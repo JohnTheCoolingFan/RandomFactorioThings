@@ -1,0 +1,100 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.13.2
+Date: 29.09.2018
+  Fixes:
+    - Fixed error on load.
+---------------------------------------------------------------------------------------------------
+Version: 0.13.0
+Date: 29.09.2018
+  Mod integration:
+    - Added integration with Deadlock's mods.
+---------------------------------------------------------------------------------------------------
+Version: 0.13.0
+Date: 24.09.2018
+  Major Features:
+    - Added Speed-Productivity 1-2-3-4 tier modules.
+  Graphics:
+    - Updated icons for merged modules.
+	- Updated icons for merged modules technologies.
+  Balancing:
+    - Merged modules research ingredient multiplier changed from 150 to 200
+---------------------------------------------------------------------------------------------------
+Version: 0.12.2
+Date: 18.08.2018
+  Fixes:
+    - Fixed error with wrong texture path (https://mods.factorio.com/mod/RandomFactorioThings/discussion/5b773c31ec95be000bba3a8a)
+---------------------------------------------------------------------------------------------------
+Version: 0.12.1
+Date: 15.08.2018
+  Balancing:
+    - Changed merged modules researches 2-3-4 level to include science packs 3
+    - Changed merged modules researches 3-4 level time from 30 to 60
+    - Changed merged modules researches 3-4 level ingredient multiplier from 50 to 100
+    - Replaced production science pack by high-tech science pack in Speed module 4 research
+---------------------------------------------------------------------------------------------------
+Version: 0.12.0
+Date: 03.08.2018
+  Major Features:
+    - Added Nuclear empowered axe.
+    - Added Nuclear empowered logistics research.
+    - Added Nuclear empowered transport belt, underground belt and splitter.
+  Graphics:
+    - Remaked Nuclear inserter, Raw nuclear metal and nuclear metal icons.
+    - remaked nuclear-inserter textures.
+  Minor Features:
+    - "Nuclear automatisation" research renamed to "Nuclear automation".
+---------------------------------------------------------------------------------------------------
+Version: 0.11.1
+Date: 31.07.2018
+  Fixes:
+    - fixed that game does not load because of my mistake.
+---------------------------------------------------------------------------------------------------
+Version: 0.11.0
+Date: 31.07.2018
+  Balancing:
+    - Hardened buildings technology: ingridient count changed to 100 (90 previously).
+    - Nuclear automation technology:
+      - Ingredient count changed to 500 (300 previously).
+      - Research time decreased to 35 (45 previously).
+    - Nuclear empowered assembler: 
+      - Added 2x tier 3 assembling machine to recipe.
+      - Health changed to 500 (400 priviously).
+      - Crafting speed changed to 5 (10 previously).
+      - Energy consumption changed to 500kW (250kW previously).
+    - Nuclear empowered inserter:
+      - Energy consumption per movement changed to 15kW.
+      - Energy consumption per rotation changed to 15kW.
+---------------------------------------------------------------------------------------------------
+Version: 0.10.4
+Date: 30.07.2018
+  Minor Features:
+    - changelog.txt restructurized AGAIN.
+---------------------------------------------------------------------------------------------------
+Version: 0.10.3
+Date: 04.05.2018
+  Minor Features:
+    - Restructurized changelog.txt.
+    - Removed dependency on JohnCore.
+---------------------------------------------------------------------------------------------------
+Version: 0.10.2
+Date: 21.03.2018
+  Minor Features:
+    - Nuclear assembling machine and modules order improvements.
+---------------------------------------------------------------------------------------------------
+Version: 0.10.1
+Date: 28.01.2018
+  Graphics:
+    - Added textures for Nuclear empowered inserter.
+---------------------------------------------------------------------------------------------------
+Version: 0.10.0
+Date: 18.12.2017
+  Major Features:
+    - Added Nuclear empowered inserter.
+    - Added Nuclear metal and Raw Nuclear metal.
+    - Added new recipes in Nuclear Automatisation technology.
+  Balancing:
+    - Nuclear Automatisation ingredients multiplier extended by 50%.
+    - Stack size for Compressed fuel extended to 75.
+  Minor Features:
+    - Added changelog.txt.
+    - Now working on 0.16.
