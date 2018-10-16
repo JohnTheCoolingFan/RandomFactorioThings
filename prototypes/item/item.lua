@@ -1,3 +1,30 @@
+require "util"
+require("merged-module")
+require("module")
+
+local items = {}
+
+local nuclear_logistic_robot = util.table.deepcopy(data.raw["item"]["logistic-robot"])
+nuclear_logistic_robot.name = "nuclear-logistic-robot"
+nuclear_logistic_robot.icon = "__RandomFactorioThings__/graphics/icons/nuclear-logistic-robot.png"
+nuclear_logistic_robot.place_result = "nuclear-logistic-robot"
+nuclear_logistic_robot.order = "a[nuclear-robot]-a[logistic-robot]"
+table.insert(items, nuclear_logistic_robot)
+
+local nuclear_construction_robot = util.table.deepcopy(data.raw["item"]["construction-robot"])
+nuclear_construction_robot.name = "nuclear-construction-robot"
+nuclear_construction_robot.icon = "__RandomFactorioThings__/graphics/icons/nuclear-construction-robot.png"
+nuclear_construction_robot.place_result = "nuclear-construction-robot"
+nuclear_construction_robot.order = "a[nuclear-robot]-b[construction-robot]"
+table.insert(items, nuclear_construction_robot)
+
+local nuclear_robot_frame = util.table.deepcopy(data.raw["item"]["flying-robot-frame"])
+nuclear_robot_frame.name = "nuclear-flying-robot-frame"
+nuclear_robot_frame.icon = "__RandomFactorioThings__/graphics/icons/nuclear-flying-robot-frame.png"
+table.insert(items, nuclear_robot_frame)
+
+data:extend(items)
+
 data:extend({
   {
     type = "item",

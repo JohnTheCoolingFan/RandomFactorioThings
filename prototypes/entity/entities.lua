@@ -1,245 +1,248 @@
+require "util"
+require("inserters")
+require("miners")
+
+local belt_entities = {}
+
+local nuclear_transport_belt = util.table.deepcopy(data.raw["transport-belt"]["express-transport-belt"])
+	nuclear_transport_belt.name = "nuclear-transport-belt"
+	nuclear_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-transport-belt.png"
+	nuclear_transport_belt.minable.result = "nuclear-transport-belt"
+	nuclear_transport_belt.max_health = 170
+	nuclear_transport_belt.speed = 0.125
+	nuclear_transport_belt.animations.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_transport_belt.animations.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_transport_belt.belt_horizontal.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_transport_belt.belt_horizontal.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_transport_belt.belt_vertical.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_transport_belt.belt_vertical.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_transport_belt.ending_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_transport_belt.ending_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_transport_belt.ending_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_transport_belt.ending_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_transport_belt.ending_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_transport_belt.ending_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_transport_belt.starting_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_transport_belt.starting_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_transport_belt.starting_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_transport_belt.starting_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_transport_belt.starting_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_transport_belt.starting_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+table.insert(belt_entities, nuclear_transport_belt)
+
+local nuclear_underground_belt = util.table.deepcopy(data.raw["underground-belt"]["express-underground-belt"])
+	nuclear_underground_belt.name = "nuclear-underground-belt"
+	nuclear_underground_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-underground-belt.png"
+	nuclear_underground_belt.minable.result = "nuclear-underground-belt"
+	nuclear_underground_belt.max_distance = 11
+	nuclear_underground_belt.speed = 0.125
+	nuclear_underground_belt.belt_horizontal.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_underground_belt.belt_horizontal.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_underground_belt.belt_vertical.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_underground_belt.belt_vertical.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_underground_belt.ending_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_underground_belt.ending_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_underground_belt.ending_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_underground_belt.ending_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_underground_belt.ending_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_underground_belt.ending_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_underground_belt.starting_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_underground_belt.starting_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_underground_belt.starting_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_underground_belt.starting_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_underground_belt.starting_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_underground_belt.starting_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_underground_belt.structure.direction_in.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
+	nuclear_underground_belt.structure.direction_in.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
+	nuclear_underground_belt.structure.direction_out.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
+	nuclear_underground_belt.structure.direction_out.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
+table.insert(belt_entities, nuclear_underground_belt)
+
+local nuclear_splitter = util.table.deepcopy(data.raw["splitter"]["express-splitter"])
+	nuclear_splitter.name = "nuclear-splitter"
+	nuclear_splitter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-splitter.png"
+	nuclear_splitter.minable.result = "nuclear-splitter"
+	nuclear_splitter.speed = 0.125
+	nuclear_splitter.belt_horizontal.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_splitter.belt_horizontal.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_splitter.belt_vertical.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_splitter.belt_vertical.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_splitter.ending_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_splitter.ending_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_splitter.ending_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_splitter.ending_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_splitter.ending_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_splitter.ending_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_splitter.starting_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_splitter.starting_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_splitter.starting_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_splitter.starting_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_splitter.starting_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_splitter.starting_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_splitter.structure.north.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-north.png"
+	nuclear_splitter.structure.north.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-north.png"
+	nuclear_splitter.structure.east.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-east.png"
+	nuclear_splitter.structure.east.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-east.png"
+	nuclear_splitter.structure.south.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-south.png"
+	nuclear_splitter.structure.south.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-south.png"
+	nuclear_splitter.structure.west.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-west.png"
+	nuclear_splitter.structure.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-west.png"
+table.insert(belt_entities, nuclear_splitter)
+
+data:extend(belt_entities)
+
+local entities = {}
+
+local nuclear_transport_robot = util.table.deepcopy(data.raw["logistic-robot"]["logistic-robot"])
+	nuclear_transport_robot.name = "nuclear-logistic-robot"
+	nuclear_transport_robot.minable.result = "nuclear-logistic-robot"
+	nuclear_transport_robot.max_health = 150
+	nuclear_transport_robot.icon = "__RandomFactorioThings__/graphics/icons/nuclear-logistic-robot.png"
+	nuclear_transport_robot.max_payload_size = 2
+	nuclear_transport_robot.speed = 0.1
+	nuclear_transport_robot.max_energy = "3MJ"
+	nuclear_transport_robot.energy_per_move = "4kJ"
+	nuclear_transport_robot.idle.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+	nuclear_transport_robot.idle.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+	nuclear_transport_robot.idle_with_cargo.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+	nuclear_transport_robot.idle_with_cargo.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+	nuclear_transport_robot.in_motion.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+	nuclear_transport_robot.in_motion.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+	nuclear_transport_robot.in_motion_with_cargo.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+	nuclear_transport_robot.in_motion_with_cargo.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+table.insert(entities, nuclear_transport_robot)
+
+local nuclear_construction_robot = util.table.deepcopy(data.raw["construction-robot"]["construction-robot"])
+	nuclear_construction_robot.name = "nuclear-construction-robot"
+	nuclear_construction_robot.minable.result = "nuclear-construction-robot"
+	nuclear_construction_robot.max_health = 150
+	nuclear_construction_robot.icon = "__RandomFactorioThings__/graphics/icons/nuclear-construction-robot.png"
+	nuclear_construction_robot.max_payload_size = 2
+	nuclear_construction_robot.speed = 0.12
+	nuclear_construction_robot.max_energy = "3MJ"
+	nuclear_construction_robot.energy_per_move = "4kJ"
+	nuclear_construction_robot.idle.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+	nuclear_construction_robot.idle.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+	nuclear_construction_robot.in_motion.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+	nuclear_construction_robot.in_motion.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+	nuclear_construction_robot.working.filename = "__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/nuclear-construction-robot-working.png"
+	nuclear_construction_robot.working.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/hr-nuclear-construction-robot-working.png"
+table.insert(entities, nuclear_construction_robot)
+
+local JohnTheCF_furnace = util.table.deepcopy(data.raw["furnace"]["stone-furnace"])
+JohnTheCF_furnace.name = "JohnTheCF-furnace"
+JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/JohnTheCF-furnace.png"
+JohnTheCF_furnace.max_health = 600
+JohnTheCF_furnace.crafting_speed = 1.3
+JohnTheCF_furnace.effectivity = 1.5
+JohnTheCF_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/JohnTheCF-furnace/JohnTheCF-furnace.png"
+JohnTheCF_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/JohnTheCF-furnace/hr-JohnTheCF-furnace.png"
+table.insert(entities, JohnTheCF_furnace)
+
+data:extend(entities)
+
 data:extend({
-
-  {
-    type = "furnace",
-    name = "JohnTheCF-furnace",
-    icon = "__RandomFactorioThings__/graphics/icons/JohnTheCF-furnace.png",
-	icon_size = 32,
-    flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {mining_time = 1, result = "JohnTheCF-furnace"},
-    max_health = 600,
-    corpse = "medium-remnants",
-    repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
-    mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
-    open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
-    vehicle_impact_sound =  { filename = "__base__/sound/car-stone-impact.ogg", volume = 1.0 },
-    working_sound =
-    {
-      sound = { filename = "__base__/sound/furnace.ogg", }
-    },
-    resistances =
-    {
-      {
-        type = "fire",
-        percent = 90
-      },
-      {
-        type = "explosion",
-        percent = 30
-      },
-      {
-        type = "impact",
-        percent = 30
-      }
-    },
-    collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
-    selection_box = {{-0.8, -1}, {0.8, 1}},
-    crafting_categories = {"smelting"},
-    result_inventory_size = 1,
-    energy_usage = "180kW",
-    crafting_speed = 1.3,
-    source_inventory_size = 1,
-    energy_source =
-    {
-      type = "burner",
-      fuel_category = "chemical",
-      effectivity = 1.5,
-      fuel_inventory_size = 1,
-      emissions = 0.01,
-      smoke =
-      {
-        {
-          name = "smoke",
-          deviation = {0.1, 0.1},
-          frequency = 5,
-          position = {0.0, -0.8},
-          starting_vertical_speed = 0.08,
-          starting_frame_deviation = 60
-        }
-      }
-    },
-	animation =
-    {
-    layers =
-      {
-        {
-        filename = "__RandomFactorioThings__/graphics/JohnTheCF-furnace/JohnTheCF-furnace.png",
-        priority = "extra-high",
-        width = 81,
-        height = 64,
-        frame_count = 1,
-        shift = {0.515625, 0.0625},
-        hr_version = {
-          filename = "__RandomFactorioThings__/graphics/JohnTheCF-furnace/hr-JohnTheCF-furnace.png",
-          priority = "extra-high",
-          width = 151,
-          height = 146,
-          frame_count = 1,
-          shift = util.by_pixel(-0.25, 6),
-          scale = 0.5
-          }
-        },
-        {
-        filename = "__RandomFactorioThings__/graphics/JohnTheCF-furnace/JohnTheCF-furnace-shadow.png",
-        priority = "extra-high",
-        width = 81,
-        height = 64,
-        frame_count = 1,
-        draw_as_shadow = true,
-        shift = {0.515625, 0.0625},
-        hr_version = {
-          filename = "__RandomFactorioThings__/graphics/JohnTheCF-furnace/hr-JohnTheCF-furnace-shadow.png",
-          priority = "extra-high",
-          width = 164,
-          height = 74,
-          frame_count = 1,
-          draw_as_shadow = true,
-          shift = util.by_pixel(14.5, 13),
-          scale = 0.5
-          }
-        }
-      }
-    },
-	working_visualisations =
-      {
-        {
-          north_position = {0.0, 0.0},
-          east_position = {0.0, 0.0},
-          south_position = {0.0, 0.0},
-          west_position = {0.0, 0.0},
-          animation =
-          {
-            filename = "__base__/graphics/entity/stone-furnace/stone-furnace-fire.png",
-            priority = "extra-high",
-            line_length = 8,
-            width = 20,
-            height = 49,
-            frame_count = 48,
-            axially_symmetrical = false,
-            direction_count = 1,
-            shift = util.by_pixel(2, 5.5),
-            hr_version = {
-              filename = "__base__/graphics/entity/stone-furnace/hr-stone-furnace-fire.png",
-              priority = "extra-high",
-              line_length = 8,
-              width = 41,
-              height = 100,
-              frame_count = 48,
-              axially_symmetrical = false,
-              direction_count = 1,
-              shift = util.by_pixel(-0.75, 5.5),
-              scale = 0.5
-            }
-          },
-        light = {intensity = 1, size = 1, color = {r=1.0, g=1.0, b=1.0}}
-        }
-      },
-    },
-  
-  {
-    type = "assembling-machine",
-    name = "nuclear-assembling-machine",
-    icon = "__RandomFactorioThings__/graphics/icons/nuclear-assembling-machine.png",
-	icon_size = 32,
-    flags = {"placeable-neutral","placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "nuclear-assembling-machine"},
-    max_health = 500,
-    corpse = "big-remnants",
-    dying_explosion = "medium-explosion",
-    resistances =
-    {
-      {
-        type = "fire",
-        percent = 70
-      }
-    },
-    fluid_boxes =
-    {
-      {
-        production_type = "input",
-        pipe_picture = assembler3pipepictures(),
-        pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
-        pipe_connections = {{ type="input", position = {0, -2} }},
-        secondary_draw_orders = { north = -1 }
-      },
-      {
-        production_type = "output",
-        pipe_picture = assembler3pipepictures(),
-        pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = {{ type="output", position = {0, 2} }},
-        secondary_draw_orders = { north = -1 }
-      },
-      off_when_no_fluid_recipe = true
-    },
-    open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
-    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-    working_sound =
-    {
-      sound = {
-        {
-          filename = "__base__/sound/assembling-machine-t3-1.ogg",
-          volume = 0.8
-        },
-        {
-          filename = "__base__/sound/assembling-machine-t3-2.ogg",
-          volume = 0.8
-        },
-      },
-      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
-      apparent_volume = 1.5,
-    },
-    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    fast_replaceable_group = "assembling-machine",
-    animation =
-    {
-      layers =
-      {
-        {
-          filename = "__RandomFactorioThings__/graphics/nuclear-assembling-machine/nuclear-assembling-machine.png",
-          priority = "high",
-          width = 108,
-          height = 114,
-          frame_count = 32,
-          line_length = 8,
-          shift = util.by_pixel(0, -0.5),
-          hr_version = {
-            filename = "__RandomFactorioThings__/graphics/nuclear-assembling-machine/hr-nuclear-assembling-machine.png",
-            priority = "high",
-            width = 214,
-            height = 226,
-            frame_count = 32,
-            line_length = 8,
-            shift = util.by_pixel(0, -0.75),
-            scale = 0.5
-          }
-        },
-        
-      },
-    },
-
-    crafting_categories = {"crafting", "advanced-crafting", "crafting-with-fluid"},
-    crafting_speed = 5,
-    energy_source =
-    {
-      type = "electric",
-      usage_priority = "secondary-input",
-      emissions = 0.03 / 3.5
-    },
-    energy_usage = "500kW",
-    ingredient_count = 10,
-    module_specification =
-    {
-      module_slots = 6
-    },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"}
-  },
+	{
+		type = "assembling-machine",
+		name = "nuclear-assembling-machine",
+		icon = "__RandomFactorioThings__/graphics/icons/nuclear-assembling-machine.png",
+		icon_size = 32,
+		flags = {"placeable-neutral","placeable-player", "player-creation"},
+		minable = {hardness = 0.2, mining_time = 0.5, result = "nuclear-assembling-machine"},
+		max_health = 500,
+		corpse = "big-remnants",
+		dying_explosion = "medium-explosion",
+		resistances =
+		{
+			{
+				type = "fire",
+				percent = 70
+			}
+		},
+		fluid_boxes =
+		{
+			{
+				production_type = "input",
+				pipe_picture = assembler3pipepictures(),
+				pipe_covers = pipecoverspictures(),
+				base_area = 10,
+				base_level = -1,
+				pipe_connections = {{ type="input", position = {0, -2} }},
+				secondary_draw_orders = { north = -1 }
+			},
+			{
+				production_type = "output",
+				pipe_picture = assembler3pipepictures(),
+				pipe_covers = pipecoverspictures(),
+				base_area = 10,
+				base_level = 1,
+				pipe_connections = {{ type="output", position = {0, 2} }},
+				secondary_draw_orders = { north = -1 }
+			},
+			off_when_no_fluid_recipe = true
+		},
+		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		working_sound =
+		{
+			sound = {
+				{
+					filename = "__base__/sound/assembling-machine-t3-1.ogg",
+					volume = 0.8
+				},
+				{
+					filename = "__base__/sound/assembling-machine-t3-2.ogg",
+					volume = 0.8
+				},
+			},
+			idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+			apparent_volume = 1.5,
+		},
+		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+		fast_replaceable_group = "assembling-machine",
+		animation =
+		{
+			layers =
+			{
+				{
+					filename = "__RandomFactorioThings__/graphics/nuclear-assembling-machine/nuclear-assembling-machine.png",
+					priority = "high",
+					width = 108,
+					height = 114,
+					frame_count = 32,
+					line_length = 8,
+					shift = util.by_pixel(0, -0.5),
+					hr_version = {
+						filename = "__RandomFactorioThings__/graphics/nuclear-assembling-machine/hr-nuclear-assembling-machine.png",
+						priority = "high",
+						width = 214,
+						height = 226,
+						frame_count = 32,
+						line_length = 8,
+						shift = util.by_pixel(0, -0.75),
+						scale = 0.5
+					}
+				},
+			},
+		},
+		crafting_categories = {"crafting", "advanced-crafting", "crafting-with-fluid"},
+		crafting_speed = 5,
+		energy_source =
+		{
+			type = "electric",
+			usage_priority = "secondary-input",
+			emissions = 0.03 / 3.5
+		},
+		energy_usage = "500kW",
+		ingredient_count = 10,
+		module_specification =
+		{
+			module_slots = 6
+		},
+		allowed_effects = {"consumption", "speed", "productivity", "pollution"}
+	},
   
   {
     type = "assembling-machine",
