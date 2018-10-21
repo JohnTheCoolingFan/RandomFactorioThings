@@ -1,11 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.14.1
+Date: 21.10.2018
+  Graphics:
+    - Graphics improvements for hardened buildings (burner miner and electric miner).
+---------------------------------------------------------------------------------------------------
 Version: 0.14.0
 Date: 16.10.2018
   Major Features:
     - Added nuclear drones
   Minor Features:
     - Rewritten some prototype files.
-    - Some loclisation improvements
+    - Some localisation improvements
 ---------------------------------------------------------------------------------------------------
 Version: 0.13.2
 Date: 29.09.2018

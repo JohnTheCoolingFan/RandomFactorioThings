@@ -135,8 +135,8 @@ JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/JohnTheCF-furn
 JohnTheCF_furnace.max_health = 600
 JohnTheCF_furnace.crafting_speed = 1.3
 JohnTheCF_furnace.effectivity = 1.5
-JohnTheCF_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/JohnTheCF-furnace/JohnTheCF-furnace.png"
-JohnTheCF_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/JohnTheCF-furnace/hr-JohnTheCF-furnace.png"
+JohnTheCF_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/JohnTheCF-furnace/JohnTheCF-furnace.png"
+JohnTheCF_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/JohnTheCF-furnace/hr-JohnTheCF-furnace.png"
 table.insert(entities, JohnTheCF_furnace)
 
 data:extend(entities)
@@ -207,7 +207,7 @@ data:extend({
 			layers =
 			{
 				{
-					filename = "__RandomFactorioThings__/graphics/nuclear-assembling-machine/nuclear-assembling-machine.png",
+					filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/nuclear-assembling-machine.png",
 					priority = "high",
 					width = 108,
 					height = 114,
@@ -215,7 +215,7 @@ data:extend({
 					line_length = 8,
 					shift = util.by_pixel(0, -0.5),
 					hr_version = {
-						filename = "__RandomFactorioThings__/graphics/nuclear-assembling-machine/hr-nuclear-assembling-machine.png",
+						filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/hr-nuclear-assembling-machine.png",
 						priority = "high",
 						width = 214,
 						height = 226,
