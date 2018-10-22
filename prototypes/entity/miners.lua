@@ -128,7 +128,7 @@ data:extend({
 			south =
 			{
 				priority = "extra-high",
-				filename = "__RandomFactorioThings__/graphics/entity/hardenedelectric-mining-drill/hardened-electric-mining-drill-S.png",
+				filename = "__RandomFactorioThings__/graphics/entity/hardene-delectric-mining-drill/hardened-electric-mining-drill-S.png",
 				line_length = 8,
 				width = 98,
 				height = 109,
@@ -154,7 +154,7 @@ data:extend({
 			west =
 			{
 				priority = "extra-high",
-				filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hardenedelectric-mining-drill-W.png",
+				filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hardened-electric-mining-drill-W.png",
 				line_length = 8,
 				width = 105,
 				height = 98,
@@ -294,29 +294,29 @@ data:extend({
 			}
 		},
 		input_fluid_patch_sprites =
-    {
-      north =
-      {
-        priority = "extra-high",
-        filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hardened-electric-mining-drill-N-patch.png",
-        line_length = 1,
-        width = 100,
-        height = 111,
-        frame_count = 1,
-        direction_count = 1,
-        shift = util.by_pixel(0, -6.5),
-        hr_version = {
-          priority = "extra-high",
-          filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hr-hardened-electric-mining-drill-N-patch.png",
-          line_length = 1,
-          width = 200,
-          height = 222,
-          frame_count = 1,
-          direction_count = 1,
-          shift = util.by_pixel(-0.5, -6.5),
-          scale = 0.5
-        }
-      },
+		{
+			north =
+			{
+				priority = "extra-high",
+				filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hardened-electric-mining-drill-N-patch.png",
+				line_length = 1,
+				width = 100,
+				height = 111,
+				frame_count = 1,
+				direction_count = 1,
+				shift = util.by_pixel(0, -6.5),
+				hr_version = {
+					priority = "extra-high",
+					filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hr-hardened-electric-mining-drill-N-patch.png",
+					line_length = 1,
+					width = 200,
+					height = 222,
+					frame_count = 1,
+					direction_count = 1,
+					shift = util.by_pixel(-0.5, -6.5),
+					scale = 0.5
+				}
+			},
       east =
       {
         priority = "extra-high",
