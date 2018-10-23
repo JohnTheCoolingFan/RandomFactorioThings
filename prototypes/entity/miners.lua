@@ -128,7 +128,7 @@ data:extend({
 			south =
 			{
 				priority = "extra-high",
-				filename = "__RandomFactorioThings__/graphics/entity/hardene-delectric-mining-drill/hardened-electric-mining-drill-S.png",
+				filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hardened-electric-mining-drill-S.png",
 				line_length = 8,
 				width = 98,
 				height = 109,
