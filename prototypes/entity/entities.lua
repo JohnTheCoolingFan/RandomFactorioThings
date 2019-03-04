@@ -10,24 +10,9 @@ local nuclear_transport_belt = util.table.deepcopy(data.raw["transport-belt"]["e
 	nuclear_transport_belt.minable.result = "nuclear-transport-belt"
 	nuclear_transport_belt.max_health = 170
 	nuclear_transport_belt.speed = 0.125
-	nuclear_transport_belt.animations.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_transport_belt.animations.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_transport_belt.belt_horizontal.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_transport_belt.belt_horizontal.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_transport_belt.belt_vertical.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_transport_belt.belt_vertical.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_transport_belt.ending_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_transport_belt.ending_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_transport_belt.ending_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_transport_belt.ending_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_transport_belt.ending_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_transport_belt.ending_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_transport_belt.starting_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_transport_belt.starting_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_transport_belt.starting_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_transport_belt.starting_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_transport_belt.starting_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_transport_belt.starting_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_transport_belt.next_upgrade = nil
+	nuclear_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+	nuclear_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
 table.insert(belt_entities, nuclear_transport_belt)
 
 local nuclear_underground_belt = util.table.deepcopy(data.raw["underground-belt"]["express-underground-belt"])
@@ -36,26 +21,15 @@ local nuclear_underground_belt = util.table.deepcopy(data.raw["underground-belt"
 	nuclear_underground_belt.minable.result = "nuclear-underground-belt"
 	nuclear_underground_belt.max_distance = 11
 	nuclear_underground_belt.speed = 0.125
-	nuclear_underground_belt.belt_horizontal.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_underground_belt.belt_horizontal.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_underground_belt.belt_vertical.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_underground_belt.belt_vertical.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_underground_belt.ending_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_underground_belt.ending_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_underground_belt.ending_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_underground_belt.ending_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_underground_belt.ending_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_underground_belt.ending_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_underground_belt.starting_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_underground_belt.starting_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_underground_belt.starting_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_underground_belt.starting_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_underground_belt.starting_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_underground_belt.starting_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_underground_belt.next_upgrade = nil
 	nuclear_underground_belt.structure.direction_in.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
 	nuclear_underground_belt.structure.direction_in.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
 	nuclear_underground_belt.structure.direction_out.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
 	nuclear_underground_belt.structure.direction_out.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
+	nuclear_underground_belt.structure.direction_in_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
+	nuclear_underground_belt.structure.direction_in_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
+	nuclear_underground_belt.structure.direction_in_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
+	nuclear_underground_belt.structure.direction_in_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
 table.insert(belt_entities, nuclear_underground_belt)
 
 local nuclear_splitter = util.table.deepcopy(data.raw["splitter"]["express-splitter"])
@@ -63,22 +37,8 @@ local nuclear_splitter = util.table.deepcopy(data.raw["splitter"]["express-split
 	nuclear_splitter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-splitter.png"
 	nuclear_splitter.minable.result = "nuclear-splitter"
 	nuclear_splitter.speed = 0.125
-	nuclear_splitter.belt_horizontal.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_splitter.belt_horizontal.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_splitter.belt_vertical.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_splitter.belt_vertical.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_splitter.ending_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_splitter.ending_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_splitter.ending_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_splitter.ending_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_splitter.ending_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_splitter.ending_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_splitter.starting_top.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_splitter.starting_top.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_splitter.starting_bottom.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_splitter.starting_bottom.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-	nuclear_splitter.starting_side.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_splitter.starting_side.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_splitter.next_upgrade = nil
+	nuclear_splitter.belt_animation_set = nuclear_transport_belt.belt_animation_set
 	nuclear_splitter.structure.north.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-north.png"
 	nuclear_splitter.structure.north.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-north.png"
 	nuclear_splitter.structure.east.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-east.png"
@@ -90,6 +50,9 @@ local nuclear_splitter = util.table.deepcopy(data.raw["splitter"]["express-split
 table.insert(belt_entities, nuclear_splitter)
 
 data:extend(belt_entities)
+data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "nuclear-transport-belt"
+data.raw["underground-belt"]["express-underground-belt"].next_upgrade = "nuclear-underground-belt"
+data.raw["splitter"]["express-splitter"].next_upgrade = "nuclear-splitter"
 
 local entities = {}
 
@@ -236,7 +199,6 @@ data:extend({
 			emissions = 0.03 / 3.5
 		},
 		energy_usage = "500kW",
-		ingredient_count = 10,
 		module_specification =
 		{
 			module_slots = 6
@@ -608,7 +570,6 @@ data:extend({
       emissions = 0.04 / 2.5
     },
     energy_usage = "300kW",
-    ingredient_count = 2,
     module_specification =
     {
       module_slots = 2
@@ -980,7 +941,6 @@ data:extend({
       emissions = 0.04 / 2.5
     },
     energy_usage = "300kW",
-    ingredient_count = 2,
     module_specification =
     {
       module_slots = 3

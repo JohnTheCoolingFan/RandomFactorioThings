@@ -4,7 +4,7 @@ data:extend({
 		name = "speed-module-4",
 		icon = "__RandomFactorioThings__/graphics/icons/speed-module-4.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		subgroup = "module",
 		category = "speed",
 		tier = 4,
@@ -19,7 +19,7 @@ data:extend({
 		name = "effectivity-module-4",
 		icon = "__RandomFactorioThings__/graphics/icons/effectivity-module-4.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		subgroup = "module",
 		category = "effectivity",
 		tier = 4,
@@ -35,7 +35,7 @@ data:extend({
 		name = "productivity-module-4",
 		icon = "__RandomFactorioThings__/graphics/icons/productivity-module-4.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		subgroup = "module",
 		category = "productivity",
 		tier = 4,
@@ -49,7 +49,7 @@ data:extend({
 			pollution = {bonus = 0.15},
 			speed = {bonus = -0.15}
 		},
-		limitation = productivitymodulelimitation(),
+		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
 	},
 })

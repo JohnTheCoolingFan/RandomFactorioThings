@@ -18,7 +18,7 @@ data:extend({
 		unit =
 		{
 			count = 100,
-			ingredients = {{"science-pack-1", 1},{"science-pack-2", 1}},
+			ingredients = {{"automation-science-pack", 1},{"logistic-science-pack", 1}},
 			time = 1
 		},
 		order = "c-a"
@@ -49,10 +49,6 @@ data:extend({
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "nuclear-axe"
-			},
-			{
-				type = "unlock-recipe",
 				recipe = "nuclear-flying-robot-frame"
 			},
 			{
@@ -70,10 +66,10 @@ data:extend({
 			count = 500,
 			ingredients =
 			{
-				{"science-pack-1", 1},
-				{"science-pack-2", 1},
-				{"science-pack-3", 1},
-				{"high-tech-science-pack", 1}
+				{"automation-science-pack", 1},
+				{"logistic-science-pack", 1},
+				{"chemical-science-pack", 1},
+				{"utility-science-pack", 1}
 			},
 			time = 35
 		},
@@ -98,10 +94,10 @@ data:extend({
 			count = 400,
 			ingredients =
 			{
-				{"science-pack-1", 1},
-				{"science-pack-2", 1},
-				{"science-pack-3", 1},
-				{"high-tech-science-pack", 1}
+				{"automation-science-pack", 1},
+				{"logistic-science-pack", 1},
+				{"chemical-science-pack", 1},
+				{"utility-science-pack", 1}
 			},
 			time = 60
 		},
@@ -127,9 +123,9 @@ data:extend({
 			count = 400,
 			ingredients =
 			{
-				{"science-pack-1", 1},
-				{"science-pack-2", 1},
-				{"science-pack-3", 1},
+				{"automation-science-pack", 1},
+				{"logistic-science-pack", 1},
+				{"chemical-science-pack", 1},
 				{"production-science-pack", 1}
 			},
 			time = 60
@@ -156,9 +152,9 @@ data:extend({
 			count = 400,
 			ingredients =
 			{
-				{"science-pack-1", 1},
-				{"science-pack-2", 1},
-				{"science-pack-3", 1},
+				{"automation-science-pack", 1},
+				{"logistic-science-pack", 1},
+				{"chemical-science-pack", 1},
 				{"production-science-pack", 1}
 			},
 			time = 60
@@ -178,8 +174,8 @@ data:extend({
 			count = 200,
 			ingredients =
 			{
-				{"science-pack-1", 1},
-				{"science-pack-2", 1}
+				{"automation-science-pack", 1},
+				{"logistic-science-pack", 1}
 			},
 			time = 30
 		},
@@ -210,7 +206,7 @@ data:extend({
 		unit =
 		{
 			count = 90,
-			ingredients = {{"science-pack-1", 1},{"science-pack-2", 1}},
+			ingredients = {{"automation-science-pack", 1},{"logistic-science-pack", 1}},
 			time = 1
 		},
 		order = "c-a"
@@ -242,9 +238,9 @@ data:extend({
 			count = 500,
 			ingredients =
 			{
-				{"science-pack-1", 1},
-				{"science-pack-2", 1},
-				{"science-pack-3", 1},
+				{"automation-science-pack", 1},
+				{"logistic-science-pack", 1},
+				{"chemical-science-pack", 1},
 				{"production-science-pack", 1}
 			},
 			time = 15

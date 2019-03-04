@@ -104,7 +104,7 @@ data:extend({
 		name = "nuclear-transport-belt",
 		icon = "__RandomFactorioThings__/graphics/icons/nuclear-transport-belt.png",
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
+		flags = {},
 		subgroup = "belt",
 		order = "a[transport-belt]-d[nuclear-transport-belt]",
 		place_result = "nuclear-transport-belt",
@@ -115,7 +115,7 @@ data:extend({
 		name = "nuclear-underground-belt",
 		icon = "__RandomFactorioThings__/graphics/icons/nuclear-underground-belt.png",
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
+		flags = {},
 		subgroup = "belt",
 		order = "b[underground-belt]-d[nuclear-underground-belt]",
 		place_result = "nuclear-underground-belt",
@@ -126,36 +126,10 @@ data:extend({
 		name = "nuclear-splitter",
 		icon = "__RandomFactorioThings__/graphics/icons/nuclear-splitter.png",
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
+		flags = {},
 		subgroup = "belt",
 		order = "c[splitter]-d[nuclear-splitter]",
 		place_result = "nuclear-splitter",
 		stack_size = 50
-	},
-	{
-		type = "mining-tool",
-		name = "nuclear-axe",
-		localised_description = {"item-description.mining-tool"},
-		icon = "__RandomFactorioThings__/graphics/icons/nuclear-axe.png",
-		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
-		action =
-		{
-			type="direct",
-			action_delivery =
-			{
-				type = "instant",
-				target_effects =
-				{
-					type = "damage",
-					damage = { amount = 12 , type = "physical"}
-				}
-			}
-		},
-		durability = 5000,
-		subgroup = "tool",
-		order = "a[mining]-c[nuclear-axe]",
-		speed = 10,
-		stack_size = 20
 	}
   })

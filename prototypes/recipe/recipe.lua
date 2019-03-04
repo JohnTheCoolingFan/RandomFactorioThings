@@ -391,7 +391,7 @@ data:extend({
 	enabled = true,
 	category = "grinding",
     ingredients = {
-	{"raw-wood", 1},
+	{"wood", 1},
 	},
 	result_count = 3,
     result = "sawdust"
@@ -508,17 +508,5 @@ data:extend({
       {type="fluid", name="lubricant", amount=80}
     },
     result = "nuclear-splitter"
-  },
-  
-  {
-    type = "recipe",
-    name = "nuclear-axe",
-    enabled = false,
-    ingredients =
-    {
-      {"nuclear-metal", 5}
-    },
-    result = "nuclear-axe",
-    requester_paste_multiplier = 5
   }
 })
