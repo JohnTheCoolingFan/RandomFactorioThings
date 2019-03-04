@@ -11,9 +11,9 @@ data:extend({
 		order = "a[speed]-d[speed-module-4]",
 		stack_size = 50,
 		default_request_amount = 10,
-		effect = { speed = {bonus = 0.7}, consumption = {bonus = 1}}
+		effect = { speed = {bonus = 0.8}, consumption = {bonus = 0.8}}
 	},
-  
+
 	{
 		type = "module",
 		name = "effectivity-module-4",
@@ -26,10 +26,10 @@ data:extend({
 		order = "c[effectivity]-d[effectivity-module-4]",
 		stack_size = 50,
 		default_request_amount = 10,
-		effect = { consumption = {bonus = -0.7}},
+		effect = { consumption = {bonus = -0.6}},
 		limitation = production
 	},
-  
+
 	{
 		type = "module",
 		name = "productivity-module-4",
@@ -42,11 +42,11 @@ data:extend({
 		order = "c[productivity]-d[productivity-module-4]",
 		stack_size = 50,
 		default_request_amount = 10,
-		effect = 
+		effect =
 		{
-			productivity = {bonus = 0.12},
+			productivity = {bonus = 0.16},
 			consumption = {bonus = 1},
-			pollution = {bonus = 0.15},
+			pollution = {bonus = 0.125},
 			speed = {bonus = -0.15}
 		},
 		limitation = productivity_module_limitation(),

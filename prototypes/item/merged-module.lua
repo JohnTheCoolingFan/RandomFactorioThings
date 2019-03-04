@@ -61,7 +61,7 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-		speed = {bonus = 0.7}, consumption = {bonus = 0.3}}
+		speed = {bonus = 0.8}, consumption = {bonus = 0.2}}
     },
 	-- Productivity-Effectivity
 	{
@@ -143,9 +143,9 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-			productivity = {bonus = 0.12},
-			consumption = {bonus = 0.3},
-			pollution = {bonus = 0.15},
+			productivity = {bonus = 0.16},
+			consumption = {bonus = 0.4},
+			pollution = {bonus = 0.125},
 			speed = {bonus = -0.15},
 		},
 		limitation = productivity_module_limitation(),

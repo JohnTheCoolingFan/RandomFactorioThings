@@ -1,4 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.14.9
+Date: 04.03.2019
+  Balancing:
+    - Speed module 4:
+      - Speed bonus 0.7 ==> 0.8
+      - Consumption bonus 1 ==> 0.8
+    - Effectivity module 4:
+      - Consumption bonus -0.7 ==> -0.6
+    - Productivity module:
+      - Productivity bonus 0.12 ==> 0.16
+      - Pollution bonus 0.15 ==> 0.125
+    - Speed-Effectivity module:
+      - Speed bonus 0.7 ==> 0.8
+      - Consumption bonus 0.3 ==> 0.2
+    - Productivity-Effectivity module:
+      - Productivity bonus 0.12 ==> 0.16
+      - Consumption bonus 0.3 ==> 0.4
+      - Pollution bonus 0.15 ==> 0.125
+---------------------------------------------------------------------------------------------------
 Version: 0.14.8
 Date: 04.03.2019
   Fixes:
