@@ -1,3 +1,5 @@
+require("module-technology")
+
 data:extend({
 	{
 		type = "technology",
@@ -23,7 +25,7 @@ data:extend({
 		},
 		order = "c-a"
 	},
-  
+
 	{
 		type = "technology",
 		name = "nuclear-automation",
@@ -75,7 +77,7 @@ data:extend({
 		},
 		order = "e-a-b"
 	},
-  
+
 	{
 		type = "technology",
 		name = "speed-module-4",
@@ -104,7 +106,7 @@ data:extend({
 		upgrade = true,
 		order = "i-c-c"
 	},
-  
+
 	{
 		type = "technology",
 		name = "productivity-module-4",
@@ -133,7 +135,7 @@ data:extend({
 		upgrade = true,
 		order = "i-c-c"
 	},
-  
+
 	{
 		type = "technology",
 		name = "effectivity-module-4",
@@ -162,7 +164,7 @@ data:extend({
 		upgrade = true,
 		order = "i-c-c"
 	},
-  
+
 	{
 		type = "technology",
 		name = "merged-modules",
@@ -181,7 +183,7 @@ data:extend({
 		},
 		order = "i-a"
 	},
-  
+
 	{
 		type = "technology",
 		name = "compresser",
@@ -211,7 +213,7 @@ data:extend({
 		},
 		order = "c-a"
 	},
-  
+
 	{
 		type = "technology",
 		name = "nuclear-logistics",
