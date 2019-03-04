@@ -1,52 +1,5 @@
---[[function productivity_module_limitation()
-return
-      {
-        "sulfuric-acid",
-        "basic-oil-processing",
-        "advanced-oil-processing",
-        "coal-liquefaction",
-        "heavy-oil-cracking",
-        "light-oil-cracking",
-        "solid-fuel-from-light-oil",
-        "solid-fuel-from-heavy-oil",
-        "solid-fuel-from-petroleum-gas",
-        "lubricant",
-        "wood",
-        "iron-plate",
-        "copper-plate",
-        "steel-plate",
-        "stone-brick",
-        "sulfur",
-        "plastic-bar",
-        "empty-barrel",
-        "uranium-processing",
-        "copper-cable",
-        "iron-stick",
-        "iron-gear-wheel",
-        "electronic-circuit",
-        "advanced-circuit",
-        "processing-unit",
-        "engine-unit",
-        "electric-engine-unit",
-        "uranium-fuel-cell",
-        "explosives",
-        "battery",
-        "flying-robot-frame",
-        "low-density-structure",
-        "rocket-fuel",
-        "rocket-control-unit",
-        "rocket-part",
-        "science-pack-1",
-        "science-pack-2",
-        "science-pack-3",
-        "military-science-pack",
-        "production-science-pack",
-        "high-tech-science-pack"
-      }
-end ]]
-
 data:extend({
-	--speed-effectivity
+	-- Speed-Effectivity
 	{
 		type = "module",
 		name = "speed-effectivity-module",
@@ -62,7 +15,7 @@ data:extend({
 		effect = {
 		speed = {bonus = 0.2}, consumption = {bonus = 0.2}}
     },
-	
+
 	{
 		type = "module",
 		name = "speed-effectivity-module-2",
@@ -78,7 +31,7 @@ data:extend({
 		effect = {
 		speed = {bonus = 0.3}, consumption = {bonus = 0.2}}
     },
-	
+
 	{
 		type = "module",
 		name = "speed-effectivity-module-3",
@@ -94,7 +47,7 @@ data:extend({
 		effect = {
 		speed = {bonus = 0.5}, consumption = {bonus = 0.2}}
     },
-	
+
 	{
 		type = "module",
 		name = "speed-effectivity-module-4",
@@ -110,7 +63,7 @@ data:extend({
 		effect = {
 		speed = {bonus = 0.7}, consumption = {bonus = 0.3}}
     },
-	--productivity-effectivity
+	-- Productivity-Effectivity
 	{
 		type = "module",
 		name = "productivity-effectivity-module",
@@ -124,7 +77,7 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-			productivity = {bonus = 0.04}, 
+			productivity = {bonus = 0.04},
 			consumption = {bonus = 0.1},
 			pollution = {bonus = 0.05},
 			speed = {bonus = -0.15},
@@ -132,7 +85,7 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
 	},
-	
+
 	{
 		type = "module",
 		name = "productivity-effectivity-module-2",
@@ -146,7 +99,7 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-			productivity = {bonus = 0.06}, 
+			productivity = {bonus = 0.06},
 			consumption = {bonus = 0.2},
 			pollution = {bonus = 0.075},
 			speed = {bonus = -0.15},
@@ -154,7 +107,7 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
 	},
-	
+
 	{
 		type = "module",
 		name = "productivity-effectivity-module-3",
@@ -168,7 +121,7 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-			productivity = {bonus = 0.1}, 
+			productivity = {bonus = 0.1},
 			consumption = {bonus = 0.3},
 			pollution = {bonus = 0.1},
 			speed = {bonus = -0.15},
@@ -176,7 +129,7 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
 	},
-	
+
 	{
 		type = "module",
 		name = "productivity-effectivity-module-4",
@@ -190,7 +143,7 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-			productivity = {bonus = 0.12}, 
+			productivity = {bonus = 0.12},
 			consumption = {bonus = 0.3},
 			pollution = {bonus = 0.15},
 			speed = {bonus = -0.15},
@@ -198,7 +151,7 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
 	},
-	--speed-productivity
+	-- Speed-Productivity
 	{
 		type = "module",
 		name = "speed-productivity-module",
@@ -216,7 +169,7 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
     },
-	
+
 	{
 		type = "module",
 		name = "speed-productivity-module-2",
@@ -234,7 +187,7 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
     },
-	
+
 	{
 		type = "module",
 		name = "speed-productivity-module-3",
@@ -252,7 +205,7 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
     },
-	
+
 	{
 		type = "module",
 		name = "speed-productivity-module-4",
