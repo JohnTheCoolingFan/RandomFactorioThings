@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.14.7
+Date: 04.03.2019
+  Fixes:
+    - Fixed missing require() for module-technology tree (https://github.com/JohnTheCoolingFan/RandomFactorioThings/issues/3)
+---------------------------------------------------------------------------------------------------
 Version: 0.14.6
 Date: 26.02.2019
   Changes:
@@ -84,7 +89,7 @@ Date: 31.07.2018
     - Nuclear automation technology:
       - Ingredient count changed to 500 (300 previously).
       - Research time decreased to 35 (45 previously).
-    - Nuclear empowered assembler: 
+    - Nuclear empowered assembler:
       - Added 2x tier 3 assembling machine to recipe.
       - Health changed to 500 (400 priviously).
       - Crafting speed changed to 5 (10 previously).
