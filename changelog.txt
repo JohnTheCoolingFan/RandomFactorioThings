@@ -2,7 +2,7 @@
 Version: 0.14.10
 Date: 04.03.2019
   Fixes:
-    - Fixed nuclear trasport belt texture name.
+    - Fixed nuclear transport belt texture name.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.9
 Date: 04.03.2019
