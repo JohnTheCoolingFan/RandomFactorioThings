@@ -205,7 +205,7 @@ data:extend({
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"}
 	},
-  
+
   {
     type = "assembling-machine",
     name = "macerator",
@@ -576,7 +576,7 @@ data:extend({
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
-  
+
   {
     type = "assembling-machine",
     name = "compresser",
