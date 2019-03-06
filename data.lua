@@ -4,5 +4,3 @@ require("prototypes.entity.entities")             -- Other prototype types have 
 require("prototypes.item.item")
 require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
-
-data.raw["furnace"]["stone-furnace"].max_health = 170
