@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.14.11
+Date: 06.03.2019
+  Fixes:
+    - Fixed nuclear transport belt animation (lr and hr)
+    - Fixed Nuclear construction robot animation
+    - Fixed Nuclear underground transport belt icon
+    - Fixed order for modules
+    - Fixed order for Hardened furnace
+    - Fixed order for nuclear robots
+---------------------------------------------------------------------------------------------------
 Version: 0.14.10
 Date: 04.03.2019
   Fixes:
