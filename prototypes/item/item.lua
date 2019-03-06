@@ -27,7 +27,9 @@ local JohnTheCF_furnace = util.table.deepcopy(data.raw["item"]["stone-furnace"])
 JohnTheCF_furnace.name = "JohnTheCF-furnace"
 JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/JohnTheCF-furnace.png"
 JohnTheCF_furnace.place_result = "JohnTheCF-furnace"
+JohnTheCF_furnace.order = "a[stone-furnace]-b[JohnTheCF-furnace]"
 table.insert(items, JohnTheCF_furnace)
+data.raw["item"]["stone-furnace"].order = "a[stone-furnace]-a[stone-furnace]"
 
 local nuclear_assembling_machine = util.table.deepcopy(data.raw["item"]["assembling-machine-3"])
 nuclear_assembling_machine.name = "nuclear-assembling-machine"
