@@ -12,7 +12,7 @@ local nuclear_transport_belt = util.table.deepcopy(data.raw["transport-belt"]["e
 	nuclear_transport_belt.speed = 0.125
 	nuclear_transport_belt.next_upgrade = nil
 	nuclear_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-	nuclear_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+	nuclear_transport_belt.belt_animation_set.animation_set.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
 table.insert(belt_entities, nuclear_transport_belt)
 
 local nuclear_underground_belt = util.table.deepcopy(data.raw["underground-belt"]["express-underground-belt"])
