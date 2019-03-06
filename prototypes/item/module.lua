@@ -1,3 +1,14 @@
+-- Order for vanilla modules
+data.raw["module"]["speed-module"].order = "a[speed]-a[speed-module-1]"
+data.raw["module"]["speed-module"].order = "a[speed]-b[speed-module-2]"
+data.raw["module"]["speed-module"].order = "a[speed]-c[speed-module-3]"
+data.raw["module"]["effectivity-module"].order = "c[effectivity]-a[effectivty-module-1]"
+data.raw["module"]["effectivity-module"].order = "c[effectivity]-b[effectivty-module-2]"
+data.raw["module"]["effectivity-module"].order = "c[effectivity]-c[effectivty-module-3]"
+data.raw["module"]["productivity-module"].order = "e[productivity]-a[productivity-module-1]"
+data.raw["module"]["productivity-module"].order = "e[productivity]-b[productivity-module-2]"
+data.raw["module"]["productivity-module"].order = "e[productivity]-c[productivity-module-3]"
+
 data:extend({
 	{
 		type = "module",
@@ -39,7 +50,7 @@ data:extend({
 		subgroup = "module",
 		category = "productivity",
 		tier = 4,
-		order = "c[productivity]-d[productivity-module-4]",
+		order = "e[productivity]-d[productivity-module-4]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect =

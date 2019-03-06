@@ -9,7 +9,7 @@ data:extend({
 		subgroup = "module",
 		category = "speed-effectivity",
 		tier = 1,
-		order = "a[speed]-a[speed-module-1]",
+		order = "b[speed-effectivity]-a[speed-effectivity-module-1]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
@@ -25,7 +25,7 @@ data:extend({
 		subgroup = "module",
 		category = "speed-effectivity",
 		tier = 2,
-		order = "a[speed]-a[speed-module-1]",
+		order = "b[speed-effectivity]-b[speed-effectivity-module-2]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
@@ -41,7 +41,7 @@ data:extend({
 		subgroup = "module",
 		category = "speed-effectivity",
 		tier = 3,
-		order = "a[speed]-a[speed-module-1]",
+		order = "b[speed-effectivity]-c[speed-effectivity-mocule-3]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
@@ -57,7 +57,7 @@ data:extend({
 		subgroup = "module",
 		category = "speed-effectivity",
 		tier = 4,
-		order = "a[speed]-a[speed-module-1]",
+		order = "b[speed-effectivity]-d[speed-effectivity-module-4]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
@@ -73,7 +73,7 @@ data:extend({
 		subgroup = "module",
 		category = "productivity-effectivity",
 		tier = 1,
-		order = "a[speed]-a[speed-module-1]",
+		order = "d[productivity-effectivty]-a[productivity-effectivity-module-1]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
@@ -95,7 +95,7 @@ data:extend({
 		subgroup = "module",
 		category = "productivity-effectivity",
 		tier = 2,
-		order = "a[speed]-a[speed-module-1]",
+		order = "d[productivity-effectivty]-b[productivity-effectivity-module-2]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
@@ -117,7 +117,7 @@ data:extend({
 		subgroup = "module",
 		category = "productivity-effectivity",
 		tier = 3,
-		order = "a[speed]-a[speed-module-1]",
+		order = "d[productivity-effectivty]-c[productivity-effectivity-module-3]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
@@ -139,7 +139,7 @@ data:extend({
 		subgroup = "module",
 		category = "productivity-effectivity",
 		tier = 4,
-		order = "a[speed]-a[speed-module-1]",
+		order = "d[productivity-effectivty]-d[productivity-effectivity-module-4]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
@@ -161,7 +161,7 @@ data:extend({
 		subgroup = "module",
 		category = "speed-productivity",
 		tier = 1,
-		order = "a[speed]-a[speed-module-1]",
+		order = "f[speed-productivity]-a[speed-productivity-module-1]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
@@ -179,7 +179,7 @@ data:extend({
 		subgroup = "module",
 		category = "speed-productivity",
 		tier = 2,
-		order = "a[speed]-a[speed-module-1]",
+		order = "f[speed-productivity]-b[speed-productivity-module-2]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
@@ -197,7 +197,7 @@ data:extend({
 		subgroup = "module",
 		category = "speed-productivity",
 		tier = 3,
-		order = "a[speed]-a[speed-module-1]",
+		order = "f[speed-productivity]-c[speed-productivity-module-3]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
@@ -215,7 +215,7 @@ data:extend({
 		subgroup = "module",
 		category = "speed-productivity",
 		tier = 4,
-		order = "a[speed]-a[speed-module-1]",
+		order = "f[speed-productivity]-d[speed-productivity-module-4]",
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
