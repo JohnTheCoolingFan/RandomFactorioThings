@@ -1,0 +1,14 @@
+{
+    "item":
+    [
+        ["JohnTheCF-furnace", "hardened-furnace"]
+    ],
+    "recipe":
+    [
+        ["JohnTheCF-furnace", "hardened-furnace"]
+    ],
+    "entity":
+    [
+        ["JohnTheCF-furnace", "hardened-furnace"]
+    ]
+}
