@@ -22,6 +22,7 @@ local nuclear_underground_belt = util.table.deepcopy(data.raw["underground-belt"
 	nuclear_underground_belt.max_distance = 11
 	nuclear_underground_belt.speed = 0.125
 	nuclear_underground_belt.next_upgrade = nil
+	nuclear_underground_belt.belt_animation_set = nuclear_transport_belt.belt_animation_set
 	nuclear_underground_belt.structure.direction_in.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
 	nuclear_underground_belt.structure.direction_in.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
 	nuclear_underground_belt.structure.direction_out.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
