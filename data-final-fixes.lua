@@ -21,7 +21,7 @@ end
 --DSB integration
 if deadlock_crafting then
 	deadlock_stacking.create("coal-piece", nil)
-	deadlock_stacking.create("JohnTheCF-furnace", nil, "JohnTheCF-processing")
+	deadlock_stacking.create("hardened-furnace", nil, "JohnTheCF-processing")
 	deadlock_stacking.create("sawdust", nil)
 	deadlock_stacking.create("compressed-fuel", nil, "compresser")
 	deadlock_stacking.create("nuclear-metal", nil, "nuclear-automation")
@@ -31,7 +31,7 @@ end
 --DCM integration
 if deadlock_crating then
 	deadlock_crating.create("coal-piece", "deadlock-crating-1")
-	deadlock_crating.create("JohnTheCF-furnace", "JohnTheCF-processing")
+	deadlock_crating.create("hardened-furnace", "JohnTheCF-processing")
 	deadlock_crating.create("sawdust", "deadlock-crating-1")
 	deadlock_crating.create("compressed-fuel", "compresser")
 	deadlock_crating.create("nuclear-metal", "nuclear-automation")

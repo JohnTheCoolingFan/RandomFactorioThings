@@ -10,7 +10,7 @@ data:extend({
 		{
 			{
 				type = "unlock-recipe",
-				recipe = "JohnTheCF-furnace"
+				recipe = "hardened-furnace"
 			},
 			{
 				type = "unlock-recipe",

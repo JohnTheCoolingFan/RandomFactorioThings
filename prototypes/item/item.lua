@@ -24,10 +24,10 @@ nuclear_robot_frame.icon = "__RandomFactorioThings__/graphics/icons/nuclear-flyi
 table.insert(items, nuclear_robot_frame)
 
 local JohnTheCF_furnace = util.table.deepcopy(data.raw["item"]["stone-furnace"])
-JohnTheCF_furnace.name = "JohnTheCF-furnace"
-JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/JohnTheCF-furnace.png"
-JohnTheCF_furnace.place_result = "JohnTheCF-furnace"
-JohnTheCF_furnace.order = "a[stone-furnace]-b[JohnTheCF-furnace]"
+JohnTheCF_furnace.name = "hardened-furnace"
+JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-furnace.png"
+JohnTheCF_furnace.place_result = "hardened-furnace"
+JohnTheCF_furnace.order = "a[stone-furnace]-b[hardened-furnace]"
 table.insert(items, JohnTheCF_furnace)
 data.raw["item"]["stone-furnace"].order = "a[stone-furnace]-a[stone-furnace]"
 

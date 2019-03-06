@@ -94,13 +94,13 @@ local nuclear_construction_robot = util.table.deepcopy(data.raw["construction-ro
 table.insert(entities, nuclear_construction_robot)
 
 local JohnTheCF_furnace = util.table.deepcopy(data.raw["furnace"]["stone-furnace"])
-JohnTheCF_furnace.name = "JohnTheCF-furnace"
-JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/JohnTheCF-furnace.png"
+JohnTheCF_furnace.name = "hardened-furnace"
+JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-furnace.png"
 JohnTheCF_furnace.max_health = 600
 JohnTheCF_furnace.crafting_speed = 1.3
 JohnTheCF_furnace.effectivity = 1.5
-JohnTheCF_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/JohnTheCF-furnace/JohnTheCF-furnace.png"
-JohnTheCF_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/JohnTheCF-furnace/hr-JohnTheCF-furnace.png"
+JohnTheCF_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/hardened-furnace/hardened-furnace.png"
+JohnTheCF_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-furnace/hr-hardened-furnace.png"
 table.insert(entities, JohnTheCF_furnace)
 
 data:extend(entities)
