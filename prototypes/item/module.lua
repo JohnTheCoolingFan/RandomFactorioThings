@@ -1,13 +1,13 @@
 -- Order for vanilla modules
 data.raw["module"]["speed-module"].order = "a[speed]-a[speed-module-1]"
-data.raw["module"]["speed-module"].order = "a[speed]-b[speed-module-2]"
-data.raw["module"]["speed-module"].order = "a[speed]-c[speed-module-3]"
+data.raw["module"]["speed-module-2"].order = "a[speed]-b[speed-module-2]"
+data.raw["module"]["speed-module-3"].order = "a[speed]-c[speed-module-3]"
 data.raw["module"]["effectivity-module"].order = "c[effectivity]-a[effectivty-module-1]"
-data.raw["module"]["effectivity-module"].order = "c[effectivity]-b[effectivty-module-2]"
-data.raw["module"]["effectivity-module"].order = "c[effectivity]-c[effectivty-module-3]"
+data.raw["module"]["effectivity-module-2"].order = "c[effectivity]-b[effectivty-module-2]"
+data.raw["module"]["effectivity-module-3"].order = "c[effectivity]-c[effectivty-module-3]"
 data.raw["module"]["productivity-module"].order = "e[productivity]-a[productivity-module-1]"
-data.raw["module"]["productivity-module"].order = "e[productivity]-b[productivity-module-2]"
-data.raw["module"]["productivity-module"].order = "e[productivity]-c[productivity-module-3]"
+data.raw["module"]["productivity-module-2"].order = "e[productivity]-b[productivity-module-2]"
+data.raw["module"]["productivity-module-3"].order = "e[productivity]-c[productivity-module-3]"
 
 data:extend({
 	{
