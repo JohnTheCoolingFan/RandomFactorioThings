@@ -119,365 +119,349 @@ data:extend({
 			result = "hardened-electric-mining-drill"
 		}
 	},
-
-  {
-    type = "recipe",
-    name = "speed-effectivity-module",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 2},
-      {"electronic-circuit", 2},
-	  {"speed-module", 1},
-	  {"effectivity-module", 1}
-    },
-    energy_required = 10,
-    result = "speed-effectivity-module"
-  },
-
-  {
-    type = "recipe",
-    name = "speed-effectivity-module-2",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 3},
-      {"electronic-circuit", 3},
-	  {"speed-module-2", 1},
-	  {"effectivity-module-2", 1}
-    },
-    energy_required = 20,
-    result = "speed-effectivity-module-2"
-  },
-
-  {
-    type = "recipe",
-    name = "speed-effectivity-module-3",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 4},
-      {"electronic-circuit", 4},
-	  {"speed-module-2", 1},
-	  {"effectivity-module-2", 1},
-	  {"processing-unit", 1}
-    },
-    energy_required = 30,
-    result = "speed-effectivity-module-3"
-  },
-
-  {
-    type = "recipe",
-    name = "speed-effectivity-module-4",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 5},
-      {"electronic-circuit", 5},
-	  {"speed-module-3", 1},
-	  {"effectivity-module-3", 1},
-	  {"processing-unit", 2}
-    },
-    energy_required = 40,
-    result = "speed-effectivity-module-4"
-  },
-
-  {
-    type = "recipe",
-    name = "productivity-effectivity-module",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 2},
-      {"electronic-circuit", 2},
-	  {"productivity-module", 1},
-	  {"effectivity-module", 1}
-    },
-    energy_required = 10,
-    result = "productivity-effectivity-module"
-  },
-
-  {
-    type = "recipe",
-    name = "productivity-effectivity-module-2",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 3},
-      {"electronic-circuit", 3},
-	  {"productivity-module-2", 1},
-	  {"effectivity-module-2", 1}
-    },
-    energy_required = 20,
-    result = "productivity-effectivity-module-2"
-  },
-
-  {
-    type = "recipe",
-    name = "productivity-effectivity-module-3",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 4},
-      {"electronic-circuit", 4},
-	  {"productivity-module-3", 1},
-	  {"effectivity-module-3", 1},
-	  {"processing-unit", 1}
-    },
-    energy_required = 30,
-    result = "productivity-effectivity-module-3"
-  },
-
-  {
-    type = "recipe",
-    name = "productivity-effectivity-module-4",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 5},
-      {"electronic-circuit", 5},
-	  {"productivity-module-4", 1},
-	  {"effectivity-module-4", 1},
-	  {"processing-unit", 2}
-    },
-    energy_required = 40,
-    result = "productivity-effectivity-module-4"
-  },
-
-  {
-    type = "recipe",
-    name = "speed-productivity-module",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 2},
-      {"electronic-circuit", 2},
-	  {"speed-module", 1},
-	  {"productivity-module", 1}
-    },
-    energy_required = 10,
-    result = "speed-productivity-module"
-  },
-
-  {
-    type = "recipe",
-    name = "speed-productivity-module-2",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 3},
-      {"electronic-circuit", 3},
-	  {"speed-module-2", 1},
-	  {"productivity-module-2", 1}
-    },
-    energy_required = 20,
-    result = "speed-productivity-module-2"
-  },
-
-  {
-    type = "recipe",
-    name = "speed-productivity-module-3",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 4},
-      {"electronic-circuit", 4},
-	  {"speed-module-2", 1},
-	  {"productivity-module-2", 1},
-	  {"processing-unit", 1}
-    },
-    energy_required = 30,
-    result = "speed-productivity-module-3"
-  },
-
-  {
-    type = "recipe",
-    name = "speed-productivity-module-4",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 5},
-      {"electronic-circuit", 5},
-	  {"speed-module-3", 1},
-	  {"productivity-module-3", 1},
-	  {"processing-unit", 2}
-    },
-    energy_required = 40,
-    result = "speed-productivity-module-4"
-  },
-
-  {
-    type = "recipe",
-    name = "coal-piece",
-	enabled = true,
-	category = "grinding",
-    ingredients = {
-	{"coal", 1},
+	{
+		type = "recipe",
+		name = "speed-effectivity-module",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 2},
+			{"electronic-circuit", 2},
+			{"speed-module", 1},
+			{"effectivity-module", 1}
+		},
+		energy_required = 10,
+		result = "speed-effectivity-module"
 	},
-	result_count = 2,
-    result = "coal-piece"
-  },
-
-  {
-    type = "recipe",
-    name = "coal-compressing",
-	enabled = false,
-	category = "compressing",
-    ingredients = {
-	{"coal-piece", 2},
+	{
+		type = "recipe",
+		name = "speed-effectivity-module-2",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 3},
+			{"electronic-circuit", 3},
+			{"speed-module-2", 1},
+			{"effectivity-module-2", 1}
+		},
+		energy_required = 20,
+		result = "speed-effectivity-module-2"
 	},
-    result = "coal"
-  },
-
-  {
-    type = "recipe",
-    name = "macerator",
-    enabled = true,
-    ingredients =
-    {
-      {"electronic-circuit", 5},
-      {"iron-gear-wheel", 10},
-      {"iron-plate", 7},
-    },
-    result = "macerator"
-  },
-
-  {
-    type = "recipe",
-    name = "compresser",
-    enabled = false,
-    ingredients =
-    {
-      {"electronic-circuit", 3},
-      {"iron-gear-wheel", 5},
-      {"iron-plate", 10},
-	  {"steel-plate", 12},
-    },
-    result = "compresser"
-  },
-
-  {
-    type = "recipe",
-    name = "sawdust",
-	enabled = true,
-	category = "grinding",
-    ingredients = {
-	{"wood", 1},
+	{
+		type = "recipe",
+		name = "speed-effectivity-module-3",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 4},
+			{"electronic-circuit", 4},
+			{"speed-module-2", 1},
+			{"effectivity-module-2", 1},
+			{"processing-unit", 1}
+		},
+		energy_required = 30,
+		result = "speed-effectivity-module-3"
 	},
-	result_count = 3,
-    result = "sawdust"
-  },
-
-  {
-    type = "recipe",
-    name = "compressed-fuel",
-	enabled = false,
-	category = "compressing",
-    ingredients = {
-	{"sawdust", 2},
-	{"coal-piece", 1},
+	{
+		type = "recipe",
+		name = "speed-effectivity-module-4",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 5},
+			{"electronic-circuit", 5},
+			{"speed-module-3", 1},
+			{"effectivity-module-3", 1},
+			{"processing-unit", 2}
+		},
+		energy_required = 40,
+		result = "speed-effectivity-module-4"
 	},
-    result = "compressed-fuel"
-  },
-  {
-    type = "recipe",
-    name = "nuclear-inserter",
-    enabled = false,
-    ingredients =
-    {
-      {"advanced-circuit", 1},
-      {"iron-gear-wheel", 5},
-      {"nuclear-metal", 2},
-    },
-    result = "nuclear-inserter",
-    requester_paste_multiplier = 5
-  },
-  {
-    type = "recipe",
-    name = "raw-nuclear-metal-smelting",
-    enabled = false,
-	category = "smelting",
-    ingredients =
-    {
-      {"raw-nuclear-metal", 1},
-    },
-    result = "nuclear-metal"
-  },
-  {
-    type = "recipe",
-    name = "raw-nuclear-metal",
-	enabled = false,
-	category = "compressing",
-    ingredients = {
-	{"iron-plate", 2},
-	{"uranium-235", 1},
+	{
+		type = "recipe",
+		name = "productivity-effectivity-module",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 2},
+			{"electronic-circuit", 2},
+			{"productivity-module", 1},
+			{"effectivity-module", 1}
+		},
+		energy_required = 10,
+		result = "productivity-effectivity-module"
 	},
-	result_count = 2,
-    result = "raw-nuclear-metal"
-  },
-  --belts
-  {
-    type = "recipe",
-    name = "nuclear-transport-belt",
-    category = "crafting-with-fluid",
-    normal =
-    {
-      enabled = false,
-
-      ingredients =
-      {
-	    {"nuclear-metal", 5},
-        {"iron-gear-wheel", 20},
-        {"express-transport-belt", 1},
-        {type="fluid", name="lubricant", amount=20}
-      },
-      result = "nuclear-transport-belt"
-    },
-    expensive =
-    {
-      enabled = false,
-      ingredients =
-      {
-	    {"nuclear-metal", 10},
-        {"iron-gear-wheel", 40},
-        {"express-transport-belt", 1},
-        {type="fluid", name="lubricant", amount=20}
-      },
-      result = "nuclear-transport-belt"
-    }
-  },
-
-  {
-    type = "recipe",
-    name = "nuclear-underground-belt",
-    energy_required = 2,
-    category = "crafting-with-fluid",
-    enabled = false,
-    ingredients =
-    {
-	  {"nuclear-metal", 25},
-      {"iron-gear-wheel", 100},
-      {"express-underground-belt", 2},
-      {type="fluid", name="lubricant", amount=40}
-    },
-    result_count = 2,
-    result = "nuclear-underground-belt"
-  },
-
-  {
-    type = "recipe",
-    name = "nuclear-splitter",
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 2,
-    ingredients =
-    {
-	  {"nuclear-metal", 5},
-      {"express-splitter", 1},
-      {"iron-gear-wheel", 20},
-      {"processing-unit", 5},
-      {type="fluid", name="lubricant", amount=80}
-    },
-    result = "nuclear-splitter"
-  }
+	{
+		type = "recipe",
+		name = "productivity-effectivity-module-2",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 3},
+			{"electronic-circuit", 3},
+			{"productivity-module-2", 1},
+			{"effectivity-module-2", 1}
+		},
+		energy_required = 20,
+		result = "productivity-effectivity-module-2"
+	},
+	{
+		type = "recipe",
+		name = "productivity-effectivity-module-3",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 4},
+			{"electronic-circuit", 4},
+			{"productivity-module-3", 1},
+			{"effectivity-module-3", 1},
+			{"processing-unit", 1}
+		},
+		energy_required = 30,
+		result = "productivity-effectivity-module-3"
+	},
+	{
+		type = "recipe",
+		name = "productivity-effectivity-module-4",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 5},
+			{"electronic-circuit", 5},
+			{"productivity-module-4", 1},
+			{"effectivity-module-4", 1},
+			{"processing-unit", 2}
+		},
+		energy_required = 40,
+		result = "productivity-effectivity-module-4"
+	},
+	{
+		type = "recipe",
+		name = "speed-productivity-module",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 2},
+			{"electronic-circuit", 2},
+			{"speed-module", 1},
+			{"productivity-module", 1}
+		},
+		energy_required = 10,
+		result = "speed-productivity-module"
+	},
+	{
+		type = "recipe",
+		name = "speed-productivity-module-2",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 3},
+			{"electronic-circuit", 3},
+			{"speed-module-2", 1},
+			{"productivity-module-2", 1}
+		},
+		energy_required = 20,
+		result = "speed-productivity-module-2"
+	},
+	{
+		type = "recipe",
+		name = "speed-productivity-module-3",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 4},
+			{"electronic-circuit", 4},
+			{"speed-module-2", 1},
+			{"productivity-module-2", 1},
+			{"processing-unit", 1}
+		},
+		energy_required = 30,
+		result = "speed-productivity-module-3"
+	},
+	{
+		type = "recipe",
+		name = "speed-productivity-module-4",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 5},
+			{"electronic-circuit", 5},
+			{"speed-module-3", 1},
+			{"productivity-module-3", 1},
+			{"processing-unit", 2}
+		},
+		energy_required = 40,
+		result = "speed-productivity-module-4"
+	},
+	{
+		type = "recipe",
+		name = "coal-piece",
+		enabled = true,
+		category = "grinding",
+		ingredients =
+		{
+			{"coal", 1},
+		},
+		result_count = 2,
+		result = "coal-piece"
+	},
+ 	{
+		type = "recipe",
+		name = "coal-compressing",
+		enabled = false,
+		category = "compressing",
+		ingredients =
+		{
+			{"coal-piece", 2},
+		},
+		result = "coal"
+	},
+	{
+		type = "recipe",
+		name = "macerator",
+		enabled = true,
+		ingredients =
+		{
+			{"electronic-circuit", 5},
+			{"iron-gear-wheel", 10},
+			{"iron-plate", 7},
+		},
+		result = "macerator"
+	},
+	{
+		type = "recipe",
+		name = "compresser",
+		enabled = false,
+		ingredients =
+		{
+			{"electronic-circuit", 3},
+			{"iron-gear-wheel", 5},
+			{"iron-plate", 10},
+			{"steel-plate", 12},
+		},
+		result = "compresser"
+	},
+	{
+		type = "recipe",
+		name = "sawdust",
+		enabled = true,
+		category = "grinding",
+		ingredients =
+		{
+			{"wood", 1},
+		},
+		result_count = 3,
+		result = "sawdust"
+	},
+	{
+		type = "recipe",
+		name = "compressed-fuel",
+		enabled = false,
+		category = "compressing",
+		ingredients =
+		{
+			{"sawdust", 2},
+			{"coal-piece", 1},
+		},
+		result = "compressed-fuel"
+	},
+	{
+		type = "recipe",
+		name = "nuclear-inserter",
+		enabled = false,
+		ingredients =
+		{
+			{"advanced-circuit", 1},
+			{"iron-gear-wheel", 5},
+			{"nuclear-metal", 2},
+		},
+		result = "nuclear-inserter",
+		requester_paste_multiplier = 5
+	},
+	{
+		type = "recipe",
+		name = "raw-nuclear-metal-smelting",
+		enabled = false,
+		category = "smelting",
+		ingredients =
+		{
+			{"raw-nuclear-metal", 1},
+		},
+		result = "nuclear-metal"
+	},
+	{
+		type = "recipe",
+		name = "raw-nuclear-metal",
+		enabled = false,
+		category = "compressing",
+		ingredients =
+		{
+			{"iron-plate", 2},
+			{"uranium-235", 1},
+		},
+		result_count = 2,
+		result = "raw-nuclear-metal"
+	},
+	-- Belts
+	{
+		type = "recipe",
+		name = "nuclear-transport-belt",
+		category = "crafting-with-fluid",
+		normal =
+		{
+			enabled = false,
+			ingredients =
+			{
+				{"nuclear-metal", 5},
+				{"iron-gear-wheel", 20},
+				{"express-transport-belt", 1},
+				{type="fluid", name="lubricant", amount=20}
+			},
+			result = "nuclear-transport-belt"
+		},
+		expensive =
+		{
+			enabled = false,
+			ingredients =
+			{
+				{"nuclear-metal", 10},
+				{"iron-gear-wheel", 40},
+				{"express-transport-belt", 1},
+				{type="fluid", name="lubricant", amount=20}
+			},
+			result = "nuclear-transport-belt"
+		}
+	},
+	{
+		type = "recipe",
+		name = "nuclear-underground-belt",
+		energy_required = 2,
+		category = "crafting-with-fluid",
+		enabled = false,
+		ingredients =
+		{
+			{"nuclear-metal", 25},
+			{"iron-gear-wheel", 100},
+			{"express-underground-belt", 2},
+			{type="fluid", name="lubricant", amount=40}
+		},
+		result_count = 2,
+		result = "nuclear-underground-belt"
+	},
+	{
+		type = "recipe",
+		name = "nuclear-splitter",
+		category = "crafting-with-fluid",
+		enabled = false,
+		energy_required = 2,
+		ingredients =
+		{
+			{"nuclear-metal", 5},
+			{"express-splitter", 1},
+			{"iron-gear-wheel", 20},
+			{"processing-unit", 5},
+			{type="fluid", name="lubricant", amount=80}
+		},
+		result = "nuclear-splitter"
+	}
 })
