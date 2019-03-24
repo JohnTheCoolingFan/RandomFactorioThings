@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.14.12
+Date: 25.03.2019
+  Major changes:
+    - Removed hardened burner mining drill
+  Balancing:
+    - Changed hardened electric mining drill mining area to 6x6
+---------------------------------------------------------------------------------------------------
 Version: 0.14.11
 Date: 06.03.2019
   Fixes:
