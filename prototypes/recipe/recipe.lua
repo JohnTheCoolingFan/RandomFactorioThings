@@ -34,7 +34,7 @@ data:extend({
 		},
 		result = "hardened-furnace"
 	},
-  
+
 	{
 		type = "recipe",
 		name = "nuclear-assembling-machine",
@@ -48,7 +48,7 @@ data:extend({
 		},
 		result = "nuclear-assembling-machine"
 	},
-  
+
 	{
 		type = "recipe",
 		name = "speed-module-4",
@@ -62,7 +62,7 @@ data:extend({
 		energy_required = 120,
 		result = "speed-module-4"
 	},
-  
+
 	{
 		type = "recipe",
 		name = "productivity-module-4",
@@ -76,7 +76,7 @@ data:extend({
 		energy_required = 120,
 		result = "productivity-module-4"
 	},
-  
+
 	{
 		type = "recipe",
 		name = "effectivity-module-4",
@@ -90,7 +90,7 @@ data:extend({
 		energy_required = 120,
 		result = "effectivity-module-4"
 	},
-  
+
 	{
 		type = "recipe",
 		name = "hardened-electric-mining-drill",
@@ -119,36 +119,7 @@ data:extend({
 			result = "hardened-electric-mining-drill"
 		}
 	},
-  
-	{
-		type = "recipe",
-		name = "hardened-burner-mining-drill",
-		normal =
-		{
-			enabled = true,
-			energy_required = 2,
-			ingredients =
-			{
-				{"iron-gear-wheel", 5},
-				{"stone-furnace", 2},
-				{"iron-plate", 5}
-			},
-			result = "hardened-burner-mining-drill"
-		},
-		expensive =
-		{
-			enabled = true,
-			energy_required = 4,
-			ingredients =
-			{
-				{"iron-gear-wheel", 10},
-				{"stone-furnace", 4},
-				{"iron-plate", 10}
-			},
-			result = "hardened-burner-mining-drill"
-		}
-	},
-  
+
   {
     type = "recipe",
     name = "speed-effectivity-module",
@@ -163,7 +134,7 @@ data:extend({
     energy_required = 10,
     result = "speed-effectivity-module"
   },
-  
+
   {
     type = "recipe",
     name = "speed-effectivity-module-2",
@@ -178,7 +149,7 @@ data:extend({
     energy_required = 20,
     result = "speed-effectivity-module-2"
   },
-  
+
   {
     type = "recipe",
     name = "speed-effectivity-module-3",
@@ -194,7 +165,7 @@ data:extend({
     energy_required = 30,
     result = "speed-effectivity-module-3"
   },
-  
+
   {
     type = "recipe",
     name = "speed-effectivity-module-4",
@@ -210,7 +181,7 @@ data:extend({
     energy_required = 40,
     result = "speed-effectivity-module-4"
   },
-  
+
   {
     type = "recipe",
     name = "productivity-effectivity-module",
@@ -225,7 +196,7 @@ data:extend({
     energy_required = 10,
     result = "productivity-effectivity-module"
   },
-  
+
   {
     type = "recipe",
     name = "productivity-effectivity-module-2",
@@ -240,7 +211,7 @@ data:extend({
     energy_required = 20,
     result = "productivity-effectivity-module-2"
   },
-  
+
   {
     type = "recipe",
     name = "productivity-effectivity-module-3",
@@ -256,7 +227,7 @@ data:extend({
     energy_required = 30,
     result = "productivity-effectivity-module-3"
   },
-  
+
   {
     type = "recipe",
     name = "productivity-effectivity-module-4",
@@ -272,7 +243,7 @@ data:extend({
     energy_required = 40,
     result = "productivity-effectivity-module-4"
   },
-  
+
   {
     type = "recipe",
     name = "speed-productivity-module",
@@ -287,7 +258,7 @@ data:extend({
     energy_required = 10,
     result = "speed-productivity-module"
   },
-  
+
   {
     type = "recipe",
     name = "speed-productivity-module-2",
@@ -302,7 +273,7 @@ data:extend({
     energy_required = 20,
     result = "speed-productivity-module-2"
   },
-  
+
   {
     type = "recipe",
     name = "speed-productivity-module-3",
@@ -318,7 +289,7 @@ data:extend({
     energy_required = 30,
     result = "speed-productivity-module-3"
   },
-  
+
   {
     type = "recipe",
     name = "speed-productivity-module-4",
@@ -334,7 +305,7 @@ data:extend({
     energy_required = 40,
     result = "speed-productivity-module-4"
   },
-  
+
   {
     type = "recipe",
     name = "coal-piece",
@@ -346,7 +317,7 @@ data:extend({
 	result_count = 2,
     result = "coal-piece"
   },
-  
+
   {
     type = "recipe",
     name = "coal-compressing",
@@ -357,7 +328,7 @@ data:extend({
 	},
     result = "coal"
   },
-  
+
   {
     type = "recipe",
     name = "macerator",
@@ -370,7 +341,7 @@ data:extend({
     },
     result = "macerator"
   },
-  
+
   {
     type = "recipe",
     name = "compresser",
@@ -384,7 +355,7 @@ data:extend({
     },
     result = "compresser"
   },
-  
+
   {
     type = "recipe",
     name = "sawdust",
@@ -396,7 +367,7 @@ data:extend({
 	result_count = 3,
     result = "sawdust"
   },
-  
+
   {
     type = "recipe",
     name = "compressed-fuel",
@@ -475,7 +446,7 @@ data:extend({
       result = "nuclear-transport-belt"
     }
   },
-  
+
   {
     type = "recipe",
     name = "nuclear-underground-belt",
@@ -492,7 +463,7 @@ data:extend({
     result_count = 2,
     result = "nuclear-underground-belt"
   },
-  
+
   {
     type = "recipe",
     name = "nuclear-splitter",
