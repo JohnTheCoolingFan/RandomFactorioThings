@@ -37,12 +37,6 @@ nuclear_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/nucle
 nuclear_assembling_machine.place_result = "nuclear-assembling-machine"
 table.insert(items, nuclear_assembling_machine)
 
-local hardened_burner_mining_drill = util.table.deepcopy(data.raw["item"]["burner-mining-drill"])
-hardened_burner_mining_drill.name = "hardened-burner-mining-drill"
-hardened_burner_mining_drill.place_result = "hardened-burner-mining-drill"
-hardened_burner_mining_drill.icon = "__RandomFactorioThings__/graphics/icons/hardened-burner-mining-drill.png"
-table.insert(items, hardened_burner_mining_drill)
-
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["item"]["electric-mining-drill"])
 hardened_electric_mining_drill.name = "hardened-electric-mining-drill"
 hardened_electric_mining_drill.place_result = "hardened-electric-mining-drill"
