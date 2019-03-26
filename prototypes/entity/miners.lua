@@ -21,14 +21,14 @@ animations.south.hr_version.filename = "__RandomFactorioThings__/graphics/entity
 animations.west.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hardened-electric-mining-drill-W.png"
 animations.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hr-hardened-electric-mining-drill-W.png"
 local if_animations = hardened_electric_mining_drill.input_fluid_patch_sprites
-if_animations.north.filename = "__RandomFactorioThings__/graphics/entity/hardened_electric_mining_drill/hardened-electric-mining-drill-N-patch.png"
-if_animations.north.hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened_electric_mining_drill/hr-hardened-electric-mining-drill-N-patch.png"
-if_animations.east.filename = "__RandomFactorioThings__/graphics/entity/hardened_electric_mining_drill/hardened-electric-mining-drill-E-patch.png"
-if_animations.east.hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened_electric_mining_drill/hr-hardened-electric-mining-drill-E-patch.png"
-if_animations.south.filename = "__RandomFactorioThings__/graphics/entity/hardened_electric_mining_drill/hardened-electric-mining-drill-S-patch.png"
-if_animations.south.hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened_electric_mining_drill/hr-hardened-electric-mining-drill-S-patch.png"
-if_animations.west.filename = "__RandomFactorioThings__/graphics/entity/hardened_electric_mining_drill/hardened-electric-mining-drill-W-patch.png"
-if_animations.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened_electric_mining_drill/hr-hardened-electric-mining-drill-W-patch.png"
+if_animations.north.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hardened-electric-mining-drill-N-patch.png"
+if_animations.north.hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hr-hardened-electric-mining-drill-N-patch.png"
+if_animations.east.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hardened-electric-mining-drill-E-patch.png"
+if_animations.east.hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hr-hardened-electric-mining-drill-E-patch.png"
+if_animations.south.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hardened-electric-mining-drill-S-patch.png"
+if_animations.south.hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hr-hardened-electric-mining-drill-S-patch.png"
+if_animations.west.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hardened-electric-mining-drill-W-patch.png"
+if_animations.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/hr-hardened-electric-mining-drill-W-patch.png"
 table.insert(miners, hardened_electric_mining_drill)
 
 data:extend(miners)
