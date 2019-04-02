@@ -26,13 +26,13 @@ data:extend(recipes)
 data:extend({
 	{
 		type = "recipe",
-		name = "hardened-furnace",
+		name = "hardened-stone-furnace",
 		enabled = false,
 		ingredients = {
 			{"iron-plate", 5},
 			{"stone", 5}
 		},
-		result = "hardened-furnace"
+		result = "hardened-stone-furnace"
 	},
 
 	{
