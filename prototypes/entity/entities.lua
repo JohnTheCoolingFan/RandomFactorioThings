@@ -110,6 +110,15 @@ hardened_steel_furnace.animation.layers[1].filename = "__RandomFactorioThings__/
 hardened_steel_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/hardened-steel-furnace/hr-hardened-steel-furnace.png"
 table.insert(entities, hardened_steel_furnace)
 
+local hardened_electric_furnace = util.table.deepcopy(data.raw["furnace"]["electric-furnace"])
+hardened_electric_furnace.name = "hardened-electric-furnace"
+hardened_electric_furnace.max_health = 525
+hardened_electric_furnace.crafting_speed = 2.5
+hardened_electric_furnace.energy_usage = "200kW"
+hardened_electric_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-furnace/hardened-electric-furnace.png"
+hardened_electric_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-furnace/hr-hardened-electric-furnace.png"
+table.insert(entities, hardened_electric_furnace)
+
 data:extend(entities)
 
 data:extend({
