@@ -1,0 +1,14 @@
+{
+    "item":
+    [
+        ["hardened-furnace", "hardened-stone-furnace"]
+    ],
+    "entity":
+    [
+        ["hardened-furnace", "hardened-stone-furnace"]
+    ],
+    "recipe":
+    [
+        ["hardened-furnace", "hardened-stone-furnace"]
+    ]
+}
