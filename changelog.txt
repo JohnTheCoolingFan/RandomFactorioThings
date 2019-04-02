@@ -1,10 +1,13 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.14.12
+Version: 0.15.0
 Date: 25.03.2019
   Major changes:
     - Removed hardened burner mining drill
+    - Added steel and electric hardened furnaces
   Balancing:
     - Changed hardened electric mining drill mining area to 6x6
+  Graphics:
+    - Updated hardened stone furnace textures
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.11
 Date: 06.03.2019
