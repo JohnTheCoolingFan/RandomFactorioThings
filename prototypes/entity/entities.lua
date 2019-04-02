@@ -105,6 +105,10 @@ table.insert(entities, JohnTheCF_furnace)
 local hardened_steel_furnace = util.table.deepcopy(data.raw["furnace"]["steel-furnace"])
 hardened_steel_furnace.name = "hardened-steel-furnace"
 hardened_steel_furnace.max_health = 450
+hardened_steel_furnace.crafting_speed = 2.5
+hardened_steel_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/hardened-steel-furnace/hardened-steel-furnace.png"
+hardened_steel_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/hardened-steel-furnace/hr-hardened-steel-furnace.png"
+table.insert(entities, hardened_steel_furnace)
 
 data:extend(entities)
 
