@@ -97,8 +97,7 @@ local JohnTheCF_furnace = util.table.deepcopy(data.raw["furnace"]["stone-furnace
 JohnTheCF_furnace.name = "hardened-stone-furnace"
 JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-stone-furnace.png"
 JohnTheCF_furnace.max_health = 300
-JohnTheCF_furnace.crafting_speed = 1.3
-JohnTheCF_furnace.effectivity = 1.5
+JohnTheCF_furnace.crafting_speed = 1.25
 JohnTheCF_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hardened-stone-furnace.png"
 JohnTheCF_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hr-hardened-stone-furnace.png"
 table.insert(entities, JohnTheCF_furnace)
