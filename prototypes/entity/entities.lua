@@ -98,6 +98,7 @@ JohnTheCF_furnace.name = "hardened-stone-furnace"
 JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-stone-furnace.png"
 JohnTheCF_furnace.max_health = 300
 JohnTheCF_furnace.crafting_speed = 1.25
+JohnTheCF_furnace.energy_usage = "100kW"
 JohnTheCF_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hardened-stone-furnace.png"
 JohnTheCF_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hr-hardened-stone-furnace.png"
 table.insert(entities, JohnTheCF_furnace)
@@ -106,6 +107,7 @@ local hardened_steel_furnace = util.table.deepcopy(data.raw["furnace"]["steel-fu
 hardened_steel_furnace.name = "hardened-steel-furnace"
 hardened_steel_furnace.max_health = 450
 hardened_steel_furnace.crafting_speed = 2.5
+hardened_steel_furnace.energy_usage = "100kW"
 hardened_steel_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/hardened-steel-furnace/hardened-steel-furnace.png"
 hardened_steel_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/hardened-steel-furnace/hr-hardened-steel-furnace.png"
 table.insert(entities, hardened_steel_furnace)
