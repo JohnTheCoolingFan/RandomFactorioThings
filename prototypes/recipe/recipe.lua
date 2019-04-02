@@ -34,7 +34,28 @@ data:extend({
 		},
 		result = "hardened-stone-furnace"
 	},
+	{
+		type = "recipe",
+		name = "hardened-steel-furnace",
+		enabled = false,
+		ingredients = {
+			{"steel-plate", 8},
+			{"stone-brick", 10},
+			{"iron-plate", 5}
+		},
+		result = "hardened-steel-furnace"
+	},
 
+		type = "recipe",
+		name = "hardened-electric-furnace",
+		enabled = false,
+		ingredients = {
+			{"steel-plate", 12},
+			{"advanced-circuit", 8}.
+			{"stone-brick", 12}
+		},
+		result = "hardened-electric-furnace"
+	},
 	{
 		type = "recipe",
 		name = "nuclear-assembling-machine",
@@ -48,7 +69,6 @@ data:extend({
 		},
 		result = "nuclear-assembling-machine"
 	},
-
 	{
 		type = "recipe",
 		name = "speed-module-4",
@@ -62,7 +82,6 @@ data:extend({
 		energy_required = 120,
 		result = "speed-module-4"
 	},
-
 	{
 		type = "recipe",
 		name = "productivity-module-4",
@@ -76,7 +95,6 @@ data:extend({
 		energy_required = 120,
 		result = "productivity-module-4"
 	},
-
 	{
 		type = "recipe",
 		name = "effectivity-module-4",
@@ -90,7 +108,6 @@ data:extend({
 		energy_required = 120,
 		result = "effectivity-module-4"
 	},
-
 	{
 		type = "recipe",
 		name = "hardened-electric-mining-drill",
