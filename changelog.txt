@@ -6,6 +6,9 @@ Date: 25.03.2019
     - Added steel and electric hardened furnaces
   Balancing:
     - Changed hardened electric mining drill mining area to 6x6
+    - Hardened stone furnace:
+      - Crafting speed 1.3 ==> 1.25
+      - Health 600 ==> 300
   Graphics:
     - Updated hardened stone furnace textures
 ---------------------------------------------------------------------------------------------------
