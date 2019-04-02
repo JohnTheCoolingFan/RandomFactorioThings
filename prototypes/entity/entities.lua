@@ -96,6 +96,7 @@ table.insert(entities, nuclear_construction_robot)
 local JohnTheCF_furnace = util.table.deepcopy(data.raw["furnace"]["stone-furnace"])
 JohnTheCF_furnace.name = "hardened-stone-furnace"
 JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-stone-furnace.png"
+JohnTheCF_furnace.minable.result = "hardened-stone-furnace"
 JohnTheCF_furnace.max_health = 300
 JohnTheCF_furnace.crafting_speed = 1.25
 JohnTheCF_furnace.energy_usage = "100kW"
@@ -105,6 +106,7 @@ table.insert(entities, JohnTheCF_furnace)
 
 local hardened_steel_furnace = util.table.deepcopy(data.raw["furnace"]["steel-furnace"])
 hardened_steel_furnace.name = "hardened-steel-furnace"
+hardened_steel_furnace.minable.result = "hardened-steel-furnace"
 hardened_steel_furnace.max_health = 450
 hardened_steel_furnace.crafting_speed = 2.5
 hardened_steel_furnace.energy_usage = "100kW"
@@ -114,6 +116,7 @@ table.insert(entities, hardened_steel_furnace)
 
 local hardened_electric_furnace = util.table.deepcopy(data.raw["furnace"]["electric-furnace"])
 hardened_electric_furnace.name = "hardened-electric-furnace"
+hardened_electric_furnace.minable.result = "hardened-electric-furnace"
 hardened_electric_furnace.max_health = 525
 hardened_electric_furnace.crafting_speed = 2.5
 hardened_electric_furnace.energy_usage = "200kW"
