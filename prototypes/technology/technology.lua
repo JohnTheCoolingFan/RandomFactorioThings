@@ -39,7 +39,7 @@ data:extend({
 		},
 		unit =
 		{
-			count = 100,
+			count = 60,
 			ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
 			time = 1
 		},
@@ -60,7 +60,7 @@ data:extend({
 		prerequisites = {"hardened-furnace"},
 		unit =
 		{
-			count = 200,
+			count = 100,
 			ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
 			time = 1
 		},
