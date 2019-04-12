@@ -111,8 +111,8 @@ hardened_steel_furnace.minable.result = "hardened-steel-furnace"
 hardened_steel_furnace.max_health = 450
 hardened_steel_furnace.crafting_speed = 2.5
 hardened_steel_furnace.energy_usage = "100kW"
-hardened_steel_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/hardened-steel-furnace/hardened-steel-furnace.png"
-hardened_steel_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/hardened-steel-furnace/hr-hardened-steel-furnace.png"
+hardened_steel_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/hardened-steel-furnace/hardened-steel-furnace.png"
+hardened_steel_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-steel-furnace/hr-hardened-steel-furnace.png"
 table.insert(entities, hardened_steel_furnace)
 
 local hardened_electric_furnace = util.table.deepcopy(data.raw["furnace"]["electric-furnace"])
