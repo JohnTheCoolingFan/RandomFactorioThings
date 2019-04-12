@@ -27,7 +27,7 @@ data:extend({
 	},]]
 	{
 		type = "technology",
-		name = "hardened-furnace-1",
+		name = "hardened-furnace",
 		icon = "__RandomFactorioThings__/graphics/technology/hardened-furnace.png",
 		icon_size = 128,
 		effects =
@@ -57,7 +57,7 @@ data:extend({
 				recipe = "hardened-steel-furnace"
 			}
 		},
-		prerequisites = {"hardened-furnace-1"},
+		prerequisites = {"hardened-furnace"},
 		unit =
 		{
 			count = 200,
