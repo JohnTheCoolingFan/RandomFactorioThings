@@ -57,7 +57,7 @@ data:extend({
 				recipe = "hardened-steel-furnace"
 			}
 		},
-		prerequisites = {"hardened-furnace"},
+		prerequisites = {"hardened-furnace". "advanced-material-processing"},
 		unit =
 		{
 			count = 100,
@@ -78,7 +78,7 @@ data:extend({
 				recipe = "hardened-electric-furnace"
 			}
 		},
-		prerequisites = {"hardened-furnace-2"},
+		prerequisites = {"hardened-furnace-2", "advanced-material-processing-2"},
 		unit =
 		{
 			count = 300,
