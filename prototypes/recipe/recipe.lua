@@ -45,7 +45,7 @@ data:extend({
 		},
 		result = "hardened-steel-furnace"
 	},
-
+	{
 		type = "recipe",
 		name = "hardened-electric-furnace",
 		enabled = false,
