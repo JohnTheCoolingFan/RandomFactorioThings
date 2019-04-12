@@ -121,7 +121,7 @@ data:extend({
 				recipe = "nuclear-construction-robot"
 			}
 		},
-		prerequisites = {"nuclear-power", "JohnTheCF-processing", "automation-3"},
+		prerequisites = {"nuclear-power", "automation-3"},
 		unit =
 		{
 			count = 500,
@@ -263,7 +263,7 @@ data:extend({
 				recipe = "compressed-fuel"
 			},
 		},
-		prerequisites = {"JohnTheCF-processing", "steel-processing"},
+		prerequisites = {"steel-processing"},
 		unit =
 		{
 			count = 90,
