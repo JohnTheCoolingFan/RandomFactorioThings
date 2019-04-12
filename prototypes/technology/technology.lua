@@ -104,7 +104,7 @@ data:extend({
 			time = 1
 		},
 		order = "" -- TODO
-	}
+	},
 	{
 		type = "technology",
 		name = "nuclear-automation",
