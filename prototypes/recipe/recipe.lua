@@ -51,7 +51,7 @@ data:extend({
 		enabled = false,
 		ingredients = {
 			{"steel-plate", 12},
-			{"advanced-circuit", 8}.
+			{"advanced-circuit", 8},
 			{"stone-brick", 12}
 		},
 		result = "hardened-electric-furnace"
