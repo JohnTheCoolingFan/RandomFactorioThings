@@ -1,7 +1,7 @@
 require("module-technology")
 
 data:extend({
-	{
+	--[[{
 		type = "technology",
 		name = "JohnTheCF-processing",
 		icon = "__RandomFactorioThings__/graphics/technology/JohnTheCF-processing.png",
@@ -24,8 +24,67 @@ data:extend({
 			time = 1
 		},
 		order = "c-a"
+	},]]
+	{
+		type = "technology",
+		name = "hardened-furnace-1",
+		icon = "__RandomFactorioThings__/graphics/technology/hardened-furnace.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "hardened-stone-furnace"
+			}
+		},
+		unit =
+		{
+			count = 100,
+			ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+			time = 1
+		},
+		order = "" -- TODO
 	},
-
+	{
+		type = "technology",
+		name = "hardened-furnace-2",
+		icon = "__RandomFactorioThings__/graphics/technology/hardened-furnace.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "hardened-steel-furnace"
+			}
+		},
+		unit =
+		{
+			count = 200,
+			ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+			time = 1
+		},
+		order = "" -- TODO
+	},
+	{
+		type = "technology",
+		name = "hardened-furnace-3",
+		icon = "__RandomFactorioThings__/graphics/technology/hardened-furnace.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "hardened-electric-furnace"
+			}
+		},
+		unit =
+		{
+			count = 300,
+			ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+			time = 1
+		},
+		order = "" -- TODO
+	},
 	{
 		type = "technology",
 		name = "nuclear-automation",
