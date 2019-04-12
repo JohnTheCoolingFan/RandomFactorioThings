@@ -90,7 +90,7 @@ data:extend({
 	{
 		type = "technology",
 		name = "hardened-electric-mining-drill",
-		icon = "__RandomFactorioThings__/graphics/technology/hardened-furnace.png",
+		icon = "__RandomFactorioThings__/graphics/technology/hardened-furnace.png", -- TODO
 		icon_size = 128,
 		effects =
 		{
