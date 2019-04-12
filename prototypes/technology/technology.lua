@@ -10,7 +10,7 @@ data:extend({
 		{
 			{
 				type = "unlock-recipe",
-				recipe = "hardened-furnace"
+				recipe = "hardened-stone-furnace"
 			},
 			{
 				type = "unlock-recipe",
