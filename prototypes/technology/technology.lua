@@ -89,6 +89,24 @@ data:extend({
 	},
 	{
 		type = "technology",
+		name = "hardened-electric-mining-drill",
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "hardened-electric-mining-drill"
+			}
+		},
+		unit =
+		{
+			count = 100,
+			ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+			time = 1
+		},
+		order = "" -- TODO
+	}
+	{
+		type = "technology",
 		name = "nuclear-automation",
 		icon = "__RandomFactorioThings__/graphics/technology/nuclear-automation.png",
 		icon_size = 128,
