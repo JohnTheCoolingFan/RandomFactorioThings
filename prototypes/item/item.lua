@@ -33,11 +33,13 @@ data.raw["item"]["stone-furnace"].order = "a[stone-furnace]-a[stone-furnace]"
 
 local hardened_steel_furnace = util.table.deepcopy(data.raw["item"]["steel-furnace"])
 hardened_steel_furnace.name = "hardened-steel-furnace"
+hardened_steel_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-steel-furnace.png"
 hardened_steel_furnace.place_result = "hardened-steel-furnace"
 table.insert(items, hardened_steel_furnace)
 
 local hardened_electric_furnace = util.table.deepcopy(data.raw["item"]["electric-furnace"])
 hardened_electric_furnace.name = "hardened-electric-furnace"
+hardened_electric_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-electric-furnace.png"
 hardened_electric_furnace.place_result = "hardened-electric-furnace"
 table.insert(items, hardened_electric_furnace)
 
