@@ -57,6 +57,7 @@ data:extend({
 				recipe = "hardened-steel-furnace"
 			}
 		},
+		prerequisites = {"hardened-furnace-1"},
 		unit =
 		{
 			count = 200,
@@ -77,6 +78,7 @@ data:extend({
 				recipe = "hardened-electric-furnace"
 			}
 		},
+		prerequisites = {"hardened-furnace-2"},
 		unit =
 		{
 			count = 300,
