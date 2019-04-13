@@ -62,9 +62,9 @@ data:extend({
 		enabled = false,
 		ingredients =
 		{
-			{"assembling-machine-3", 2},
+			{"assembling-machine-3", 1},
 			{"advanced-circuit", 5},
-			{"iron-gear-wheel", 15},
+			{"speed-module-4", 2},
 			{"nuclear-metal", 5},
 		},
 		result = "nuclear-assembling-machine"
