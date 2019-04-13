@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.0
-Date: 25.03.2019
+Date: 13.04.2019
   Major changes:
     - Removed hardened burner mining drill
     - Added steel and electric hardened furnaces
