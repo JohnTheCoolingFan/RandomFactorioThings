@@ -504,11 +504,11 @@ data:extend({
 	},
   {
     type = "assembling-machine",
-    name = "compresser",
-    icon = "__RandomFactorioThings__/graphics/icons/compresser.png",
+    name = "compressor",
+    icon = "__RandomFactorioThings__/graphics/icons/compressor.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "compresser"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "compressor"},
     max_health = 350,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
@@ -666,7 +666,7 @@ data:extend({
       {
         -- Centrifuge C
         {
-          filename = "__RandomFactorioThings__/graphics/entity/compresser/compresser-C-light.png",
+          filename = "__RandomFactorioThings__/graphics/entity/compressor/compressor-C-light.png",
           priority = "high",
           blend_mode = "additive", -- centrifuge
           line_length = 8,
@@ -677,7 +677,7 @@ data:extend({
 
           hr_version =
           {
-            filename = "__RandomFactorioThings__/graphics/entity/compresser/hr-compresser-C-light.png",
+            filename = "__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-C-light.png",
             priority = "high",
             scale = 0.5,
             blend_mode = "additive", -- centrifuge
@@ -690,7 +690,7 @@ data:extend({
         },
         -- Centrifuge B
         {
-          filename = "__RandomFactorioThings__/graphics/entity/compresser/compresser-B-light.png",
+          filename = "__RandomFactorioThings__/graphics/entity/compressor/compressor-B-light.png",
           priority = "high",
           blend_mode = "additive", -- centrifuge
           line_length = 8,
@@ -700,7 +700,7 @@ data:extend({
           shift = util.by_pixel(16.5, 0.5),
           hr_version =
           {
-            filename = "__RandomFactorioThings__/graphics/entity/compresser/hr-compresser-B-light.png",
+            filename = "__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-B-light.png",
             priority = "high",
             scale = 0.5,
             blend_mode = "additive", -- centrifuge
@@ -713,7 +713,7 @@ data:extend({
         },
         -- Centrifuge A
         {
-          filename = "__RandomFactorioThings__/graphics/entity/compresser/compresser-A-light.png",
+          filename = "__RandomFactorioThings__/graphics/entity/compressor/compressor-A-light.png",
           priority = "high",
           blend_mode = "additive", -- centrifuge
           line_length = 8,
@@ -723,7 +723,7 @@ data:extend({
           shift = util.by_pixel(-23.5, -2),
           hr_version =
           {
-            filename = "__RandomFactorioThings__/graphics/entity/compresser/hr-compresser-A-light.png",
+            filename = "__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-A-light.png",
             priority = "high",
             scale = 0.5,
             blend_mode = "additive", -- centrifuge
@@ -754,7 +754,7 @@ data:extend({
         west_position = {0.0, 0.0},
         animation =
         {
-          filename = "__RandomFactorioThings__/graphics/entity/compresser/compresser-C-light.png",
+          filename = "__RandomFactorioThings__/graphics/entity/compressor/compressor-C-light.png",
           priority = "high",
           blend_mode = "additive", -- centrifuge
           line_length = 8,
@@ -765,7 +765,7 @@ data:extend({
 
           hr_version =
           {
-            filename = "__RandomFactorioThings__/graphics/entity/compresser/hr-compresser-C-light.png",
+            filename = "__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-C-light.png",
             priority = "high",
             scale = 0.5,
             blend_mode = "additive", -- centrifuge
@@ -785,7 +785,7 @@ data:extend({
         west_position = {0.0, 0.0},
         animation =
         {
-          filename = "__RandomFactorioThings__/graphics/entity/compresser/compresser-B-light.png",
+          filename = "__RandomFactorioThings__/graphics/entity/compressor/compressor-B-light.png",
           priority = "high",
           blend_mode = "additive", -- centrifuge
           line_length = 8,
@@ -795,7 +795,7 @@ data:extend({
           shift = util.by_pixel(16.5, 0.5),
           hr_version =
           {
-            filename = "__RandomFactorioThings__/graphics/entity/compresser/hr-compresser-B-light.png",
+            filename = "__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-B-light.png",
             priority = "high",
             scale = 0.5,
             blend_mode = "additive", -- centrifuge
@@ -814,7 +814,7 @@ data:extend({
         west_position = {0.0, 0.0},
         animation =
         {
-          filename = "__RandomFactorioThings__/graphics/entity/compresser/compresser-A-light.png",
+          filename = "__RandomFactorioThings__/graphics/entity/compressor/compressor-A-light.png",
           priority = "high",
           blend_mode = "additive", -- centrifuge
           line_length = 8,
@@ -824,7 +824,7 @@ data:extend({
           shift = util.by_pixel(-23.5, -2),
           hr_version =
           {
-            filename = "__RandomFactorioThings__/graphics/entity/compresser/hr-compresser-A-light.png",
+            filename = "__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-A-light.png",
             priority = "high",
             scale = 0.5,
             blend_mode = "additive", -- centrifuge

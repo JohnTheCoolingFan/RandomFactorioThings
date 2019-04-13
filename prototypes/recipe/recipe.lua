@@ -347,7 +347,7 @@ data:extend({
 	},
 	{
 		type = "recipe",
-		name = "compresser",
+		name = "compressor",
 		enabled = false,
 		ingredients =
 		{
@@ -356,7 +356,7 @@ data:extend({
 			{"iron-plate", 10},
 			{"steel-plate", 12},
 		},
-		result = "compresser"
+		result = "compressor"
 	},
 	{
 		type = "recipe",

@@ -243,14 +243,14 @@ data:extend({
 
 	{
 		type = "technology",
-		name = "compresser",
-		icon = "__RandomFactorioThings__/graphics/icons/compresser.png",
+		name = "compressor",
+		icon = "__RandomFactorioThings__/graphics/icons/compressor.png",
 		icon_size = 32,
 		effects =
 		{
 			{
 				type = "unlock-recipe",
-				recipe = "compresser"
+				recipe = "compressor"
 			},
 			{
 				type = "unlock-recipe",

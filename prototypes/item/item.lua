@@ -70,12 +70,12 @@ macerator.place_result = "macerator"
 macerator.order = "c[RFT]-b[macerator]"
 table.insert(items, macerator)
 
-local compresser = util.table.deepcopy(data.raw["item"]["assembling-machine-3"])
-compresser.name = "compresser"
-compresser.icon = "__RandomFactorioThings__/graphics/icons/compresser.png"
-compresser.place_result = "compresser"
-compresser.order = "c[RFT]-c[compresser]"
-table.insert(items, compresser)
+local compressor = util.table.deepcopy(data.raw["item"]["assembling-machine-3"])
+compressor.name = "compressor"
+compressor.icon = "__RandomFactorioThings__/graphics/icons/compressor.png"
+compressor.place_result = "compressor"
+compressor.order = "c[RFT]-c[compressor]"
+table.insert(items, compressor)
 
 local sawdust = util.table.deepcopy(data.raw["item"]["coal"])
 sawdust.name = "sawdust"

@@ -24,6 +24,8 @@ Date: 25.03.2019
   Fixes:
     - Fixed order for Nuclear assembling machine
     - Fixed order for macerator and compressor
+  Locale:
+    - Fixed name for compressor ("compresser" previously)
   Graphics:
     - Updated hardened stone furnace textures
 ---------------------------------------------------------------------------------------------------
