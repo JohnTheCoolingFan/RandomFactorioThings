@@ -35,13 +35,17 @@ local hardened_steel_furnace = util.table.deepcopy(data.raw["item"]["steel-furna
 hardened_steel_furnace.name = "hardened-steel-furnace"
 hardened_steel_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-steel-furnace.png"
 hardened_steel_furnace.place_result = "hardened-steel-furnace"
+hardened_steel_furnace.order = "b[steel-furnace]-b[hardened-steel-furnace]"
 table.insert(items, hardened_steel_furnace)
+data.raw["item"]["steel-furnace"].order = "b[steel-furnace]-a[steel-furnace]"
 
 local hardened_electric_furnace = util.table.deepcopy(data.raw["item"]["electric-furnace"])
 hardened_electric_furnace.name = "hardened-electric-furnace"
 hardened_electric_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-electric-furnace.png"
 hardened_electric_furnace.place_result = "hardened-electric-furnace"
+hardened_electric_furnace.order = "c[electric-furnace]-b[hardened-electric-furnace]"
 table.insert(items, hardened_electric_furnace)
+data.raw["item"]["electric-furnace"].order = "c[electric-furnace]-a[electric-furnace]"
 
 local nuclear_assembling_machine = util.table.deepcopy(data.raw["item"]["assembling-machine-3"])
 nuclear_assembling_machine.name = "nuclear-assembling-machine"
