@@ -21,6 +21,9 @@ Date: 25.03.2019
         - Advanced circuit x5
         - Speed module 4 x2
         - Nuclear metal x5
+  Fixes:
+    - Fixed order for Nuclear assembling machine
+    - Fixed order for macerator and compressor
   Graphics:
     - Updated hardened stone furnace textures
 ---------------------------------------------------------------------------------------------------
