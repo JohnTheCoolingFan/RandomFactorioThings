@@ -1,30 +1,6 @@
 require("module-technology")
 
 data:extend({
-	--[[{
-		type = "technology",
-		name = "JohnTheCF-processing",
-		icon = "__RandomFactorioThings__/graphics/technology/JohnTheCF-processing.png",
-		icon_size = 128,
-		effects =
-		{
-			{
-				type = "unlock-recipe",
-				recipe = "hardened-stone-furnace"
-			},
-			{
-				type = "unlock-recipe",
-				recipe = "hardened-electric-mining-drill"
-			}
-		},
-		unit =
-		{
-			count = 100,
-			ingredients = {{"automation-science-pack", 1},{"logistic-science-pack", 1}},
-			time = 1
-		},
-		order = "c-a"
-	},]]
 	{
 		type = "technology",
 		name = "hardened-furnace",
