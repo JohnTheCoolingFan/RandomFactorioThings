@@ -33,7 +33,7 @@ data:extend({
 				recipe = "hardened-steel-furnace"
 			}
 		},
-		prerequisites = {"hardened-furnace". "advanced-material-processing"},
+		prerequisites = {"hardened-furnace", "advanced-material-processing"},
 		unit =
 		{
 			count = 100,
