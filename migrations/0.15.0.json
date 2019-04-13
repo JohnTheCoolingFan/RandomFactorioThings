@@ -1,15 +1,18 @@
 {
     "item":
     [
-        ["hardened-furnace", "hardened-stone-furnace"]
+        ["hardened-furnace", "hardened-stone-furnace"],
+        ["compresser", "compressor"]
     ],
     "entity":
     [
-        ["hardened-furnace", "hardened-stone-furnace"]
+        ["hardened-furnace", "hardened-stone-furnace"],
+        ["compresser", "compressor"]
     ],
     "recipe":
     [
-        ["hardened-furnace", "hardened-stone-furnace"]
+        ["hardened-furnace", "hardened-stone-furnace"],
+        ["compresser", "compressor"]
     ],
     "technology":
     [
