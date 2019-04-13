@@ -10,5 +10,9 @@
     "recipe":
     [
         ["hardened-furnace", "hardened-stone-furnace"]
+    ],
+    "technology":
+    [
+        ["JohnTheCf-processing", "hardened-stone-furnace"]
     ]
 }
