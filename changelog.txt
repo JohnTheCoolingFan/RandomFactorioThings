@@ -26,6 +26,7 @@ Date: 25.03.2019
     - Fixed order for macerator and compressor
   Locale:
     - Fixed name for compressor ("compresser" previously)
+    - Added Ukrainian locale
   Graphics:
     - Updated hardened stone furnace textures
 ---------------------------------------------------------------------------------------------------
