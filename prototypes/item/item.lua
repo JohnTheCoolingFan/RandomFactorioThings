@@ -47,7 +47,7 @@ local nuclear_assembling_machine = util.table.deepcopy(data.raw["item"]["assembl
 nuclear_assembling_machine.name = "nuclear-assembling-machine"
 nuclear_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/nuclear-assembling-machine.png"
 nuclear_assembling_machine.place_result = "nuclear-assembling-machine"
-nuclear_assembling_machine.order = "c[RFT]-a[nuclear-assembling-machine]"
+nuclear_assembling_machine.order = "c[rft]-a[nuclear-assembling-machine]"
 table.insert(items, nuclear_assembling_machine)
 
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["item"]["electric-mining-drill"])
@@ -67,14 +67,14 @@ local macerator = util.table.deepcopy(data.raw["item"]["assembling-machine-3"])
 macerator.name = "macerator"
 macerator.icon = "__RandomFactorioThings__/graphics/icons/macerator.png"
 macerator.place_result = "macerator"
-macerator.order = "c[RFT]-b[macerator]"
+macerator.order = "c[rft]-b[macerator]"
 table.insert(items, macerator)
 
 local compressor = util.table.deepcopy(data.raw["item"]["assembling-machine-3"])
 compressor.name = "compressor"
 compressor.icon = "__RandomFactorioThings__/graphics/icons/compressor.png"
 compressor.place_result = "compressor"
-compressor.order = "c[RFT]-c[compressor]"
+compressor.order = "c[rft]-c[compressor]"
 table.insert(items, compressor)
 
 local sawdust = util.table.deepcopy(data.raw["item"]["coal"])
