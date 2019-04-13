@@ -16,6 +16,11 @@ Date: 25.03.2019
       - Crafting speed 5 ==> 2
       - Energy usage 500kW ==> 1000kW
       - Emissions per minute 2 ==> 1
+      - Crafting recipe:
+        - Assembling machine 3 x1
+        - Advanced circuit x5
+        - Speed module 4 x2
+        - Nuclear metal x5
   Graphics:
     - Updated hardened stone furnace textures
 ---------------------------------------------------------------------------------------------------
