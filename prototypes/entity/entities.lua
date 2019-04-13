@@ -126,6 +126,17 @@ hardened_electric_furnace.animation.layers[1].filename = "__RandomFactorioThings
 hardened_electric_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-furnace/hr-hardened-electric-furnace.png"
 table.insert(entities, hardened_electric_furnace)
 
+local nuclear_assembling_machine = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"])
+nuclear_assembling_machine.name = "nuclear-assembling-machine"
+nuclear_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/nuclear-assembling-machine.png"
+nuclear_assembling_machine.max_health = 450
+nuclear_assembling_machine.crafting_speed = 2
+nuclear_assembling_machine.energy_usage = "1000kW"
+nuclear_assembling_machine.module_specification.module_slots = 6
+nuclear_assembling_machine.energy_source.emissions_per_minute = 1
+table.insert(entities, nuclear_assembling_machine)
+data.raw["assembling-machine"]["assembling-machine-3"].next_upgrade = "nuclear-assembling-machine"
+
 data:extend(entities)
 
 data:extend({

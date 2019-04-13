@@ -11,6 +11,11 @@ Date: 25.03.2019
     - Hardened stone furnace:
       - Crafting speed 1.3 ==> 1.25
       - Health 600 ==> 300
+    - Nuclear assembling machine:
+      - Max health 500 ==> 450
+      - Crafting speed 5 ==> 2
+      - Energy usage 500kW ==> 1000kW
+      - Emissions per minute 2 ==> 1
   Graphics:
     - Updated hardened stone furnace textures
 ---------------------------------------------------------------------------------------------------
