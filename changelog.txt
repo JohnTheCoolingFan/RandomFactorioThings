@@ -1,8 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Date: 0.15.3
+Date: 24.04.2019
+  Fixes:
+    - Fixed nuclear underground belt side loading sprite.
+---------------------------------------------------------------------------------------------------
 Version: 0.15.2
 Date: 24.04.2019
   Fixes:
-    - Fixed hardened steel furnace lr texture filename
+    - Fixed hardened steel furnace lr texture filename.
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.1
 Date: 14.04.2019
@@ -10,17 +15,17 @@ Date: 14.04.2019
     - Russian:
       - Ядрённый сборщик ==> Ядрённый сборочный автомат.
     - Ukrainian:
-      - Ядерний складальник ==> Ядерний складальний автомат
+      - Ядерний складальник ==> Ядерний складальний автомат.
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.0
 Date: 13.04.2019
   Major changes:
-    - Removed hardened burner mining drill
-    - Added steel and electric hardened furnaces
-    - Removed "Hardened buildings" technology
-    - Added technologies for hardened furnaces
+    - Removed hardened burner mining drill.
+    - Added steel and electric hardened furnaces.
+    - Removed "Hardened buildings" technology.
+    - Added technologies for hardened furnaces.
   Balancing:
-    - Changed hardened electric mining drill mining area to 6x6
+    - Changed hardened electric mining drill mining area to 6x6.
     - Hardened stone furnace:
       - Crafting speed 1.3 ==> 1.25
       - Health 600 ==> 300
@@ -35,23 +40,23 @@ Date: 13.04.2019
         - Speed module 4 x2
         - Nuclear metal x5
   Fixes:
-    - Fixed order for Nuclear assembling machine
-    - Fixed order for macerator and compressor
+    - Fixed order for Nuclear assembling machine.
+    - Fixed order for macerator and compressor.
   Locale:
-    - Fixed name for compressor ("compresser" previously)
-    - Added Ukrainian locale
+    - Fixed name for compressor ("compresser" previously).
+    - Added Ukrainian locale.
   Graphics:
-    - Updated hardened stone furnace textures
+    - Updated hardened stone furnace textures.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.11
 Date: 06.03.2019
   Fixes:
-    - Fixed nuclear transport belt animation (lr and hr)
-    - Fixed Nuclear construction robot animation
-    - Fixed Nuclear underground transport belt icon
-    - Fixed order for modules
-    - Fixed order for Hardened furnace
-    - Fixed order for nuclear robots
+    - Fixed nuclear transport belt animation (lr and hr).
+    - Fixed Nuclear construction robot animation.
+    - Fixed Nuclear underground transport belt icon.
+    - Fixed order for modules.
+    - Fixed order for Hardened furnace.
+    - Fixed order for nuclear robots.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.10
 Date: 04.03.2019
@@ -85,17 +90,17 @@ Date: 04.03.2019
 Version: 0.14.7
 Date: 04.03.2019
   Fixes:
-    - Fixed missing require() for module-technology tree (https://github.com/JohnTheCoolingFan/RandomFactorioThings/issues/3)
+    - Fixed missing require() for module-technology tree (https://github.com/JohnTheCoolingFan/RandomFactorioThings/issues/3).
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.6
 Date: 26.02.2019
   Changes:
-    - Added thumbnail.png
+    - Added thumbnail.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.5
 Date: 26.02.2019
   Changes:
-    - Updated to Factorio 0.17
+    - Updated to Factorio 0.17.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.2 - 0.14.4
 Date: 22.10.2018 - 23.10.2018
@@ -110,10 +115,10 @@ Date: 21.10.2018
 Version: 0.14.0
 Date: 16.10.2018
   Major Features:
-    - Added nuclear drones
+    - Added nuclear drones.
   Minor Features:
     - Rewritten some prototype files.
-    - Some localisation improvements
+    - Some localisation improvements.
 ---------------------------------------------------------------------------------------------------
 Version: 0.13.2
 Date: 29.09.2018
@@ -133,12 +138,12 @@ Date: 24.09.2018
     - Updated icons for merged modules.
 	- Updated icons for merged modules technologies.
   Balancing:
-    - Merged modules research ingredient multiplier changed from 150 to 200
+    - Merged modules research ingredient multiplier 150 ==> 200.
 ---------------------------------------------------------------------------------------------------
 Version: 0.12.2
 Date: 18.08.2018
   Fixes:
-    - Fixed error with wrong texture path (https://mods.factorio.com/mod/RandomFactorioThings/discussion/5b773c31ec95be000bba3a8a)
+    - Fixed error with wrong texture path (https://mods.factorio.com/mod/RandomFactorioThings/discussion/5b773c31ec95be000bba3a8a).
 ---------------------------------------------------------------------------------------------------
 Version: 0.12.1
 Date: 15.08.2018
