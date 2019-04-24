@@ -29,8 +29,8 @@ local nuclear_underground_belt = util.table.deepcopy(data.raw["underground-belt"
 	nuclear_underground_belt.structure.direction_out.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
 	nuclear_underground_belt.structure.direction_in_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
 	nuclear_underground_belt.structure.direction_in_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
-	nuclear_underground_belt.structure.direction_in_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
-	nuclear_underground_belt.structure.direction_in_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
+	nuclear_underground_belt.structure.direction_out_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
+	nuclear_underground_belt.structure.direction_out_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
 table.insert(belt_entities, nuclear_underground_belt)
 
 local nuclear_splitter = util.table.deepcopy(data.raw["splitter"]["express-splitter"])
