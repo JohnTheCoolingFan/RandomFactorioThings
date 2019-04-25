@@ -3,7 +3,7 @@ data:extend({
 	{
     type = "inserter",
     name = "nuclear-inserter",
-    icon = "__base__/graphics/icons/inserter.png",
+    icon = "__RandomFactorioThings__/graphics/icons/nuclear-inserter.png",
     icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "nuclear-inserter"},
