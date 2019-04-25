@@ -100,6 +100,10 @@ data:extend({
 			},
 			{
 				type = "unlock-recipe",
+				recipe = "nuclear-long-handed-inserter"
+			},
+			{
+				type = "unlock-recipe",
 				recipe = "raw-nuclear-metal-smelting"
 			},
 			{
