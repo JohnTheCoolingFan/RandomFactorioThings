@@ -1,5 +1,9 @@
-data:extend({
+local nuclear_long_handed_inserter = util.table.deepcopy(data.raw["inserter"]["long-handed-inserter"])
+nuclear_long_handed_inserter.name = "nuclear-long-handed-inserter"
+nuclear_long_handed_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-long-handed-inserter.png"
+nuclear_long_handed_inserter.minable.result = "nuclear-long-handed-inserter"
 
+data:extend({
 	{
     type = "inserter",
     name = "nuclear-inserter",
