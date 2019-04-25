@@ -1,6 +1,6 @@
 local inserters = {}
 
-local nuclear_inserter = util.table.deepcopy(data.raw["inseter"]["fast-inserter"])
+local nuclear_inserter = util.table.deepcopy(data.raw["inserter"]["fast-inserter"])
 nuclear_inserter.name = "nuclear-inserter"
 nuclear_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-inserter.png"
 nuclear_inserter.minable.result = "nuclear-inserter"
