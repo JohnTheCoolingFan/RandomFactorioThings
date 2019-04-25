@@ -21,6 +21,12 @@ local nuclear_construction_robot = util.table.deepcopy(data.raw["recipe"]["const
 	nuclear_construction_robot.ingredients[1][1] = "nuclear-flying-robot-frame"
 table.insert(recipes, nuclear_construction_robot)
 
+local nuclear_long_handed_inserter = util.table.deepcopy(data.raw["recipe"]["long-handed-inserter"])
+nuclear_long_handed_inserter.name = "nuclear-long-handed-inserter"
+nuclear_long_handed_inserter.result = "nuclear-long-handed-inserter"
+nuclear_long_handed_inserter.ingredients = {{"fast-inserter", 1}, {"iron-gear-wheel", 2}, {"nuclear-metal", 2}}
+table.insert(recipes, nuclear_long_handed_inserter)
+
 data:extend(recipes)
 
 data:extend({
