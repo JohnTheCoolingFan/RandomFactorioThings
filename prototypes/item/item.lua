@@ -110,6 +110,12 @@ raw_nuclear_metal.name = "raw-nuclear-metal"
 raw_nuclear_metal.icon = "__RandomFactorioThings__/graphics/icons/raw-nuclear-metal.png"
 table.insert(items, raw_nuclear_metal)
 
+local nuclear_long_handed_inserter = util.table.deepcopy(data.raw["item"]["long-handed-inserter"])
+nuclear_long_handed_inserter.name = "nuclear-long-handed-inserter"
+nuclear_long_handed_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-long-handed-inserter.png"
+nuclear_long_handed_inserter.place_result = "nuclear-long-handed-inserter"
+table.insert(items, nuclear_long_handed_inserter)
+
 data:extend(items)
 
 data:extend({
