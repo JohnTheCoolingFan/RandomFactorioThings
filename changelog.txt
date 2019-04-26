@@ -3,6 +3,8 @@ Version: 0.16.0
 Date: <unknown>
   Major Changes:
     - Added nuclear long-handed inserter.
+    - Added nuclear stack inserter.
+    - Added nuclear stack filter inserter.
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.4
 Date: 25.04.2019
