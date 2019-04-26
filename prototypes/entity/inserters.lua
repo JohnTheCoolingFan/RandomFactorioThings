@@ -42,7 +42,7 @@ data.raw["inserter"]["long-handed-inserter"].next_upgrade = "nuclear-long-handed
 
 local nuclear_stack_inserter = util.table.deepcopy(data.raw["inserter"]["stack-inserter"])
 nuclear_stack_inserter.name = "nuclear-stack-inserter"
---nuclear_stack_inserter.icon = "" --TODO
+nuclear_stack_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-stack-inserter.png"
 nuclear_stack_inserter.minable.result = "nuclear-stack-inserter"
 nuclear_stack_inserter.energy_per_movement = "30kJ"
 nuclear_stack_inserter.energy_per_rotation = "30kJ"
@@ -62,7 +62,7 @@ data.raw["inserter"]["stack-inserter"].next_upgrade = "nuclear-stack-inserter"
 
 local nuclear_stack_filter_inserter = util.table.deepcopy(data.raw["inserter"]["stack-filter-inserter"])
 nuclear_stack_filter_inserter.name = "nuclear-stack-filter-inserter"
---nuclear_stack_filter_inserter.icon = "" --TODO
+nuclear_stack_filter_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-stack-filter-inserter.png"
 nuclear_stack_filter_inserter.minable.result = "nuclear-stack-filter-inserter"
 nuclear_stack_filter_inserter.energy_per_movement = nuclear_stack_inserter.energy_per_movement
 nuclear_stack_filter_inserter.energy_per_rotation = nuclear_stack_inserter.energy_per_rotation
