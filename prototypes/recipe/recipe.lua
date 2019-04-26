@@ -27,6 +27,18 @@ nuclear_long_handed_inserter.result = "nuclear-long-handed-inserter"
 nuclear_long_handed_inserter.ingredients = {{"fast-inserter", 1}, {"iron-gear-wheel", 2}, {"nuclear-metal", 2}}
 table.insert(recipes, nuclear_long_handed_inserter)
 
+local nuclear_stack_inserter = util.table.deepcopy(data.raw["recipe"]["stack-inserter"])
+nuclear_stack_inserter.name = "nuclear-stack-inserter"
+nuclear_stack_inserter.result = "nuclear-stack-inserter"
+nuclear_stack_inserter.ingredietns = {} --TODO
+table.insert(recipes, nuclear_stack_inserter)
+
+local nuclear_stack_filter_inserter = util.table.deepcopy(data.raw["recipe"]["stack-filter-inserter"])
+nuclear_stack_filter_inserter.name = "nuclear-stack-filter-inserter"
+nuclear_stack_filter_inserter.result = "nuclear-stack-filter-inserter"
+nuclear_stack_filter_inserter.ingredients = {} --TODO
+table.insert(recipes, nuclear_stack_filter_inserter)
+
 data:extend(recipes)
 
 data:extend({
