@@ -116,6 +116,18 @@ nuclear_long_handed_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuc
 nuclear_long_handed_inserter.place_result = "nuclear-long-handed-inserter"
 table.insert(items, nuclear_long_handed_inserter)
 
+local nuclear_stack_inserter = util.table.deepcopy(data.raw["item"]["stack-inserter"])
+nuclear_stack_inserter.name = "nuclear-stack-inserter"
+--nuclear_stack_inserter.icon = "" --TODO
+nuclear_stack_inserter.place_result = "nuclear-stack-inserter"
+table.insert(items, nuclear_stack_inserter)
+
+local nuclear_stack_filter_inserter = util.table.deepcopy(data.rawp["item"]["stack-filter-inserter"])
+nuclear_stack_filter_inserter.name = "nuclear-stack-filter-inserter"
+--nuclear_stack_filter_inserter.icon = "" --TODO
+nuclear_stack_filter_inserter.place_result = "nuclear-stack-filter-inserter"
+table.insert(items, nuclear_stack_filter_inserter)
+
 data:extend(items)
 
 data:extend({
