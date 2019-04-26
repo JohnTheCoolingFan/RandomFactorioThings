@@ -104,6 +104,14 @@ data:extend({
 			},
 			{
 				type = "unlock-recipe",
+				recipe = "nuclear-stack-inserter"
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "nuclear-stack-filter-inserter"
+			},
+			{
+				type = "unlock-recipe",
 				recipe = "raw-nuclear-metal-smelting"
 			},
 			{
