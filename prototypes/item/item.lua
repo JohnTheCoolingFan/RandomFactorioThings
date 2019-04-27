@@ -135,8 +135,8 @@ nuclear_transport_belt.order = "a[transport-belt]-d[nuclear-transport-belt]"
 nuclear_transport_belt.place_result = "nuclear-transport-belt"
 table.insert(items, nuclear_transport_belt)
 
-local nuclear_underground_belt = util.table.deepcopy(data.raw["item"]["express-undeground-belt"])
-nuclear_underground_belt.name = "nuclear-undeground-belt"
+local nuclear_underground_belt = util.table.deepcopy(data.raw["item"]["express-underground-belt"])
+nuclear_underground_belt.name = "nuclear-underground-belt"
 nuclear_underground_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-underground-belt.png"
 nuclear_underground_belt.order = "b[underground-belt]-d[nuclear-underground-belt]"
 nuclear_underground_belt.place_result = "nuclear-underground-belt"
@@ -147,5 +147,6 @@ nuclear_splitter.name = "nuclear-splitter"
 nuclear_splitter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-splitter.png"
 nuclear_splitter.order = "c[splitter]-d[nuclear-splitter]"
 nuclear_splitter.place_result = "nuclear-splitter"
+table.insert(items, nuclear_splitter)
 
 data:extend(items)

@@ -14,7 +14,7 @@ function nuclearassemblerpipepictures()
       shift = util.by_pixel(2.5, 14),
       hr_version =
       {
-        filename = "__RandomFactorioThings__/graphics/entitynuclear-/assembling-machin3/hr-nuclear-assembling-machine-pipe-N.png",
+        filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/hr-nuclear-assembling-machine-pipe-N.png",
         priority = "extra-high",
         width = 71,
         height = 38,
@@ -58,14 +58,14 @@ function nuclearassemblerpipepictures()
     },
     west =
     {
-      filename = "__RandomFactorioThings__/graphics/entity/assembling-machine-3/assembling-machine-3-pipe-W.png",
+      filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/nuclear-assembling-machine-pipe-W.png",
       priority = "extra-high",
       width = 19,
       height = 37,
       shift = util.by_pixel(25.5, 1.5),
       hr_version =
       {
-        filename = "__RandomFactorioThings__/graphics/entity/assembling-machine-3/hr-assembling-machine-3-pipe-W.png",
+        filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/hr-nuclear-assembling-machine-pipe-W.png",
         priority = "extra-high",
         width = 39,
         height = 73,
