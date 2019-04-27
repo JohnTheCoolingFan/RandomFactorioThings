@@ -147,7 +147,7 @@ macerator.animation.layers[2].filename = "__RandomFactorioThings__/graphics/enti
 macerator.animation.layers[2].hr_version.filename = "__RandomFactorioThings__/graphics/entity/macerator/hr-macerator-B-light.png"
 macerator.animation.layers[3].filename = "__RandomFactorioThings__/graphics/entity/macerator/macerator-A-light.png"
 macerator.animation.layers[3].hr_version.filename = "__RandomFactorioThings__/graphics/entity/macerator/hr-macerator-A-light.png"
-macerator.crafting_categories = {"grinding", "basic-grinding"}
+macerator.crafting_categories = {"grinding"}
 macerator.energy_usage = "150kW"
 table.insert(entities, macerator)
 
