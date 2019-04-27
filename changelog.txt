@@ -8,6 +8,8 @@ Date: <unknown>
   Balancing:
     - Macerator and compressor crafting speed 0.75 ==> 1
     - Macerator and compressor energy usage 300kW ==> 150kW
+  Graphics:
+    - Updated nuclear assembling machine textures.
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.4
 Date: 25.04.2019
