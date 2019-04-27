@@ -2,6 +2,80 @@ require "util"
 require("inserters")
 require("miners")
 
+function nuclearassemblerpipepictures()
+  return
+  {
+    north =
+    {
+      filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/nuclear-assembling-machine-pipe-N.png",
+      priority = "extra-high",
+      width = 35,
+      height = 18,
+      shift = util.by_pixel(2.5, 14),
+      hr_version =
+      {
+        filename = "__RandomFactorioThings__/graphics/entitynuclear-/assembling-machin3/hr-nuclear-assembling-machine-pipe-N.png",
+        priority = "extra-high",
+        width = 71,
+        height = 38,
+        shift = util.by_pixel(2.25, 13.5),
+        scale = 0.5
+      }
+    },
+    east =
+    {
+      filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/nuclear-assembling-machine-pipe-E.png",
+      priority = "extra-high",
+      width = 20,
+      height = 38,
+      shift = util.by_pixel(-25, 1),
+      hr_version =
+      {
+        filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/hr-nuclear-assembling-machine-pipe-E.png",
+        priority = "extra-high",
+        width = 42,
+        height = 76,
+        shift = util.by_pixel(-24.5, 1),
+        scale = 0.5
+      }
+    },
+    south =
+    {
+      filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/nuclear-assembling-machine-pipe-S.png",
+      priority = "extra-high",
+      width = 44,
+      height = 31,
+      shift = util.by_pixel(0, -31.5),
+      hr_version =
+      {
+        filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/hr-nuclear-assembling-machine-pipe-S.png",
+        priority = "extra-high",
+        width = 88,
+        height = 61,
+        shift = util.by_pixel(0, -31.25),
+        scale = 0.5
+      }
+    },
+    west =
+    {
+      filename = "__RandomFactorioThings__/graphics/entity/assembling-machine-3/assembling-machine-3-pipe-W.png",
+      priority = "extra-high",
+      width = 19,
+      height = 37,
+      shift = util.by_pixel(25.5, 1.5),
+      hr_version =
+      {
+        filename = "__RandomFactorioThings__/graphics/entity/assembling-machine-3/hr-assembling-machine-3-pipe-W.png",
+        priority = "extra-high",
+        width = 39,
+        height = 73,
+        shift = util.by_pixel(25.75, 1.25),
+        scale = 0.5
+      }
+    }
+  }
+end
+
 local belt_entities = {}
 
 local nuclear_transport_belt = util.table.deepcopy(data.raw["transport-belt"]["express-transport-belt"])
@@ -134,6 +208,10 @@ nuclear_assembling_machine.crafting_speed = 2
 nuclear_assembling_machine.energy_usage = "1000kW"
 nuclear_assembling_machine.module_specification.module_slots = 6
 nuclear_assembling_machine.energy_source.emissions_per_minute = 1
+nuclear_assembling_machine.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/nuclear-assembling-machine.png"
+nuclear_assembling_machine.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/hr-nuclear-assembling-machine.png"
+nuclear_assembling_machine.fluid_boxes[1].pipe_picture = nuclearassemblerpipepictures()
+nuclear_assembling_machine.fluid_boxes[2].pipe_picture = nuclearassemblerpipepictures()
 table.insert(entities, nuclear_assembling_machine)
 data.raw["assembling-machine"]["assembling-machine-3"].next_upgrade = "nuclear-assembling-machine"
 
