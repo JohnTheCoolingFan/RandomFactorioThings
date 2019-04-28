@@ -114,6 +114,12 @@ if mods["PlutoniumEnergy"] then
 local plutonium_steel = util.table.deepcopy(data.raw["item"]["steel-plate"])
 plutonium_steel.name = "plutonium-steel"
 plutonium_steel.icon = "__RandomFactorioThings__/graphics/icons/plutonium-steel.png"
+table.insert(items, plutonium_steel)
+
+local raw_plutonium_steel = util.table.deepcopy(plutonium_steel)
+raw_plutonium_steel.name = "raw-plutonium-steel"
+raw_plutonium_steel.icon = "__RandomFactorioThings__/graphics/icons/plutonium-steel.png" --TODO
+table.insert(itesm, raw_plutonium_steel)
 end
 
 local nuclear_long_handed_inserter = util.table.deepcopy(data.raw["item"]["long-handed-inserter"])
