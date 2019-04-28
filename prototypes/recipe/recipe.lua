@@ -177,7 +177,7 @@ data:extend({
 		type = "recipe",
 		name = "raw-nuclear-metal",
 		enabled = false,
-		category = "compressing",
+		category = "centrifuging",
 		ingredients =
 		{
 			{"iron-plate", 2},
