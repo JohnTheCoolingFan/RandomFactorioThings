@@ -277,6 +277,7 @@ table.insert(entities, hardened_electric_furnace)
 local nuclear_assembling_machine = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"])
 nuclear_assembling_machine.name = "nuclear-assembling-machine"
 nuclear_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/nuclear-assembling-machine.png"
+nuclear_assembling_machine.minable.result = "nuclear-assembling-machine"
 nuclear_assembling_machine.max_health = 450
 nuclear_assembling_machine.crafting_speed = 2
 nuclear_assembling_machine.energy_usage = "1125kW"
