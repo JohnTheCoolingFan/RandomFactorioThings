@@ -279,15 +279,33 @@ nuclear_assembling_machine.name = "nuclear-assembling-machine"
 nuclear_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/nuclear-assembling-machine.png"
 nuclear_assembling_machine.max_health = 450
 nuclear_assembling_machine.crafting_speed = 2
-nuclear_assembling_machine.energy_usage = "1000kW"
+nuclear_assembling_machine.energy_usage = "1125kW"
 nuclear_assembling_machine.module_specification.module_slots = 6
 nuclear_assembling_machine.energy_source.emissions_per_minute = 1
 nuclear_assembling_machine.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/nuclear-assembling-machine.png"
 nuclear_assembling_machine.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/hr-nuclear-assembling-machine.png"
 nuclear_assembling_machine.fluid_boxes[1].pipe_picture = nuclearassemblerpipepictures()
 nuclear_assembling_machine.fluid_boxes[2].pipe_picture = nuclearassemblerpipepictures()
+nuclear_assembling_machine.next_upgrade = mods["PlutoniumEnergy"] and "plutonium-assembling-machine"
 table.insert(entities, nuclear_assembling_machine)
 data.raw["assembling-machine"]["assembling-machine-3"].next_upgrade = "nuclear-assembling-machine"
+
+if mods["PlutoniumEnergy"] then
+local plutonium_assembling_machine = util.table.deepcopy(nuclear_assembling_machine)
+plutonium_assembling_machine.name = "plutonium-assembling-machine"
+plutonium_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/plutonium-assembling-machine.png"
+plutonium_assembling_machine.minable.result = "plutonium-assembling-machine"
+plutonium_assembling_machine.max_health = 500
+plutonium_assembling_machine.crafting_speed = 3
+plutonium_assembling_machine.energy_usage = "4.5MW"
+plutonium_assembling_machine.module_specification.module_slots = 8
+plutonium_assembling_machine.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/plutonium-assembling-machine.png"
+plutonium_assembling_machine.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/hr-plutonium-assembling-machine.png"
+plutonium_assembling_machine.fluid_boxes[1].pipe_picture = plutoniumassemblerpipepictures()
+plutonium_assembling_machine.fluid_boxes[2].pipe_picture = plutoniumassemblerpipepictures()
+plutonium_assembling_machine.next_upgrade = nil
+table.insert(entities, plutonium_assembling_machine)
+end
 
 local macerator = util.table.deepcopy(data.raw["assembling-machine"]["centrifuge"])
 macerator.name = "macerator"
