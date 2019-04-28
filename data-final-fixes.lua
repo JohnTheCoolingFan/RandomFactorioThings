@@ -1,3 +1,9 @@
+--[[TODO
+- Check deadlock integration
+- Add integration with plutonium belts
+- Change items that can be compressed/crated
+]]
+
 --deadlock loaders integration
 if deadlock_loaders then
 	deadlock_loaders.create({
