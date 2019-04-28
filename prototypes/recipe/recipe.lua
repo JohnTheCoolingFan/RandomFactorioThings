@@ -116,6 +116,7 @@ data:extend({
 			{"speed-module-4", 2},
 			{"nuclear-metal", 5},
 		},
+		energy_required = 10,
 		result = "nuclear-assembling-machine"
 	},
 	{

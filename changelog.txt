@@ -11,6 +11,7 @@ Date: <unknown>
     - Removed coal compressing recipe.
     - Raw nuclear metal now can be crafted only through centrifuge.
     - Nuclear assembling machine energy consumption 1000kW ==> 1125kW
+    - Nuclear assembling machine crafting time 0.5 ==> 10
   Graphics:
     - Updated nuclear assembling machine textures.
   Mod integration:
