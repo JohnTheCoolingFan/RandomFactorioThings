@@ -1,5 +1,6 @@
 --[[TODO
 - plutonium assembling machine
+- add speed module 5 x2 for plutonium assembling machine when speed module 5 will be available
 ]]
 
 require "util"
@@ -68,6 +69,19 @@ if mods["PlutoniumEnergy"] then
 				{"raw-plutonium-steel", 1}
 			}
 			result = "plutonium-steel"
+		},
+		{
+			type = "recipe",
+			name = "plutonium-assembling-machine",
+			enabled = false,
+			category = "advanced-crafting",
+			ingredients = {
+				{"nuclear-assembling-machine", 2},
+				{"processing-unit", 5},
+				{"iron-gear-wheel", 20},
+				{"plutonium-steel", 10}
+			},
+			result = "plutonium-assembling-machine"
 		}
 	})
 end
@@ -109,6 +123,7 @@ data:extend({
 		type = "recipe",
 		name = "nuclear-assembling-machine",
 		enabled = false,
+		category = "advanced-crafting",
 		ingredients =
 		{
 			{"assembling-machine-3", 1},
