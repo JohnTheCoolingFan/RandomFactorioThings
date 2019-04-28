@@ -13,6 +13,10 @@ Date: <unknown>
     - Nuclear assembling machine energy consumption 1000kW ==> 1125kW
   Graphics:
     - Updated nuclear assembling machine textures.
+  Mod integration:
+    - Added integration with Plutonium Energy
+    - Added plutonium steel
+    - Added plutonium assembling machine.
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.4
 Date: 25.04.2019
