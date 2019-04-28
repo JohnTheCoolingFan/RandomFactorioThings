@@ -1,5 +1,4 @@
 --[[TODO
-- plutonium steel
 - plutonium assembling machine
 ]]
 
