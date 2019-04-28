@@ -47,6 +47,32 @@ table.insert(recipes, nuclear_stack_filter_inserter)
 
 data:extend(recipes)
 
+if mods["PlutoniumEnergy"] then
+	data:extend({
+		{
+			type = "recipe",
+			name = "raw-plutonium-steel",
+			enabled = false,
+			category = "centrifuging",
+			ingredients = {
+				{"steel-plate", 2},
+				{"plutonium-238", 5}
+			},
+			result = "raw-plutonium-steel"
+		},
+		{
+			type = "recipe",
+			name = "raw-plutonium-steel-smelting",
+			enabled = false,
+			category = "smelting",
+			ingredients = {
+				{"raw-plutonium-steel", 1}
+			}
+			result = "plutonium-steel"
+		}
+	})
+end
+
 data:extend({
 	{
 		type = "recipe",
