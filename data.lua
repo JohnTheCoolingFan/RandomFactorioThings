@@ -7,4 +7,6 @@ require("prototypes.technology.technology")
 --[[TODO
 - plutonium inserters
 - plutonium belts
+- Modules lvl 5-6
+- New module icons
 ]]
