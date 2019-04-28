@@ -100,17 +100,6 @@ data:extend({
 		result_count = 2,
 		result = "coal-piece"
 	},
- 	{
-		type = "recipe",
-		name = "coal-compressing",
-		enabled = false,
-		category = "compressing",
-		ingredients =
-		{
-			{"coal-piece", 2},
-		},
-		result = "coal"
-	},
 	{
 		type = "recipe",
 		name = "macerator",
