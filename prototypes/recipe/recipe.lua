@@ -164,17 +164,6 @@ data:extend({
 	},
 	{
 		type = "recipe",
-		name = "raw-nuclear-metal-smelting",
-		enabled = false,
-		category = "smelting",
-		ingredients =
-		{
-			{"raw-nuclear-metal", 1},
-		},
-		result = "nuclear-metal"
-	},
-	{
-		type = "recipe",
 		name = "raw-nuclear-metal",
 		enabled = false,
 		category = "centrifuging",
@@ -185,6 +174,17 @@ data:extend({
 		},
 		result_count = 2,
 		result = "raw-nuclear-metal"
+	},
+	{
+		type = "recipe",
+		name = "raw-nuclear-metal-smelting",
+		enabled = false,
+		category = "smelting",
+		ingredients =
+		{
+			{"raw-nuclear-metal", 1},
+		},
+		result = "nuclear-metal"
 	},
 	-- Belts
 	{
