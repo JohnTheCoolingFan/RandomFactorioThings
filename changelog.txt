@@ -10,6 +10,7 @@ Date: <unknown>
     - Macerator and compressor energy usage 300kW ==> 150kW
     - Removed coal compressing recipe.
     - Raw nuclear metal now can be crafted only through centrifuge.
+    - Nuclear assembling machine energy consumption 1000kW ==> 1125kW
   Graphics:
     - Updated nuclear assembling machine textures.
 ---------------------------------------------------------------------------------------------------
