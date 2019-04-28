@@ -119,7 +119,14 @@ table.insert(items, plutonium_steel)
 local raw_plutonium_steel = util.table.deepcopy(plutonium_steel)
 raw_plutonium_steel.name = "raw-plutonium-steel"
 raw_plutonium_steel.icon = "__RandomFactorioThings__/graphics/icons/plutonium-steel.png" --TODO
-table.insert(itesm, raw_plutonium_steel)
+table.insert(items, raw_plutonium_steel)
+
+local plutonium_assembling_machine = util.table.deepcopy(nuclear_assembling_machine)
+plutonium_assembling_machine.name = "plutonium-assembling-machine"
+plutonium_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/plutonium-assembling-machine.png"
+plutonium_assembling_machine.place_result = "plutonium-assembling-machine"
+plutonium_assembling_machine.order = "c[rft]-a[plutonium-assembling-machine]"
+table.insert(items, plutonium_assembling_machine)
 end
 
 local nuclear_long_handed_inserter = util.table.deepcopy(data.raw["item"]["long-handed-inserter"])
