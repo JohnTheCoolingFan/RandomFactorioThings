@@ -1,4 +1,3 @@
-require "util"
 require("inserters")
 require("miners")
 

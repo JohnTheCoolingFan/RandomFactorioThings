@@ -1,5 +1,3 @@
-require "util"
-
 local miners = {}
 
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["mining-drill"]["electric-mining-drill"])

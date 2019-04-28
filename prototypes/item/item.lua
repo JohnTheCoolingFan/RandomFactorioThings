@@ -1,4 +1,3 @@
-require "util"
 require("merged-module")
 require("module")
 
