@@ -1,3 +1,8 @@
+--[[TODO
+- plutonium steel
+- plutonium assembling machine
+]]
+
 require "util"
 require("module")
 
