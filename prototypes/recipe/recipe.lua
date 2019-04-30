@@ -1,8 +1,3 @@
---[[TODO
-- plutonium assembling machine
-- add speed module 5 x2 for plutonium assembling machine when speed module 5 will be available
-]]
-
 require("module")
 
 local recipes = {}
