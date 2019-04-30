@@ -198,7 +198,7 @@ data:extend({
 			speed = {bonus = 0.15},
 			consumption = {bonus = 1.2},
 			productivity = {bonus = 0.06},
-			pollution = {bonus = 0.075}
+			pollution = {bonus = 0.07}
 		},
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
@@ -240,8 +240,8 @@ data:extend({
 		default_request_amount = 10,
 		effect = {
 			speed = {bonus = 0.55},
-			consumption = {bonus = 2},
-			productivity = {bonus = 0.12},
+			consumption = {bonus = 1.8},
+			productivity = {bonus = 0.16},
 			pollution = {bonus = 0.15}
 		},
 		limitation = productivity_module_limitation(),

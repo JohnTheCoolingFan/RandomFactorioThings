@@ -16,6 +16,10 @@ Date: <unknown>
     - Productivity module 4 pollution bonus 0.125 ==> 0.14
     - Productivity-effectivity module 2 pollution bonus 0.075 ==> 0.07
     - Productivity-effectivity module 4 pollution bonus 0.125 == 0.14
+    - Speed-productivity module 4 consumption bonus 2 ==> 1.8
+    - Speed-productivity module 4 module productivity bonus 0.12 ==> 0.16
+    - Speed-productivity module 2 pollution bonus 0.075 ==> 0.07
+    - Speed-productivity module 4 pollution bonus 0.15 ==> 0.14
   Graphics:
     - Updated nuclear assembling machine textures.
   Mod integration:
