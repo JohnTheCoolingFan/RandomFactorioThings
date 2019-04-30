@@ -8,22 +8,22 @@ require("module")
 local recipes = {}
 
 local nuclear_flying_robot_frame = util.table.deepcopy(data.raw["recipe"]["flying-robot-frame"])
-    nuclear_flying_robot_frame.name = "nuclear-flying-robot-frame"
-    nuclear_flying_robot_frame.result = "nuclear-flying-robot-frame"
-    nuclear_flying_robot_frame.energy_required = 30
-    nuclear_flying_robot_frame.ingredients = {{"electric-engine-unit", 1}, {"battery", 4}, {"nuclear-metal", 5}, {"electronic-circuit", 5}}
+nuclear_flying_robot_frame.name = "nuclear-flying-robot-frame"
+nuclear_flying_robot_frame.result = "nuclear-flying-robot-frame"
+nuclear_flying_robot_frame.energy_required = 30
+nuclear_flying_robot_frame.ingredients = {{"electric-engine-unit", 1}, {"battery", 4}, {"nuclear-metal", 5}, {"electronic-circuit", 5}}
 table.insert(recipes, nuclear_flying_robot_frame)
 
 local nuclear_logistic_robot = util.table.deepcopy(data.raw["recipe"]["logistic-robot"])
-    nuclear_logistic_robot.name = "nuclear-logistic-robot"
-    nuclear_logistic_robot.result = "nuclear-logistic-robot"
-    nuclear_logistic_robot.ingredients[1][1] = "nuclear-flying-robot-frame"
+nuclear_logistic_robot.name = "nuclear-logistic-robot"
+nuclear_logistic_robot.result = "nuclear-logistic-robot"
+nuclear_logistic_robot.ingredients[1][1] = "nuclear-flying-robot-frame"
 table.insert(recipes, nuclear_logistic_robot)
 
 local nuclear_construction_robot = util.table.deepcopy(data.raw["recipe"]["construction-robot"])
-    nuclear_construction_robot.name = "nuclear-construction-robot"
-    nuclear_construction_robot.result = "nuclear-construction-robot"
-    nuclear_construction_robot.ingredients[1][1] = "nuclear-flying-robot-frame"
+nuclear_construction_robot.name = "nuclear-construction-robot"
+nuclear_construction_robot.result = "nuclear-construction-robot"
+nuclear_construction_robot.ingredients[1][1] = "nuclear-flying-robot-frame"
 table.insert(recipes, nuclear_construction_robot)
 
 local nuclear_long_handed_inserter = util.table.deepcopy(data.raw["recipe"]["long-handed-inserter"])
