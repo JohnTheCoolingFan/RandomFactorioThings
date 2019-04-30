@@ -135,7 +135,7 @@ data:extend({
 				recipe = "nuclear-construction-robot"
 			}
 		},
-		prerequisites = {"nuclear-power", "automation-3"},
+		prerequisites = {"uranium-processing", "automation-3"},
 		unit =
 		{
 			count = 500,
