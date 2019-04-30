@@ -33,9 +33,11 @@ data:extend({
 		order = "a[speed]-d[speed-module-4]",
 		stack_size = 50,
 		default_request_amount = 10,
-		effect = { speed = {bonus = 0.8}, consumption = {bonus = 0.8}}
+		effect = {
+			speed = {bonus = 0.8},
+			consumption = {bonus = 0.8}
+		}
 	},
-
 	{
 		type = "module",
 		name = "effectivity-module-4",
@@ -48,7 +50,9 @@ data:extend({
 		order = "c[effectivity]-d[effectivity-module-4]",
 		stack_size = 50,
 		default_request_amount = 10,
-		effect = { consumption = {bonus = -0.6}},
+		effect = {
+			consumption = {bonus = -0.6}
+		},
 		limitation = production
 	},
 
