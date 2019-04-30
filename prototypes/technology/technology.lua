@@ -148,7 +148,7 @@ data:extend({
 			},
 			time = 35
 		},
-		order = "e-a-b"
+		order = "e-a-b" -- TODO
 	},
 
 	{
@@ -177,7 +177,7 @@ data:extend({
 			time = 60
 		},
 		upgrade = true,
-		order = "i-c-c"
+		order = "i-c-c" -- TODO
 	},
 
 	{
@@ -206,7 +206,7 @@ data:extend({
 			time = 60
 		},
 		upgrade = true,
-		order = "i-c-c"
+		order = "i-c-c" -- TODO
 	},
 
 	{
@@ -235,7 +235,7 @@ data:extend({
 			time = 60
 		},
 		upgrade = true,
-		order = "i-c-c"
+		order = "i-c-c" -- TODO
 	},
 
 	{
@@ -254,7 +254,7 @@ data:extend({
 			},
 			time = 30
 		},
-		order = "i-a"
+		order = "i-a" -- TODO
 	},
 
 	{
@@ -284,7 +284,7 @@ data:extend({
 			ingredients = {{"automation-science-pack", 1},{"logistic-science-pack", 1}},
 			time = 1
 		},
-		order = "c-a"
+		order = "c-a" -- TODO
 	},
 
 	{
@@ -320,6 +320,38 @@ data:extend({
 			},
 			time = 15
 		},
-		order = "a-f-c"
+		order = "a-f-c" -- TODO
 	}
 })
+
+if mods["PlutoniumEnergy"] then
+	data:extend({
+		{
+			type = "technology",
+			name = "plutonium-automation",
+			icon = "__RandomFactorioThings__/graphics/technology/nuclear-automation.png",
+			icon_size = 128,
+			effects =
+			{
+				{
+					type = "unlock-recipe",
+					recipe = "plutonium-assembling-machine"
+				}
+			},
+			prerequisites = {"nuclear-automation"},
+			unit = -- TODO
+			{
+				count = 500,
+				ingredients =
+				{
+					{"automation-science-pack", 1},
+					{"logistic-science-pack", 1},
+					{"chemical-science-pack", 1},
+					{"utility-science-pack", 1}
+				},
+				time = 35
+			},
+			order = "e-a-b" -- TODO
+		},
+	})
+end
