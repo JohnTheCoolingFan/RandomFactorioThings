@@ -17,7 +17,6 @@ data:extend({
 			consumption = {bonus = 0.2}
 		}
 	},
-
 	{
 		type = "module",
 		name = "speed-effectivity-module-2",
@@ -35,7 +34,6 @@ data:extend({
 			consumption = {bonus = 0.2}
 		}
 	},
-
 	{
 		type = "module",
 		name = "speed-effectivity-module-3",
@@ -53,7 +51,6 @@ data:extend({
 			consumption = {bonus = 0.2}
 		}
 	},
-
 	{
 		type = "module",
 		name = "speed-effectivity-module-4",
@@ -93,7 +90,6 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
 	},
-
 	{
 		type = "module",
 		name = "productivity-effectivity-module-2",
@@ -115,7 +111,6 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
 	},
-
 	{
 		type = "module",
 		name = "productivity-effectivity-module-3",
@@ -137,7 +132,6 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
 	},
-
 	{
 		type = "module",
 		name = "productivity-effectivity-module-4",
@@ -181,7 +175,6 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
 	},
-
 	{
 		type = "module",
 		name = "speed-productivity-module-2",
@@ -203,7 +196,6 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
 	},
-
 	{
 		type = "module",
 		name = "speed-productivity-module-3",
@@ -225,7 +217,6 @@ data:extend({
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
 	},
-
 	{
 		type = "module",
 		name = "speed-productivity-module-4",
