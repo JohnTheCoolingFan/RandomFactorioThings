@@ -156,7 +156,7 @@ table.insert(items, plutonium_steel)
 
 local raw_plutonium_steel = util.table.deepcopy(plutonium_steel)
 raw_plutonium_steel.name = "raw-plutonium-steel"
-raw_plutonium_steel.icon = "__RandomFactorioThings__/graphics/icons/plutonium-steel.png" --TODO
+raw_plutonium_steel.icon = "__RandomFactorioThings__/graphics/icons/raw-plutonium-steel.png"
 table.insert(items, raw_plutonium_steel)
 
 local plutonium_assembling_machine = util.table.deepcopy(nuclear_assembling_machine)
