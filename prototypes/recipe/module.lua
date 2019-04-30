@@ -91,34 +91,6 @@ data:extend({
         energy_required = 480,
         result = "effectivity-module-6"
     },
-    --[[{
-        type = "recipe",
-        name = "hardened-electric-mining-drill",
-        normal =
-        {
-            enabled = false,
-            energy_required = 2,
-            ingredients =
-            {
-                {"electronic-circuit", 5},
-                {"iron-gear-wheel", 10},
-                {"iron-plate", 20}
-            },
-            result = "hardened-electric-mining-drill"
-        },
-        expensive =
-        {
-            enabled = false,
-            energy_required = 2,
-            ingredients =
-            {
-                {"electronic-circuit", 10},
-                {"iron-gear-wheel", 20},
-                {"iron-plate", 40}
-            },
-            result = "hardened-electric-mining-drill"
-        }
-    },]]
     {
         type = "recipe",
         name = "speed-effectivity-module",
