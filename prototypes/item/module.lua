@@ -21,172 +21,172 @@ data.raw["module"]["productivity-module-2"].icon = "__RandomFactorioThings__/gra
 data.raw["module"]["productivity-module-3"].icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-3.png"
 
 data:extend({
-	{
-		type = "module",
-		name = "speed-module-4",
-		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-module-4.png",
-		icon_size = 32,
-		flags = {},
-		subgroup = "module",
-		category = "speed",
-		tier = 4,
-		order = "a[speed]-d[speed-module-4]",
-		stack_size = 50,
-		default_request_amount = 10,
-		effect = {
-			speed = {bonus = 0.8},
-			consumption = {bonus = 0.8}
-		}
-	},
-	{
-		type = "module",
-		name = "speed-module-5",
-		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-module-5.png",
-		icon_size = 32,
-		flags = {},
-		subgroup = "module",
-		category = "speed",
-		tier = 4,
-		order = "a[speed]-e[speed-module-5]",
-		stack_size = 50,
-		default_request_amount = 10,
-		effect = {
-			speed = {bonus = 1.2},
-			consumption = {bonus = 0.9}
-		}
-	},
-	{
-		type = "module",
-		name = "speed-module-6",
-		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-module-6.png",
-		icon_size = 32,
-		flags = {},
-		subgroup = "module",
-		category = "speed",
-		tier = 4,
-		order = "a[speed]-f[speed-module-6]",
-		stack_size = 50,
-		default_request_amount = 10,
-		effect = {
-			speed = {bonus = 1.7},
-			consumption = {bonus = 1}
-		}
-	},
-	{
-		type = "module",
-		name = "effectivity-module-4",
-		icon = "__RandomFactorioThings__/graphics/icons/modules/effectivity-module-4.png",
-		icon_size = 32,
-		flags = {},
-		subgroup = "module",
-		category = "effectivity",
-		tier = 4,
-		order = "c[effectivity]-d[effectivity-module-4]",
-		stack_size = 50,
-		default_request_amount = 10,
-		effect = {
-			consumption = {bonus = -0.6}
-		},
-		limitation = production
-	},
-	{
-		type = "module",
-		name = "effectivity-module-5",
-		icon = "__RandomFactorioThings__/graphics/icons/modules/effectivity-module-5.png",
-		icon_size = 32,
-		flags = {},
-		subgroup = "module",
-		category = "effectivity",
-		tier = 4,
-		order = "c[effectivity]-e[effectivity-module-5]",
-		stack_size = 50,
-		default_request_amount = 10,
-		effect = {
-			consumption = {bonus = -0.7}
-		},
-		limitation = production
-	},
-	{
-		type = "module",
-		name = "effectivity-module-6",
-		icon = "__RandomFactorioThings__/graphics/icons/modules/effectivity-module-6.png",
-		icon_size = 32,
-		flags = {},
-		subgroup = "module",
-		category = "effectivity",
-		tier = 4,
-		order = "c[effectivity]-f[effectivity-module-6]",
-		stack_size = 50,
-		default_request_amount = 10,
-		effect = {
-			consumption = {bonus = -0.8}
-		},
-		limitation = production
-	},
-	{
-		type = "module",
-		name = "productivity-module-4",
-		icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-4.png",
-		icon_size = 32,
-		flags = {},
-		subgroup = "module",
-		category = "productivity",
-		tier = 4,
-		order = "e[productivity]-d[productivity-module-4]",
-		stack_size = 50,
-		default_request_amount = 10,
-		effect =
-		{
-			productivity = {bonus = 0.16},
-			consumption = {bonus = 1},
-			pollution = {bonus = 0.14},
-			speed = {bonus = -0.15}
-		},
-		limitation = productivity_module_limitation(),
-		limitation_message_key = "production-module-usable-only-on-intermediates"
-	},
-	{
-		type = "module",
-		name = "productivity-module-5",
-		icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-5.png",
-		icon_size = 32,
-		flags = {},
-		subgroup = "module",
-		category = "productivity",
-		tier = 4,
-		order = "e[productivity]-e[productivity-module-5]",
-		stack_size = 50,
-		default_request_amount = 10,
-		effect =
-		{
-			productivity = {bonus = 0.24},
-			consumption = {bonus = 1.2},
-			pollution = {bonus = 0.19},
-			speed = {bonus = -0.15}
-		},
-		limitation = productivity_module_limitation(),
-		limitation_message_key = "production-module-usable-only-on-intermediates"
-	},
-	{
-		type = "module",
-		name = "productivity-module-6",
-		icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-6.png",
-		icon_size = 32,
-		flags = {},
-		subgroup = "module",
-		category = "productivity",
-		tier = 4,
-		order = "e[productivity]-f[productivity-module-6]",
-		stack_size = 50,
-		default_request_amount = 10,
-		effect =
-		{
-			productivity = {bonus = 0.34},
-			consumption = {bonus = 1.4},
-			pollution = {bonus = 0.25},
-			speed = {bonus = -0.15}
-		},
-		limitation = productivity_module_limitation(),
-		limitation_message_key = "production-module-usable-only-on-intermediates"
-	},
+    {
+        type = "module",
+        name = "speed-module-4",
+        icon = "__RandomFactorioThings__/graphics/icons/modules/speed-module-4.png",
+        icon_size = 32,
+        flags = {},
+        subgroup = "module",
+        category = "speed",
+        tier = 4,
+        order = "a[speed]-d[speed-module-4]",
+        stack_size = 50,
+        default_request_amount = 10,
+        effect = {
+            speed = {bonus = 0.8},
+            consumption = {bonus = 0.8}
+        }
+    },
+    {
+        type = "module",
+        name = "speed-module-5",
+        icon = "__RandomFactorioThings__/graphics/icons/modules/speed-module-5.png",
+        icon_size = 32,
+        flags = {},
+        subgroup = "module",
+        category = "speed",
+        tier = 4,
+        order = "a[speed]-e[speed-module-5]",
+        stack_size = 50,
+        default_request_amount = 10,
+        effect = {
+            speed = {bonus = 1.2},
+            consumption = {bonus = 0.9}
+        }
+    },
+    {
+        type = "module",
+        name = "speed-module-6",
+        icon = "__RandomFactorioThings__/graphics/icons/modules/speed-module-6.png",
+        icon_size = 32,
+        flags = {},
+        subgroup = "module",
+        category = "speed",
+        tier = 4,
+        order = "a[speed]-f[speed-module-6]",
+        stack_size = 50,
+        default_request_amount = 10,
+        effect = {
+            speed = {bonus = 1.7},
+            consumption = {bonus = 1}
+        }
+    },
+    {
+        type = "module",
+        name = "effectivity-module-4",
+        icon = "__RandomFactorioThings__/graphics/icons/modules/effectivity-module-4.png",
+        icon_size = 32,
+        flags = {},
+        subgroup = "module",
+        category = "effectivity",
+        tier = 4,
+        order = "c[effectivity]-d[effectivity-module-4]",
+        stack_size = 50,
+        default_request_amount = 10,
+        effect = {
+            consumption = {bonus = -0.6}
+        },
+        limitation = production
+    },
+    {
+        type = "module",
+        name = "effectivity-module-5",
+        icon = "__RandomFactorioThings__/graphics/icons/modules/effectivity-module-5.png",
+        icon_size = 32,
+        flags = {},
+        subgroup = "module",
+        category = "effectivity",
+        tier = 4,
+        order = "c[effectivity]-e[effectivity-module-5]",
+        stack_size = 50,
+        default_request_amount = 10,
+        effect = {
+            consumption = {bonus = -0.7}
+        },
+        limitation = production
+    },
+    {
+        type = "module",
+        name = "effectivity-module-6",
+        icon = "__RandomFactorioThings__/graphics/icons/modules/effectivity-module-6.png",
+        icon_size = 32,
+        flags = {},
+        subgroup = "module",
+        category = "effectivity",
+        tier = 4,
+        order = "c[effectivity]-f[effectivity-module-6]",
+        stack_size = 50,
+        default_request_amount = 10,
+        effect = {
+            consumption = {bonus = -0.8}
+        },
+        limitation = production
+    },
+    {
+        type = "module",
+        name = "productivity-module-4",
+        icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-4.png",
+        icon_size = 32,
+        flags = {},
+        subgroup = "module",
+        category = "productivity",
+        tier = 4,
+        order = "e[productivity]-d[productivity-module-4]",
+        stack_size = 50,
+        default_request_amount = 10,
+        effect =
+        {
+            productivity = {bonus = 0.16},
+            consumption = {bonus = 1},
+            pollution = {bonus = 0.14},
+            speed = {bonus = -0.15}
+        },
+        limitation = productivity_module_limitation(),
+        limitation_message_key = "production-module-usable-only-on-intermediates"
+    },
+    {
+        type = "module",
+        name = "productivity-module-5",
+        icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-5.png",
+        icon_size = 32,
+        flags = {},
+        subgroup = "module",
+        category = "productivity",
+        tier = 4,
+        order = "e[productivity]-e[productivity-module-5]",
+        stack_size = 50,
+        default_request_amount = 10,
+        effect =
+        {
+            productivity = {bonus = 0.24},
+            consumption = {bonus = 1.2},
+            pollution = {bonus = 0.19},
+            speed = {bonus = -0.15}
+        },
+        limitation = productivity_module_limitation(),
+        limitation_message_key = "production-module-usable-only-on-intermediates"
+    },
+    {
+        type = "module",
+        name = "productivity-module-6",
+        icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-6.png",
+        icon_size = 32,
+        flags = {},
+        subgroup = "module",
+        category = "productivity",
+        tier = 4,
+        order = "e[productivity]-f[productivity-module-6]",
+        stack_size = 50,
+        default_request_amount = 10,
+        effect =
+        {
+            productivity = {bonus = 0.34},
+            consumption = {bonus = 1.4},
+            pollution = {bonus = 0.25},
+            speed = {bonus = -0.15}
+        },
+        limitation = productivity_module_limitation(),
+        limitation_message_key = "production-module-usable-only-on-intermediates"
+    },
 })
