@@ -68,6 +68,40 @@ data:extend({
 			consumption = {bonus = 0.2}
 		}
 	},
+	{
+		type = "module",
+		name = "speed-effectivity-module-5",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-effectivity-module-5.png",
+		icon_size = 32,
+		flags = {},
+		subgroup = "module",
+		category = "speed-effectivity",
+		tier = 4,
+		order = "b[speed-effectivity]-e[speed-effectivity-module-5]",
+		stack_size = 50,
+		default_request_amount = 10,
+		effect = {
+			speed = {bonus = 1.2},
+			consumption = {bonus = 0.2}
+		}
+	},
+	{
+		type = "module",
+		name = "speed-effectivity-module-6",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-effectivity-module-6.png",
+		icon_size = 32,
+		flags = {},
+		subgroup = "module",
+		category = "speed-effectivity",
+		tier = 4,
+		order = "b[speed-effectivity]-e[speed-effectivity-module-6]",
+		stack_size = 50,
+		default_request_amount = 10,
+		effect = {
+			speed = {bonus = 1.7},
+			consumption = {bonus = 0.2}
+		}
+	},
 	-- Productivity-Effectivity
 	{
 		type = "module",
@@ -148,6 +182,48 @@ data:extend({
 			productivity = {bonus = 0.16},
 			consumption = {bonus = 0.4},
 			pollution = {bonus = 0.14},
+			speed = {bonus = -0.15},
+		},
+		limitation = productivity_module_limitation(),
+		limitation_message_key = "production-module-usable-only-on-intermediates"
+	},
+	{
+		type = "module",
+		name = "productivity-effectivity-module-5",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-effectivity-module-5.png",
+		icon_size = 32,
+		flags = {},
+		subgroup = "module",
+		category = "productivity-effectivity",
+		tier = 4,
+		order = "d[productivity-effectivty]-e[productivity-effectivity-module-5]",
+		stack_size = 50,
+		default_request_amount = 10,
+		effect = {
+			productivity = {bonus = 0.24},
+			consumption = {bonus = 0.5},
+			pollution = {bonus = 0.19},
+			speed = {bonus = -0.15},
+		},
+		limitation = productivity_module_limitation(),
+		limitation_message_key = "production-module-usable-only-on-intermediates"
+	},
+	{
+		type = "module",
+		name = "productivity-effectivity-module-6",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-effectivity-module-6.png",
+		icon_size = 32,
+		flags = {},
+		subgroup = "module",
+		category = "productivity-effectivity",
+		tier = 4,
+		order = "d[productivity-effectivty]-f[productivity-effectivity-module-6]",
+		stack_size = 50,
+		default_request_amount = 10,
+		effect = {
+			productivity = {bonus = 0.34},
+			consumption = {bonus = 0.6},
+			pollution = {bonus = 0.25},
 			speed = {bonus = -0.15},
 		},
 		limitation = productivity_module_limitation(),
@@ -234,6 +310,48 @@ data:extend({
 			consumption = {bonus = 1.8},
 			productivity = {bonus = 0.16},
 			pollution = {bonus = 0.15}
+		},
+		limitation = productivity_module_limitation(),
+		limitation_message_key = "production-module-usable-only-on-intermediates"
+	},
+	{
+		type = "module",
+		name = "speed-productivity-module-5",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-productivity-module-5.png",
+		icon_size = 32,
+		flags = {},
+		subgroup = "module",
+		category = "speed-productivity",
+		tier = 4,
+		order = "f[speed-productivity]-e[speed-productivity-module-5]",
+		stack_size = 50,
+		default_request_amount = 10,
+		effect = {
+			speed = {bonus = 1.05},
+			consumption = {bonus = 2.1},
+			productivity = {bonus = 0.24},
+			pollution = {bonus = 0.19}
+		},
+		limitation = productivity_module_limitation(),
+		limitation_message_key = "production-module-usable-only-on-intermediates"
+	},
+	{
+		type = "module",
+		name = "speed-productivity-module-6",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-productivity-module-6.png",
+		icon_size = 32,
+		flags = {},
+		subgroup = "module",
+		category = "speed-productivity",
+		tier = 4,
+		order = "f[speed-productivity]-f[speed-productivity-module-6]",
+		stack_size = 50,
+		default_request_amount = 10,
+		effect = {
+			speed = {bonus = 1.55},
+			consumption = {bonus = 2.4},
+			productivity = {bonus = 0.34},
+			pollution = {bonus = 0.25}
 		},
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
