@@ -15,6 +15,32 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "speed-module-5",
+        enabled = false,
+        ingredients =
+        {
+            {"speed-module-4", 5},
+            {"advanced-circuit", 15},
+            {"processing-unit", 15}
+        },
+        energy_required = 240,
+        result = "speed-module-5"
+    },
+    {
+        type = "recipe",
+        name = "speed-module-6",
+        enabled = false,
+        ingredients =
+        {
+            {"speed-module-5", 5},
+            {"advanced-circuit", 15},
+            {"processing-unit", 15}
+        },
+        energy_required = 480,
+        result = "speed-module-6"
+    },
+    {
+        type = "recipe",
         name = "productivity-module-4",
         enabled = false,
         ingredients =
