@@ -77,7 +77,7 @@ if mods["PlutoniumEnergy"] then
             ingredients = {
                 {"nuclear-assembling-machine", 2},
                 {"processing-unit", 5},
-                {"iron-gear-wheel", 20},
+                {"speed-module-5", 2},
                 {"plutonium-steel", 10}
             },
             result = "plutonium-assembling-machine"
