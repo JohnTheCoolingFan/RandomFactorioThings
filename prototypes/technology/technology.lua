@@ -307,7 +307,7 @@ data:extend({
 				recipe = "nuclear-splitter"
 			}
 		},
-		prerequisites = {"logistics-3", "nuclear-automation"},
+		prerequisites = {"logistics-3", "uranium-processing"},
 		unit =
 		{
 			count = 500,

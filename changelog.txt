@@ -20,6 +20,7 @@ Date: <unknown>
     - Speed-productivity module 4 module productivity bonus 0.12 ==> 0.16
     - Speed-productivity module 2 pollution bonus 0.075 ==> 0.07
     - Speed-productivity module 4 pollution bonus 0.15 ==> 0.14
+    - Changed nuclear automation prerequisite from Nuclear power to Uranium processing
   Graphics:
     - Updated nuclear assembling machine textures.
   Mod integration:
