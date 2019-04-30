@@ -13,6 +13,7 @@ Date: <unknown>
     - Nuclear assembling machine energy consumption 1000kW ==> 1125kW
     - Nuclear assembling machine crafting time 0.5 ==> 10
     - Nuclear assembling machine crafting category changed to "advanced crafting".
+    - Productivity module 4 pollution bonus 0.125 ==> 0.14
   Graphics:
     - Updated nuclear assembling machine textures.
   Mod integration:
