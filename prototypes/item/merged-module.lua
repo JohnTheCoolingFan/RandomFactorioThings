@@ -13,8 +13,10 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-		speed = {bonus = 0.2}, consumption = {bonus = 0.2}}
-    },
+			speed = {bonus = 0.2},
+			consumption = {bonus = 0.2}
+		}
+	},
 
 	{
 		type = "module",
@@ -29,8 +31,10 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-		speed = {bonus = 0.3}, consumption = {bonus = 0.2}}
-    },
+			speed = {bonus = 0.3},
+			consumption = {bonus = 0.2}
+		}
+	},
 
 	{
 		type = "module",
@@ -45,8 +49,10 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-		speed = {bonus = 0.5}, consumption = {bonus = 0.2}}
-    },
+			speed = {bonus = 0.5},
+			consumption = {bonus = 0.2}
+		}
+	},
 
 	{
 		type = "module",
@@ -61,8 +67,10 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-		speed = {bonus = 0.8}, consumption = {bonus = 0.2}}
-    },
+			speed = {bonus = 0.8},
+			consumption = {bonus = 0.2}
+		}
+	},
 	-- Productivity-Effectivity
 	{
 		type = "module",
@@ -165,10 +173,14 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-		speed = {bonus = 0.05}, consumption = {bonus = 0.9}, productivity = {bonus = 0.04}, pollution = {bonus = 0.05}},
+			speed = {bonus = 0.05},
+			consumption = {bonus = 0.9},
+			productivity = {bonus = 0.04},
+			pollution = {bonus = 0.05}
+		},
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
-    },
+	},
 
 	{
 		type = "module",
@@ -183,10 +195,14 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-		speed = {bonus = 0.15}, consumption = {bonus = 1.2}, productivity = {bonus = 0.06}, pollution = {bonus = 0.075}},
+			speed = {bonus = 0.15},
+			consumption = {bonus = 1.2},
+			productivity = {bonus = 0.06},
+			pollution = {bonus = 0.075}
+		},
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
-    },
+	},
 
 	{
 		type = "module",
@@ -201,10 +217,14 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-		speed = {bonus = 0.35}, consumption = {bonus = 1.5}, productivity = {bonus = 0.1}, pollution = {bonus = 0.1}},
+			speed = {bonus = 0.35},
+			consumption = {bonus = 1.5},
+			productivity = {bonus = 0.1},
+			pollution = {bonus = 0.1}
+		},
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
-    },
+	},
 
 	{
 		type = "module",
@@ -219,8 +239,12 @@ data:extend({
 		stack_size = 50,
 		default_request_amount = 10,
 		effect = {
-		speed = {bonus = 0.55}, consumption = {bonus = 2}, productivity = {bonus = 0.12}, pollution = {bonus = 0.15}},
+			speed = {bonus = 0.55},
+			consumption = {bonus = 2},
+			productivity = {bonus = 0.12},
+			pollution = {bonus = 0.15}
+		},
 		limitation = productivity_module_limitation(),
 		limitation_message_key = "production-module-usable-only-on-intermediates"
-    }
+	}
 })
