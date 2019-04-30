@@ -3,7 +3,7 @@ data:extend({
 	{
 		type = "module",
 		name = "speed-effectivity-module",
-		icon = "__RandomFactorioThings__/graphics/icons/speed-effectivity-module.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-effectivity-module-1.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
@@ -21,7 +21,7 @@ data:extend({
 	{
 		type = "module",
 		name = "speed-effectivity-module-2",
-		icon = "__RandomFactorioThings__/graphics/icons/speed-effectivity-module-2.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-effectivity-module-2.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
@@ -39,7 +39,7 @@ data:extend({
 	{
 		type = "module",
 		name = "speed-effectivity-module-3",
-		icon = "__RandomFactorioThings__/graphics/icons/speed-effectivity-module-3.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-effectivity-module-3.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
@@ -57,7 +57,7 @@ data:extend({
 	{
 		type = "module",
 		name = "speed-effectivity-module-4",
-		icon = "__RandomFactorioThings__/graphics/icons/speed-effectivity-module-4.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-effectivity-module-4.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
@@ -75,7 +75,7 @@ data:extend({
 	{
 		type = "module",
 		name = "productivity-effectivity-module",
-		icon = "__RandomFactorioThings__/graphics/icons/productivity-effectivity-module.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-effectivity-module-1.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
@@ -97,7 +97,7 @@ data:extend({
 	{
 		type = "module",
 		name = "productivity-effectivity-module-2",
-		icon = "__RandomFactorioThings__/graphics/icons/productivity-effectivity-module-2.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-effectivity-module-2.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
@@ -119,7 +119,7 @@ data:extend({
 	{
 		type = "module",
 		name = "productivity-effectivity-module-3",
-		icon = "__RandomFactorioThings__/graphics/icons/productivity-effectivity-module-3.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-effectivity-module-3.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
@@ -141,7 +141,7 @@ data:extend({
 	{
 		type = "module",
 		name = "productivity-effectivity-module-4",
-		icon = "__RandomFactorioThings__/graphics/icons/productivity-effectivity-module-4.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-effectivity-module-4.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
@@ -163,7 +163,7 @@ data:extend({
 	{
 		type = "module",
 		name = "speed-productivity-module",
-		icon = "__RandomFactorioThings__/graphics/icons/speed-productivity-module.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-productivity-module-1.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
@@ -185,7 +185,7 @@ data:extend({
 	{
 		type = "module",
 		name = "speed-productivity-module-2",
-		icon = "__RandomFactorioThings__/graphics/icons/speed-productivity-module-2.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-productivity-module-2.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
@@ -207,7 +207,7 @@ data:extend({
 	{
 		type = "module",
 		name = "speed-productivity-module-3",
-		icon = "__RandomFactorioThings__/graphics/icons/speed-productivity-module-3.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-productivity-module-3.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
@@ -229,7 +229,7 @@ data:extend({
 	{
 		type = "module",
 		name = "speed-productivity-module-4",
-		icon = "__RandomFactorioThings__/graphics/icons/speed-productivity-module-4.png",
+		icon = "__RandomFactorioThings__/graphics/icons/modules/speed-productivity-module-4.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "module",
