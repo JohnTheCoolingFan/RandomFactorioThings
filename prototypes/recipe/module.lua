@@ -1,3 +1,4 @@
+-- TODO: module recipes
 data:extend({
     {
 		type = "recipe",
