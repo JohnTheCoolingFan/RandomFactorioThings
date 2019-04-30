@@ -335,6 +335,14 @@ if mods["PlutoniumEnergy"] then
 			{
 				{
 					type = "unlock-recipe",
+					recipe = "raw-plutonium-steel"
+				},
+				{
+					type = "unlock-recipe",
+					recipe = "raw-plutonium-steel-smelting"
+				},
+				{
+					type = "unlock-recipe",
 					recipe = "plutonium-assembling-machine"
 				}
 			},
