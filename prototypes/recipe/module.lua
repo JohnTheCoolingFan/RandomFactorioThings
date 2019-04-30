@@ -28,6 +28,32 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "productivity-module-5",
+        enabled = false,
+        ingredients =
+        {
+            {"productivity-module-4", 5},
+            {"advanced-circuit", 15},
+            {"processing-unit", 15}
+        },
+        energy_required = 240,
+        result = "productivity-module-5"
+    },
+    {
+        type = "recipe",
+        name = "productivity-module-6",
+        enabled = false,
+        ingredients =
+        {
+            {"productivity-module-5", 5},
+            {"advanced-circuit", 15},
+            {"processing-unit", 15}
+        },
+        energy_required = 480,
+        result = "productivity-module-6"
+    },
+    {
+        type = "recipe",
         name = "effectivity-module-4",
         enabled = false,
         ingredients =
@@ -40,6 +66,31 @@ data:extend({
         result = "effectivity-module-4"
     },
     {
+        type = "recipe",
+        name = "effectivity-module-5",
+        enabled = false,
+        ingredients =
+        {
+            {"effectivity-module-4", 5},
+            {"advanced-circuit", 15},
+            {"processing-unit", 15}
+        },
+        energy_required = 240,
+        result = "effectivity-module-5"
+    },
+    {
+        type = "recipe",
+        name = "effectivity-module-6",
+        enabled = false,
+        ingredients =
+        {
+            {"effectivity-module-5", 5},
+            {"advanced-circuit", 15},
+            {"processing-unit", 15}
+        },
+        energy_required = 480,
+        result = "effectivity-module-6"
+    },
         type = "recipe",
         name = "hardened-electric-mining-drill",
         normal =
