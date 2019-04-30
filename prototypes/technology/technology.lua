@@ -346,7 +346,7 @@ if mods["PlutoniumEnergy"] then
 					recipe = "plutonium-assembling-machine"
 				}
 			},
-			prerequisites = {"nuclear-automation"},
+			prerequisites = {"nuclear-automation", "plutonium-nuclear-power"},
 			unit = -- TODO
 			{
 				count = 500,
