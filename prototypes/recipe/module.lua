@@ -91,7 +91,7 @@ data:extend({
         energy_required = 480,
         result = "effectivity-module-6"
     },
-    {
+    --[[{
         type = "recipe",
         name = "hardened-electric-mining-drill",
         normal =
@@ -118,7 +118,7 @@ data:extend({
             },
             result = "hardened-electric-mining-drill"
         }
-    },
+    },]]
     {
         type = "recipe",
         name = "speed-effectivity-module",
