@@ -10,4 +10,5 @@ require("prototypes.technology.technology")
 - Modules lvl 5-6
 - New module icons
 - Plutonium technology icons
+- Code formatting
 ]]
