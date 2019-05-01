@@ -288,8 +288,7 @@ data:extend({
             count = 50,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1}
+                {"logistic-science-pack", 1}
             },
             time = 30
         },
@@ -312,8 +311,7 @@ data:extend({
             count = 100,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1}
+                {"logistic-science-pack", 1}
             },
             time = 60
         },
@@ -336,8 +334,7 @@ data:extend({
             count = 100,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1}
+                {"logistic-science-pack", 1}
             },
             time = 60
         },
@@ -384,8 +381,7 @@ data:extend({
             count = 50,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1}
+                {"logistic-science-pack", 1}
             },
             time = 30
         },
@@ -408,8 +404,7 @@ data:extend({
             count = 100,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1}
+                {"logistic-science-pack", 1}
             },
             time = 60
         },
@@ -432,8 +427,7 @@ data:extend({
             count = 100,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1}
+                {"logistic-science-pack", 1}
             },
             time = 60
         },
@@ -480,8 +474,7 @@ data:extend({
             count = 50,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1}
+                {"logistic-science-pack", 1}
             },
             time = 30
         },
@@ -504,8 +497,7 @@ data:extend({
             count = 100,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1}
+                {"logistic-science-pack", 1}
             },
             time = 60
         },
@@ -528,8 +520,7 @@ data:extend({
             count = 100,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 1}
+                {"logistic-science-pack", 1}
             },
             time = 60
         },
