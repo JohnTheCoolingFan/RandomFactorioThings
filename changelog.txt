@@ -7,6 +7,7 @@ Date: <unknown>
     - Added nuclear stack filter inserter.
   Balancing:
     - Fixed a lot of typos that affect balancing.
+    - Modules technologies rebalancing.
     - Macerator and compressor crafting speed 0.75 ==> 1
     - Macerator and compressor energy usage 300kW ==> 150kW
     - Removed coal compressing recipe.
