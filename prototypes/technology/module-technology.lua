@@ -9,19 +9,66 @@ data:extend({
         name = "speed-module-4",
         icon = "__base__/graphics/technology/speed-module.png",
         icon_size = 128,
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "speed-module-4"
             }
         },
         prerequisites = {"speed-module-3"},
-        unit =
-        {
+        unit = {
             count = 400,
-            ingredients =
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"utility-science-pack", 1}
+            },
+            time = 60
+        },
+        upgrade = true,
+        order = "i-c-c" -- TODO
+    },
+    {
+        type = "technology",
+        name = "speed-module-5",
+        icon = "__base__/graphics/technology/speed-module.png",
+        icon_size = 128,
+        effects = {
             {
+                type = "unlock-recipe",
+                recipe = "speed-module-5"
+            }
+        },
+        prerequisites = {"speed-module-4"},
+        unit = {
+            count = 400,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"utility-science-pack", 1}
+            },
+            time = 60
+        },
+        upgrade = true,
+        order = "i-c-c" -- TODO
+    },
+    {
+        type = "technology",
+        name = "speed-module-6",
+        icon = "__base__/graphics/technology/speed-module.png",
+        icon_size = 128,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "speed-module-6"
+            }
+        },
+        prerequisites = {"speed-module-5"},
+        unit = {
+            count = 400,
+            ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
@@ -38,19 +85,66 @@ data:extend({
         name = "productivity-module-4",
         icon = "__base__/graphics/technology/productivity-module.png",
         icon_size = 128,
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "productivity-module-4"
             }
         },
         prerequisites = {"productivity-module-3"},
-        unit =
-        {
+        unit = {
             count = 400,
-            ingredients =
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
+            },
+            time = 60
+        },
+        upgrade = true,
+        order = "i-c-c" -- TODO
+    },
+    {
+        type = "technology",
+        name = "productivity-module-5",
+        icon = "__base__/graphics/technology/productivity-module.png",
+        icon_size = 128,
+        effects = {
             {
+                type = "unlock-recipe",
+                recipe = "productivity-module-5"
+            }
+        },
+        prerequisites = {"productivity-module-4"},
+        unit = {
+            count = 400,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
+            },
+            time = 60
+        },
+        upgrade = true,
+        order = "i-c-c" -- TODO
+    },
+    {
+        type = "technology",
+        name = "productivity-module-6",
+        icon = "__base__/graphics/technology/productivity-module.png",
+        icon_size = 128,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "productivity-module-6"
+            }
+        },
+        prerequisites = {"productivity-module-5"},
+        unit = {
+            count = 400,
+            ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
@@ -67,19 +161,66 @@ data:extend({
         name = "effectivity-module-4",
         icon = "__base__/graphics/technology/effectivity-module.png",
         icon_size = 128,
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "effectivity-module-4"
             }
         },
         prerequisites = {"effectivity-module-3"},
-        unit =
-        {
+        unit = {
             count = 400,
-            ingredients =
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
+            },
+            time = 60
+        },
+        upgrade = true,
+        order = "i-c-c" -- TODO
+    },
+    {
+        type = "technology",
+        name = "effectivity-module-5",
+        icon = "__base__/graphics/technology/effectivity-module.png",
+        icon_size = 128,
+        effects = {
             {
+                type = "unlock-recipe",
+                recipe = "effectivity-module-5"
+            }
+        },
+        prerequisites = {"effectivity-module-4"},
+        unit = {
+            count = 400,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
+            },
+            time = 60
+        },
+        upgrade = true,
+        order = "i-c-c" -- TODO
+    },
+    {
+        type = "technology",
+        name = "effectivity-module-6",
+        icon = "__base__/graphics/technology/effectivity-module.png",
+        icon_size = 128,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "effectivity-module-6"
+            }
+        },
+        prerequisites = {"effectivity-module-5"},
+        unit = {
+            count = 400,
+            ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
