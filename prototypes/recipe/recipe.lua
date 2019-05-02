@@ -86,8 +86,8 @@ data:extend({
         name = "hardened-stone-furnace",
         enabled = false,
         ingredients = {
-            {"iron-plate", 5},
-            {"stone", 5}
+            {"stone-furnace", 1},
+            {"iron-plate", 5}
         },
         result = "hardened-stone-furnace"
     },
@@ -96,8 +96,8 @@ data:extend({
         name = "hardened-steel-furnace",
         enabled = false,
         ingredients = {
-            {"steel-plate", 8},
-            {"stone-brick", 10},
+            {"steel-furnace", 1},
+            {"steel-plate", 5},
             {"iron-plate", 5}
         },
         result = "hardened-steel-furnace"
@@ -107,9 +107,10 @@ data:extend({
         name = "hardened-electric-furnace",
         enabled = false,
         ingredients = {
-            {"steel-plate", 12},
-            {"advanced-circuit", 8},
-            {"stone-brick", 12}
+            {"electric-furnace", 1}
+            {"steel-plate", 5},
+            {"advanced-circuit", 5},
+            {"stone-brick", 5}
         },
         result = "hardened-electric-furnace"
     },
