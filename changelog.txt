@@ -13,8 +13,8 @@ Date: <unknown>
     - Removed coal compressing recipe.
     - Raw nuclear metal now can be crafted only through centrifuge.
     - Nuclear assembling machine energy consumption 1000kW ==> 1125kW
-    - Nuclear assembling machine crafting time 0.5 ==> 10
-    - Nuclear assembling machine crafting category changed to "advanced crafting".
+    - Nuclear assembling machine recipe crafting time 0.5 ==> 10
+    - Nuclear assembling machine recipe crafting category changed to "advanced crafting".
     - Productivity module 4 pollution bonus 0.125 ==> 0.14
     - Productivity-effectivity module 2 pollution bonus 0.075 ==> 0.07
     - Productivity-effectivity module 4 pollution bonus 0.125 == 0.14
