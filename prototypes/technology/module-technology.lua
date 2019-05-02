@@ -17,7 +17,7 @@ data:extend({
         },
         prerequisites = {"speed-module-3"},
         unit = {
-            count = 400,
+            count = 450,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
@@ -42,14 +42,15 @@ data:extend({
         },
         prerequisites = {"speed-module-4"},
         unit = {
-            count = 400,
+            count = 700,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
                 {"utility-science-pack", 1}
             },
-            time = 60
+            time = 100
         },
         upgrade = true,
         order = "i-c-c" -- TODO
@@ -67,14 +68,16 @@ data:extend({
         },
         prerequisites = {"speed-module-5"},
         unit = {
-            count = 400,
+            count = 1000,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
-                {"utility-science-pack", 1}
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1},
+                {"space-science-pack", 1}
             },
-            time = 60
+            time = 200
         },
         upgrade = true,
         order = "i-c-c" -- TODO
@@ -93,7 +96,7 @@ data:extend({
         },
         prerequisites = {"productivity-module-3"},
         unit = {
-            count = 400,
+            count = 450,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
@@ -118,14 +121,15 @@ data:extend({
         },
         prerequisites = {"productivity-module-4"},
         unit = {
-            count = 400,
+            count = 700,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
-                {"production-science-pack", 1}
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1
             },
-            time = 60
+            time = 100
         },
         upgrade = true,
         order = "i-c-c" -- TODO
@@ -143,14 +147,16 @@ data:extend({
         },
         prerequisites = {"productivity-module-5"},
         unit = {
-            count = 400,
+            count = 1000,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
-                {"production-science-pack", 1}
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1},
+                {"space-science-pack", 1}
             },
-            time = 60
+            time = 200
         },
         upgrade = true,
         order = "i-c-c" -- TODO
@@ -169,7 +175,7 @@ data:extend({
         },
         prerequisites = {"effectivity-module-3"},
         unit = {
-            count = 400,
+            count = 450,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
@@ -194,14 +200,15 @@ data:extend({
         },
         prerequisites = {"effectivity-module-4"},
         unit = {
-            count = 400,
+            count = 700,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
-                {"production-science-pack", 1}
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1}
             },
-            time = 60
+            time = 100
         },
         upgrade = true,
         order = "i-c-c" -- TODO
@@ -219,14 +226,16 @@ data:extend({
         },
         prerequisites = {"effectivity-module-5"},
         unit = {
-            count = 400,
+            count = 1000,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
-                {"production-science-pack", 1}
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1},
+                {"space-science-pack", 1}
             },
-            time = 60
+            time = 200
         },
         upgrade = true,
         order = "i-c-c" -- TODO
@@ -239,7 +248,7 @@ data:extend({
         icon_size = 128,
         prerequisites = {"modules"},
         unit = {
-            count = 200,
+            count = 50,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1}
@@ -262,7 +271,7 @@ data:extend({
         },
         prerequisites = {"merged-modules", "speed-module", "effectivity-module"},
         unit = {
-            count = 50,
+            count = 75,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
@@ -285,10 +294,11 @@ data:extend({
         },
         prerequisites = {"speed-effectivity-module", "speed-module-2", "effectivity-module-2"},
         unit = {
-            count = 50,
+            count = 100,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1}
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1}
             },
             time = 30
         },
@@ -308,10 +318,12 @@ data:extend({
         },
         prerequisites = {"speed-effectivity-module-2", "speed-module-3", "effectivity-module-3"},
         unit = {
-            count = 100,
+            count = 300,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1}
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
             },
             time = 60
         },
@@ -331,12 +343,67 @@ data:extend({
         },
         prerequisites = {"speed-effectivity-module-3", "speed-module-4", "effectivity-module-4"},
         unit = {
-            count = 100,
+            count = 450,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1}
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
             },
-            time = 60
+            time = 50
+        },
+        upgrade = true,
+        order = "i-c-a" -- TODO
+    },
+    {
+        type = "technology",
+        name = "speed-effectivity-module-5",
+        icon = "__RandomFactorioThings__/graphics/technology/speed-effectivity-module.png",
+        icon_size = 128,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "speed-effectivity-module-5"
+            }
+        },
+        prerequisites = {"speed-effectivity-module-4", "speed-module-5", "effectivity-module-5"},
+        unit = {
+            count = 700,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1}
+            },
+            time = 80
+        },
+        upgrade = true,
+        order = "i-c-a" -- TODO
+    },
+    {
+        type = "technology",
+        name = "speed-effectivity-module-6",
+        icon = "__RandomFactorioThings__/graphics/technology/speed-effectivity-module.png",
+        icon_size = 128,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "speed-effectivity-module-6"
+            }
+        },
+        prerequisites = {"speed-effectivity-module-5", "speed-module-6", "effectivity-module-6"},
+        unit = {
+            count = 1000,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1},
+                {"space-science-pack", 1}
+            },
+            time = 150
         },
         upgrade = true,
         order = "i-c-a" -- TODO
@@ -355,7 +422,7 @@ data:extend({
         },
         prerequisites = {"merged-modules", "productivity-module", "effectivity-module"},
         unit = {
-            count = 50,
+            count = 75,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1}
@@ -378,10 +445,11 @@ data:extend({
         },
         prerequisites = {"productivity-effectivity-module", "productivity-module-2", "effectivity-module-2"},
         unit = {
-            count = 50,
+            count = 100,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1}
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1}
             },
             time = 30
         },
@@ -401,10 +469,12 @@ data:extend({
         },
         prerequisites = {"productivity-effectivity-module-2", "productivity-module-3", "effectivity-module-3"},
         unit = {
-            count = 100,
+            count = 300,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1}
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
             },
             time = 60
         },
@@ -424,12 +494,67 @@ data:extend({
         },
         prerequisites = {"productivity-effectivity-module-3", "productivity-module-4", "effectivity-module-4"},
         unit = {
-            count = 100,
+            count = 450,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1}
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
             },
-            time = 60
+            time = 50
+        },
+        upgrade = true,
+        order = "i-c-a" -- TODO
+    },
+    {
+        type = "technology",
+        name = "productivity-effectivity-module-5",
+        icon = "__RandomFactorioThings__/graphics/technology/productivity-effectivity-module.png",
+        icon_size = 128,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "productivity-effectivity-module-5"
+            }
+        },
+        prerequisites = {"productivity-effectivity-module-4", "productivity-module-5", "effectivity-module-5"},
+        unit = {
+            count = 700,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1}
+            },
+            time = 80
+        },
+        upgrade = true,
+        order = "i-c-a" -- TODO
+    },
+    {
+        type = "technology",
+        name = "productivity-effectivity-module-6",
+        icon = "__RandomFactorioThings__/graphics/technology/productivity-effectivity-module.png",
+        icon_size = 128,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "productivity-effectivity-module-6"
+            }
+        },
+        prerequisites = {"productivity-effectivity-module-5", "productivity-module-6", "effectivity-module-6"},
+        unit = {
+            count = 1000,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1},
+                {"space-science-pack", 1}
+            },
+            time = 150
         },
         upgrade = true,
         order = "i-c-a" -- TODO
@@ -448,7 +573,7 @@ data:extend({
         },
         prerequisites = {"merged-modules", "speed-module", "productivity-module"},
         unit = {
-            count = 50,
+            count = 75,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
@@ -471,10 +596,11 @@ data:extend({
         },
         prerequisites = {"speed-productivity-module", "speed-module-2", "productivity-module-2"},
         unit = {
-            count = 50,
+            count = 100,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1}
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1}
             },
             time = 30
         },
@@ -494,10 +620,12 @@ data:extend({
         },
         prerequisites = {"speed-productivity-module-2", "speed-module-3", "productivity-module-3"},
         unit = {
-            count = 100,
+            count = 300,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1}
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
             },
             time = 60
         },
@@ -517,12 +645,67 @@ data:extend({
         },
         prerequisites = {"speed-productivity-module-3", "speed-module-4", "productivity-module-4"},
         unit = {
-            count = 100,
+            count = 450,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1}
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
             },
-            time = 60
+            time = 50
+        },
+        upgrade = true,
+        order = "i-c-a" -- TODO
+    },
+    {
+        type = "technology",
+        name = "speed-productivity-module-5",
+        icon = "__RandomFactorioThings__/graphics/technology/speed-productivity-module.png",
+        icon_size = 128,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "speed-productivity-module-5"
+            }
+        },
+        prerequisites = {"speed-productivity-module-4", "speed-module-5", "productivity-module-5"},
+        unit = {
+            count = 700,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1}
+            },
+            time = 80
+        },
+        upgrade = true,
+        order = "i-c-a" -- TODO
+    },
+    {
+        type = "technology",
+        name = "speed-productivity-module-6",
+        icon = "__RandomFactorioThings__/graphics/technology/speed-productivity-module.png",
+        icon_size = 128,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "speed-productivity-module-6"
+            }
+        },
+        prerequisites = {"speed-productivity-module-5", "speed-module-6", "productivity-module-6"},
+        unit = {
+            count = 1000,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1},
+                {"space-science-pack", 1}
+            },
+            time = 150
         },
         upgrade = true,
         order = "i-c-a" -- TODO
