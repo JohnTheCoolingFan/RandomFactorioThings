@@ -8,7 +8,6 @@ require("prototypes.technology.technology")
 - plutonium inserters
 - plutonium belts
 - Modules lvl 5-6
-- New module icons
 - Plutonium technology icons
 - Code formatting
 ]]
