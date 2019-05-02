@@ -40,7 +40,7 @@ data:extend({
                 recipe = "speed-module-5"
             }
         },
-        prerequisites = {"speed-module-4"},
+        prerequisites = {"speed-module-4", "utility-science-pack"},
         unit = {
             count = 700,
             ingredients = {
@@ -66,7 +66,7 @@ data:extend({
                 recipe = "speed-module-6"
             }
         },
-        prerequisites = {"speed-module-5"},
+        prerequisites = {"speed-module-5", "space-science-pack"},
         unit = {
             count = 1000,
             ingredients = {
@@ -119,7 +119,7 @@ data:extend({
                 recipe = "productivity-module-5"
             }
         },
-        prerequisites = {"productivity-module-4"},
+        prerequisites = {"productivity-module-4", "utility-science-pack"},
         unit = {
             count = 700,
             ingredients = {
@@ -145,7 +145,7 @@ data:extend({
                 recipe = "productivity-module-6"
             }
         },
-        prerequisites = {"productivity-module-5"},
+        prerequisites = {"productivity-module-5", "space-science-pack"},
         unit = {
             count = 1000,
             ingredients = {
@@ -198,7 +198,7 @@ data:extend({
                 recipe = "effectivity-module-5"
             }
         },
-        prerequisites = {"effectivity-module-4"},
+        prerequisites = {"effectivity-module-4", "utility-science-pack"},
         unit = {
             count = 700,
             ingredients = {
@@ -224,7 +224,7 @@ data:extend({
                 recipe = "effectivity-module-6"
             }
         },
-        prerequisites = {"effectivity-module-5"},
+        prerequisites = {"effectivity-module-5", "space-science-pack"},
         unit = {
             count = 1000,
             ingredients = {
