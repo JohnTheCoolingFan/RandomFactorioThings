@@ -27,6 +27,7 @@ Date: <unknown>
     - Changed nuclear logistics prerequisite from Nuclear power to Uranium processing.
   Graphics:
     - Updated nuclear assembling machine textures.
+    - Updated nuclear automation technology icon
   Mod integration:
     - Added integration with Plutonium Energy.
     - Added plutonium steel.
