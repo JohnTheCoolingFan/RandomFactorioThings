@@ -1,6 +1,6 @@
-require("inserters")
-require("miners")
-require("assemblerpipes")
+require("prototypes.entity.inserters")
+require("prototypes.entity.miners")
+require("prototypes.entity.assemblerpipes")
 
 local belt_entities = {}
 
