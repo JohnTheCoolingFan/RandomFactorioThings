@@ -1,4 +1,4 @@
-require("module")
+require("prototypes.recipe.module")
 
 local recipes = {}
 
