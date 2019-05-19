@@ -6,9 +6,6 @@ require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
 --[[TODO
 - plutonium inserters
-    - Plutonium inserter (regular) textures + icon
-    - Long-handed textures + icon
 - plutonium belts
-- Plutonium technology icons
 - Code formatting
 ]]
