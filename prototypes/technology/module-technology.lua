@@ -1,7 +1,3 @@
---[[TODO
-- Add new module technologies
-- Rebalance existing technologies
-]]
 data:extend({
     -- Speed
     {
