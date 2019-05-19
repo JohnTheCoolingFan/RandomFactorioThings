@@ -222,7 +222,7 @@ if mods["PlutoniumEnergy"] then
         {
             type = "technology",
             name = "plutonium-automation",
-            icon = "__RandomFactorioThings__/graphics/technology/nuclear-automation.png",
+            icon = "__RandomFactorioThings__/graphics/technology/plutonium-automation.png",
             icon_size = 128,
             effects =
             {
