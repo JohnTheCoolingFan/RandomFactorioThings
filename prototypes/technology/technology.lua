@@ -233,6 +233,22 @@ if mods["PlutoniumEnergy"] then
                 {
                     type = "unlock-recipe",
                     recipe = "plutonium-assembling-machine"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "plutonium-inserter"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "plutonium-long-handed-inserter"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "plutonium-stack-inserter"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "plutonium-stack-filter-inserter"
                 }
             },
             prerequisites = {"nuclear-automation", "plutonium-nuclear-power"},
