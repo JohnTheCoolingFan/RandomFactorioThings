@@ -1,3 +1,7 @@
+--[[ TODO
+Insrters order
+]]
+
 require("prototypes.item.merged-module")
 require("prototypes.item.module")
 
