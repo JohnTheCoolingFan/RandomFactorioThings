@@ -163,10 +163,6 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "coal-compressing"
-            },
-            {
-                type = "unlock-recipe",
                 recipe = "compressed-fuel"
             },
         },
