@@ -21,6 +21,21 @@ nuclear_construction_robot.result = "nuclear-construction-robot"
 nuclear_construction_robot.ingredients[1][1] = "nuclear-flying-robot-frame"
 table.insert(recipes, nuclear_construction_robot)
 
+local nuclear_inserter = {
+    type = "recipe",
+    name = "nuclear-inserter",
+    enabled = false,
+    ingredients =
+    {
+        {"advanced-circuit", 1},
+        {"iron-gear-wheel", 5},
+        {"nuclear-metal", 2},
+    },
+    result = "nuclear-inserter",
+    requester_paste_multiplier = 5
+}
+table.insert(recipes, nuclear_inserter)
+
 local nuclear_long_handed_inserter = util.table.deepcopy(data.raw["recipe"]["long-handed-inserter"])
 nuclear_long_handed_inserter.name = "nuclear-long-handed-inserter"
 nuclear_long_handed_inserter.result = "nuclear-long-handed-inserter"
@@ -39,9 +54,31 @@ nuclear_stack_filter_inserter.result = "nuclear-stack-filter-inserter"
 nuclear_stack_filter_inserter.ingredients = {{"nuclear-stack-inserter", 1}, {"advanced-circuit", 5}}
 table.insert(recipes, nuclear_stack_filter_inserter)
 
-data:extend(recipes)
-
 if mods["PlutoniumEnergy"] then
+    local plutonium_inserter = util.table.deepcopy(nuclear_inserter)
+    plutonium_inserter.name = "plutonium-inserter"
+    plutonium_inserter.result = "plutonium-inserter"
+    plutonium_inserter.ingredients = {{"nuclear-inserter", 1}, {"plutonium-steel", 3}, {"iron-gear-wheel", 5}}
+    table.insert(recipes, plutonium_inserter)
+
+    local plutonium_long_handed_inserter = util.table.deepcopy(nuclear_long_handed_inserter)
+    plutonium_long_handed_inserter.name = "plutonium-long-handed-inserter"
+    plutonium_long_handed_inserter.result = "plutonium-long-handed-inserter"
+    plutonium_long_handed_inserter.ingredients = {{"nuclear-long-handed-inserter", 1}, {"plutonium-steel", 2}, {"iron-gear-wheel", 5}}
+    table.insert(recipes, plutonium_long_handed_inserter)
+
+    local plutonium_stack_inserter = util.table.deepcopy(nuclear_stack_inserter)
+    plutonium_stack_inserter.name = "plutonium-stack-inserter"
+    plutonium_stack_inserter.result = "plutonium-stack-inserter"
+    plutonium_stack_inserter.ingredients = {{"nuclear-stack-inserter", 1}, {"plutonium-steel", 8}, {"iron-gear-wheel", 10}}
+    table.insert(recipes, plutonium_stack_inserter)
+
+    local plutonium_stack_filter_inserter = util.table.deepcopy(nuclear_stack_filter_inserter)
+    plutonium_stack_filter_inserter.name = "plutonium-stack-filter-inserter"
+    plutonium_stack_filter_inserter.result = "plutonium-stack-filter-inserter"
+    plutonium_stack_filter_inserter.ingredients = {{"plutonium-stack-inserter", 1}, {"advanced-circuit", 5}}
+    table.insert(recipes, plutonium_stack_filter_inserter)
+
     data:extend({
         {
             type = "recipe",
@@ -79,6 +116,8 @@ if mods["PlutoniumEnergy"] then
         }
     })
 end
+
+data:extend(recipes)
 
 data:extend({
     {
@@ -217,19 +256,6 @@ data:extend({
             {"coal-piece", 1},
         },
         result = "compressed-fuel"
-    },
-    {
-        type = "recipe",
-        name = "nuclear-inserter",
-        enabled = false,
-        ingredients =
-        {
-            {"advanced-circuit", 1},
-            {"iron-gear-wheel", 5},
-            {"nuclear-metal", 2},
-        },
-        result = "nuclear-inserter",
-        requester_paste_multiplier = 5
     },
     {
         type = "recipe",
