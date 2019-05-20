@@ -93,12 +93,6 @@ compressed_fuel.fuel_value = "12MJ"
 compressed_fuel.stack_size = 75
 table.insert(items, compressed_fuel)
 
-local nuclear_inserter = util.table.deepcopy(data.raw["item"]["fast-inserter"])
-nuclear_inserter.name = "nuclear-inserter"
-nuclear_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-inserter.png"
-nuclear_inserter.place_result = "nuclear-inserter"
-table.insert(items, nuclear_inserter)
-
 local nuclear_metal = util.table.deepcopy(data.raw["item"]["iron-plate"])
 nuclear_metal.name = "nuclear-metal"
 nuclear_metal.icon = "__RandomFactorioThings__/graphics/icons/nuclear-metal.png"
@@ -108,6 +102,12 @@ local raw_nuclear_metal = util.table.deepcopy(nuclear_metal)
 raw_nuclear_metal.name = "raw-nuclear-metal"
 raw_nuclear_metal.icon = "__RandomFactorioThings__/graphics/icons/raw-nuclear-metal.png"
 table.insert(items, raw_nuclear_metal)
+
+local nuclear_inserter = util.table.deepcopy(data.raw["item"]["fast-inserter"])
+nuclear_inserter.name = "nuclear-inserter"
+nuclear_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-inserter.png"
+nuclear_inserter.place_result = "nuclear-inserter"
+table.insert(items, nuclear_inserter)
 
 local nuclear_long_handed_inserter = util.table.deepcopy(data.raw["item"]["long-handed-inserter"])
 nuclear_long_handed_inserter.name = "nuclear-long-handed-inserter"
