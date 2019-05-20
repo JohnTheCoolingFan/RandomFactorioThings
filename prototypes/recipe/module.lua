@@ -364,7 +364,7 @@ data:extend({
         },
         energy_required = 50,
         result = "speed-productivity-module-5"
-    }
+    },
     {
         type = "recipe",
         name = "speed-productivity-module-6",

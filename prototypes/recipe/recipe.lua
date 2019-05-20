@@ -98,7 +98,7 @@ if mods["PlutoniumEnergy"] then
             category = "smelting",
             ingredients = {
                 {"raw-plutonium-steel", 1}
-            }
+            },
             result = "plutonium-steel"
         },
         {
@@ -146,7 +146,7 @@ data:extend({
         name = "hardened-electric-furnace",
         enabled = false,
         ingredients = {
-            {"electric-furnace", 1}
+            {"electric-furnace", 1},
             {"steel-plate", 5},
             {"advanced-circuit", 5},
             {"stone-brick", 5}
