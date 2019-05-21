@@ -5,7 +5,7 @@ require("prototypes.item.item")
 require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
 --[[TODO
-- plutonium inserters
 - plutonium belts
-- Code formatting
+- Code formatting ("final" check)
+- Check order for all items/technologies/recipes
 ]]

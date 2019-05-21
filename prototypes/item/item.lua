@@ -1,5 +1,5 @@
 --[[ TODO
-Insrters order
+Inserters order
 ]]
 
 require("prototypes.item.merged-module")

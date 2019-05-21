@@ -1,5 +1,4 @@
 --[[TODO
-- plutonium automation technology
 - plutonium logisctics technology (belts)
 ]]
 require("module-technology")

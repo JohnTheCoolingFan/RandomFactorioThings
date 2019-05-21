@@ -1,6 +1,6 @@
 --[[TODO
 - Check deadlock integration
-- Add integration with plutonium belts
+- Add integration for plutonium belts
 - Change items that can be compressed/crated
 ]]
 
