@@ -1,7 +1,3 @@
---[[ TODO
-Inserters order
-]]
-
 require("prototypes.item.merged-module")
 require("prototypes.item.module")
 
@@ -123,13 +119,17 @@ local nuclear_stack_inserter = util.table.deepcopy(data.raw["item"]["stack-inser
 nuclear_stack_inserter.name = "nuclear-stack-inserter"
 nuclear_stack_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-stack-inserter.png"
 nuclear_stack_inserter.place_result = "nuclear-stack-inserter"
+nuclear_stack_inserter.order = "f[stack-inserter]-b[nuclear]"
 table.insert(items, nuclear_stack_inserter)
+data.raw["item"]["stack-inserter"].order = "f[stack-inserter]-a[common]"
 
 local nuclear_stack_filter_inserter = util.table.deepcopy(data.raw["item"]["stack-filter-inserter"])
 nuclear_stack_filter_inserter.name = "nuclear-stack-filter-inserter"
 nuclear_stack_filter_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-stack-filter-inserter.png"
 nuclear_stack_filter_inserter.place_result = "nuclear-stack-filter-inserter"
+nuclear_stack_filter_inserter.order = "g[stack-filter-inserter]-b[nuclear]"
 table.insert(items, nuclear_stack_filter_inserter)
+data.raw["item"]["stack-filter-inserter"].order = "g[stack-filter-inserter]-a[common]"
 
 local nuclear_transport_belt = util.table.deepcopy(data.raw["item"]["express-transport-belt"])
 nuclear_transport_belt.name = "nuclear-transport-belt"
@@ -186,12 +186,14 @@ local plutonium_stack_inserter = util.table.deepcopy(nuclear_stack_inserter)
 plutonium_stack_inserter.name = "plutonium-stack-inserter"
 plutonium_stack_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-stack-inserter.png"
 plutonium_stack_inserter.place_result = "plutonium-stack-inserter"
+plutonium_stack_inserter.order = "g[stack-inserter]-c[plutonium]"
 table.insert(items, plutonium_stack_inserter)
 
 local plutonium_stack_filter_inserter = util.table.deepcopy(nuclear_stack_filter_inserter)
 plutonium_stack_filter_inserter.name = "plutonium-stack-filter-inserter"
 plutonium_stack_filter_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-stack-filter-inserter.png"
 plutonium_stack_filter_inserter.place_result = "plutonium-stack-filter-inserter"
+plutonium_stack_filter_inserter.order = "g[stack-filter-inserter]-c[plutonium]"
 table.insert(items, plutonium_stack_filter_inserter)
 end
 
