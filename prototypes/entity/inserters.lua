@@ -88,6 +88,8 @@ if mods["PlutoniumEnergy"] then
     plutonium_inserter.energy_per_movement = "25kJ"
     plutonium_inserter.energy_per_rotation = "25kJ"
     plutonium_inserter.energy_source.drain = "0.7kW"
+    plutonium_inserter.rotation_speed = 0.85
+    plutonium_inserter.extension_speed = 0.15
     plutonium_inserter.hand_base_picture.filename = "__RandomFactorioThings__/graphics/entity/plutonium-inserter/plutonium-inserter-hand-base.png"
     plutonium_inserter.hand_base_picture.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-inserter/hr-plutonium-inserter-hand-base.png"
     plutonium_inserter.hand_closed_picture.filename = "__RandomFactorioThings__/graphics/entity/plutonium-inserter/plutonium-inserter-hand-closed.png"
