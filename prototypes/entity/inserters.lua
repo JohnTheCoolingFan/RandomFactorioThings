@@ -102,7 +102,7 @@ if mods["PlutoniumEnergy"] then
 
     local plutonium_long_handed_inserter = util.table.deepcopy(nuclear_long_handed_inserter)
     plutonium_long_handed_inserter.name = "plutonium-long-handed-inserter"
-    plutonium_long_handed_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-inserter.png" -- TODO
+    plutonium_long_handed_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium--long-handed-inserter.png"
     plutonium_long_handed_inserter.minable.result = "plutonium-long-handed-inserter"
     plutonium_long_handed_inserter.energy_per_movement = "20kJ"
     plutonium_long_handed_inserter.energy_per_rotation = "20kJ"
