@@ -109,6 +109,68 @@ if mods["PlutoniumEnergy"] then
             },
             result = "plutonium-assembling-machine"
         }
+        -- Belts
+        {
+            type = "recipe",
+            name = "plutonium-transport-belt",
+            category = "crafting-with-fluid",
+            normal =
+            {
+                enabled = false,
+                ingredients =
+                {
+                    {"plutonium-steel", 5},
+                    {"iron-gear-wheel", 20},
+                    {"nuclear-transport-belt", 1},
+                    {type="fluid", name="lubricant", amount=20}
+                },
+                result = "plutonium-transport-belt"
+            },
+            expensive =
+            {
+                enabled = false,
+                ingredients =
+                {
+                    {"plutonium-steel", 10},
+                    {"iron-gear-wheel", 40},
+                    {"nuclear-transport-belt", 1},
+                    {type="fluid", name="lubricant", amount=20}
+                },
+                result = "plutonium-transport-belt"
+            }
+        },
+        {
+            type = "recipe",
+            name = "plutonium-underground-belt",
+            energy_required = 2,
+            category = "crafting-with-fluid",
+            enabled = false,
+            ingredients =
+            {
+                {"plutonium-steel", 25},
+                {"iron-gear-wheel", 100},
+                {"nuclear-underground-belt", 2},
+                {type="fluid", name="lubricant", amount=40}
+            },
+            result_count = 2,
+            result = "plutonium-underground-belt"
+        },
+        {
+            type = "recipe",
+            name = "plutonium-splitter",
+            category = "crafting-with-fluid",
+            enabled = false,
+            energy_required = 2,
+            ingredients =
+            {
+                {"plutonium-steel", 5},
+                {"nuclear-splitter", 1},
+                {"iron-gear-wheel", 20},
+                {"processing-unit", 5},
+                {type="fluid", name="lubricant", amount=80}
+            },
+            result = "plutonium-splitter"
+        }
     })
 end
 
