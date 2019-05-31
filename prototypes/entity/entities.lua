@@ -8,7 +8,6 @@ local nuclear_transport_belt = util.table.deepcopy(data.raw["transport-belt"]["e
 nuclear_transport_belt.name = "nuclear-transport-belt"
 nuclear_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-transport-belt.png"
 nuclear_transport_belt.minable.result = "nuclear-transport-belt"
-nuclear_transport_belt.max_health = 170
 nuclear_transport_belt.speed = 0.125
 nuclear_transport_belt.next_upgrade = nil
 nuclear_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
@@ -187,6 +186,51 @@ if mods["PlutoniumEnergy"] then
     plutonium_assembling_machine.fluid_boxes[2].pipe_picture = plutoniumassemblerpipepictures()
     plutonium_assembling_machine.next_upgrade = nil
     table.insert(entities, plutonium_assembling_machine)
+
+    local plutonium_transport_belt = util.table.deepcopy(nuclear_transport_belt)
+    plutonium_transport_belt.name = "plutonium-transport-belt"
+    plutonium_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/plutonium-transport-belt.png"
+    plutonium_transport_belt.minable.result = "plutonium-transport-belt"
+    plutonium_transport_belt.speed = 0.15625
+    plutonium_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/plutonium-transport-belt/plutonium-transport-belt.png"
+    plutonium_transport_belt.belt_animation_set.animation_set.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-transport-belt/hr-plutonium-transport-belt.png"
+    table.insert(entities, plutonium_transport_belt)
+
+    local plutonium_underground_belt = util.table.deepcopy(nuclear_underground_belt)
+    plutonium_underground_belt.name = "plutonium-underground-belt"
+    plutonium_underground_belt.icon = "__RandomFactorioThings__/graphics/icons/plutonium-underground-belt.png"
+    plutonium_underground_belt.minable.result = "plutonium-underground-belt"
+    plutonium_underground_belt.speed = 0.15625
+    plutonium_underground_belt.belt_animation_set = plutonium_transport_belt.belt_animation_set
+    plutonium_underground_belt.structure.direction_in.sheet.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_in.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_out.sheet.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_out.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_in_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_in_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_out_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_out_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
+    table.insert(entities, plutonium_underground_belt)
+
+    local plutonium_splitter = util.table.deepcopy(nuclear_splitter)
+    plutonium_splitter.name = "plutonium-splitter"
+    plutonium_splitter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-splitter.png"
+    plutonium_splitter.minable.result = "plutonium-splitter"
+    plutonium_splitter.speed = 0.15625
+    plutonium_splitter.belt_animation_set = plutonium_transport_belt.belt_animation_set
+    plutonium_splitter.structure.north.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-north.png"
+    plutonium_splitter.structure.north.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-north.png"
+    plutonium_splitter.structure.east.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-east.png"
+    plutonium_splitter.structure.east.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-east.png"
+    plutonium_splitter.structure.south.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-south.png"
+    plutonium_splitter.structure.south.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-south.png"
+    plutonium_splitter.structure.west.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-west.png"
+    plutonium_splitter.structure.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-west.png"
+    table.insert(entities, plutonium_splitter)
+
+    data.raw["transport-belt"]["nuclear-tranport-belt"].next_upgrade = "plutonium-transport-belt"
+    data.raw["underground-belt"]["nuclear-underground-belt"].next_upgrade = "plutonium-underground-belt"
+    data.raw["splitter"]["nuclear-splitter"].next_upgrade = "plutonium-splitter"
 end
 
 data:extend(entities)
