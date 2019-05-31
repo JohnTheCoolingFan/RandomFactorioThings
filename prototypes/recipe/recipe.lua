@@ -108,7 +108,7 @@ if mods["PlutoniumEnergy"] then
                 {"plutonium-steel", 10}
             },
             result = "plutonium-assembling-machine"
-        }
+        },
         -- Belts
         {
             type = "recipe",

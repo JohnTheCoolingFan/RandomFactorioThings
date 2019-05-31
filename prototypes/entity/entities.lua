@@ -228,7 +228,7 @@ if mods["PlutoniumEnergy"] then
     plutonium_splitter.structure.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-west.png"
     table.insert(entities, plutonium_splitter)
 
-    data.raw["transport-belt"]["nuclear-tranport-belt"].next_upgrade = "plutonium-transport-belt"
+    data.raw["transport-belt"]["nuclear-transport-belt"].next_upgrade = "plutonium-transport-belt"
     data.raw["underground-belt"]["nuclear-underground-belt"].next_upgrade = "plutonium-underground-belt"
     data.raw["splitter"]["nuclear-splitter"].next_upgrade = "plutonium-splitter"
 end

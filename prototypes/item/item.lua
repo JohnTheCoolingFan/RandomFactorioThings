@@ -198,7 +198,7 @@ if mods["PlutoniumEnergy"] then
 
     local plutonium_transport_belt = util.table.deepcopy(nuclear_transport_belt)
     plutonium_transport_belt.name = "plutonium-transport-belt"
-    plutonium_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/plutonium-traansport-belt.png"
+    plutonium_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/plutonium-transport-belt.png"
     --plutonium_transport_belt.order = "" -- TODO
     plutonium_transport_belt.place_result = "plutonium-transport-belt"
     table.insert(items, plutonium_transport_belt)
