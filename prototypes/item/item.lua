@@ -186,7 +186,7 @@ if mods["PlutoniumEnergy"] then
     plutonium_stack_inserter.name = "plutonium-stack-inserter"
     plutonium_stack_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-stack-inserter.png"
     plutonium_stack_inserter.place_result = "plutonium-stack-inserter"
-    plutonium_stack_inserter.order = "g[stack-inserter]-c[plutonium]"
+    plutonium_stack_inserter.order = "f[stack-inserter]-c[plutonium]"
     table.insert(items, plutonium_stack_inserter)
 
     local plutonium_stack_filter_inserter = util.table.deepcopy(nuclear_stack_filter_inserter)
