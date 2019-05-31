@@ -15,14 +15,15 @@ Date: <unknown>
     - Speed-productivity module 4 module productivity bonus 0.12 ==> 0.16
     - Speed-productivity module 2 pollution bonus 0.075 ==> 0.07
     - Speed-productivity module 4 pollution bonus 0.15 ==> 0.14
+    - Hardened furnaces are now upgrades of regular furnaces.
     - Macerator and compressor crafting speed 0.75 ==> 1
     - Macerator and compressor energy usage 300kW ==> 150kW
-    - Removed coal compressing recipe.
-    - Raw nuclear metal now can be crafted only through centrifuge.
     - Nuclear assembling machine energy consumption 1000kW ==> 1125kW
     - Nuclear assembling machine recipe crafting time 0.5 ==> 10
     - Nuclear assembling machine recipe crafting category changed to "advanced crafting".
-    - Hardened furnaces are now upgrades of regular furnaces.
+    - Removed coal compressing recipe.
+    - Raw nuclear metal now can be crafted only through centrifuge.
+    - Changed nuclear inserter recipe requester_paste_multiplier from 5 to 30
     - Changed nuclear automation prerequisite from Nuclear power to Uranium processing.
     - Changed nuclear logistics prerequisite from Nuclear power to Uranium processing.
   Graphics:
