@@ -199,21 +199,21 @@ if mods["PlutoniumEnergy"] then
     local plutonium_transport_belt = util.table.deepcopy(nuclear_transport_belt)
     plutonium_transport_belt.name = "plutonium-transport-belt"
     plutonium_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/plutonium-transport-belt.png"
-    --plutonium_transport_belt.order = "" -- TODO
+    plutonium_transport_belt.order = "a[transport-belt]-e[plutonium-transport-belt]"
     plutonium_transport_belt.place_result = "plutonium-transport-belt"
     table.insert(items, plutonium_transport_belt)
 
     local plutonium_underground_belt = util.table.deepcopy(nuclear_underground_belt)
     plutonium_underground_belt.name = "plutonium-underground-belt"
     plutonium_underground_belt.icon = "__RandomFactorioThings__/graphics/icons/plutonium-underground-belt.png"
-    --plutonium_underground_belt.order = "" -- TODO
+    plutonium_underground_belt.order = "b[underground-belt]-e[plutonium-underground-belt]"
     plutonium_underground_belt.place_result = "plutonium-underground-belt"
     table.insert(items, plutonium_underground_belt)
 
     local plutonium_splitter = util.table.deepcopy(nuclear_splitter)
     plutonium_splitter.name = "plutonium-splitter"
     plutonium_splitter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-splitter.png"
-    --plutonium_splitter.order = "" -- TODO
+    plutonium_splitter.order = "c[splitter]-e[plutonium-splitter]"
     plutonium_splitter.place_result = "plutonium-splitter"
     table.insert(items, plutonium_splitter)
 end
