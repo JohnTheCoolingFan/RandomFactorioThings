@@ -30,10 +30,11 @@ Date: <unknown>
     - Updated nuclear assembling machine textures.
     - Updated nuclear automation technology icon
   Mod integration:
-    - Added integration with Plutonium Energy.
-    - Added plutonium steel.
-    - Added plutonium assembling machine.
-    - Added plutonium inserters
+    - Added integration with Plutonium Energy:
+      - Added plutonium steel.
+      - Added plutonium assembling machine.
+      - Added plutonium inserters.
+      - Added plutonium transport belt
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.4
 Date: 25.04.2019
