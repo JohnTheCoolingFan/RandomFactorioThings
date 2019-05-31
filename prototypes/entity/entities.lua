@@ -173,20 +173,20 @@ compressor.module_specification.module_slots = 3
 table.insert(entities, compressor)
 
 if mods["PlutoniumEnergy"] then
-local plutonium_assembling_machine = util.table.deepcopy(nuclear_assembling_machine)
-plutonium_assembling_machine.name = "plutonium-assembling-machine"
-plutonium_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/plutonium-assembling-machine.png"
-plutonium_assembling_machine.minable.result = "plutonium-assembling-machine"
-plutonium_assembling_machine.max_health = 500
-plutonium_assembling_machine.crafting_speed = 3
-plutonium_assembling_machine.energy_usage = "4.5MW"
-plutonium_assembling_machine.module_specification.module_slots = 8
-plutonium_assembling_machine.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/plutonium-assembling-machine.png"
-plutonium_assembling_machine.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/hr-plutonium-assembling-machine.png"
-plutonium_assembling_machine.fluid_boxes[1].pipe_picture = plutoniumassemblerpipepictures()
-plutonium_assembling_machine.fluid_boxes[2].pipe_picture = plutoniumassemblerpipepictures()
-plutonium_assembling_machine.next_upgrade = nil
-table.insert(entities, plutonium_assembling_machine)
+    local plutonium_assembling_machine = util.table.deepcopy(nuclear_assembling_machine)
+    plutonium_assembling_machine.name = "plutonium-assembling-machine"
+    plutonium_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/plutonium-assembling-machine.png"
+    plutonium_assembling_machine.minable.result = "plutonium-assembling-machine"
+    plutonium_assembling_machine.max_health = 500
+    plutonium_assembling_machine.crafting_speed = 3
+    plutonium_assembling_machine.energy_usage = "4.5MW"
+    plutonium_assembling_machine.module_specification.module_slots = 8
+    plutonium_assembling_machine.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/plutonium-assembling-machine.png"
+    plutonium_assembling_machine.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/hr-plutonium-assembling-machine.png"
+    plutonium_assembling_machine.fluid_boxes[1].pipe_picture = plutoniumassemblerpipepictures()
+    plutonium_assembling_machine.fluid_boxes[2].pipe_picture = plutoniumassemblerpipepictures()
+    plutonium_assembling_machine.next_upgrade = nil
+    table.insert(entities, plutonium_assembling_machine)
 end
 
 data:extend(entities)
