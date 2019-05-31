@@ -5,7 +5,6 @@ require("prototypes.item.item")
 require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
 --[[TODO
-- Plutonium robots (maybe)
 - Code formatting ("final" check)
 - Check order for all items/technologies/recipes
 ]]
