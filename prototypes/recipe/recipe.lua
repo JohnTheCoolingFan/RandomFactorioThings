@@ -1,7 +1,3 @@
---[[TODO:
-- Remake prototype definition from simple table to util.table.deepcopy()
-]]
-
 require("prototypes.recipe.module")
 
 local recipes = {}
@@ -49,6 +45,75 @@ nuclear_stack_filter_inserter.result = "nuclear-stack-filter-inserter"
 nuclear_stack_filter_inserter.ingredients = {{"nuclear-stack-inserter", 1}, {"advanced-circuit", 5}}
 table.insert(recipes, nuclear_stack_filter_inserter)
 
+local nuclear_transport_belt = util.table.deepcopy(data.raw["recipe"]["express-transport-belt"])
+nuclear_transport_belt.name = "nuclear-transport-belt"
+nuclear_transport_belt.normal.ingredients = {{"nuclear-metal", 5}, {"iron-gear-wheel", 20}, {"express-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
+nuclear_transport_belt.normal.result = "nuclear-transport-belt"
+nuclear_transport_belt.expensive.ingredients = {{"nuclear-metal", 10}, {"iron-gear-wheel", 40}, {"express-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
+nuclear_transport_belt.expensive.result = "nuclear-transport-belt"
+table.insert(recipes, nuclear_transport_belt)
+
+local nuclear_underground_belt = util.table.deepcopy(data.raw["recipe"]["express-underground-belt"])
+nuclear_underground_belt.name = "nuclear-underground-belt"
+nuclear_underground_belt.ingredients = {{"nuclear-metal", 25}, {"iron-gear-wheel", 100}, {"express-underground-belt", 2}, {type="fluid", name="lubricant", amount=40}}
+nuclear_underground_belt.result = "nuclear-underground-belt"
+table.insert(recipes, nuclear_underground_belt)
+
+local nuclear_splitter = util.table.deepcopy(data.raw["recipe"]["express-splitter"])
+nuclear_splitter.name = "nuclear-splitter"
+nuclear_splitter.ingredients = {{"nuclear-metal", 5}, {"express-splitter", 1}, {"iron-gear-wheel", 20}, {"processing-unit", 5}, {type="fluid", name="lubricant", amount=80}}
+nuclear_splitter.result = "nuclear-splitter"
+table.insert(recipes, nuclear_splitter)
+
+local hardened_stone_furnace = util.table.deepcopy(data.raw["recipe"]["steel-furnace"])
+hardened_stone_furnace.name = "hardened-stone-furnace"
+hardened_stone_furnace.ingredients = {{"stone-furnace", 1}, {"iron-plate", 5}}
+hardened_stone_furnace.result = "hardened-stone-furnace"
+table.insert(recipes, hardened_stone_furnace)
+
+local hardened_steel_furnace = util.table.deepcopy(hardened_stone_furnace)
+hardened_steel_furnace.name = "hardened-steel-furnace"
+hardened_stone_furnace.ingredients = {{"steel-furnace", 1}, {"steel-plate", 5}, {"iron-plate", 5}}
+hardened_steel_furnace.result = "hardened-steel-furnace"
+table.insert(recipes, hardened_steel_furnace)
+
+local hardened_electric_furnace = util.table.deepcopy(data.raw["furnace"]["electric-furnace"])
+hardened_electric_furnace.name = "hardened-electric-furnace"
+hardened_electric_furnace.ingredients = {{"electric-furnace", 1}, {"steel-plate", 5}, {"advanced-circuit", 5}, {"stone-brick", 5}}
+hardened_electric_furnace.result = "hardened-electric-firnace"
+table.insert(recipes, hardened_electric_furnace)
+
+local hardened_electric_mining_drill = util.table.deepcopy(data.raw["recipes"]["electric-mining-drill"])
+hardened_electric_mining_drill.name = "hardened-electric-mining-drill"
+hardened_electric_mining_drill.normal.ingredients = {{"electronic-circuit", 5}, {"iron-gear-wheel", 10}, {"iron-plate", 20}}
+hardened_electric_mining_drill.normal.result = "hardened-electric-mining-drill"
+hardened_electric_mining_drill.expensive.ingredients = {{"electronic-circuit", 10}, {"iron-gear-wheel", 20}, {"iron-plate", 40}}
+hardened_electric_mining_drill.expensive.result = "hardened-electric-mining-drill"
+table.insert(recipes, hardened_electric_mining_drill)
+
+local nuclear_assembling_machine = util.table.deepcopy(data.raw["recipe"]["assembling-machine-3"])
+nuclear_assembling_machine.name = "nuclear-assembling-machine"
+nuclear_assembling_machine.ingredients = {{"assembling-machine-3", 1}, {"advanced-circuit", 5}, {"speed-module-4", 2}, {"nuclear-metal", 5}}
+nuclear_assembling_machine.energy_required = 10
+nuclear_assembling_machine.result = "nuclear-assembling-machine"
+table.insert(recipes, nuclear_assembling_machine)
+
+local raw_nuclear_metal = {type = "recipe"}
+raw_nuclear_metal.name = "raw-nuclear-metal"
+raw_nuclear_metal.enabled = false
+raw_nuclear_metal.category = "centrifuging"
+raw_nuclear_metal.ingedients = {{"iron-plate", 2}, {"uranium-235", 1}}
+raw_nuclear_metal.result_count = 2
+raw_nuclear_metal.result = "raw-nuclear-metal"
+table.insert(recipes, raw_nuclear_metal)
+
+local raw_nuclear_metal_smelting = util.table.deepcopy(raw_nuclear_metal)
+raw_nuclear_metal_smelting.name = "ra-nuclear-metal-smelting"
+raw_nuclear_metal_smelting.category = "smelting"
+raw_nuclear_metal_smelting.ingredients = {{"raw-nuclear-metal"}, 1}
+raw_nuclear_metal_smelting.result_count = nil
+raw_nuclear_metal_smelting.result = "nuclear-metal"
+
 if mods["PlutoniumEnergy"] then
     local plutonium_inserter = util.table.deepcopy(nuclear_inserter)
     plutonium_inserter.name = "plutonium-inserter"
@@ -74,185 +139,57 @@ if mods["PlutoniumEnergy"] then
     plutonium_stack_filter_inserter.ingredients = {{"plutonium-stack-inserter", 1}, {"advanced-circuit", 5}}
     table.insert(recipes, plutonium_stack_filter_inserter)
 
-    data:extend({
-        {
-            type = "recipe",
-            name = "raw-plutonium-steel",
-            enabled = false,
-            category = "centrifuging",
-            ingredients = {
-                {"steel-plate", 2},
-                {"plutonium-238", 5}
-            },
-            result = "raw-plutonium-steel"
-        },
-        {
-            type = "recipe",
-            name = "raw-plutonium-steel-smelting",
-            enabled = false,
-            category = "smelting",
-            ingredients = {
-                {"raw-plutonium-steel", 1}
-            },
-            result = "plutonium-steel"
-        },
-        {
-            type = "recipe",
-            name = "plutonium-assembling-machine",
-            enabled = false,
-            category = "advanced-crafting",
-            ingredients = {
-                {"nuclear-assembling-machine", 2},
-                {"processing-unit", 5},
-                {"speed-module-5", 2},
-                {"plutonium-steel", 10}
-            },
-            result = "plutonium-assembling-machine"
-        },
-        -- Belts
-        {
-            type = "recipe",
-            name = "plutonium-transport-belt",
-            category = "crafting-with-fluid",
-            normal =
-            {
-                enabled = false,
-                ingredients =
-                {
-                    {"plutonium-steel", 5},
-                    {"iron-gear-wheel", 20},
-                    {"nuclear-transport-belt", 1},
-                    {type="fluid", name="lubricant", amount=20}
-                },
-                result = "plutonium-transport-belt"
-            },
-            expensive =
-            {
-                enabled = false,
-                ingredients =
-                {
-                    {"plutonium-steel", 10},
-                    {"iron-gear-wheel", 40},
-                    {"nuclear-transport-belt", 1},
-                    {type="fluid", name="lubricant", amount=20}
-                },
-                result = "plutonium-transport-belt"
-            }
-        },
-        {
-            type = "recipe",
-            name = "plutonium-underground-belt",
-            energy_required = 2,
-            category = "crafting-with-fluid",
-            enabled = false,
-            ingredients =
-            {
-                {"plutonium-steel", 25},
-                {"iron-gear-wheel", 100},
-                {"nuclear-underground-belt", 2},
-                {type="fluid", name="lubricant", amount=40}
-            },
-            result_count = 2,
-            result = "plutonium-underground-belt"
-        },
-        {
-            type = "recipe",
-            name = "plutonium-splitter",
-            category = "crafting-with-fluid",
-            enabled = false,
-            energy_required = 2,
-            ingredients =
-            {
-                {"plutonium-steel", 5},
-                {"nuclear-splitter", 1},
-                {"iron-gear-wheel", 20},
-                {"processing-unit", 5},
-                {type="fluid", name="lubricant", amount=80}
-            },
-            result = "plutonium-splitter"
-        }
-    })
+    local raw_plutonium_steel = {type = "recipe"}
+    raw_plutonium_steel.name = "raw-plutonium-steel"
+    raw_plutonium_steel.enabled = false
+    raw_plutonium_steel.category = "centrifuging"
+    raw_plutonium_steel.ingredients = {{"steel-plate", 2}, {"plutonium-238", 5}}
+    raw_plutonium_steel.energy_required = 5
+    raw_plutonium_steel.result = "raw-plutonium-steel"
+    table.insert(recipes, raw_plutonium_steel)
+
+    local raw_plutonium_steel_smelting = {type = "recipe"}
+    raw_plutonium_steel_smelting.name = "raw-plutonium-steel-smelting"
+    raw_plutonium_steel_smelting.enabled = false
+    raw_plutonium_steel_smelting.category = "smelting"
+    raw_plutonium_steel_smelting.ingredients = {{"raw-plutonium-steel", 1}}
+    raw_plutonium_steel_smelting.energy_required = 6.4
+    raw_plutonium_steel_smelting.result = "plutonium-steel"
+    table.insert(recipes, raw_plutonium_steel_smelting)
+
+    local plutonium_assembling_machine = util.table.deepcopy(data.raw["recipe"]["assembling-machine-3"])
+    plutonium_assembling_machine.name = "plutonium-assembling-machine"
+    plutonium_assembling_machine.category = "advanced-crafting"
+    plutonium_assembling_machine.ingredients = {{"nuclear-assembling-machine", 2}, {"processing-unit", 5}, {"speed-module-5", 2}, {"plutonium-steel", 10}}
+    plutonium_assembling_machine.energy_required = 30
+    plutonium_assembling_machine.result = "plutonium-assembling-machine"
+    table.insert(recipes, plutonium_assembling_machine)
+
+    local plutonium_transport_belt = util.table.deepcopy(nuclear_transport_belt)
+    plutonium_transport_belt.name = "plutonium-transport-belt"
+    plutonium_transport_belt.normal.ingredients = {{"plutonium-steel", 5}, {"iron-gear-wheel", 20}, {"nuclear-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
+    plutonium_transport_belt.normal.result = "plutonium-transport-belt"
+    plutonium_transport_belt.expensive.ingredients = {{"plutonium-steel", 10}, {"iron-gear-wheel", 40}, {"nuclear-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
+    plutonium_transport_belt.expensive.result = "plutonium-transport-belt"
+    table.insert(recipes, plutonium_transport_belt)
+
+    local plutonium_underground_belt = util.table.deepcopy(nuclear_underground_belt)
+    plutonium_underground_belt.name = "plutonium-underground-belt"
+    plutonium_underground_belt.ingredients = {{"plutonium-steel", 25}, {"iron-gear-wheel", 100}, {"nuclear-underground-belt", 2}, {type="fluid", name="lubricant", amount=40}}
+    plutonium_underground_belt.result = "plutonium_underground_belt"
+    table.insert(recipes, plutonium_transport_belt)
+
+    local plutonium_splitter = util.table.deepcopy(nuclear_splitter)
+    plutonium_splitter.name = "plutonium-splitter"
+    plutonium_splitter.ingredients = {{"plutonium-steel", 5}, {"nuclear-splitter", 1}, {"iron-gear-wheel", 20}, {"processing-unit", 5}, {type="fluid", name="lubricant", amount=80}}
+    plutonium_splitter.result = "plutonium-splitter"
+    table.insert(recipes, plutonium_splitter)
 end
 
 data:extend(recipes)
 
+-- I'll better leave these recipes as data:extend()
 data:extend({
-    {
-        type = "recipe",
-        name = "hardened-stone-furnace",
-        enabled = false,
-        ingredients = {
-            {"stone-furnace", 1},
-            {"iron-plate", 5}
-        },
-        result = "hardened-stone-furnace"
-    },
-    {
-        type = "recipe",
-        name = "hardened-steel-furnace",
-        enabled = false,
-        ingredients = {
-            {"steel-furnace", 1},
-            {"steel-plate", 5},
-            {"iron-plate", 5}
-        },
-        result = "hardened-steel-furnace"
-    },
-    {
-        type = "recipe",
-        name = "hardened-electric-furnace",
-        enabled = false,
-        ingredients = {
-            {"electric-furnace", 1},
-            {"steel-plate", 5},
-            {"advanced-circuit", 5},
-            {"stone-brick", 5}
-        },
-        result = "hardened-electric-furnace"
-    },
-    {
-        type = "recipe",
-        name = "hardened-electric-mining-drill",
-        normal =
-        {
-            enabled = false,
-            energy_required = 2,
-            ingredients =
-            {
-                {"electronic-circuit", 5},
-                {"iron-gear-wheel", 10},
-                {"iron-plate", 20}
-            },
-            result = "hardened-electric-mining-drill"
-        },
-        expensive =
-        {
-            enabled = false,
-            energy_required = 2,
-            ingredients =
-            {
-                {"electronic-circuit", 10},
-                {"iron-gear-wheel", 20},
-                {"iron-plate", 40}
-            },
-            result = "hardened-electric-mining-drill"
-        }
-    },
-    {
-        type = "recipe",
-        name = "nuclear-assembling-machine",
-        enabled = false,
-        category = "advanced-crafting",
-        ingredients =
-        {
-            {"assembling-machine-3", 1},
-            {"advanced-circuit", 5},
-            {"speed-module-4", 2},
-            {"nuclear-metal", 5},
-        },
-        energy_required = 10,
-        result = "nuclear-assembling-machine"
-    },
     {
         type = "recipe",
         name = "coal-piece",
@@ -313,91 +250,5 @@ data:extend({
             {"coal-piece", 1},
         },
         result = "compressed-fuel"
-    },
-    {
-        type = "recipe",
-        name = "raw-nuclear-metal",
-        enabled = false,
-        category = "centrifuging",
-        ingredients =
-        {
-            {"iron-plate", 2},
-            {"uranium-235", 1},
-        },
-        result_count = 2,
-        result = "raw-nuclear-metal"
-    },
-    {
-        type = "recipe",
-        name = "raw-nuclear-metal-smelting",
-        enabled = false,
-        category = "smelting",
-        ingredients =
-        {
-            {"raw-nuclear-metal", 1},
-        },
-        result = "nuclear-metal"
-    },
-    -- Belts
-    {
-        type = "recipe",
-        name = "nuclear-transport-belt",
-        category = "crafting-with-fluid",
-        normal =
-        {
-            enabled = false,
-            ingredients =
-            {
-                {"nuclear-metal", 5},
-                {"iron-gear-wheel", 20},
-                {"express-transport-belt", 1},
-                {type="fluid", name="lubricant", amount=20}
-            },
-            result = "nuclear-transport-belt"
-        },
-        expensive =
-        {
-            enabled = false,
-            ingredients =
-            {
-                {"nuclear-metal", 10},
-                {"iron-gear-wheel", 40},
-                {"express-transport-belt", 1},
-                {type="fluid", name="lubricant", amount=20}
-            },
-            result = "nuclear-transport-belt"
-        }
-    },
-    {
-        type = "recipe",
-        name = "nuclear-underground-belt",
-        energy_required = 2,
-        category = "crafting-with-fluid",
-        enabled = false,
-        ingredients =
-        {
-            {"nuclear-metal", 25},
-            {"iron-gear-wheel", 100},
-            {"express-underground-belt", 2},
-            {type="fluid", name="lubricant", amount=40}
-        },
-        result_count = 2,
-        result = "nuclear-underground-belt"
-    },
-    {
-        type = "recipe",
-        name = "nuclear-splitter",
-        category = "crafting-with-fluid",
-        enabled = false,
-        energy_required = 2,
-        ingredients =
-        {
-            {"nuclear-metal", 5},
-            {"express-splitter", 1},
-            {"iron-gear-wheel", 20},
-            {"processing-unit", 5},
-            {type="fluid", name="lubricant", amount=80}
-        },
-        result = "nuclear-splitter"
     }
 })
