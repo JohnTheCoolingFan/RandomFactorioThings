@@ -21,19 +21,10 @@ nuclear_construction_robot.result = "nuclear-construction-robot"
 nuclear_construction_robot.ingredients[1][1] = "nuclear-flying-robot-frame"
 table.insert(recipes, nuclear_construction_robot)
 
-local nuclear_inserter = {
-    type = "recipe",
-    name = "nuclear-inserter",
-    enabled = false,
-    ingredients =
-    {
-        {"advanced-circuit", 1},
-        {"iron-gear-wheel", 5},
-        {"nuclear-metal", 2},
-    },
-    result = "nuclear-inserter",
-    requester_paste_multiplier = 5
-}
+local nuclear_inserter = util.table.deepcopy(data.raw["recipe"]["fast-inserter"])
+nuclear_inserter.name = "nuclear-inserter"
+nuclear_inserter.ingredients = {{"advanced-circuit", 1}, {"iron-gear-wheel", 5}, {"nuclear-metal", 2},}
+nuclear_inserter.result = "nuclear-inserter"
 table.insert(recipes, nuclear_inserter)
 
 local nuclear_long_handed_inserter = util.table.deepcopy(data.raw["recipe"]["long-handed-inserter"])
