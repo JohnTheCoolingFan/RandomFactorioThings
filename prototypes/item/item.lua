@@ -153,48 +153,48 @@ nuclear_splitter.place_result = "nuclear-splitter"
 table.insert(items, nuclear_splitter)
 
 if mods["PlutoniumEnergy"] then
-local plutonium_steel = util.table.deepcopy(data.raw["item"]["steel-plate"])
-plutonium_steel.name = "plutonium-steel"
-plutonium_steel.icon = "__RandomFactorioThings__/graphics/icons/plutonium-steel.png"
-table.insert(items, plutonium_steel)
+    local plutonium_steel = util.table.deepcopy(data.raw["item"]["steel-plate"])
+    plutonium_steel.name = "plutonium-steel"
+    plutonium_steel.icon = "__RandomFactorioThings__/graphics/icons/plutonium-steel.png"
+    table.insert(items, plutonium_steel)
 
-local raw_plutonium_steel = util.table.deepcopy(plutonium_steel)
-raw_plutonium_steel.name = "raw-plutonium-steel"
-raw_plutonium_steel.icon = "__RandomFactorioThings__/graphics/icons/raw-plutonium-steel.png"
-table.insert(items, raw_plutonium_steel)
+    local raw_plutonium_steel = util.table.deepcopy(plutonium_steel)
+    raw_plutonium_steel.name = "raw-plutonium-steel"
+    raw_plutonium_steel.icon = "__RandomFactorioThings__/graphics/icons/raw-plutonium-steel.png"
+    table.insert(items, raw_plutonium_steel)
 
-local plutonium_assembling_machine = util.table.deepcopy(nuclear_assembling_machine)
-plutonium_assembling_machine.name = "plutonium-assembling-machine"
-plutonium_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/plutonium-assembling-machine.png"
-plutonium_assembling_machine.place_result = "plutonium-assembling-machine"
-plutonium_assembling_machine.order = "c[rft]-a[plutonium-assembling-machine]"
-table.insert(items, plutonium_assembling_machine)
+    local plutonium_assembling_machine = util.table.deepcopy(nuclear_assembling_machine)
+    plutonium_assembling_machine.name = "plutonium-assembling-machine"
+    plutonium_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/plutonium-assembling-machine.png"
+    plutonium_assembling_machine.place_result = "plutonium-assembling-machine"
+    plutonium_assembling_machine.order = "c[rft]-a[plutonium-assembling-machine]"
+    table.insert(items, plutonium_assembling_machine)
 
-local plutonium_inserter = util.table.deepcopy(nuclear_inserter)
-plutonium_inserter.name = "plutonium-inserter"
-plutonium_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-inserter.png"
-plutonium_inserter.place_result = "plutonium-inserter"
-table.insert(items, plutonium_inserter)
+    local plutonium_inserter = util.table.deepcopy(nuclear_inserter)
+    plutonium_inserter.name = "plutonium-inserter"
+    plutonium_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-inserter.png"
+    plutonium_inserter.place_result = "plutonium-inserter"
+    table.insert(items, plutonium_inserter)
 
-local plutonium_long_handed_inserter = util.table.deepcopy(nuclear_long_handed_inserter)
-plutonium_long_handed_inserter.name = "plutonium-long-handed-inserter"
-plutonium_long_handed_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-inserter.png" -- TODO
-plutonium_long_handed_inserter.place_result = "plutonium-long-handed-inserter"
-table.insert(items, plutonium_long_handed_inserter)
+    local plutonium_long_handed_inserter = util.table.deepcopy(nuclear_long_handed_inserter)
+    plutonium_long_handed_inserter.name = "plutonium-long-handed-inserter"
+    plutonium_long_handed_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-inserter.png" -- TODO
+    plutonium_long_handed_inserter.place_result = "plutonium-long-handed-inserter"
+    table.insert(items, plutonium_long_handed_inserter)
 
-local plutonium_stack_inserter = util.table.deepcopy(nuclear_stack_inserter)
-plutonium_stack_inserter.name = "plutonium-stack-inserter"
-plutonium_stack_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-stack-inserter.png"
-plutonium_stack_inserter.place_result = "plutonium-stack-inserter"
-plutonium_stack_inserter.order = "g[stack-inserter]-c[plutonium]"
-table.insert(items, plutonium_stack_inserter)
+    local plutonium_stack_inserter = util.table.deepcopy(nuclear_stack_inserter)
+    plutonium_stack_inserter.name = "plutonium-stack-inserter"
+    plutonium_stack_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-stack-inserter.png"
+    plutonium_stack_inserter.place_result = "plutonium-stack-inserter"
+    plutonium_stack_inserter.order = "g[stack-inserter]-c[plutonium]"
+    table.insert(items, plutonium_stack_inserter)
 
-local plutonium_stack_filter_inserter = util.table.deepcopy(nuclear_stack_filter_inserter)
-plutonium_stack_filter_inserter.name = "plutonium-stack-filter-inserter"
-plutonium_stack_filter_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-stack-filter-inserter.png"
-plutonium_stack_filter_inserter.place_result = "plutonium-stack-filter-inserter"
-plutonium_stack_filter_inserter.order = "g[stack-filter-inserter]-c[plutonium]"
-table.insert(items, plutonium_stack_filter_inserter)
+    local plutonium_stack_filter_inserter = util.table.deepcopy(nuclear_stack_filter_inserter)
+    plutonium_stack_filter_inserter.name = "plutonium-stack-filter-inserter"
+    plutonium_stack_filter_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-stack-filter-inserter.png"
+    plutonium_stack_filter_inserter.place_result = "plutonium-stack-filter-inserter"
+    plutonium_stack_filter_inserter.order = "g[stack-filter-inserter]-c[plutonium]"
+    table.insert(items, plutonium_stack_filter_inserter)
 end
 
 data:extend(items)
