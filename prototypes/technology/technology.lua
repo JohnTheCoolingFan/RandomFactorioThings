@@ -265,5 +265,41 @@ if mods["PlutoniumEnergy"] then
             },
             order = "e-a-b" -- TODO
         },
+        {
+            type = "technology",
+            name = "plutonium-logistics",
+            icon_size = 128,
+            icon = "__RandomFactorioThings__/graphics/technology/plutonium-logistics.png",
+            effects =
+            {
+                {
+                    type = "unlock-recipe",
+                    recipe = "plutonium-transport-belt"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "plutonium-underground-belt"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "plutonium-splitter"
+                }
+            },
+            prerequisites = {"nuclear-logistics", "plutonium-nuclear-power"},
+            unit =
+            {
+                count = 750,
+                ingredients =
+                {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1},
+                    {"production-science-pack", 1},
+                    {"space-science-pack", 1}
+                },
+                time = 15
+            },
+            order = "a-f-c" -- TODO
+        }
     })
 end
