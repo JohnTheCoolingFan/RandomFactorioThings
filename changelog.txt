@@ -22,6 +22,7 @@ Date: <unknown>
     - Nuclear assembling machine recipe crafting time 0.5 ==> 10
     - Nuclear assembling machine recipe crafting category changed to "advanced crafting".
     - Removed coal compressing recipe.
+    - Changed hardened electric furnace crafting time from 0.5 to 5
     - Raw nuclear metal now can be crafted only through centrifuge.
     - Changed nuclear inserter recipe requester_paste_multiplier from 5 to 30
     - Changed nuclear automation prerequisite from Nuclear power to Uranium processing.
@@ -34,7 +35,7 @@ Date: <unknown>
       - Added plutonium steel.
       - Added plutonium assembling machine.
       - Added plutonium inserters.
-      - Added plutonium transport belt
+      - Added plutonium transport belt.
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.4
 Date: 25.04.2019
