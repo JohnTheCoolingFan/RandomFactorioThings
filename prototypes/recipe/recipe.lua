@@ -1,3 +1,7 @@
+--[[TODO:
+- Remake prototype definition from simple table to util.table.deepcopy()
+]]
+
 require("prototypes.recipe.module")
 
 local recipes = {}
