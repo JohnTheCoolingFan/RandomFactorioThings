@@ -145,7 +145,7 @@ data:extend({
             time = 35
         },
         order = "e-a-b" -- TODO
-    }
+    },
 
     {
         type = "technology",

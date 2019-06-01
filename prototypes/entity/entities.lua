@@ -73,7 +73,7 @@ nuclear_logistic_robot.in_motion.filename = "__RandomFactorioThings__/graphics/e
 nuclear_logistic_robot.in_motion.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
 nuclear_logistic_robot.in_motion_with_cargo.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
 nuclear_logistic_robot.in_motion_with_cargo.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
-table.insert(entities, nuclear_transport_robot)
+table.insert(entities, nuclear_logistic_robot)
 
 local nuclear_construction_robot = util.table.deepcopy(data.raw["construction-robot"]["construction-robot"])
 nuclear_construction_robot.name = "nuclear-construction-robot"
@@ -101,7 +101,7 @@ hardened_stone_furnace.crafting_speed = 1.25
 hardened_stone_furnace.energy_usage = "100kW"
 hardened_stone_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hardened-stone-furnace.png"
 hardened_stone_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hr-hardened-stone-furnace.png"
-table.insert(entities, JohnTheCF_furnace)
+table.insert(entities, hardened_stone_furnace)
 
 local hardened_steel_furnace = util.table.deepcopy(data.raw["furnace"]["steel-furnace"])
 hardened_steel_furnace.name = "hardened-steel-furnace"

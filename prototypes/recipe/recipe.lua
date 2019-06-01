@@ -77,13 +77,13 @@ hardened_stone_furnace.ingredients = {{"steel-furnace", 1}, {"steel-plate", 5}, 
 hardened_steel_furnace.result = "hardened-steel-furnace"
 table.insert(recipes, hardened_steel_furnace)
 
-local hardened_electric_furnace = util.table.deepcopy(data.raw["furnace"]["electric-furnace"])
+local hardened_electric_furnace = util.table.deepcopy(data.raw["recipe"]["electric-furnace"])
 hardened_electric_furnace.name = "hardened-electric-furnace"
 hardened_electric_furnace.ingredients = {{"electric-furnace", 1}, {"steel-plate", 5}, {"advanced-circuit", 5}, {"stone-brick", 5}}
-hardened_electric_furnace.result = "hardened-electric-firnace"
+hardened_electric_furnace.result = "hardened-electric-furnace"
 table.insert(recipes, hardened_electric_furnace)
 
-local hardened_electric_mining_drill = util.table.deepcopy(data.raw["recipes"]["electric-mining-drill"])
+local hardened_electric_mining_drill = util.table.deepcopy(data.raw["recipe"]["electric-mining-drill"])
 hardened_electric_mining_drill.name = "hardened-electric-mining-drill"
 hardened_electric_mining_drill.normal.ingredients = {{"electronic-circuit", 5}, {"iron-gear-wheel", 10}, {"iron-plate", 20}}
 hardened_electric_mining_drill.normal.result = "hardened-electric-mining-drill"
@@ -102,17 +102,18 @@ local raw_nuclear_metal = {type = "recipe"}
 raw_nuclear_metal.name = "raw-nuclear-metal"
 raw_nuclear_metal.enabled = false
 raw_nuclear_metal.category = "centrifuging"
-raw_nuclear_metal.ingedients = {{"iron-plate", 2}, {"uranium-235", 1}}
+raw_nuclear_metal.ingredients = {{"iron-plate", 2}, {"uranium-235", 1}}
 raw_nuclear_metal.result_count = 2
 raw_nuclear_metal.result = "raw-nuclear-metal"
 table.insert(recipes, raw_nuclear_metal)
 
 local raw_nuclear_metal_smelting = util.table.deepcopy(raw_nuclear_metal)
-raw_nuclear_metal_smelting.name = "ra-nuclear-metal-smelting"
+raw_nuclear_metal_smelting.name = "raw-nuclear-metal-smelting"
 raw_nuclear_metal_smelting.category = "smelting"
-raw_nuclear_metal_smelting.ingredients = {{"raw-nuclear-metal"}, 1}
+raw_nuclear_metal_smelting.ingredients = {{"raw-nuclear-metal", 1}}
 raw_nuclear_metal_smelting.result_count = nil
 raw_nuclear_metal_smelting.result = "nuclear-metal"
+table.insert(recipes, raw_nuclear_metal_smelting)
 
 if mods["PlutoniumEnergy"] then
     local plutonium_inserter = util.table.deepcopy(nuclear_inserter)
@@ -176,8 +177,8 @@ if mods["PlutoniumEnergy"] then
     local plutonium_underground_belt = util.table.deepcopy(nuclear_underground_belt)
     plutonium_underground_belt.name = "plutonium-underground-belt"
     plutonium_underground_belt.ingredients = {{"plutonium-steel", 25}, {"iron-gear-wheel", 100}, {"nuclear-underground-belt", 2}, {type="fluid", name="lubricant", amount=40}}
-    plutonium_underground_belt.result = "plutonium_underground_belt"
-    table.insert(recipes, plutonium_transport_belt)
+    plutonium_underground_belt.result = "plutonium-underground-belt"
+    table.insert(recipes, plutonium_underground_belt)
 
     local plutonium_splitter = util.table.deepcopy(nuclear_splitter)
     plutonium_splitter.name = "plutonium-splitter"

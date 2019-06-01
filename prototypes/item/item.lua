@@ -48,7 +48,7 @@ hardened_stone_furnace.name = "hardened-stone-furnace"
 hardened_stone_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-stone-furnace.png"
 hardened_stone_furnace.place_result = "hardened-stone-furnace"
 hardened_stone_furnace.order = "a[stone-furnace]-b[hardened-stone-furnace]"
-table.insert(items, JohnTheCF_furnace)
+table.insert(items, hardened_stone_furnace)
 data.raw["item"]["stone-furnace"].order = "a[stone-furnace]-a[stone-furnace]"
 
 local hardened_steel_furnace = util.table.deepcopy(data.raw["item"]["steel-furnace"])
