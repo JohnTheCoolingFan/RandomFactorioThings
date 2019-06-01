@@ -3,6 +3,27 @@ require("prototypes.item.module")
 
 local items = {}
 
+local nuclear_transport_belt = util.table.deepcopy(data.raw["item"]["express-transport-belt"])
+nuclear_transport_belt.name = "nuclear-transport-belt"
+nuclear_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-transport-belt.png"
+nuclear_transport_belt.order = "a[transport-belt]-d[nuclear-transport-belt]"
+nuclear_transport_belt.place_result = "nuclear-transport-belt"
+table.insert(items, nuclear_transport_belt)
+
+local nuclear_underground_belt = util.table.deepcopy(data.raw["item"]["express-underground-belt"])
+nuclear_underground_belt.name = "nuclear-underground-belt"
+nuclear_underground_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-underground-belt.png"
+nuclear_underground_belt.order = "b[underground-belt]-d[nuclear-underground-belt]"
+nuclear_underground_belt.place_result = "nuclear-underground-belt"
+table.insert(items, nuclear_underground_belt)
+
+local nuclear_splitter = util.table.deepcopy(data.raw["item"]["express-splitter"])
+nuclear_splitter.name = "nuclear-splitter"
+nuclear_splitter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-splitter.png"
+nuclear_splitter.order = "c[splitter]-d[nuclear-splitter]"
+nuclear_splitter.place_result = "nuclear-splitter"
+table.insert(items, nuclear_splitter)
+
 local nuclear_logistic_robot = util.table.deepcopy(data.raw["item"]["logistic-robot"])
 nuclear_logistic_robot.name = "nuclear-logistic-robot"
 nuclear_logistic_robot.icon = "__RandomFactorioThings__/graphics/icons/nuclear-logistic-robot.png"
@@ -22,11 +43,11 @@ nuclear_robot_frame.name = "nuclear-flying-robot-frame"
 nuclear_robot_frame.icon = "__RandomFactorioThings__/graphics/icons/nuclear-flying-robot-frame.png"
 table.insert(items, nuclear_robot_frame)
 
-local JohnTheCF_furnace = util.table.deepcopy(data.raw["item"]["stone-furnace"])
-JohnTheCF_furnace.name = "hardened-stone-furnace"
-JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-stone-furnace.png"
-JohnTheCF_furnace.place_result = "hardened-stone-furnace"
-JohnTheCF_furnace.order = "a[stone-furnace]-b[hardened-stone-furnace]"
+local hardened_stone_furnace = util.table.deepcopy(data.raw["item"]["stone-furnace"])
+hardened_stone_furnace.name = "hardened-stone-furnace"
+hardened_stone_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-stone-furnace.png"
+hardened_stone_furnace.place_result = "hardened-stone-furnace"
+hardened_stone_furnace.order = "a[stone-furnace]-b[hardened-stone-furnace]"
 table.insert(items, JohnTheCF_furnace)
 data.raw["item"]["stone-furnace"].order = "a[stone-furnace]-a[stone-furnace]"
 
@@ -130,27 +151,6 @@ nuclear_stack_filter_inserter.place_result = "nuclear-stack-filter-inserter"
 nuclear_stack_filter_inserter.order = "g[stack-filter-inserter]-b[nuclear]"
 table.insert(items, nuclear_stack_filter_inserter)
 data.raw["item"]["stack-filter-inserter"].order = "g[stack-filter-inserter]-a[common]"
-
-local nuclear_transport_belt = util.table.deepcopy(data.raw["item"]["express-transport-belt"])
-nuclear_transport_belt.name = "nuclear-transport-belt"
-nuclear_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-transport-belt.png"
-nuclear_transport_belt.order = "a[transport-belt]-d[nuclear-transport-belt]"
-nuclear_transport_belt.place_result = "nuclear-transport-belt"
-table.insert(items, nuclear_transport_belt)
-
-local nuclear_underground_belt = util.table.deepcopy(data.raw["item"]["express-underground-belt"])
-nuclear_underground_belt.name = "nuclear-underground-belt"
-nuclear_underground_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-underground-belt.png"
-nuclear_underground_belt.order = "b[underground-belt]-d[nuclear-underground-belt]"
-nuclear_underground_belt.place_result = "nuclear-underground-belt"
-table.insert(items, nuclear_underground_belt)
-
-local nuclear_splitter = util.table.deepcopy(data.raw["item"]["express-splitter"])
-nuclear_splitter.name = "nuclear-splitter"
-nuclear_splitter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-splitter.png"
-nuclear_splitter.order = "c[splitter]-d[nuclear-splitter]"
-nuclear_splitter.place_result = "nuclear-splitter"
-table.insert(items, nuclear_splitter)
 
 if mods["PlutoniumEnergy"] then
     local plutonium_steel = util.table.deepcopy(data.raw["item"]["steel-plate"])
