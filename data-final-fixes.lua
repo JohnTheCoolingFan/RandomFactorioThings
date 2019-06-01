@@ -4,6 +4,9 @@
 - Change items that can be compressed/crated
 ]]
 
+
+--[[ Deprecated integration
+
 --deadlock loaders integration
 if deadlock_loaders then
     deadlock_loaders.create({
@@ -43,3 +46,4 @@ if deadlock_crating then
     deadlock_crating.create("nuclear-metal", "nuclear-automation")
     deadlock_crating.create("raw-nuclear-metal", "nuclear-automation")
 end
+]]
