@@ -1,6 +1,3 @@
---[[TODO
-- plutonium logisctics technology (belts)
-]]
 require("module-technology")
 
 data:extend({
