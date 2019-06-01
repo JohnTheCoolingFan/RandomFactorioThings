@@ -7,7 +7,6 @@ if deadlock then
         underground_belt = "nuclear-underground-belt",
         splitter = "nuclear-splitter",
         technology = "nuclear-logistics",
-        --order = "", -- TODO
         loader_category = "crafting-with-fluid",
         beltbox_technology = "nuclear-logistics",
         beltbox_category = "crafting-with-fluid"
@@ -31,7 +30,6 @@ if deadlock then
             underground_belt = "plutonium-underground-belt",
             splitter = "plutonium-splitter",
             technology = "plutonium-logistics",
-            --order = "", -- TODO
             loader_category = "crafting-with-fluid",
             beltbox_technology = "plutonium-logistics",
             beltbox_category = "crafting-with-fluid"

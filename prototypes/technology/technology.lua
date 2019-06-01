@@ -1,22 +1,24 @@
 require("module-technology")
 
 data:extend({
+    -- Hardened furnaces
     {
         type = "technology",
         name = "hardened-furnace",
         icon = "__RandomFactorioThings__/graphics/technology/hardened-furnace.png",
         icon_size = 128,
-        effects =
-        {
+        effects =     {
             {
                 type = "unlock-recipe",
                 recipe = "hardened-stone-furnace"
             }
         },
-        unit =
-        {
+        unit = {
             count = 60,
-            ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1}
+            },
             time = 1
         },
         order = "" -- TODO
@@ -26,18 +28,19 @@ data:extend({
         name = "hardened-furnace-2",
         icon = "__RandomFactorioThings__/graphics/technology/hardened-furnace.png",
         icon_size = 128,
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "hardened-steel-furnace"
             }
         },
         prerequisites = {"hardened-furnace", "advanced-material-processing"},
-        unit =
-        {
+        unit = {
             count = 100,
-            ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1}
+            },
             time = 1
         },
         order = "" -- TODO
@@ -47,49 +50,55 @@ data:extend({
         name = "hardened-furnace-3",
         icon = "__RandomFactorioThings__/graphics/technology/hardened-furnace.png",
         icon_size = 128,
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "hardened-electric-furnace"
             }
         },
         prerequisites = {"hardened-furnace-2", "advanced-material-processing-2"},
-        unit =
-        {
+        unit = {
             count = 300,
-            ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}},
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1}
+            },
             time = 1
         },
         order = "" -- TODO
     },
+
+    -- Hardened electric mining drill
     {
         type = "technology",
         name = "hardened-electric-mining-drill",
         icon = "__RandomFactorioThings__/graphics/technology/hardened-electric-mining-drill.png",
         icon_size = 128,
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "hardened-electric-mining-drill"
             }
         },
-        unit =
-        {
+        unit = {
             count = 50,
-            ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1}
+            },
             time = 1
         },
         order = "" -- TODO
     },
+
+    -- Nuclear
     {
         type = "technology",
         name = "nuclear-automation",
         icon = "__RandomFactorioThings__/graphics/technology/nuclear-automation.png",
         icon_size = 128,
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "nuclear-assembling-machine"
@@ -132,11 +141,9 @@ data:extend({
             }
         },
         prerequisites = {"uranium-processing", "automation-3"},
-        unit =
-        {
+        unit = {
             count = 500,
-            ingredients =
-            {
+            ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
@@ -146,14 +153,12 @@ data:extend({
         },
         order = "e-a-b" -- TODO
     },
-
     {
         type = "technology",
         name = "nuclear-logistics",
         icon_size = 128,
         icon = "__RandomFactorioThings__/graphics/technology/nuclear-logistics.png",
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "nuclear-transport-belt"
@@ -168,11 +173,9 @@ data:extend({
             }
         },
         prerequisites = {"logistics-3", "uranium-processing"},
-        unit =
-        {
+        unit = {
             count = 500,
-            ingredients =
-            {
+            ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
@@ -182,13 +185,14 @@ data:extend({
         },
         order = "a-f-c" -- TODO
     },
+
+    -- Compressor
     {
         type = "technology",
         name = "compressor",
         icon = "__RandomFactorioThings__/graphics/icons/compressor.png",
         icon_size = 32,
-        effects =
-        {
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "compressor"
@@ -199,16 +203,19 @@ data:extend({
             },
         },
         prerequisites = {"steel-processing"},
-        unit =
-        {
+        unit = {
             count = 90,
-            ingredients = {{"automation-science-pack", 1},{"logistic-science-pack", 1}},
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1}
+            },
             time = 1
         },
         order = "c-a" -- TODO
     },
 })
 
+-- Plutonium Energy integration
 if mods["PlutoniumEnergy"] then
     data:extend({
         {
@@ -216,8 +223,7 @@ if mods["PlutoniumEnergy"] then
             name = "plutonium-automation",
             icon = "__RandomFactorioThings__/graphics/technology/plutonium-automation.png",
             icon_size = 128,
-            effects =
-            {
+            effects = {
                 {
                     type = "unlock-recipe",
                     recipe = "raw-plutonium-steel"
@@ -248,11 +254,9 @@ if mods["PlutoniumEnergy"] then
                 }
             },
             prerequisites = {"nuclear-automation", "plutonium-nuclear-power"},
-            unit = -- TODO
-            {
-                count = 500,
-                ingredients =
-                {
+            unit = {
+                count = 750,
+                ingredients = {
                     {"automation-science-pack", 1},
                     {"logistic-science-pack", 1},
                     {"chemical-science-pack", 1},
@@ -267,8 +271,7 @@ if mods["PlutoniumEnergy"] then
             name = "plutonium-logistics",
             icon_size = 128,
             icon = "__RandomFactorioThings__/graphics/technology/plutonium-logistics.png",
-            effects =
-            {
+            effects = {
                 {
                     type = "unlock-recipe",
                     recipe = "plutonium-transport-belt"
@@ -283,11 +286,9 @@ if mods["PlutoniumEnergy"] then
                 }
             },
             prerequisites = {"nuclear-logistics", "plutonium-nuclear-power"},
-            unit =
-            {
+            unit = {
                 count = 750,
-                ingredients =
-                {
+                ingredients = {
                     {"automation-science-pack", 1},
                     {"logistic-science-pack", 1},
                     {"chemical-science-pack", 1},

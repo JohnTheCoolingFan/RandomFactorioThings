@@ -102,6 +102,7 @@ data:extend({
             consumption = {bonus = 0.2}
         }
     },
+
     -- Productivity-Effectivity
     {
         type = "module",
@@ -229,6 +230,7 @@ data:extend({
         limitation = productivity_module_limitation(),
         limitation_message_key = "production-module-usable-only-on-intermediates"
     },
+    
     -- Speed-Productivity
     {
         type = "module",

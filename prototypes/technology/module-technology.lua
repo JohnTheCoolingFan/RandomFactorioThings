@@ -78,6 +78,7 @@ data:extend({
         upgrade = true,
         order = "i-c-c" -- TODO
     },
+
     -- Productivity
     {
         type = "technology",
@@ -157,6 +158,7 @@ data:extend({
         upgrade = true,
         order = "i-c-c" -- TODO
     },
+
     -- Effectivity
     {
         type = "technology",
@@ -236,6 +238,7 @@ data:extend({
         upgrade = true,
         order = "i-c-c" -- TODO
     },
+
     -- Merged
     {
         type = "technology",
@@ -253,6 +256,7 @@ data:extend({
         },
         order = "i-a" -- TODO
     },
+
     -- Speed-effectivity
     {
         type = "technology",
@@ -404,6 +408,7 @@ data:extend({
         upgrade = true,
         order = "i-c-a" -- TODO
     },
+
     -- Productivity-effectivity
     {
         type = "technology",
@@ -555,6 +560,7 @@ data:extend({
         upgrade = true,
         order = "i-c-a" -- TODO
     },
+    
     -- Speed-productivity
     {
         type = "technology",

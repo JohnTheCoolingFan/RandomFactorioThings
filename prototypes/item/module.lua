@@ -21,6 +21,7 @@ data.raw["module"]["productivity-module-2"].icon = "__RandomFactorioThings__/gra
 data.raw["module"]["productivity-module-3"].icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-3.png"
 
 data:extend({
+    -- Speed
     {
         type = "module",
         name = "speed-module-4",
@@ -72,6 +73,8 @@ data:extend({
             consumption = {bonus = 1}
         }
     },
+
+    -- Effectivity
     {
         type = "module",
         name = "effectivity-module-4",
@@ -123,6 +126,8 @@ data:extend({
         },
         limitation = production
     },
+
+    -- Productivity
     {
         type = "module",
         name = "productivity-module-4",
@@ -135,8 +140,7 @@ data:extend({
         order = "e[productivity]-d[productivity-module-4]",
         stack_size = 50,
         default_request_amount = 10,
-        effect =
-        {
+        effect = {
             productivity = {bonus = 0.16},
             consumption = {bonus = 1},
             pollution = {bonus = 0.14},
@@ -157,8 +161,7 @@ data:extend({
         order = "e[productivity]-e[productivity-module-5]",
         stack_size = 50,
         default_request_amount = 10,
-        effect =
-        {
+        effect = {
             productivity = {bonus = 0.24},
             consumption = {bonus = 1.2},
             pollution = {bonus = 0.19},
@@ -179,8 +182,7 @@ data:extend({
         order = "e[productivity]-f[productivity-module-6]",
         stack_size = 50,
         default_request_amount = 10,
-        effect =
-        {
+        effect = {
             productivity = {bonus = 0.34},
             consumption = {bonus = 1.4},
             pollution = {bonus = 0.25},
@@ -188,5 +190,5 @@ data:extend({
         },
         limitation = productivity_module_limitation(),
         limitation_message_key = "production-module-usable-only-on-intermediates"
-    },
+    }
 })

@@ -4,7 +4,3 @@ require("prototypes.entity.entities")             -- Other prototype types have 
 require("prototypes.item.item")
 require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
---[[TODO
-- Code formatting ("final" check)
-- Check order for all items/technologies/recipes
-]]

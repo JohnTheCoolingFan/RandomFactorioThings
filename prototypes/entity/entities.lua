@@ -2,7 +2,7 @@ require("prototypes.entity.inserters")
 require("prototypes.entity.miners")
 require("prototypes.entity.assemblerpipes")
 
-local belt_entities = {}
+local entities = {}
 
 local nuclear_transport_belt = util.table.deepcopy(data.raw["transport-belt"]["express-transport-belt"])
 nuclear_transport_belt.name = "nuclear-transport-belt"
@@ -12,7 +12,7 @@ nuclear_transport_belt.speed = 0.125
 nuclear_transport_belt.next_upgrade = nil
 nuclear_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
 nuclear_transport_belt.belt_animation_set.animation_set.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
-table.insert(belt_entities, nuclear_transport_belt)
+table.insert(entities, nuclear_transport_belt)
 
 local nuclear_underground_belt = util.table.deepcopy(data.raw["underground-belt"]["express-underground-belt"])
 nuclear_underground_belt.name = "nuclear-underground-belt"
@@ -30,7 +30,7 @@ nuclear_underground_belt.structure.direction_in_side_loading.sheet.filename = "_
 nuclear_underground_belt.structure.direction_in_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
 nuclear_underground_belt.structure.direction_out_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
 nuclear_underground_belt.structure.direction_out_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
-table.insert(belt_entities, nuclear_underground_belt)
+table.insert(entities, nuclear_underground_belt)
 
 local nuclear_splitter = util.table.deepcopy(data.raw["splitter"]["express-splitter"])
 nuclear_splitter.name = "nuclear-splitter"
@@ -47,14 +47,11 @@ nuclear_splitter.structure.south.filename = "__RandomFactorioThings__/graphics/e
 nuclear_splitter.structure.south.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-south.png"
 nuclear_splitter.structure.west.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-west.png"
 nuclear_splitter.structure.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-west.png"
-table.insert(belt_entities, nuclear_splitter)
+table.insert(entities, nuclear_splitter)
 
-data:extend(belt_entities)
 data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "nuclear-transport-belt"
 data.raw["underground-belt"]["express-underground-belt"].next_upgrade = "nuclear-underground-belt"
 data.raw["splitter"]["express-splitter"].next_upgrade = "nuclear-splitter"
-
-local entities = {}
 
 local nuclear_logistic_robot = util.table.deepcopy(data.raw["logistic-robot"]["logistic-robot"])
 nuclear_logistic_robot.name = "nuclear-logistic-robot"

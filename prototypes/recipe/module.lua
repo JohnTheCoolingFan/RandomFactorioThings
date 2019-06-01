@@ -1,10 +1,10 @@
 data:extend({
+    -- Speed
     {
         type = "recipe",
         name = "speed-module-4",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"speed-module-3", 5},
             {"advanced-circuit", 10},
             {"processing-unit", 10}
@@ -16,8 +16,7 @@ data:extend({
         type = "recipe",
         name = "speed-module-5",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"speed-module-4", 5},
             {"advanced-circuit", 15},
             {"processing-unit", 15}
@@ -29,8 +28,7 @@ data:extend({
         type = "recipe",
         name = "speed-module-6",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"speed-module-5", 5},
             {"advanced-circuit", 15},
             {"processing-unit", 15}
@@ -38,12 +36,13 @@ data:extend({
         energy_required = 480,
         result = "speed-module-6"
     },
+
+    -- Productivity
     {
         type = "recipe",
         name = "productivity-module-4",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"productivity-module-3", 5},
             {"advanced-circuit", 10},
             {"processing-unit", 10}
@@ -55,8 +54,7 @@ data:extend({
         type = "recipe",
         name = "productivity-module-5",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"productivity-module-4", 5},
             {"advanced-circuit", 15},
             {"processing-unit", 15}
@@ -68,8 +66,7 @@ data:extend({
         type = "recipe",
         name = "productivity-module-6",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"productivity-module-5", 5},
             {"advanced-circuit", 15},
             {"processing-unit", 15}
@@ -77,12 +74,13 @@ data:extend({
         energy_required = 480,
         result = "productivity-module-6"
     },
+
+    -- Effectivity
     {
         type = "recipe",
         name = "effectivity-module-4",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"effectivity-module-3", 5},
             {"advanced-circuit", 10},
             {"processing-unit", 10}
@@ -94,8 +92,7 @@ data:extend({
         type = "recipe",
         name = "effectivity-module-5",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"effectivity-module-4", 5},
             {"advanced-circuit", 15},
             {"processing-unit", 15}
@@ -107,8 +104,7 @@ data:extend({
         type = "recipe",
         name = "effectivity-module-6",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"effectivity-module-5", 5},
             {"advanced-circuit", 15},
             {"processing-unit", 15}
@@ -116,12 +112,13 @@ data:extend({
         energy_required = 480,
         result = "effectivity-module-6"
     },
+
+    -- Speed-effectivity
     {
         type = "recipe",
         name = "speed-effectivity-module",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 2},
             {"electronic-circuit", 2},
             {"speed-module", 1},
@@ -134,8 +131,7 @@ data:extend({
         type = "recipe",
         name = "speed-effectivity-module-2",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 3},
             {"electronic-circuit", 3},
             {"speed-module-2", 1},
@@ -148,8 +144,7 @@ data:extend({
         type = "recipe",
         name = "speed-effectivity-module-3",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 4},
             {"electronic-circuit", 4},
             {"speed-module-3", 1},
@@ -163,8 +158,7 @@ data:extend({
         type = "recipe",
         name = "speed-effectivity-module-4",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 5},
             {"electronic-circuit", 5},
             {"speed-module-4", 1},
@@ -178,8 +172,7 @@ data:extend({
         type = "recipe",
         name = "speed-effectivity-module-5",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 6},
             {"electronic-circuit", 6},
             {"speed-module-5", 1},
@@ -193,8 +186,7 @@ data:extend({
         type = "recipe",
         name = "speed-effectivity-module-6",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 7},
             {"electronic-circuit", 7},
             {"speed-module-6", 1},
@@ -204,12 +196,13 @@ data:extend({
         energy_required = 60,
         result = "speed-effectivity-module-6"
     },
+
+    -- Productivity-effectivity
     {
         type = "recipe",
         name = "productivity-effectivity-module",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 2},
             {"electronic-circuit", 2},
             {"productivity-module", 1},
@@ -222,8 +215,7 @@ data:extend({
         type = "recipe",
         name = "productivity-effectivity-module-2",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 3},
             {"electronic-circuit", 3},
             {"productivity-module-2", 1},
@@ -236,8 +228,7 @@ data:extend({
         type = "recipe",
         name = "productivity-effectivity-module-3",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 4},
             {"electronic-circuit", 4},
             {"productivity-module-3", 1},
@@ -251,8 +242,7 @@ data:extend({
         type = "recipe",
         name = "productivity-effectivity-module-4",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 5},
             {"electronic-circuit", 5},
             {"productivity-module-4", 1},
@@ -266,8 +256,7 @@ data:extend({
         type = "recipe",
         name = "productivity-effectivity-module-5",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 6},
             {"electronic-circuit", 6},
             {"productivity-module-5", 1},
@@ -281,8 +270,7 @@ data:extend({
         type = "recipe",
         name = "productivity-effectivity-module-6",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 7},
             {"electronic-circuit", 7},
             {"productivity-module-6", 1},
@@ -292,12 +280,13 @@ data:extend({
         energy_required = 60,
         result = "productivity-effectivity-module-6"
     },
+
+    -- Speed-productivity
     {
         type = "recipe",
         name = "speed-productivity-module",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 2},
             {"electronic-circuit", 2},
             {"speed-module", 1},
@@ -310,8 +299,7 @@ data:extend({
         type = "recipe",
         name = "speed-productivity-module-2",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 3},
             {"electronic-circuit", 3},
             {"speed-module-2", 1},
@@ -324,8 +312,7 @@ data:extend({
         type = "recipe",
         name = "speed-productivity-module-3",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 4},
             {"electronic-circuit", 4},
             {"speed-module-3", 1},
@@ -339,8 +326,7 @@ data:extend({
         type = "recipe",
         name = "speed-productivity-module-4",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 5},
             {"electronic-circuit", 5},
             {"speed-module-4", 1},
@@ -354,8 +340,7 @@ data:extend({
         type = "recipe",
         name = "speed-productivity-module-5",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 6},
             {"electronic-circuit", 6},
             {"speed-module-5", 1},
@@ -369,8 +354,7 @@ data:extend({
         type = "recipe",
         name = "speed-productivity-module-6",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"advanced-circuit", 7},
             {"electronic-circuit", 7},
             {"speed-module-6", 1},

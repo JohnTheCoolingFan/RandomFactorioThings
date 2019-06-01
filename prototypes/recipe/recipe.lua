@@ -189,15 +189,14 @@ end
 
 data:extend(recipes)
 
--- I'll better leave these recipes as data:extend()
+-- I'll better leave these recipes as data:extend() (maybe change later)
 data:extend({
     {
         type = "recipe",
         name = "coal-piece",
         enabled = true,
         category = "grinding",
-        ingredients =
-        {
+        ingredients = {
             {"coal", 1},
         },
         result_count = 2,
@@ -207,8 +206,7 @@ data:extend({
         type = "recipe",
         name = "macerator",
         enabled = true,
-        ingredients =
-        {
+        ingredients = {
             {"electronic-circuit", 5},
             {"iron-gear-wheel", 10},
             {"iron-plate", 7},
@@ -219,8 +217,7 @@ data:extend({
         type = "recipe",
         name = "compressor",
         enabled = false,
-        ingredients =
-        {
+        ingredients = {
             {"electronic-circuit", 3},
             {"iron-gear-wheel", 5},
             {"iron-plate", 10},
@@ -233,8 +230,7 @@ data:extend({
         name = "sawdust",
         enabled = true,
         category = "grinding",
-        ingredients =
-        {
+        ingredients = {
             {"wood", 1},
         },
         result_count = 3,
@@ -245,8 +241,7 @@ data:extend({
         name = "compressed-fuel",
         enabled = false,
         category = "compressing",
-        ingredients =
-        {
+        ingredients = {
             {"sawdust", 2},
             {"coal-piece", 1},
         },
