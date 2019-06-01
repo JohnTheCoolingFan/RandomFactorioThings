@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.16.0
-Date: <unknown>
+Version: 1.0.0
+Date: 01.06.2019
   Major Changes:
     - Added nuclear long-handed inserter.
     - Added nuclear stack inserter.
@@ -38,7 +38,7 @@ Date: <unknown>
       - Added plutonium assembling machine.
       - Added plutonium inserters.
       - Added plutonium transport belt.
-    - Remade Deadlock mods integration
+    - Remade DeadLock mods integration
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.4
 Date: 25.04.2019
