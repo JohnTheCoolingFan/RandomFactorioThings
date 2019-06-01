@@ -148,32 +148,7 @@ data:extend({
             time = 35
         },
         order = "e-a-b" -- TODO
-    },
-    {
-        type = "technology",
-        name = "compressor",
-        icon = "__RandomFactorioThings__/graphics/icons/compressor.png",
-        icon_size = 32,
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "compressor"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "compressed-fuel"
-            },
-        },
-        prerequisites = {"steel-processing"},
-        unit =
-        {
-            count = 90,
-            ingredients = {{"automation-science-pack", 1},{"logistic-science-pack", 1}},
-            time = 1
-        },
-        order = "c-a" -- TODO
-    },
+    }
 
     {
         type = "technology",
@@ -209,7 +184,32 @@ data:extend({
             time = 15
         },
         order = "a-f-c" -- TODO
-    }
+    },
+    {
+        type = "technology",
+        name = "compressor",
+        icon = "__RandomFactorioThings__/graphics/icons/compressor.png",
+        icon_size = 32,
+        effects =
+        {
+            {
+                type = "unlock-recipe",
+                recipe = "compressor"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "compressed-fuel"
+            },
+        },
+        prerequisites = {"steel-processing"},
+        unit =
+        {
+            count = 90,
+            ingredients = {{"automation-science-pack", 1},{"logistic-science-pack", 1}},
+            time = 1
+        },
+        order = "c-a" -- TODO
+    },
 })
 
 if mods["PlutoniumEnergy"] then
