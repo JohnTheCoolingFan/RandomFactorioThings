@@ -1,10 +1,9 @@
 -- Deadlock (deadlock-beltboxes-loaders) integration
 if deadlock then
-
     -- Tier table
     local nuclear_tier_table = {
         transport_belt = "nuclear-transport-belt",
-        colour = {g = 1},
+        colour = {r=0,g=1,b=0},
         underground_belt = "nuclear-underground-belt",
         splitter = "nuclear-splitter",
         technology = "nuclear-logistics",
@@ -25,11 +24,10 @@ if deadlock then
 
     -- Plutonium
     if mods["PlutoniumEnergy"] then
-
         -- Tier table
         local plutonium_tier_table = {
             transport_belt = "plutonium-transport-belt",
-            colour = {r=0,g=1,b=0},
+            colour = {r=0.1,g=0.9,b=0.7},
             underground_belt = "plutonium-underground-belt",
             splitter = "plutonium-splitter",
             technology = "plutonium-logistics",
