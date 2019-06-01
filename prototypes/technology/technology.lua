@@ -21,7 +21,7 @@ data:extend({
             },
             time = 1
         },
-        order = "" -- TODO
+        order = "c-d-a"
     },
     {
         type = "technology",
@@ -43,7 +43,7 @@ data:extend({
             },
             time = 1
         },
-        order = "" -- TODO
+        order = "c-d-b"
     },
     {
         type = "technology",
@@ -66,7 +66,7 @@ data:extend({
             },
             time = 1
         },
-        order = "" -- TODO
+        order = "c-d-c"
     },
 
     -- Hardened electric mining drill
@@ -89,7 +89,7 @@ data:extend({
             },
             time = 1
         },
-        order = "" -- TODO
+        order = "c-d-d"
     },
 
     -- Nuclear
@@ -151,7 +151,7 @@ data:extend({
             },
             time = 35
         },
-        order = "e-a-b" -- TODO
+        order = "a-f-d"
     },
     {
         type = "technology",
@@ -183,7 +183,7 @@ data:extend({
             },
             time = 15
         },
-        order = "a-f-c" -- TODO
+        order = "a-f-c"
     },
 
     -- Compressor
@@ -211,7 +211,7 @@ data:extend({
             },
             time = 1
         },
-        order = "c-a" -- TODO
+        order = "a-b-d"
     },
 })
 
@@ -264,7 +264,7 @@ if mods["PlutoniumEnergy"] then
                 },
                 time = 35
             },
-            order = "e-a-b" -- TODO
+            order = "a-b-e"
         },
         {
             type = "technology",
@@ -297,7 +297,7 @@ if mods["PlutoniumEnergy"] then
                 },
                 time = 15
             },
-            order = "a-f-c" -- TODO
+            order = "a-f-e"
         }
     })
 end
