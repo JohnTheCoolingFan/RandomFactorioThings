@@ -92,15 +92,15 @@ nuclear_construction_robot.working.filename = "__RandomFactorioThings__/graphics
 nuclear_construction_robot.working.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/hr-nuclear-construction-robot-working.png"
 table.insert(entities, nuclear_construction_robot)
 
-local JohnTheCF_furnace = util.table.deepcopy(data.raw["furnace"]["stone-furnace"])
-JohnTheCF_furnace.name = "hardened-stone-furnace"
-JohnTheCF_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-stone-furnace.png"
-JohnTheCF_furnace.minable.result = "hardened-stone-furnace"
-JohnTheCF_furnace.max_health = 300
-JohnTheCF_furnace.crafting_speed = 1.25
-JohnTheCF_furnace.energy_usage = "100kW"
-JohnTheCF_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hardened-stone-furnace.png"
-JohnTheCF_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hr-hardened-stone-furnace.png"
+local hardened_stone_furnace = util.table.deepcopy(data.raw["furnace"]["stone-furnace"])
+hardened_stone_furnace.name = "hardened-stone-furnace"
+hardened_stone_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-stone-furnace.png"
+hardened_stone_furnace.minable.result = "hardened-stone-furnace"
+hardened_stone_furnace.max_health = 300
+hardened_stone_furnace.crafting_speed = 1.25
+hardened_stone_furnace.energy_usage = "100kW"
+hardened_stone_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hardened-stone-furnace.png"
+hardened_stone_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hr-hardened-stone-furnace.png"
 table.insert(entities, JohnTheCF_furnace)
 
 local hardened_steel_furnace = util.table.deepcopy(data.raw["furnace"]["steel-furnace"])
