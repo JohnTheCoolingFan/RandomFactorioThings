@@ -94,7 +94,7 @@ if mods["PlutoniumEnergy"] then
     plutonium_inserter.hand_base_picture.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-inserter/hr-plutonium-inserter-hand-base.png"
     plutonium_inserter.hand_closed_picture.filename = "__RandomFactorioThings__/graphics/entity/plutonium-inserter/plutonium-inserter-hand-closed.png"
     plutonium_inserter.hand_closed_picture.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-inserter/hr-plutonium-inserter-hand-closed.png"
-    plutonium_inserter.hand_open_picture.filename = "__RandomFactorioThings__/graphics/entity/plutonium-inserter/nplutoniuminserter-hand-open.png"
+    plutonium_inserter.hand_open_picture.filename = "__RandomFactorioThings__/graphics/entity/plutonium-inserter/plutonium-inserter-hand-open.png"
     plutonium_inserter.hand_open_picture.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-inserter/hr-plutonium-inserter-hand-open.png"
     plutonium_inserter.platform_picture.sheet.filename = "__RandomFactorioThings__/graphics/entity/plutonium-inserter/plutonium-inserter-platform.png"
     plutonium_inserter.platform_picture.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-inserter/hr-plutonium-inserter-platform.png"

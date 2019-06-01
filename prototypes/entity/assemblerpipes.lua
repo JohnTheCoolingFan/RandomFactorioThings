@@ -83,7 +83,7 @@ if mods["PlutoniumEnergy"] then
                 }
             },
             east = {
-                filename = "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/nplutoniumassembling-machine-pipe-E.png",
+                filename = "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/plutonium-assembling-machine-pipe-E.png",
                 priority = "extra-high",
                 width = 20,
                 height = 38,

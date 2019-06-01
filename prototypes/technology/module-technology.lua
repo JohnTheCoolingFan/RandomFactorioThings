@@ -304,6 +304,7 @@ data:extend({
         },
         upgrade = true,
         order = "i-h-b"
+    },
     {
         type = "technology",
         name = "speed-effectivity-module-3",
