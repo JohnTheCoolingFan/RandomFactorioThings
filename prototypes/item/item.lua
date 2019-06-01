@@ -74,19 +74,6 @@ nuclear_assembling_machine.place_result = "nuclear-assembling-machine"
 nuclear_assembling_machine.order = "c[rft]-a[nuclear-assembling-machine]"
 table.insert(items, nuclear_assembling_machine)
 
-local hardened_electric_mining_drill = util.table.deepcopy(data.raw["item"]["electric-mining-drill"])
-hardened_electric_mining_drill.name = "hardened-electric-mining-drill"
-hardened_electric_mining_drill.place_result = "hardened-electric-mining-drill"
-hardened_electric_mining_drill.icon = "__RandomFactorioThings__/graphics/icons/hardened-electric-mining-drill.png"
-table.insert(items, hardened_electric_mining_drill)
-
-local coal_piece = util.table.deepcopy(data.raw["item"]["coal"])
-coal_piece.name = "coal-piece"
-coal_piece.icon = "__RandomFactorioThings__/graphics/icons/coal-piece.png"
-coal_piece.fuel_value = "4MJ"
-coal_piece.stack_size = 100
-table.insert(items, coal_piece)
-
 local macerator = util.table.deepcopy(data.raw["item"]["assembling-machine-3"])
 macerator.name = "macerator"
 macerator.icon = "__RandomFactorioThings__/graphics/icons/macerator.png"
@@ -100,29 +87,6 @@ compressor.icon = "__RandomFactorioThings__/graphics/icons/compressor.png"
 compressor.place_result = "compressor"
 compressor.order = "c[rft]-c[compressor]"
 table.insert(items, compressor)
-
-local sawdust = util.table.deepcopy(data.raw["item"]["coal"])
-sawdust.name = "sawdust"
-sawdust.icon = "__RandomFactorioThings__/graphics/icons/sawdust.png"
-sawdust.fuel_value = "1MJ"
-table.insert(items, sawdust)
-
-local compressed_fuel = util.table.deepcopy(data.raw["item"]["coal"])
-compressed_fuel.name = "compressed-fuel"
-compressed_fuel.icon = "__RandomFactorioThings__/graphics/icons/compressed-fuel.png"
-compressed_fuel.fuel_value = "12MJ"
-compressed_fuel.stack_size = 75
-table.insert(items, compressed_fuel)
-
-local nuclear_metal = util.table.deepcopy(data.raw["item"]["iron-plate"])
-nuclear_metal.name = "nuclear-metal"
-nuclear_metal.icon = "__RandomFactorioThings__/graphics/icons/nuclear-metal.png"
-table.insert(items, nuclear_metal)
-
-local raw_nuclear_metal = util.table.deepcopy(nuclear_metal)
-raw_nuclear_metal.name = "raw-nuclear-metal"
-raw_nuclear_metal.icon = "__RandomFactorioThings__/graphics/icons/raw-nuclear-metal.png"
-table.insert(items, raw_nuclear_metal)
 
 local nuclear_inserter = util.table.deepcopy(data.raw["item"]["fast-inserter"])
 nuclear_inserter.name = "nuclear-inserter"
@@ -151,6 +115,42 @@ nuclear_stack_filter_inserter.place_result = "nuclear-stack-filter-inserter"
 nuclear_stack_filter_inserter.order = "g[stack-filter-inserter]-b[nuclear]"
 table.insert(items, nuclear_stack_filter_inserter)
 data.raw["item"]["stack-filter-inserter"].order = "g[stack-filter-inserter]-a[common]"
+
+local hardened_electric_mining_drill = util.table.deepcopy(data.raw["item"]["electric-mining-drill"])
+hardened_electric_mining_drill.name = "hardened-electric-mining-drill"
+hardened_electric_mining_drill.place_result = "hardened-electric-mining-drill"
+hardened_electric_mining_drill.icon = "__RandomFactorioThings__/graphics/icons/hardened-electric-mining-drill.png"
+table.insert(items, hardened_electric_mining_drill)
+
+local coal_piece = util.table.deepcopy(data.raw["item"]["coal"])
+coal_piece.name = "coal-piece"
+coal_piece.icon = "__RandomFactorioThings__/graphics/icons/coal-piece.png"
+coal_piece.fuel_value = "4MJ"
+coal_piece.stack_size = 100
+table.insert(items, coal_piece)
+
+local sawdust = util.table.deepcopy(data.raw["item"]["coal"])
+sawdust.name = "sawdust"
+sawdust.icon = "__RandomFactorioThings__/graphics/icons/sawdust.png"
+sawdust.fuel_value = "1MJ"
+table.insert(items, sawdust)
+
+local compressed_fuel = util.table.deepcopy(data.raw["item"]["coal"])
+compressed_fuel.name = "compressed-fuel"
+compressed_fuel.icon = "__RandomFactorioThings__/graphics/icons/compressed-fuel.png"
+compressed_fuel.fuel_value = "12MJ"
+compressed_fuel.stack_size = 75
+table.insert(items, compressed_fuel)
+
+local nuclear_metal = util.table.deepcopy(data.raw["item"]["iron-plate"])
+nuclear_metal.name = "nuclear-metal"
+nuclear_metal.icon = "__RandomFactorioThings__/graphics/icons/nuclear-metal.png"
+table.insert(items, nuclear_metal)
+
+local raw_nuclear_metal = util.table.deepcopy(nuclear_metal)
+raw_nuclear_metal.name = "raw-nuclear-metal"
+raw_nuclear_metal.icon = "__RandomFactorioThings__/graphics/icons/raw-nuclear-metal.png"
+table.insert(items, raw_nuclear_metal)
 
 if mods["PlutoniumEnergy"] then
     local plutonium_steel = util.table.deepcopy(data.raw["item"]["steel-plate"])
