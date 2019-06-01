@@ -56,23 +56,23 @@ data.raw["splitter"]["express-splitter"].next_upgrade = "nuclear-splitter"
 
 local entities = {}
 
-local nuclear_transport_robot = util.table.deepcopy(data.raw["logistic-robot"]["logistic-robot"])
-nuclear_transport_robot.name = "nuclear-logistic-robot"
-nuclear_transport_robot.minable.result = "nuclear-logistic-robot"
-nuclear_transport_robot.max_health = 150
-nuclear_transport_robot.icon = "__RandomFactorioThings__/graphics/icons/nuclear-logistic-robot.png"
-nuclear_transport_robot.max_payload_size = 2
-nuclear_transport_robot.speed = 0.1
-nuclear_transport_robot.max_energy = "3MJ"
-nuclear_transport_robot.energy_per_move = "4kJ"
-nuclear_transport_robot.idle.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
-nuclear_transport_robot.idle.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
-nuclear_transport_robot.idle_with_cargo.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
-nuclear_transport_robot.idle_with_cargo.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
-nuclear_transport_robot.in_motion.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
-nuclear_transport_robot.in_motion.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
-nuclear_transport_robot.in_motion_with_cargo.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
-nuclear_transport_robot.in_motion_with_cargo.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+local nuclear_logistic_robot = util.table.deepcopy(data.raw["logistic-robot"]["logistic-robot"])
+nuclear_logistic_robot.name = "nuclear-logistic-robot"
+nuclear_logistic_robot.minable.result = "nuclear-logistic-robot"
+nuclear_logistic_robot.max_health = 150
+nuclear_logistic_robot.icon = "__RandomFactorioThings__/graphics/icons/nuclear-logistic-robot.png"
+nuclear_logistic_robot.max_payload_size = 2
+nuclear_logistic_robot.speed = 0.1
+nuclear_logistic_robot.max_energy = "3MJ"
+nuclear_logistic_robot.energy_per_move = "4kJ"
+nuclear_logistic_robot.idle.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+nuclear_logistic_robot.idle.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+nuclear_logistic_robot.idle_with_cargo.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+nuclear_logistic_robot.idle_with_cargo.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+nuclear_logistic_robot.in_motion.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+nuclear_logistic_robot.in_motion.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+nuclear_logistic_robot.in_motion_with_cargo.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+nuclear_logistic_robot.in_motion_with_cargo.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
 table.insert(entities, nuclear_transport_robot)
 
 local nuclear_construction_robot = util.table.deepcopy(data.raw["construction-robot"]["construction-robot"])
