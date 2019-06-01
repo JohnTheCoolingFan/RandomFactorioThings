@@ -45,11 +45,11 @@ if deadlock then
         -- Stacking
         deadlock.add_stack("plutonium-steel", "__RandomFactorioThings__/graphics/icons/plutonium-steel.png", "deadlock-stacking-3", 32)
         deadlock.add_stack("raw-plutonium-steel", "__RandomFactorioThings__/graphics/icons/raw-plutonium-steel.png", "deadlock-stacking-3", 32)
-        deadlock.add_stack("plutonium-239", "__PlutoniumEnergy__/graphics/icons/plutonium-239.png", 32)
-        deadlock.add_stack("plutonium-238", "__PlutoniumEnergy__/graphics/icons/plutonium-238.png", 32)
-        deadlock.add_stack("MOX-fuel", "__PlutoniumEnergy__/graphics/icons/MOX-fuel.png", 32)
-        deadlock.add_stack("plutonium-rounds-magazine", "__PlutoniumEnergy__/graphics/icons/plutonium-rounds-magazine.png", 32, "ammo")
-        deadlock.add_stack("plutonium-cannon-shell", "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell.png", 32, "ammo")
-        deadlock.add_stack("explosive-plutonium-cannon-shell", "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell.png", 32, "ammo")
+        deadlock.add_stack("plutonium-239", "__PlutoniumEnergy__/graphics/icons/plutonium-239.png", "deadlock-stacking-2", 32)
+        deadlock.add_stack("plutonium-238", "__PlutoniumEnergy__/graphics/icons/plutonium-238.png", "deadlock-stacking-2", 32)
+        deadlock.add_stack("MOX-fuel", "__PlutoniumEnergy__/graphics/icons/MOX-fuel.png", "deadlock-stacking-2", 32)
+        deadlock.add_stack("plutonium-rounds-magazine", "__PlutoniumEnergy__/graphics/icons/plutonium-rounds-magazine.png", "deadlock-stacking-2", 32, "ammo")
+        deadlock.add_stack("plutonium-cannon-shell", "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell.png", "deadlock-stacking-2", 32, "ammo")
+        deadlock.add_stack("explosive-plutonium-cannon-shell", "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell.png", "deadlock-stacking-2", 32, "ammo")
     end
 end
