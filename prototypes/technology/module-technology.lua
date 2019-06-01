@@ -23,7 +23,7 @@ data:extend({
             time = 60
         },
         upgrade = true,
-        order = "i-c-c" -- TODO
+        order = "i-c-d"
     },
     {
         type = "technology",
@@ -49,7 +49,7 @@ data:extend({
             time = 100
         },
         upgrade = true,
-        order = "i-c-c" -- TODO
+        order = "i-c-e"
     },
     {
         type = "technology",
@@ -76,7 +76,7 @@ data:extend({
             time = 200
         },
         upgrade = true,
-        order = "i-c-c" -- TODO
+        order = "i-c-f"
     },
 
     -- Productivity
@@ -103,7 +103,7 @@ data:extend({
             time = 60
         },
         upgrade = true,
-        order = "i-c-c" -- TODO
+        order = "i-e-d"
     },
     {
         type = "technology",
@@ -129,7 +129,7 @@ data:extend({
             time = 100
         },
         upgrade = true,
-        order = "i-c-c" -- TODO
+        order = "i-e-e"
     },
     {
         type = "technology",
@@ -156,7 +156,7 @@ data:extend({
             time = 200
         },
         upgrade = true,
-        order = "i-c-c" -- TODO
+        order = "i-e-f"
     },
 
     -- Effectivity
@@ -183,7 +183,7 @@ data:extend({
             time = 60
         },
         upgrade = true,
-        order = "i-c-c" -- TODO
+        order = "i-g-d"
     },
     {
         type = "technology",
@@ -209,7 +209,7 @@ data:extend({
             time = 100
         },
         upgrade = true,
-        order = "i-c-c" -- TODO
+        order = "i-g-e"
     },
     {
         type = "technology",
@@ -236,7 +236,7 @@ data:extend({
             time = 200
         },
         upgrade = true,
-        order = "i-c-c" -- TODO
+        order = "i-g-f"
     },
 
     -- Merged
@@ -254,7 +254,7 @@ data:extend({
             },
             time = 30
         },
-        order = "i-a" -- TODO
+        order = "i-b"
     },
 
     -- Speed-effectivity
@@ -279,7 +279,7 @@ data:extend({
             time = 30
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-h-a"
     },
     {
         type = "technology",
@@ -303,8 +303,7 @@ data:extend({
             time = 30
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
-    },
+        order = "i-h-b"
     {
         type = "technology",
         name = "speed-effectivity-module-3",
@@ -328,7 +327,7 @@ data:extend({
             time = 60
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-h-c"
     },
     {
         type = "technology",
@@ -353,7 +352,7 @@ data:extend({
             time = 50
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-h-d"
     },
     {
         type = "technology",
@@ -379,7 +378,7 @@ data:extend({
             time = 80
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-h-e"
     },
     {
         type = "technology",
@@ -406,7 +405,7 @@ data:extend({
             time = 150
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-h-f"
     },
 
     -- Productivity-effectivity
@@ -431,7 +430,7 @@ data:extend({
             time = 30
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-i-a"
     },
     {
         type = "technology",
@@ -455,7 +454,7 @@ data:extend({
             time = 30
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-i-b"
     },
     {
         type = "technology",
@@ -480,7 +479,7 @@ data:extend({
             time = 60
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-i-c"
     },
     {
         type = "technology",
@@ -505,7 +504,7 @@ data:extend({
             time = 50
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-i-d"
     },
     {
         type = "technology",
@@ -531,7 +530,7 @@ data:extend({
             time = 80
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-i-e"
     },
     {
         type = "technology",
@@ -558,9 +557,9 @@ data:extend({
             time = 150
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-i-f"
     },
-    
+
     -- Speed-productivity
     {
         type = "technology",
@@ -583,7 +582,7 @@ data:extend({
             time = 30
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-j-a"
     },
     {
         type = "technology",
@@ -607,7 +606,7 @@ data:extend({
             time = 30
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-j-b"
     },
     {
         type = "technology",
@@ -632,7 +631,7 @@ data:extend({
             time = 60
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-j-c"
     },
     {
         type = "technology",
@@ -657,7 +656,7 @@ data:extend({
             time = 50
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-j-d"
     },
     {
         type = "technology",
@@ -683,7 +682,7 @@ data:extend({
             time = 80
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-j-e"
     },
     {
         type = "technology",
@@ -710,6 +709,6 @@ data:extend({
             time = 150
         },
         upgrade = true,
-        order = "i-c-a" -- TODO
+        order = "i-j-f"
     }
 })
