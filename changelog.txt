@@ -36,6 +36,7 @@ Date: <unknown>
       - Added plutonium assembling machine.
       - Added plutonium inserters.
       - Added plutonium transport belt.
+    - Remade Deadlock mods integration
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.4
 Date: 25.04.2019
