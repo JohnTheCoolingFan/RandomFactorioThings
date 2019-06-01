@@ -1,11 +1,4 @@
---[[TODO
-- Check deadlock integration
-- Add integration for plutonium belts
-- Change items that can be compressed/crated
-]]
-
 -- Deadlock (deadlock-beltboxes-loaders) integration
-
 if deadlock then
 
     -- Tier table
