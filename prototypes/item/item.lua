@@ -125,17 +125,20 @@ table.insert(items, hardened_electric_mining_drill)
 local coal_piece = util.table.deepcopy(data.raw["item"]["coal"])
 coal_piece.name = "coal-piece"
 coal_piece.icon = "__RandomFactorioThings__/graphics/icons/coal-piece.png"
+coal_piece.icon_size = 32
+coal_piece.pictures = nil
 coal_piece.fuel_value = "4MJ"
 coal_piece.stack_size = 100
 table.insert(items, coal_piece)
 
-local sawdust = util.table.deepcopy(data.raw["item"]["coal"])
+local sawdust = util.table.deepcopy(coal_piece)
 sawdust.name = "sawdust"
 sawdust.icon = "__RandomFactorioThings__/graphics/icons/sawdust.png"
 sawdust.fuel_value = "1MJ"
+sawdust.stack_size = 50
 table.insert(items, sawdust)
 
-local compressed_fuel = util.table.deepcopy(data.raw["item"]["coal"])
+local compressed_fuel = util.table.deepcopy(coal_piece)
 compressed_fuel.name = "compressed-fuel"
 compressed_fuel.icon = "__RandomFactorioThings__/graphics/icons/compressed-fuel.png"
 compressed_fuel.fuel_value = "12MJ"
