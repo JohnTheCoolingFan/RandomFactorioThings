@@ -144,7 +144,7 @@ if mods["PlutoniumEnergy"] then
     raw_plutonium_steel.name = "raw-plutonium-steel"
     raw_plutonium_steel.enabled = false
     raw_plutonium_steel.category = "centrifuging"
-    raw_plutonium_steel.ingredients = {{"steel-plate", 2}, {"plutonium-238", 5}}
+    raw_plutonium_steel.ingredients = {{"steel-plate", 2}, {"PE-plutonium-238", 5}}
     raw_plutonium_steel.energy_required = 5
     raw_plutonium_steel.result = "raw-plutonium-steel"
     table.insert(recipes, raw_plutonium_steel)
