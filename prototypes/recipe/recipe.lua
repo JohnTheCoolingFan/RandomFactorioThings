@@ -99,7 +99,6 @@ if hardened_electric_mining_drill.normal then
 else
     hardened_electric_mining_drill.ingredients = {{"electronic-circuit", 5}, {"iron-gear-wheel", 10}, {"iron-plate", 20}}
     hardened_electric_mining_drill.result = "hardened-electric-mining-drill"
-    hardened_electric_mining_drill.category = "crafting-with-fluid"
 end
 table.insert(recipes, hardened_electric_mining_drill)
 
