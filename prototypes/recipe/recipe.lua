@@ -55,6 +55,7 @@ if nuclear_transport_belt.normal then
 else
     nuclear_transport_belt.ingredients = {{"nuclear-metal", 5}, {"iron-gear-wheel", 20}, {"express-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
     nuclear_transport_belt.result = "nuclear-transport-belt"
+    nuclear_transport_belt.category = "crafting-with-fluid"
 end
 table.insert(recipes, nuclear_transport_belt)
 
@@ -98,6 +99,7 @@ if hardened_electric_mining_drill.normal then
 else
     hardened_electric_mining_drill.ingredients = {{"electronic-circuit", 5}, {"iron-gear-wheel", 10}, {"iron-plate", 20}}
     hardened_electric_mining_drill.result = "hardened-electric-mining-drill"
+    hardened_electric_mining_drill.category = "crafting-with-fluid"
 end
 table.insert(recipes, hardened_electric_mining_drill)
 
@@ -186,6 +188,7 @@ if mods["PlutoniumEnergy"] then
     else
         plutonium_transport_belt.ingredients = {{"plutonium-steel", 5}, {"iron-gear-wheel", 20}, {"nuclear-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
         plutonium_transport_belt.result = "plutonium-transport-belt"
+        plutonium_transport_belt.category = "crafting-with-fluid"
     end
     table.insert(recipes, plutonium_transport_belt)
 
