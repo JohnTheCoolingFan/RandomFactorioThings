@@ -47,10 +47,15 @@ table.insert(recipes, nuclear_stack_filter_inserter)
 
 local nuclear_transport_belt = util.table.deepcopy(data.raw["recipe"]["express-transport-belt"])
 nuclear_transport_belt.name = "nuclear-transport-belt"
-nuclear_transport_belt.normal.ingredients = {{"nuclear-metal", 5}, {"iron-gear-wheel", 20}, {"express-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
-nuclear_transport_belt.normal.result = "nuclear-transport-belt"
-nuclear_transport_belt.expensive.ingredients = {{"nuclear-metal", 10}, {"iron-gear-wheel", 40}, {"express-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
-nuclear_transport_belt.expensive.result = "nuclear-transport-belt"
+if nuclear_transport_belt.normal then
+    nuclear_transport_belt.normal.ingredients = {{"nuclear-metal", 5}, {"iron-gear-wheel", 20}, {"express-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
+    nuclear_transport_belt.normal.result = "nuclear-transport-belt"
+    nuclear_transport_belt.expensive.ingredients = {{"nuclear-metal", 10}, {"iron-gear-wheel", 40}, {"express-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
+    nuclear_transport_belt.expensive.result = "nuclear-transport-belt"
+else
+    nuclear_transport_belt.ingredients = {{"nuclear-metal", 5}, {"iron-gear-wheel", 20}, {"express-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
+    nuclear_transport_belt.result = "nuclear-transport-belt"
+end
 table.insert(recipes, nuclear_transport_belt)
 
 local nuclear_underground_belt = util.table.deepcopy(data.raw["recipe"]["express-underground-belt"])
@@ -85,10 +90,15 @@ table.insert(recipes, hardened_electric_furnace)
 
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["recipe"]["electric-mining-drill"])
 hardened_electric_mining_drill.name = "hardened-electric-mining-drill"
-hardened_electric_mining_drill.normal.ingredients = {{"electronic-circuit", 5}, {"iron-gear-wheel", 10}, {"iron-plate", 20}}
-hardened_electric_mining_drill.normal.result = "hardened-electric-mining-drill"
-hardened_electric_mining_drill.expensive.ingredients = {{"electronic-circuit", 10}, {"iron-gear-wheel", 20}, {"iron-plate", 40}}
-hardened_electric_mining_drill.expensive.result = "hardened-electric-mining-drill"
+if hardened_electric_mining_drill.normal then
+    hardened_electric_mining_drill.normal.ingredients = {{"electronic-circuit", 5}, {"iron-gear-wheel", 10}, {"iron-plate", 20}}
+    hardened_electric_mining_drill.normal.result = "hardened-electric-mining-drill"
+    hardened_electric_mining_drill.expensive.ingredients = {{"electronic-circuit", 10}, {"iron-gear-wheel", 20}, {"iron-plate", 40}}
+    hardened_electric_mining_drill.expensive.result = "hardened-electric-mining-drill"
+else
+    hardened_electric_mining_drill.ingredients = {{"electronic-circuit", 5}, {"iron-gear-wheel", 10}, {"iron-plate", 20}}
+    hardened_electric_mining_drill.result = "hardened-electric-mining-drill"
+end
 table.insert(recipes, hardened_electric_mining_drill)
 
 local nuclear_assembling_machine = util.table.deepcopy(data.raw["recipe"]["assembling-machine-3"])
@@ -168,10 +178,15 @@ if mods["PlutoniumEnergy"] then
 
     local plutonium_transport_belt = util.table.deepcopy(nuclear_transport_belt)
     plutonium_transport_belt.name = "plutonium-transport-belt"
-    plutonium_transport_belt.normal.ingredients = {{"plutonium-steel", 5}, {"iron-gear-wheel", 20}, {"nuclear-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
-    plutonium_transport_belt.normal.result = "plutonium-transport-belt"
-    plutonium_transport_belt.expensive.ingredients = {{"plutonium-steel", 10}, {"iron-gear-wheel", 40}, {"nuclear-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
-    plutonium_transport_belt.expensive.result = "plutonium-transport-belt"
+    if plutonium_transport_belt.normal then
+        plutonium_transport_belt.normal.ingredients = {{"plutonium-steel", 5}, {"iron-gear-wheel", 20}, {"nuclear-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
+        plutonium_transport_belt.normal.result = "plutonium-transport-belt"
+        plutonium_transport_belt.expensive.ingredients = {{"plutonium-steel", 10}, {"iron-gear-wheel", 40}, {"nuclear-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
+        plutonium_transport_belt.expensive.result = "plutonium-transport-belt"
+    else
+        plutonium_transport_belt.ingredients = {{"plutonium-steel", 5}, {"iron-gear-wheel", 20}, {"nuclear-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
+        plutonium_transport_belt.result = "plutonium-transport-belt"
+    end
     table.insert(recipes, plutonium_transport_belt)
 
     local plutonium_underground_belt = util.table.deepcopy(nuclear_underground_belt)
