@@ -79,7 +79,7 @@ table.insert(recipes, hardened_stone_furnace)
 
 local hardened_steel_furnace = util.table.deepcopy(hardened_stone_furnace)
 hardened_steel_furnace.name = "hardened-steel-furnace"
-hardened_stone_furnace.ingredients = {{"steel-furnace", 1}, {"steel-plate", 5}, {"iron-plate", 5}}
+hardened_steel_furnace.ingredients = {{"steel-furnace", 1}, {"steel-plate", 5}, {"iron-plate", 5}}
 hardened_steel_furnace.result = "hardened-steel-furnace"
 table.insert(recipes, hardened_steel_furnace)
 
