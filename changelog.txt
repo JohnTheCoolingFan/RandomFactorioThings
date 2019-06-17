@@ -2,6 +2,11 @@
 Version: 1.0.4
 Date: 09.06.2019
   Fixes:
+    - Fixed hardened stone and steel furnaces recipe ingredients.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 09.06.2019
+  Fixes:
     - Fixed crafting categories issue with boblogistics.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.3
