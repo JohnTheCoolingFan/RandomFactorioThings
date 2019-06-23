@@ -4,7 +4,3 @@ require("prototypes.entity.entities")             -- Other prototype types have 
 require("prototypes.item.item")
 require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
-
---TODO
--- Fix technologies ingredients, especially time.
--- Fix hardened electric mining drill recipe enabled by default
