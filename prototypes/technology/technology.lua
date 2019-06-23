@@ -19,7 +19,7 @@ data:extend({
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1}
             },
-            time = 1
+            time = 30
         },
         order = "c-d-a"
     },
@@ -41,7 +41,7 @@ data:extend({
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1}
             },
-            time = 1
+            time = 30
         },
         order = "c-d-b"
     },
@@ -64,7 +64,7 @@ data:extend({
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1}
             },
-            time = 1
+            time = 15
         },
         order = "c-d-c"
     },
@@ -87,7 +87,7 @@ data:extend({
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1}
             },
-            time = 1
+            time = 20
         },
         order = "c-d-d"
     },
@@ -209,7 +209,7 @@ data:extend({
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1}
             },
-            time = 1
+            time = 15
         },
         order = "a-b-d"
     },
