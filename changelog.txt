@@ -1,5 +1,14 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.4
+Version: 1.0.6
+Date: 23.06.2019
+  Balancing:
+    Hardened furnaces technology 1 & 2 time unit 1 ==> 30
+    Hardened furnace technology 3 time unit 1 ==> 15
+    Compressor technology time unit 1 ==> 15
+  Fixes:
+    Disabled hardened electric mining drill by default.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
 Date: 09.06.2019
   Fixes:
     - Fixed hardened stone and steel furnaces recipe ingredients.
