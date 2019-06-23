@@ -92,11 +92,14 @@ table.insert(recipes, hardened_electric_furnace)
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["recipe"]["electric-mining-drill"])
 hardened_electric_mining_drill.name = "hardened-electric-mining-drill"
 if hardened_electric_mining_drill.normal then
+    hardened_electric_mining_drill.normal.enabled = false
     hardened_electric_mining_drill.normal.ingredients = {{"electronic-circuit", 5}, {"iron-gear-wheel", 10}, {"iron-plate", 20}}
     hardened_electric_mining_drill.normal.result = "hardened-electric-mining-drill"
+    hardened_electric_mining_drill.expensive.enabled = false
     hardened_electric_mining_drill.expensive.ingredients = {{"electronic-circuit", 10}, {"iron-gear-wheel", 20}, {"iron-plate", 40}}
     hardened_electric_mining_drill.expensive.result = "hardened-electric-mining-drill"
 else
+    hardened_electric_mining_drill.enabled = false
     hardened_electric_mining_drill.ingredients = {{"electronic-circuit", 5}, {"iron-gear-wheel", 10}, {"iron-plate", 20}}
     hardened_electric_mining_drill.result = "hardened-electric-mining-drill"
 end
