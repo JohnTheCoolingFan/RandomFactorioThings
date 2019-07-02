@@ -35,13 +35,19 @@ Date: 08. 06. 2019
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 01. 06. 2019
-  Major Changes:
+  Major Features:
     - Added nuclear long-handed inserter.
     - Added nuclear stack inserter.
     - Added nuclear stack filter inserter.
-    - Added modules lvl 5 & 6
-  Minor changes:
+    - Added modules tier 5 and 6
+    - Added integration with Plutonium Energy.
+    - Added plutonium steel.
+    - Added plutonium assembling machine.
+    - Added plutonium inserters.
+    - Added plutonium transport belt.
+  Minor Features:
     - Updated locale files.
+    - Remade DeadLock integration.
   Balancing:
     - Fixed a lot of typos that affect balancing.
     - Module technologies rebalancing.
@@ -67,13 +73,6 @@ Date: 01. 06. 2019
   Graphics:
     - Updated nuclear assembling machine textures.
     - Updated nuclear automation technology icon
-  Mod integration:
-    - Added integration with Plutonium Energy:
-    - Added plutonium steel.
-    - Added plutonium assembling machine.
-    - Added plutonium inserters.
-    - Added plutonium transport belt.
-    - Remade DeadLock mods integration
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.4
 Date: 25. 04. 2019
@@ -98,7 +97,7 @@ Date: 14. 04. 2019
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.0
 Date: 13. 04. 2019
-  Major changes:
+  Major Features:
     - Removed hardened burner mining drill.
     - Added steel and electric hardened furnaces.
     - Removed "Hardened buildings" technology.
@@ -205,13 +204,13 @@ Date: 29. 09. 2018
 ---------------------------------------------------------------------------------------------------
 Version: 0.13.0
 Date: 29. 09. 2018
-  Mod integration:
+  Minor Features:
     - Added integration with Deadlock's mods.
 ---------------------------------------------------------------------------------------------------
 Version: 0.13.0
 Date: 24. 09. 2018
   Major Features:
-    - Added Speed-Productivity 1-2-3-4 tier modules.
+    - Added Speed-Productivity modules.
   Graphics:
     - Updated icons for merged modules.
     - Updated icons for merged modules technologies.
