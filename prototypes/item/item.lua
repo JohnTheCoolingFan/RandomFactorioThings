@@ -126,6 +126,7 @@ local coal_piece = util.table.deepcopy(data.raw["item"]["coal"])
 coal_piece.name = "coal-piece"
 coal_piece.icon = "__RandomFactorioThings__/graphics/icons/coal-piece.png"
 coal_piece.icon_size = 32
+coal_piece.icon_mipmaps = nil
 coal_piece.pictures = nil
 coal_piece.fuel_value = "4MJ"
 coal_piece.stack_size = 100
