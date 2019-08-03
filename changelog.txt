@@ -202,7 +202,7 @@ Date: 29. 09. 2018
   Fixes:
     - Fixed error on load.
 ---------------------------------------------------------------------------------------------------
-Version: 0.13.0
+Version: 0.13.1
 Date: 29. 09. 2018
   Minor Features:
     - Added integration with Deadlock's mods.
