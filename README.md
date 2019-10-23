@@ -4,7 +4,7 @@ Random Factorio Things extends vanilla (base) game, adding new assembling machin
 
 - New tiers of common machines, such as furnaces or mining drills.
 - New "Nuclear" tier for assemblling machines, inserters and transport belts.
-- Level 4 modules.
+- Level 4-6 modules.
 - Merged modules up to 4 levels. Merged modules combine characteristics of two modules, but take only one module slot.
 - Ability to combine wood and coal to get more effective fuel. ~~By the way, not really a main feature.~~
 
