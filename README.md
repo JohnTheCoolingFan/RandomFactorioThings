@@ -1,4 +1,4 @@
-Random Factorio Things extends vanilla (base) game, adding new assembling machines, new buildings tiers and new modules.
+Random Factorio Things (RFT for short) extends vanilla (base) game, adding new assembling machines, new buildings tiers and new modules.
 
 ### Main features:
 
