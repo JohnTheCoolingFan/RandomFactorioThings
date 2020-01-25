@@ -84,6 +84,7 @@ table.insert(items, macerator)
 local compressor = util.table.deepcopy(data.raw["item"]["assembling-machine-3"])
 compressor.name = "compressor"
 compressor.icon = "__RandomFactorioThings__/graphics/icons/compressor.png"
+compressor.icon_size = 32
 compressor.place_result = "compressor"
 compressor.order = "c[rft]-c[compressor]"
 table.insert(items, compressor)
