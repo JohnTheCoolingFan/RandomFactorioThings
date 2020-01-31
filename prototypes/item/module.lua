@@ -11,14 +11,23 @@ data.raw["module"]["productivity-module-3"].order = "e[productivity]-c[productiv
 
 -- Vanilla module icons
 data.raw["module"]["speed-module"].icon = "__RandomFactorioThings__/graphics/icons/modules/speed-module-1.png"
+data.raw["module"]["speed-module"].icon_size = 32
 data.raw["module"]["speed-module-2"].icon = "__RandomFactorioThings__/graphics/icons/modules/speed-module-2.png"
+data.raw["module"]["speed-module-2"].icon_size = 32
 data.raw["module"]["speed-module-3"].icon = "__RandomFactorioThings__/graphics/icons/modules/speed-module-3.png"
+data.raw["module"]["speed-module-3"].icon_size = 32
 data.raw["module"]["effectivity-module"].icon = "__RandomFactorioThings__/graphics/icons/modules/effectivity-module-1.png"
+data.raw["module"]["effectivity-module"].icon_size = 32
 data.raw["module"]["effectivity-module-2"].icon = "__RandomFactorioThings__/graphics/icons/modules/effectivity-module-2.png"
+data.raw["module"]["effectivity-module-2"].icon_size = 32
 data.raw["module"]["effectivity-module-3"].icon = "__RandomFactorioThings__/graphics/icons/modules/effectivity-module-3.png"
+data.raw["module"]["effectivity-module-3"].icon_size = 32
 data.raw["module"]["productivity-module"].icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-1.png"
+data.raw["module"]["productivity-module"].icon_size = 32
 data.raw["module"]["productivity-module-2"].icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-2.png"
+data.raw["module"]["productivity-module-2"].icon_size = 32
 data.raw["module"]["productivity-module-3"].icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-3.png"
+data.raw["module"]["productivity-module-3"].icon_size = 32
 
 data:extend({
     -- Speed
