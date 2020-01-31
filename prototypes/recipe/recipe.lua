@@ -55,8 +55,8 @@ if nuclear_transport_belt.normal then
 else
     nuclear_transport_belt.ingredients = {{"nuclear-metal", 5}, {"iron-gear-wheel", 20}, {"express-transport-belt", 1}, {type="fluid", name="lubricant", amount=20}}
     nuclear_transport_belt.result = "nuclear-transport-belt"
-    nuclear_transport_belt.category = "crafting-with-fluid"
 end
+nuclear_transport_belt.category = "crafting-with-fluid"
 table.insert(recipes, nuclear_transport_belt)
 
 local nuclear_underground_belt = util.table.deepcopy(data.raw["recipe"]["express-underground-belt"])

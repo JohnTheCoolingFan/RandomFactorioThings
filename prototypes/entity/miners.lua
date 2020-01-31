@@ -3,6 +3,7 @@ local miners = {}
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["mining-drill"]["electric-mining-drill"])
 hardened_electric_mining_drill.name = "hardened-electric-mining-drill"
 hardened_electric_mining_drill.icon = "__RandomFactorioThings__/graphics/icons/hardened-electric-mining-drill.png"
+hardened_electric_mining_drill.icon_size = 32
 hardened_electric_mining_drill.minable.result = "hardened-electric-mining-drill"
 hardened_electric_mining_drill.max_health = 400
 hardened_electric_mining_drill.energy_usage = "110kW"
