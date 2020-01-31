@@ -5,4 +5,4 @@ require("prototypes.item.item")
 require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
 
--- TODO: Problem with icon_size. *FUUUUUUUUUUUUUUUUUUUUUUUUU*
+-- TODO: remake (*AGAIN?*) icons for 64 size
