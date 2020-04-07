@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
-Date: 07.04.2020
+Date: 08.04.2020
   Minor features:
     - Added Vanilla Loaders HD compatibility.
   Balancing:
