@@ -7,9 +7,9 @@
     "homepage": "https://discord.gg/grHVhE2",
     "dependencies": [
         "base >= 0.18.0",
-        "?PlutoniumEnergy",
-        "?deadlock-beltboxes-loaders",
-        "?vanilla-loaders-hd"
+        "? PlutoniumEnergy",
+        "? deadlock-beltboxes-loaders",
+        "? vanilla-loaders-hd >= 0.18.7"
     ],
     "description": "Mod that continues idea of vanilla game.",
     "factorio_version": "0.18"
