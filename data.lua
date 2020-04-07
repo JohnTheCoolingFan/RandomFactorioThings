@@ -6,3 +6,4 @@ require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
 
 -- TODO: remake (*AGAIN?*) icons for 64 size
+-- TODO: Vanilla loaders HD support
