@@ -3,6 +3,9 @@ Version: 1.1.1
 Date: 07.04.2020
   Fixes:
     - Added missing locale for plutonium techs.
+  Balancing:
+    - Moved nuclear logistics and construction robots from nuclear automation to nuclear logistics
+      technology
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 25. 01. 2020
