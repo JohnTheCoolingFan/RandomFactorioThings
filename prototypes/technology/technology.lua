@@ -137,7 +137,7 @@ data:extend({
                 {"chemical-science-pack", 1},
                 {"utility-science-pack", 1}
             },
-            time = 35
+            time = 30
         },
         order = "a-f-d"
     },
@@ -181,7 +181,7 @@ data:extend({
                 {"chemical-science-pack", 1},
                 {"production-science-pack", 1}
             },
-            time = 15
+            time = 20
         },
         order = "a-f-c"
     },

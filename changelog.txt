@@ -6,6 +6,8 @@ Date: 07.04.2020
   Balancing:
     - Moved nuclear logistics and construction robots from nuclear automation to nuclear logistics
       technology.
+    - Nuclear automation technology time component 35 ==> 30
+    - Nuclear logistics technology time component 15 ==> 20
   Fixes:
     - Added missing locale for plutonium techs.
 ---------------------------------------------------------------------------------------------------
