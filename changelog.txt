@@ -1,11 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 08.04.2020
+  Minor features:
+    - Added Vanilla Loaders HD compatibility.
+  Balancing:
+    - Moved nuclear logistics and construction robots from nuclear automation to nuclear logistics
+      technology.
+    - Nuclear automation technology time component 35 ==> 30
+    - Nuclear logistics technology time component 15 ==> 20
+  Fixes:
+    - Added missing locale for plutonium techs.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
-Date: 25. 01. 2020
+Date: 25.01.2020
   Major Features:
-  	- Updates and fixes for Factorio 0.18
+    - Updates and fixes for Factorio 0.18
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.6
-Date: 23. 06. 2019
+Date: 23.06.2019
   Balancing:
     - Hardened furnaces technology 1 & 2 time unit 1 ==> 30
     - Hardened furnace technology 3 time unit 1 ==> 15
@@ -14,32 +26,32 @@ Date: 23. 06. 2019
     - Disabled hardened electric mining drill by default.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.5
-Date: 09. 06. 2019
+Date: 09.06.2019
   Fixes:
     - Fixed hardened stone and steel furnaces recipe ingredients.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.4
-Date: 09. 06. 2019
+Date: 09.06.2019
   Fixes:
     - Fixed crafting categories issue with boblogistics.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.3
-Date: 09. 06. 2019
+Date: 09.06.2019
   Fixes:
     - Fixed error caused by incompatibility with boblogistics.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
-Date: 08. 06. 2019
+Date: 08.06.2019
   Fixes:
     - Fixed icons for coal piece, sawdust and compressed fuel.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
-Date: 08. 06. 2019
+Date: 08.06.2019
   Fixes:
     - Fixed plutonium item names for integration with Plutonium Energy.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
-Date: 01. 06. 2019
+Date: 01.06.2019
   Major Features:
     - Added nuclear long-handed inserter.
     - Added nuclear stack inserter.
@@ -80,28 +92,28 @@ Date: 01. 06. 2019
     - Updated nuclear automation technology icon
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.4
-Date: 25. 04. 2019
+Date: 25.04.2019
   Fixes:
     - Fixed nuclear inserter entity icon.
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.3
-Date: 24. 04. 2019
+Date: 24.04.2019
   Fixes:
     - Fixed nuclear underground belt side loading sprite.
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.2
-Date: 24. 04. 2019
+Date: 24.04.2019
   Fixes:
     - Fixed hardened steel furnace lr texture filename.
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.1
-Date: 14. 04. 2019
+Date: 14.04.2019
   Locale:
     - Russian: Ядрённый сборщик ==> Ядрённый сборочный автомат.
     - Ukrainian: Ядерний складальник ==> Ядерний складальний автомат.
 ---------------------------------------------------------------------------------------------------
 Version: 0.15.0
-Date: 13. 04. 2019
+Date: 13.04.2019
   Major Features:
     - Removed hardened burner mining drill.
     - Added steel and electric hardened furnaces.
@@ -126,7 +138,7 @@ Date: 13. 04. 2019
     - Updated hardened stone furnace textures.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.11
-Date: 06. 03. 2019
+Date: 06.03.2019
   Fixes:
     - Fixed nuclear transport belt animation (lr and hr).
     - Fixed Nuclear construction robot animation.
@@ -136,12 +148,12 @@ Date: 06. 03. 2019
     - Fixed order for nuclear robots.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.10
-Date: 04. 03. 2019
+Date: 04.03.2019
   Fixes:
     - Fixed nuclear transport belt texture name.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.9
-Date: 04. 03. 2019
+Date: 04.03.2019
   Balancing:
     - Speed module 4 speed bonus 0.7 ==> 0.8
     - Speed module 4 consumption bonus 1 ==> 0.8
@@ -149,53 +161,53 @@ Date: 04. 03. 2019
     - Productivity module productivity bonus 0.12 ==> 0.16
     - Productivity module pollution bonus 0.15 ==> 0.125
     - Speed-Effectivity module speed bonus 0.7 ==> 0.8
-    - Speed-Effectivity module consumption bonus 0. 3==> 0.2
+    - Speed-Effectivity module consumption bonus 0.3==> 0.2
     - Productivity-Effectivity module productivity bonus 0.12 == 0.16
     - Productivity-Effectivity module consumption bonus 0.3 ==> 0.4
     - Productivity-Effectivity module pollution bonus 0.15 ==> 0.125
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.8
-Date: 04. 03. 2019
+Date: 04.03.2019
   Fixes:
     - Fixed science pack names for module technologies.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.7
-Date: 04. 03. 2019
+Date: 04.03.2019
   Fixes:
     - Fixed missing require() for module-technology tree (https://github.com/JohnTheCoolingFan/RandomFactorioThings/issues/3).
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.6
-Date: 26. 02. 2019
+Date: 26.02.2019
   Minor Features:
     - Added thumbnail.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.5
-Date: 26. 02. 2019
+Date: 26.02.2019
   Minor Features:
     - Updated to Factorio 0.17.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.4
-Date: 23. 10. 2018
+Date: 23.10.2018
   Fixes:
     - Fixed non-hr texture path errors.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.3
-Date: 23. 10. 2018
+Date: 23.10.2018
   Fixes:
     - Fixed non-hr texture path errors.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.2
-Date: 22. 10. 2018
+Date: 22.10.2018
   Fixes:
     - Fixed non-hr texture path errors.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.1
-Date: 21. 10. 2018
+Date: 21.10.2018
   Graphics:
     - Graphics improvements for hardened buildings (burner miner and electric miner).
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.0
-Date: 16. 10. 2018
+Date: 16.10.2018
   Major Features:
     - Added nuclear drones.
   Minor Features:
@@ -203,17 +215,17 @@ Date: 16. 10. 2018
     - Some localisation improvements.
 ---------------------------------------------------------------------------------------------------
 Version: 0.13.2
-Date: 29. 09. 2018
+Date: 29.09.2018
   Fixes:
     - Fixed error on load.
 ---------------------------------------------------------------------------------------------------
 Version: 0.13.1
-Date: 29. 09. 2018
+Date: 29.09.2018
   Minor Features:
     - Added integration with Deadlock's mods.
 ---------------------------------------------------------------------------------------------------
 Version: 0.13.0
-Date: 24. 09. 2018
+Date: 24.09.2018
   Major Features:
     - Added Speed-Productivity modules.
   Graphics:
@@ -223,12 +235,12 @@ Date: 24. 09. 2018
     - Merged modules research ingredient multiplier 150 ==> 200
 ---------------------------------------------------------------------------------------------------
 Version: 0.12.2
-Date: 18. 08. 2018
+Date: 18.08.2018
   Fixes:
     - Fixed error with wrong texture path.
 ---------------------------------------------------------------------------------------------------
 Version: 0.12.1
-Date: 15. 08. 2018
+Date: 15.08.2018
   Balancing:
     - Changed merged modules researches 2-3-4 level to include science packs 3
     - Changed merged modules researches 3-4 level time from 30 to 60
@@ -236,7 +248,7 @@ Date: 15. 08. 2018
     - Replaced production science pack by high-tech science pack in Speed module 4 research.
 ---------------------------------------------------------------------------------------------------
 Version: 0.12.0
-Date: 03. 08. 2018
+Date: 03.08.2018
   Major Features:
     - Added Nuclear empowered axe.
     - Added Nuclear empowered logistics research.
@@ -248,12 +260,12 @@ Date: 03. 08. 2018
     - "Nuclear automatisation" research renamed to "Nuclear automation".
 ---------------------------------------------------------------------------------------------------
 Version: 0.11.1
-Date: 31. 07. 2018
+Date: 31.07.2018
   Fixes:
     - Fixed that game does not load because of my mistake.
 ---------------------------------------------------------------------------------------------------
 Version: 0.11.0
-Date: 31. 07. 2018
+Date: 31.07.2018
   Balancing:
     - Hardened buildings technology: ingridient count changed to 100 (90 previously).
     - Nuclear automation technology ingredient count 300 ==> 500
@@ -265,28 +277,28 @@ Date: 31. 07. 2018
     - Nuclear empowered inserter energy cinsumption per movement and per rotation changed to 15kW
 ---------------------------------------------------------------------------------------------------
 Version: 0.10.4
-Date: 30. 07. 2018
+Date: 30.07.2018
   Minor Features:
     - changelog.txt restructurized AGAIN.
 ---------------------------------------------------------------------------------------------------
 Version: 0.10.3
-Date: 04. 05. 2018
+Date: 04.05.2018
   Minor Features:
     - Restructurized changelog.txt.
     - Removed dependency on JohnCore.
 ---------------------------------------------------------------------------------------------------
 Version: 0.10.2
-Date: 21. 03. 2018
+Date: 21.03.2018
   Minor Features:
     - Nuclear assembling machine and modules order improvements.
 ---------------------------------------------------------------------------------------------------
 Version: 0.10.1
-Date: 28. 01. 2018
+Date: 28.01.2018
   Graphics:
     - Added textures for Nuclear empowered inserter.
 ---------------------------------------------------------------------------------------------------
 Version: 0.10.0
-Date: 18. 12. 2017
+Date: 18.12.2017
   Major Features:
     - Added Nuclear empowered inserter.
     - Added Nuclear metal and Raw Nuclear metal.

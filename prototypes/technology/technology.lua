@@ -126,18 +126,6 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "raw-nuclear-metal"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "nuclear-flying-robot-frame"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "nuclear-logistic-robot"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "nuclear-construction-robot"
             }
         },
         prerequisites = {"uranium-processing", "automation-3"},
@@ -149,7 +137,7 @@ data:extend({
                 {"chemical-science-pack", 1},
                 {"utility-science-pack", 1}
             },
-            time = 35
+            time = 30
         },
         order = "a-f-d"
     },
@@ -170,6 +158,18 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "nuclear-splitter"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "nuclear-flying-robot-frame"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "nuclear-logistic-robot"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "nuclear-construction-robot"
             }
         },
         prerequisites = {"logistics-3", "uranium-processing"},
@@ -181,7 +181,7 @@ data:extend({
                 {"chemical-science-pack", 1},
                 {"production-science-pack", 1}
             },
-            time = 15
+            time = 20
         },
         order = "a-f-c"
     },
