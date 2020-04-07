@@ -9,7 +9,7 @@
         "base >= 0.18.0",
         "? PlutoniumEnergy",
         "? deadlock-beltboxes-loaders",
-        "? vanilla-loaders-hd >= 0.18.7"
+        "? vanilla-loaders-hd >= 0.18.8"
     ],
     "description": "Mod that continues idea of vanilla game.",
     "factorio_version": "0.18"
