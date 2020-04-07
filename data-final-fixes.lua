@@ -51,6 +51,8 @@ if deadlock then
 end
 
 if vanillaHD then
+    local nuclear_loader_next_tier = nil
+    if mods['PlutoniumEnergy'] then nuclear_loader_next_tier = 'plutonium-loader' end
     vanillaHD.addLoader('nuclear-loader', {r=0,g=255,b=0}, 'nuclear-transport-belt', 'nuclear-logistics', 'express-loader')
     if mods['PlutoniumEnergy'] then
         vanillaHD.addLoader('plutonium-loader', {r=26,g=230,b=179}, 'plutonium-transport-belt', 'plutonium-logistics', 'nuclear-loader')
