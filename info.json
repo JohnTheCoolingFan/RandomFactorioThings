@@ -8,7 +8,8 @@
     "dependencies": [
         "base >= 0.18.0",
         "?PlutoniumEnergy",
-        "?deadlock-beltboxes-loaders"
+        "?deadlock-beltboxes-loaders",
+        "?vanilla-loaders-hd"
     ],
     "description": "Mod that continues idea of vanilla game.",
     "factorio_version": "0.18"
