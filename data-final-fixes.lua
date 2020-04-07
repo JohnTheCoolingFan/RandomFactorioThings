@@ -50,11 +50,15 @@ if deadlock then
     end
 end
 
+-- Vanilla Loaders HD (vanilla-loaders-hd) integration
 if vanillaHD then
+    -- This part acn be more compact, but this is ok.
     local nuclear_loader_next_tier = nil
     if mods['PlutoniumEnergy'] then nuclear_loader_next_tier = 'plutonium-loader' end
+    -- Nuclear [empowered] loader
     vanillaHD.addLoader('nuclear-loader', {r=0,g=255,b=0}, 'nuclear-transport-belt', 'nuclear-logistics', 'express-loader')
     if mods['PlutoniumEnergy'] then
+        -- Plutonium loader
         vanillaHD.addLoader('plutonium-loader', {r=26,g=230,b=179}, 'plutonium-transport-belt', 'plutonium-logistics', 'nuclear-loader')
     end
 end
