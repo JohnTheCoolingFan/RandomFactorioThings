@@ -56,7 +56,7 @@ if vanillaHD then
     vanillaHD.addLoader("nuclear-loader", {r=0,g=255,b=0}, "nuclear-transport-belt", "nuclear-logistics", "express-loader")
 
     -- If PlutoniumEnergy is present, create plutonium loader with nuclear loader as the previous tier
-    if mods ["PlutoniumEnergy"] then
+    if mods["PlutoniumEnergy"] then
         vanillaHD.addLoader("plutonium-loader", {r=26,g=230,b=179}, "plutonium-transport-belt", "plutonium-logistics", "nuclear-loader")
     end
 end
