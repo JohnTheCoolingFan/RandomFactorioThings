@@ -1,3 +1,6 @@
+-- TODO: **URGENT** Fix #21
+--       Remake graphics again
+
 require("prototypes.entity.inserters")
 require("prototypes.entity.miners")
 require("prototypes.entity.assemblerpipes")
