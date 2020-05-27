@@ -6,5 +6,5 @@ require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
 
 -- TODO: **URGENT** Fix #21
--- TODO: remake (*AGAIN?*) icons for 64 size
+-- TODO: icon mipmaps. remake icons completely. Same for other graphics
 -- TODO: idea. Quantum tier (how original...)
