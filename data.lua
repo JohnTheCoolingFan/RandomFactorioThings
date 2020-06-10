@@ -7,4 +7,5 @@ require("prototypes.technology.technology")
 
 -- TODO: **URGENT** Fix #21
 -- TODO: icon mipmaps. remake icons completely. Same for other graphics
+-- TODO: PNG optimisation
 -- TODO: idea. Quantum tier (how original...)
