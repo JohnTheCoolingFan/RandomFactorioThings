@@ -1,3 +1,5 @@
+-- TODO: implement new graphics for hardened electric mining drill
+
 local miners = {}
 
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["mining-drill"]["electric-mining-drill"])
