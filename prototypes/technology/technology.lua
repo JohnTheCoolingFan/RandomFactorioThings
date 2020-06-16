@@ -106,10 +106,10 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "raw-nuclear-metal"
+            },
             {
                 type = "unlock-recipe",
                 recipe = "raw-nuclear-metal-smelting"
-            },
             },
             {
                 type = "unlock-recipe",
@@ -195,7 +195,7 @@ data:extend({
         type = "technology",
         name = "compressor",
         icon = "__RandomFactorioThings__/graphics/icons/compressor.png",
-        icon_size = 32,
+        icon_size = 64,
         effects = {
             {
                 type = "unlock-recipe",
