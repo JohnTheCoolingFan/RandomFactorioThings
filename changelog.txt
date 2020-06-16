@@ -3,6 +3,10 @@ Version: 1.1.3
 Date: 16.06.2020
   Major features:
     - Added Nuclear and Plutonium filter inserters
+  Minor features:
+    - Renamed coal piece to coal dust
+  Balancing:
+    - Added Fast inserter to Nuclear inserter recipe
   Graphics:
     - Updated hardened electric mining drill graphics
     - Updated icons (except modules)
