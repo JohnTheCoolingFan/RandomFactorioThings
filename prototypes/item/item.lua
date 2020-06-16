@@ -128,14 +128,14 @@ hardened_electric_mining_drill.icon = "__RandomFactorioThings__/graphics/icons/h
 hardened_electric_mining_drill.place_result = "hardened-electric-mining-drill"
 table.insert(items, hardened_electric_mining_drill)
 
-local coal_piece = util.table.deepcopy(data.raw["item"]["coal"])
-coal_piece.name = "coal-piece"
-coal_piece.icon = "__RandomFactorioThings__/graphics/icons/coal-piece.png"
-coal_piece.icon_mipmaps = nil
-coal_piece.pictures = nil
-coal_piece.fuel_value = "4MJ"
-coal_piece.stack_size = 100
-table.insert(items, coal_piece)
+local coal_dust = util.table.deepcopy(data.raw["item"]["coal"])
+coal_dust.name = "coal-dust"
+coal_dust.icon = "__RandomFactorioThings__/graphics/icons/coal-dust.png"
+coal_dust.icon_mipmaps = nil
+coal_dust.pictures = nil
+coal_dust.fuel_value = "4MJ"
+coal_dust.stack_size = 100
+table.insert(items, coal_dust)
 
 local sawdust = util.table.deepcopy(coal_piece)
 sawdust.name = "sawdust"
