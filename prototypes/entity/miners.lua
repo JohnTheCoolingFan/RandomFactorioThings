@@ -3,7 +3,7 @@
 local miners = {}
 
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["mining-drill"]["electric-mining-drill"])
-local hemd_graphics_path = '__RandomFactorioThings/graphics/entity/hardened-electric-mining-drill/'
+local hemd_graphics_path = '__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/'
 
 -- These were yanked from __base__/prototypes/entity/demo-mining-drill.lua
 -- There probably could be a better way to do this, but I think this will work. Hope vanilla graphics won't change very often.
@@ -109,15 +109,15 @@ local hemd_animation = hardened_electric_mining_drill.graphics_set.animation
     hemd_animation.west.layers[1].filename = hemd_graphics_path..'hardened-electric-mining-drill-W.png'
     hemd_animation.west.layers[1].hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-W.png'
 
-local hemd_working_vis = hardened_electric_mining_drill.working_visualisations
+local hemd_working_vis = hardened_electric_mining_drill.graphics_set.working_visualisations
     hemd_working_vis[3].north_animation.layers[1] = hardened_electric_mining_drill_animation()
     hemd_working_vis[3].east_animation.layers[1] = hardened_electric_mining_drill_horizontal_animation()
     hemd_working_vis[3].south_animation.layers[1] = hardened_electric_mining_drill_animation()
     hemd_working_vis[3].west_animation.layers[1] = hardened_electric_mining_drill_horizontal_animation()
     hemd_working_vis[6].east_animation.filename = hemd_graphics_path..'hardened-electric-mining-drill-E-front.png'
     hemd_working_vis[6].east_animation.hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-E-front.png'
-    hemd_working_vis[6].south_animation.filename = hemd_graphics_path..'hardened-electric-mining-drill-S-front.png'
-    hemd_working_vis[6].south_animation.hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-S-front.png'
+    hemd_working_vis[6].south_animation.layers[2].filename = hemd_graphics_path..'hardened-electric-mining-drill-S-front.png'
+    hemd_working_vis[6].south_animation.layers[2].hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-S-front.png'
     hemd_working_vis[6].west_animation.filename = hemd_graphics_path..'hardened-electric-mining-drill-W-front.png'
     hemd_working_vis[6].west_animation.hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-W-front.png'
 
@@ -137,8 +137,8 @@ local hemd_wet_work = hemd_wet.working_visualisations
     hemd_wet_work[12].north_animation.layers[1].hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-N-wet-front.png'
     hemd_wet_work[12].west_animation.layers[1].filename = hemd_graphics_path..'hardened-electric-mining-drill-W-wet-front.png'
     hemd_wet_work[12].west_animation.layers[1].hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-W-wet-front.png'
-    hemd_wet_work[12].south_animation.layers[1].filename = hemd_graphics_path..'hardened-electric-mining-drill-S-wet-front.png'
-    hemd_wet_work[12].south_animation.layers[1].hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-S-wet-front.png'
+    hemd_wet_work[12].south_animation.layers[2].filename = hemd_graphics_path..'hardened-electric-mining-drill-S-wet-front.png'
+    hemd_wet_work[12].south_animation.layers[2].hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-S-wet-front.png'
     hemd_wet_work[12].east_animation.layers[1].filename = hemd_graphics_path..'hardened-electric-mining-drill-E-wet-front.png'
     hemd_wet_work[12].east_animation.layers[1].hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-E-wet-front.png'
     hemd_wet_work[13].east_animation = hardened_electric_mining_drill_horizontal_animation()

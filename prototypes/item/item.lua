@@ -137,14 +137,14 @@ coal_dust.fuel_value = "4MJ"
 coal_dust.stack_size = 100
 table.insert(items, coal_dust)
 
-local sawdust = util.table.deepcopy(coal_piece)
+local sawdust = util.table.deepcopy(coal_dust)
 sawdust.name = "sawdust"
 sawdust.icon = "__RandomFactorioThings__/graphics/icons/sawdust.png"
 sawdust.fuel_value = "1MJ"
 sawdust.stack_size = 50
 table.insert(items, sawdust)
 
-local compressed_fuel = util.table.deepcopy(coal_piece)
+local compressed_fuel = util.table.deepcopy(coal_dust)
 compressed_fuel.name = "compressed-fuel"
 compressed_fuel.icon = "__RandomFactorioThings__/graphics/icons/compressed-fuel.png"
 compressed_fuel.fuel_value = "12MJ"

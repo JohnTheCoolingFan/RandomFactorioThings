@@ -29,7 +29,7 @@ table.insert(recipes, nuclear_inserter)
 
 local nuclear_filter_inserter = util.table.deepcopy(data.raw['recipe']['filter-inserter'])
 nuclear_filter_inserter.name = 'nuclear-filter-inserter'
-nuclear_filter_Inserter.ingredients = {{'nuclear-inserter', 1}, {'processing-unit', 2}}
+nuclear_filter_inserter.ingredients = {{'nuclear-inserter', 1}, {'processing-unit', 2}}
 nuclear_filter_inserter.result = 'nuclear-filter-inserter'
 table.insert(recipes, nuclear_filter_inserter)
 
