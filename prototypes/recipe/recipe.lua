@@ -225,14 +225,14 @@ data:extend(recipes)
 data:extend({
     {
         type = "recipe",
-        name = "coal-piece",
+        name = "coal-dust",
         enabled = true,
         category = "grinding",
         ingredients = {
             {"coal", 1},
         },
         result_count = 2,
-        result = "coal-piece"
+        result = "coal-dust"
     },
     {
         type = "recipe",
