@@ -42,6 +42,26 @@ nuclear_long_handed_inserter.platform_picture.sheet.hr_version.filename = "__Ran
 table.insert(inserters, nuclear_long_handed_inserter)
 data.raw["inserter"]["long-handed-inserter"].next_upgrade = "nuclear-long-handed-inserter"
 
+local nuclear_filter_inserter = util.table.deepcopy(data.raw['inserter']['filter-inserter'])
+nuclear_filter_inserter.name = 'nuclear-filter-inserter'
+nuclear_filter_inserter.icon = '__RandomFactorioThings/graphics/icons/nuclear-filter-inserter.png'
+nuclear_filter_inserter.minable.result = 'nuclear-filter-inserter'
+nuclear_filter_inserter.energy_per_movement = '17kJ'
+nuclear_filter_inserter.energy_per_rotation = '17kJ'
+nuclear_filter_inserter.extension_speed = 0.1
+nuclear_filter_inserter.rotation_speed = 0.06
+nuclear_filter_inserter.next_upgrade = nil
+nuclear_filter_inserter.hand_base_picture.filename = "__RandomFactorioThings__/graphics/entity/nuclear-filter-inserter/nuclear-filter-inserter-hand-base.png"
+nuclear_filter_inserter.hand_base_picture.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-filter-inserter/hr-nuclear-filter-inserter-hand-base.png"
+nuclear_filter_inserter.hand_closed_picture.filename = "__RandomFactorioThings__/graphics/entity/nuclear-filter-inserter/nuclear-filter-inserter-hand-closed.png"
+nuclear_filter_inserter.hand_closed_picture.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-filter-inserter/hr-nuclear-filter-inserter-hand-closed.png"
+nuclear_filter_inserter.hand_open_picture.filename = "__RandomFactorioThings__/graphics/entity/nuclear-filter-inserter/nuclear-filter-inserter-hand-open.png"
+nuclear_filter_inserter.hand_open_picture.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-filter-inserter/hr-nuclear-filter-inserter-hand-open.png"
+nuclear_filter_inserter.platform_picture.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-filter-inserter/nuclear-filter-inserter-platform.png"
+nuclear_filter_inserter.platform_picture.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-filter-inserter/hr-nuclear-filter-inserter-platform.png"
+table.insert(inserters, nuclear_filter_inserter)
+data.raw['inserter']['filter_inserter'].next_upgrade = 'nuclear-filter-inserter'
+
 local nuclear_stack_inserter = util.table.deepcopy(data.raw["inserter"]["stack-inserter"])
 nuclear_stack_inserter.name = "nuclear-stack-inserter"
 nuclear_stack_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-stack-inserter.png"
