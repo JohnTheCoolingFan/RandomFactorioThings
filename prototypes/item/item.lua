@@ -94,6 +94,12 @@ nuclear_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-inserte
 nuclear_inserter.place_result = "nuclear-inserter"
 table.insert(items, nuclear_inserter)
 
+local nuclear_filter_inserter = util.table.deepcopy(data.raw["item"]["filter-inserter"])
+nuclear_filter_inserter.name = "nuclear-filter-inserter"
+nuclear_filter_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-filter-inserter.png"
+nuclear_filter_inserter.place_result = "nuclear-filter-inserter"
+table.insert(items, nuclear_filter_inserter)
+
 local nuclear_long_handed_inserter = util.table.deepcopy(data.raw["item"]["long-handed-inserter"])
 nuclear_long_handed_inserter.name = "nuclear-long-handed-inserter"
 nuclear_long_handed_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-long-handed-inserter.png"
@@ -178,6 +184,12 @@ if mods["PlutoniumEnergy"] then
     plutonium_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-inserter.png"
     plutonium_inserter.place_result = "plutonium-inserter"
     table.insert(items, plutonium_inserter)
+
+    local plutonium_filter_inserter = util.table.deepcopy(nuclear_filter_inserter)
+    plutonium_filter_inserter.name = "plutonium-filter-inserter"
+    plutonium_filter_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-filter-inserter.png"
+    plutonium_filter_inserter.place_result = "plutonium-filter-inserter"
+    table.insert(items, plutonium_filter_inserter)
 
     local plutonium_long_handed_inserter = util.table.deepcopy(nuclear_long_handed_inserter)
     plutonium_long_handed_inserter.name = "plutonium-long-handed-inserter"
