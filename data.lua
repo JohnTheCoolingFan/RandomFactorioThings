@@ -6,6 +6,5 @@ require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
 
 -- TODO: **URGENT** Fix #21
--- TODO: icon mipmaps. remake icons completely. Same for other graphics
--- TODO: PNG optimisation
+-- TODO: modules and beacons starting from 0.18.32
 -- TODO: idea. Quantum tier (how original...)
