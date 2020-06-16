@@ -108,6 +108,10 @@ data:extend({
                 recipe = "nuclear-inserter"
             },
             {
+                type = 'unlock-recipe',
+                recipe = 'nuclear-filter-inserter'
+            },
+            {
                 type = "unlock-recipe",
                 recipe = "nuclear-long-handed-inserter"
             },
@@ -239,6 +243,10 @@ if mods["PlutoniumEnergy"] then
                 {
                     type = "unlock-recipe",
                     recipe = "plutonium-inserter"
+                },
+                {
+                    type = 'unlock-recipe',
+                    recipe = 'plutonium-filter-inserter'
                 },
                 {
                     type = "unlock-recipe",
