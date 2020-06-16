@@ -105,6 +105,14 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
+                recipe = "raw-nuclear-metal"
+            {
+                type = "unlock-recipe",
+                recipe = "raw-nuclear-metal-smelting"
+            },
+            },
+            {
+                type = "unlock-recipe",
                 recipe = "nuclear-inserter"
             },
             {
@@ -122,14 +130,6 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "nuclear-stack-filter-inserter"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "raw-nuclear-metal-smelting"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "raw-nuclear-metal"
             }
         },
         prerequisites = {"uranium-processing", "automation-3"},
@@ -230,15 +230,15 @@ if mods["PlutoniumEnergy"] then
             effects = {
                 {
                     type = "unlock-recipe",
+                    recipe = "plutonium-assembling-machine"
+                },
+                {
+                    type = "unlock-recipe",
                     recipe = "raw-plutonium-steel"
                 },
                 {
                     type = "unlock-recipe",
                     recipe = "raw-plutonium-steel-smelting"
-                },
-                {
-                    type = "unlock-recipe",
-                    recipe = "plutonium-assembling-machine"
                 },
                 {
                     type = "unlock-recipe",
