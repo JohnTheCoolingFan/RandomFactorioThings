@@ -105,7 +105,19 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
+                recipe = "raw-nuclear-metal"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "raw-nuclear-metal-smelting"
+            },
+            {
+                type = "unlock-recipe",
                 recipe = "nuclear-inserter"
+            },
+            {
+                type = 'unlock-recipe',
+                recipe = 'nuclear-filter-inserter'
             },
             {
                 type = "unlock-recipe",
@@ -118,14 +130,6 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "nuclear-stack-filter-inserter"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "raw-nuclear-metal-smelting"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "raw-nuclear-metal"
             }
         },
         prerequisites = {"uranium-processing", "automation-3"},
@@ -191,7 +195,7 @@ data:extend({
         type = "technology",
         name = "compressor",
         icon = "__RandomFactorioThings__/graphics/icons/compressor.png",
-        icon_size = 32,
+        icon_size = 64,
         effects = {
             {
                 type = "unlock-recipe",
@@ -226,6 +230,10 @@ if mods["PlutoniumEnergy"] then
             effects = {
                 {
                     type = "unlock-recipe",
+                    recipe = "plutonium-assembling-machine"
+                },
+                {
+                    type = "unlock-recipe",
                     recipe = "raw-plutonium-steel"
                 },
                 {
@@ -234,11 +242,11 @@ if mods["PlutoniumEnergy"] then
                 },
                 {
                     type = "unlock-recipe",
-                    recipe = "plutonium-assembling-machine"
+                    recipe = "plutonium-inserter"
                 },
                 {
-                    type = "unlock-recipe",
-                    recipe = "plutonium-inserter"
+                    type = 'unlock-recipe',
+                    recipe = 'plutonium-filter-inserter'
                 },
                 {
                     type = "unlock-recipe",

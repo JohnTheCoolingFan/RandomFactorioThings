@@ -5,5 +5,6 @@ require("prototypes.item.item")
 require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
 
--- TODO: remake (*AGAIN?*) icons for 64 size
--- TODO: Vanilla loaders HD support
+-- TODO: **URGENT** Fix #21
+-- TODO: modules and beacons starting from 0.18.32
+-- TODO: idea. Quantum tier (how original...)

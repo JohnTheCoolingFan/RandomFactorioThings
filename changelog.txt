@@ -1,8 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 16.06.2020
+  Major features:
+    - Added Nuclear and Plutonium filter inserters
+  Minor features:
+    - Renamed coal piece to coal dust
+    - Changed unlocks order in automation techs
+  Balancing:
+    - Added Fast inserter to Nuclear inserter recipe
+  Graphics:
+    - Updated hardened electric mining drill graphics
+    - Updated icons (except modules)
+    - Massive PNG optimisation
+---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 09.04.2020
   Minor Features:
-    - Added Polish locale by Gutu [TSM]#8528
+    - Added Polish locale by Guru [TSM]#8528
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 08.04.2020

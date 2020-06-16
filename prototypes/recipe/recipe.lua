@@ -23,9 +23,15 @@ table.insert(recipes, nuclear_construction_robot)
 
 local nuclear_inserter = util.table.deepcopy(data.raw["recipe"]["fast-inserter"])
 nuclear_inserter.name = "nuclear-inserter"
-nuclear_inserter.ingredients = {{"advanced-circuit", 1}, {"iron-gear-wheel", 5}, {"nuclear-metal", 2},}
+nuclear_inserter.ingredients = {{'fast-inserter', 1}, {"advanced-circuit", 1}, {"iron-gear-wheel", 5}, {"nuclear-metal", 2}}
 nuclear_inserter.result = "nuclear-inserter"
 table.insert(recipes, nuclear_inserter)
+
+local nuclear_filter_inserter = util.table.deepcopy(data.raw['recipe']['filter-inserter'])
+nuclear_filter_inserter.name = 'nuclear-filter-inserter'
+nuclear_filter_inserter.ingredients = {{'nuclear-inserter', 1}, {'processing-unit', 2}}
+nuclear_filter_inserter.result = 'nuclear-filter-inserter'
+table.insert(recipes, nuclear_filter_inserter)
 
 local nuclear_long_handed_inserter = util.table.deepcopy(data.raw["recipe"]["long-handed-inserter"])
 nuclear_long_handed_inserter.name = "nuclear-long-handed-inserter"
@@ -136,6 +142,12 @@ if mods["PlutoniumEnergy"] then
     plutonium_inserter.ingredients = {{"nuclear-inserter", 1}, {"plutonium-steel", 3}, {"iron-gear-wheel", 5}}
     table.insert(recipes, plutonium_inserter)
 
+    local plutonium_filter_inserter = util.table.deepcopy(nuclear_filter_inserter)
+    plutonium_filter_inserter.name = 'plutonium-filter-inserter'
+    plutonium_filter_inserter.result = 'plutonium-filter-inserter'
+    plutonium_filter_inserter.ingredients = {{'plutonium-inserter', 1}, {'processing-unit', 2}}
+    table.insert(recipes, plutonium_filter_inserter)
+
     local plutonium_long_handed_inserter = util.table.deepcopy(nuclear_long_handed_inserter)
     plutonium_long_handed_inserter.name = "plutonium-long-handed-inserter"
     plutonium_long_handed_inserter.result = "plutonium-long-handed-inserter"
@@ -213,14 +225,14 @@ data:extend(recipes)
 data:extend({
     {
         type = "recipe",
-        name = "coal-piece",
+        name = "coal-dust",
         enabled = true,
         category = "grinding",
         ingredients = {
             {"coal", 1},
         },
         result_count = 2,
-        result = "coal-piece"
+        result = "coal-dust"
     },
     {
         type = "recipe",
@@ -263,7 +275,7 @@ data:extend({
         category = "compressing",
         ingredients = {
             {"sawdust", 2},
-            {"coal-piece", 1},
+            {"coal-dust", 1},
         },
         result = "compressed-fuel"
     }
