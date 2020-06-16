@@ -46,8 +46,9 @@ local nuclear_filter_inserter = util.table.deepcopy(data.raw['inserter']['filter
 nuclear_filter_inserter.name = 'nuclear-filter-inserter'
 nuclear_filter_inserter.icon = '__RandomFactorioThings/graphics/icons/nuclear-filter-inserter.png'
 nuclear_filter_inserter.minable.result = 'nuclear-filter-inserter'
-nuclear_filter_inserter.energy_per_movement = '17kJ'
-nuclear_filter_inserter.energy_per_rotation = '17kJ'
+nuclear_filter_inserter.energy_per_movement = '18kJ'
+nuclear_filter_inserter.energy_per_rotation = '18kJ'
+nuclear_filter_inserter.energy_source.drain = '0.7kW'
 nuclear_filter_inserter.extension_speed = 0.1
 nuclear_filter_inserter.rotation_speed = 0.06
 nuclear_filter_inserter.next_upgrade = nil
@@ -141,6 +142,25 @@ if mods["PlutoniumEnergy"] then
     plutonium_long_handed_inserter.platform_picture.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-long-handed-inserter/hr-plutonium-long-handed-inserter-platform.png"
     table.insert(inserters, plutonium_long_handed_inserter)
 
+    local plutonium_filter_inserter = util.table.deepcopy(nuclear_filter_inserter)
+    plutonium_filter_inserter.name = 'plutonium-filter-inserter'
+    plutonium_filter_inserter.icon = '__RandomFactorioThings__/graphics/icons/plutonium-filter-inserter.png'
+    plutonium_filter_inserter.minable.result = 'plutonium-filter-inserter'
+    plutonium_filter_inserter.energy_per_movement = '30kJ'
+    plutonium_filter_inserter.energy_per_rotation = '30kJ'
+    plutonium_filter_inserter.energy_source.drain = '0.8kW'
+    plutonium_filter_inserter.rotation_speed = 0.85
+    plutonium_filter_inserter.extension_speed = 0.15
+    plutonium_filter_inserter.hand_base_picture.filename = "__RandomFactorioThings__/graphics/entity/plutonium-filter-inserter/plutonium-filter-inserter-hand-base.png"
+    plutonium_filter_inserter.hand_base_picture.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-filter-inserter/hr-plutonium-filter-inserter-hand-base.png"
+    plutonium_filter_inserter.hand_closed_picture.filename = "__RandomFactorioThings__/graphics/entity/plutonium-filter-inserter/plutonium-filter-inserter-hand-closed.png"
+    plutonium_filter_inserter.hand_closed_picture.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-filter-inserter/hr-plutonium-filter-inserter-hand-closed.png"
+    plutonium_filter_inserter.hand_open_picture.filename = "__RandomFactorioThings__/graphics/entity/plutonium-filter-inserter/plutonium-filter-inserter-hand-open.png"
+    plutonium_filter_inserter.hand_open_picture.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-filter-inserter/hr-plutonium-filter-inserter-hand-open.png"
+    plutonium_filter_inserter.platform_picture.sheet.filename = "__RandomFactorioThings__/graphics/entity/plutonium-filter-inserter/plutonium-filter-inserter-platform.png"
+    plutonium_filter_inserter.platform_picture.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-filter-inserter/hr-plutonium-filter-inserter-platform.png"
+    table.insert(inserter, plutonium_filter_inserter)
+
     local plutonium_stack_inserter = util.table.deepcopy(nuclear_stack_inserter)
     plutonium_stack_inserter.name = "plutonium-stack-inserter"
     plutonium_stack_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-stack-inserter.png"
@@ -181,8 +201,9 @@ if mods["PlutoniumEnergy"] then
 
     inserters[1].next_upgrade = "plutonium-inserter"
     inserters[2].next_upgrade = "plutonium-long-handed-inserter"
-    inserters[3].next_upgrade = "plutonium-stack-inserter"
-    inserters[4].next_upgrade = "plutonium-stack-filter-inserter"
+    inserters[3].next_upgrade = 'plutonium-filter-inserter'
+    inserters[4].next_upgrade = "plutonium-stack-inserter"
+    inserters[5].next_upgrade = "plutonium-stack-filter-inserter"
 end
 
 data:extend(inserters)
