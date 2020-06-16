@@ -5,6 +5,7 @@ Date: 16.06.2020
     - Added Nuclear and Plutonium filter inserters
   Graphics:
     - Updated hardened electric mining drill graphics
+    - Updated icons (except modules)
     - Massive PNG optimisation
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
