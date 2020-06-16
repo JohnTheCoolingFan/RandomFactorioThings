@@ -275,7 +275,7 @@ data:extend({
         category = "compressing",
         ingredients = {
             {"sawdust", 2},
-            {"coal-piece", 1},
+            {"coal-dust", 1},
         },
         result = "compressed-fuel"
     }
