@@ -42,6 +42,7 @@ data.raw["module"]["productivity-module-2"].icon_size = 32
 data.raw["module"]["productivity-module-3"].icon = "__RandomFactorioThings__/graphics/icons/modules/productivity-module-3.png"
 data.raw["module"]["productivity-module-3"].icon_size = 32
 
+-- Level 4-6 vanilla effect modules
 data:extend({
     -- Speed
     {
