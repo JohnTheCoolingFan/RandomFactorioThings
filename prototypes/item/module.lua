@@ -61,7 +61,9 @@ data:extend({
         effect = {
             speed = {bonus = 0.8},
             consumption = {bonus = 0.8}
-        }
+        },
+        beacon_tint = tint['speed'],
+        requires_beacon_alt_mode = true
     },
     {
         type = "module",
@@ -79,7 +81,9 @@ data:extend({
         effect = {
             speed = {bonus = 1.2},
             consumption = {bonus = 0.9}
-        }
+        },
+        beacon_tint = tint['speed'],
+        requires_beacon_alt_mode = true
     },
     {
         type = "module",
@@ -97,7 +101,9 @@ data:extend({
         effect = {
             speed = {bonus = 1.7},
             consumption = {bonus = 1}
-        }
+        },
+        beacon_tint = tint['speed'],
+        requires_beacon_alt_mode = true
     },
 
     -- Effectivity
@@ -117,7 +123,9 @@ data:extend({
         effect = {
             consumption = {bonus = -0.6}
         },
-        limitation = production
+        limitation = production,
+        beacon_tint = tint['effectivity'],
+        requires_beacon_alt_mode = true
     },
     {
         type = "module",
@@ -135,7 +143,9 @@ data:extend({
         effect = {
             consumption = {bonus = -0.7}
         },
-        limitation = production
+        limitation = production,
+        beacon_tint = tint['effectivity'],
+        requires_beacon_alt_mode = true
     },
     {
         type = "module",
@@ -153,7 +163,9 @@ data:extend({
         effect = {
             consumption = {bonus = -0.8}
         },
-        limitation = production
+        limitation = production,
+        beacon_tint = tint['effectivity'],
+        requires_beacon_alt_mode = true
     },
 
     -- Productivity
