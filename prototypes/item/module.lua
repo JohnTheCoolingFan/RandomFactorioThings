@@ -1,3 +1,16 @@
+-- Module tint
+local tint = {
+    ['speed'] = {
+        primary = { 0, 1, 0 },
+        secondary = {r = 0.370, g = 1.000, b = 0.370, a = 1.000}, -- #5eff5eff
+    },
+    ['effectivity'] = {
+        primary = { 0, 1, 0 },
+        secondary = {r = 0.370, g = 1.000, b = 0.370, a = 1.000}, -- #5eff5eff
+    },
+    ['productivity'] = nil -- Missing in vanilla for some reason
+}
+
 -- Order for vanilla modules
 data.raw["module"]["speed-module"].order = "a[speed]-a[speed-module-1]"
 data.raw["module"]["speed-module-2"].order = "a[speed]-b[speed-module-2]"
