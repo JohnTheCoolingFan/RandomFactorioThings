@@ -2,7 +2,8 @@
 Version: 1.2.1
 Date: 17.06.2020
   Locale:
-    - Added missing locale entries.
+    - Added missing locale entries (Releasing early because pl translator isn't responding in a
+      while).
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: 16.06.2020
