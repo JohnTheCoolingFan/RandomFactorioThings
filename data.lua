@@ -5,6 +5,7 @@ require("prototypes.item.item")
 require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
 
+-- TODO: REMAKE ELECTRIC MINING DRILL'S GRAPHICS AGAIN
 -- TODO: **URGENT** Fix #21
 -- TODO: modules and beacons starting from 0.18.32
 -- TODO: idea. Quantum tier (how original...)
