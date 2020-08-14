@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 14.08.2020
+  Fixes:
+    - "Fixed" electric mining drill graphics - using vanilla graphics (Hotfix)
+  Minor Features:
+    - Requires 1.0.0 game version
+---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 26.07.2020
   Locale:

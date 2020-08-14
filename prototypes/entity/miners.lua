@@ -4,7 +4,7 @@ local miners = {}
 
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["mining-drill"]["electric-mining-drill"])
 local hemd_graphics_path = '__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/'
-
+--[[
 -- These were yanked from __base__/prototypes/entity/demo-mining-drill.lua
 -- There probably could be a better way to do this, but I think this will work. Hope vanilla graphics won't change very often.
 local hardened_electric_drill_animation_speed = 0.4
@@ -89,7 +89,7 @@ local function hardened_electric_mining_drill_horizontal_animation()
     }
   }
 end
-
+]]
 hardened_electric_mining_drill.name = 'hardened-electric-mining-drill'
 hardened_electric_mining_drill.icon = '__RandomFactorioThings__/graphics/icons/hardened-electric-mining-drill.png'
 hardened_electric_mining_drill.minable.result = "hardened-electric-mining-drill"
@@ -98,7 +98,7 @@ hardened_electric_mining_drill.energy_usage = "110kW"
 hardened_electric_mining_drill.mining_speed = 0.6
 hardened_electric_mining_drill.resource_searching_radius = 3.01
 hardened_electric_mining_drill.module_specification.module_slots = 4
-
+--[[
 local hemd_animation = hardened_electric_mining_drill.graphics_set.animation
     hemd_animation.north.layers[1].filename = hemd_graphics_path..'hardened-electric-mining-drill-N.png'
     hemd_animation.north.layers[1].hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-N.png'
@@ -143,7 +143,7 @@ local hemd_wet_work = hemd_wet.working_visualisations
     hemd_wet_work[12].east_animation.layers[1].hr_version.filename = hemd_graphics_path..'hr-hardened-electric-mining-drill-E-wet-front.png'
     hemd_wet_work[13].east_animation = hardened_electric_mining_drill_horizontal_animation()
     hemd_wet_work[13].west_animation = hardened_electric_mining_drill_horizontal_animation()
-
+]]
 table.insert(miners, hardened_electric_mining_drill)
 
 data:extend(miners)

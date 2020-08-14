@@ -1,16 +1,16 @@
 {
     "name": "RandomFactorioThings",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "title": "Random Factorio Things",
     "author": "JohnTheCoolingFan",
     "contact": "https://discord.gg/grHVhE2",
     "homepage": "https://discord.gg/grHVhE2",
     "dependencies": [
-        "base >= 0.18.31",
+        "base >= 1.0.0",
         "? PlutoniumEnergy",
         "? deadlock-beltboxes-loaders",
         "? vanilla-loaders-hd >= 0.18.8"
     ],
     "description": "Mod that continues idea of vanilla game.",
-    "factorio_version": "0.18"
+    "factorio_version": "1.0"
 }
