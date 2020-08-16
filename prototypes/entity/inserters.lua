@@ -1,5 +1,3 @@
--- TODO: nuclear filter inserter and remake recipes
-
 local inserters = {}
 
 local nuclear_inserter = util.table.deepcopy(data.raw["inserter"]["fast-inserter"])
