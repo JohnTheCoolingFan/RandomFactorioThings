@@ -7,5 +7,6 @@ require("prototypes.technology.technology")
 
 -- TODO: REMAKE ELECTRIC MINING DRILL'S GRAPHICS AGAIN
 -- TODO: **URGENT** Fix #21 // Remake splitter and all other belt sprites
+-- TODO: ~~god-module~~ Merged module that combines all 3 types of modules
 -- TODO: modules and beacons starting from 0.18.32
 -- TODO: idea. Quantum tier (how original...)
