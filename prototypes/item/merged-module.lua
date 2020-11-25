@@ -120,7 +120,7 @@ data:extend({
             productivity = {bonus = 0.04},
             consumption = {bonus = 0.1},
             pollution = {bonus = 0.05},
-            speed = {bonus = -0.15},
+            speed = {bonus = -0.05},
         },
         limitation = productivity_module_limitation(),
         limitation_message_key = "production-module-usable-only-on-intermediates"
@@ -141,7 +141,7 @@ data:extend({
             productivity = {bonus = 0.06},
             consumption = {bonus = 0.2},
             pollution = {bonus = 0.07},
-            speed = {bonus = -0.15},
+            speed = {bonus = -0.10},
         },
         limitation = productivity_module_limitation(),
         limitation_message_key = "production-module-usable-only-on-intermediates"
@@ -183,7 +183,7 @@ data:extend({
             productivity = {bonus = 0.16},
             consumption = {bonus = 0.4},
             pollution = {bonus = 0.14},
-            speed = {bonus = -0.15},
+            speed = {bonus = -0.20},
         },
         limitation = productivity_module_limitation(),
         limitation_message_key = "production-module-usable-only-on-intermediates"
@@ -204,7 +204,7 @@ data:extend({
             productivity = {bonus = 0.24},
             consumption = {bonus = 0.5},
             pollution = {bonus = 0.19},
-            speed = {bonus = -0.15},
+            speed = {bonus = -0.25},
         },
         limitation = productivity_module_limitation(),
         limitation_message_key = "production-module-usable-only-on-intermediates"
@@ -225,7 +225,7 @@ data:extend({
             productivity = {bonus = 0.34},
             consumption = {bonus = 0.6},
             pollution = {bonus = 0.25},
-            speed = {bonus = -0.15},
+            speed = {bonus = -0.30},
         },
         limitation = productivity_module_limitation(),
         limitation_message_key = "production-module-usable-only-on-intermediates"
@@ -245,7 +245,7 @@ data:extend({
         stack_size = 50,
         default_request_amount = 10,
         effect = {
-            speed = {bonus = 0.05},
+            speed = {bonus = 0.15},
             consumption = {bonus = 0.9},
             productivity = {bonus = 0.04},
             pollution = {bonus = 0.05}
@@ -266,7 +266,7 @@ data:extend({
         stack_size = 50,
         default_request_amount = 10,
         effect = {
-            speed = {bonus = 0.15},
+            speed = {bonus = 0.20},
             consumption = {bonus = 1.2},
             productivity = {bonus = 0.06},
             pollution = {bonus = 0.07}
@@ -308,7 +308,7 @@ data:extend({
         stack_size = 50,
         default_request_amount = 10,
         effect = {
-            speed = {bonus = 0.55},
+            speed = {bonus = 0.60},
             consumption = {bonus = 1.8},
             productivity = {bonus = 0.16},
             pollution = {bonus = 0.15}
@@ -329,7 +329,7 @@ data:extend({
         stack_size = 50,
         default_request_amount = 10,
         effect = {
-            speed = {bonus = 1.05},
+            speed = {bonus = 0.95},
             consumption = {bonus = 2.1},
             productivity = {bonus = 0.24},
             pollution = {bonus = 0.19}
@@ -350,7 +350,7 @@ data:extend({
         stack_size = 50,
         default_request_amount = 10,
         effect = {
-            speed = {bonus = 1.55},
+            speed = {bonus = 1.40},
             consumption = {bonus = 2.4},
             productivity = {bonus = 0.34},
             pollution = {bonus = 0.25}
