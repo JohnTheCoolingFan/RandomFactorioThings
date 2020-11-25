@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.4
+Date: 25.11.2020
+  Major Features:
+    - Update for Factorio 1.1
+  Balancing:
+    - Productivity modules rebalancing, for more info see
+      https://mods.factorio.com/mod/RFT-modules/changelog
+---------------------------------------------------------------------------------------------------
 Version: 1.2.3
 Date: 11.09.2020
   Fixes:
