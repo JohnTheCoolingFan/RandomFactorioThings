@@ -183,5 +183,7 @@ hardened_electrci_mining_drill.animation = make_rotated_animation_variations_fro
         }
     })
 
+table.insert(remnants, hardened_electric_mining_drill)
+
 
 data:extend(remnants)
