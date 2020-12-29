@@ -5,7 +5,7 @@ require("prototypes.item.item")
 require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
 
--- TODO: implement new remnants
+-- TODO: remnants for the rest of the entities
 -- TODO: modules and beacons starting from 0.18.32
 -- TODO: technology descriptions
 -- TODO: idea. Quantum tier (how original...)
