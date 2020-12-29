@@ -2,42 +2,42 @@ require 'util'
 
 -- Yanked directly from __base__/prototypes/entities/remnants.lua
 local function make_rotated_animation_variations_from_sheet(variation_count, sheet) --makes remnants work with more than 1 variation
-  local result = {}
+    local result = {}
 
-  local function set_y_offset(variation, i)
-    local frame_count = variation.frame_count or 1
-    local line_length = variation.line_length or frame_count
-    if (line_length < 1) then
-      line_length = frame_count
-    end
-
-    local height_in_frames = math.floor((frame_count * variation.direction_count + line_length - 1) / line_length)
-    -- if (height_in_frames ~= 1) then
-    --   log("maybe broken sheet: h=" .. height_in_frames .. ", vc=" .. variation_count .. ", " .. variation.filename)
-    -- end
-    variation.y = variation.height * (i - 1) * height_in_frames
-  end
-
-  for i = 1,variation_count do
-    local variation = util.table.deepcopy(sheet)
-
-    if variation.layers then
-      for _, layer in pairs(variation.layers) do
-        set_y_offset(layer, i)
-        if (layer.hr_version) then
-          set_y_offset(layer.hr_version, i)
+    local function set_y_offset(variation, i)
+        local frame_count = variation.frame_count or 1
+        local line_length = variation.line_length or frame_count
+        if (line_length < 1) then
+            line_length = frame_count
         end
-      end
-    else
-      set_y_offset(variation, i)
-      if (variation.hr_version) then
-        set_y_offset(variation.hr_version, i)
-      end
+
+        local height_in_frames = math.floor((frame_count * variation.direction_count + line_length - 1) / line_length)
+        -- if (height_in_frames ~= 1) then
+        --   log("maybe broken sheet: h=" .. height_in_frames .. ", vc=" .. variation_count .. ", " .. variation.filename)
+        -- end
+        variation.y = variation.height * (i - 1) * height_in_frames
     end
 
-    table.insert(result, variation)
-  end
- return result
+    for i = 1,variation_count do
+        local variation = util.table.deepcopy(sheet)
+
+        if variation.layers then
+            for _, layer in pairs(variation.layers) do
+                set_y_offset(layer, i)
+                if (layer.hr_version) then
+                    set_y_offset(layer.hr_version, i)
+                end
+            end
+        else
+            set_y_offset(variation, i)
+            if (variation.hr_version) then
+                set_y_offset(variation.hr_version, i)
+            end
+        end
+
+        table.insert(result, variation)
+    end
+    return result
 end
 
 
@@ -152,6 +152,36 @@ if mods['PlutoniumEnergy'] then
 
     table.insert(remnants, plutonium_underground_belt)
 end
+
+
+local hardened_electric_mining_drill = util.table.deepcopy(data.raw['corpse']['electric-mining-drill-remnants'])
+hardened_electric_mining_drill.name = 'hardened-electrci-mining-drill-remnants'
+hardened_electric_mining_drill.icon = '__RandomFactorioThings__/graphics/icons/hardened-electric-mining-drill.png'
+hardened_electrci_mining_drill.animation = make_rotated_animation_variations_from_sheet(4,
+    {
+        filename = "__base__/graphics/entity/electric-mining-drill/remnants/electric-mining-drill-remnants.png",
+        line_length = 1,
+        width = 178,
+        height = 166,
+        frame_count = 1,
+        variation_count = 1,
+        axially_symmetrical = false,
+        direction_count = 1,
+        shift = util.by_pixel(7, 0),
+        hr_version =
+        {
+            filename = "__base__/graphics/entity/electric-mining-drill/remnants/hr-electric-mining-drill-remnants.png",
+            line_length = 1,
+            width = 356,
+            height = 328,
+            frame_count = 1,
+            variation_count = 1,
+            axially_symmetrical = false,
+            direction_count = 1,
+            shift = util.by_pixel(7, -0.5),
+            scale = 0.5
+        }
+    })
 
 
 data:extend(remnants)
