@@ -44,9 +44,9 @@ end
 local remnants = {}
 
 
-local nuclear_transport_belt = util.table.deepcopy(data.war['corpse']['express-transport-belt-remnants'])
+local nuclear_transport_belt = util.table.deepcopy(data.raw['corpse']['express-transport-belt-remnants'])
 
-nuclear_transport_belt.name = 'nuclear-transport-belt-corpse'
+nuclear_transport_belt.name = 'nuclear-transport-belt-remnants'
 nuclear_transport_belt.icon = '__RandomFactorioThings__/graphics/icons/nuclear-transport-belt.png'
 -- Yanked from base game source. Parameters may start to differ over time
 nuclear_transport_belt.animation =  make_rotated_animation_variations_from_sheet(2,
@@ -81,7 +81,7 @@ table.insert(remnants, nuclear_transport_belt)
 local nuclear_splitter = util.table.deepcopy(data.raw['corpse']['express-splitter-remnants'])
 
 nuclear_splitter.name = 'nuclear-splitter-remnants'
-nuclear_splitter.icon = '__RandomFactorioThings/graphics/icons/nuclear-splitter.png'
+nuclear_splitter.icon = '__RandomFactorioThings__/graphics/icons/nuclear-splitter.png'
 nuclear_splitter.animation.filename = '__RandomFactorioThings__/graphics/entity/nuclear-splitter/remnants/nuclear-splitter-remnants.png'
 nuclear_splitter.animation.hr_version.filename = '__RandomFactorioThings__/graphics/entity/nuclear-splitter/remnants/hr-nuclear-splitter-remnants.png'
 
