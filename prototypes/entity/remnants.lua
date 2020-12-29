@@ -155,11 +155,11 @@ end
 
 
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw['corpse']['electric-mining-drill-remnants'])
-hardened_electric_mining_drill.name = 'hardened-electrci-mining-drill-remnants'
+hardened_electric_mining_drill.name = 'hardened-electric-mining-drill-remnants'
 hardened_electric_mining_drill.icon = '__RandomFactorioThings__/graphics/icons/hardened-electric-mining-drill.png'
-hardened_electrci_mining_drill.animation = make_rotated_animation_variations_from_sheet(4,
+hardened_electric_mining_drill.animation = make_rotated_animation_variations_from_sheet(4,
     {
-        filename = "__base__/graphics/entity/electric-mining-drill/remnants/electric-mining-drill-remnants.png",
+        filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/remnants/hardened-electric-mining-drill-remnants.png",
         line_length = 1,
         width = 178,
         height = 166,
@@ -170,7 +170,7 @@ hardened_electrci_mining_drill.animation = make_rotated_animation_variations_fro
         shift = util.by_pixel(7, 0),
         hr_version =
         {
-            filename = "__base__/graphics/entity/electric-mining-drill/remnants/hr-electric-mining-drill-remnants.png",
+            filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-mining-drill/remnants/hr-hardened-electric-mining-drill-remnants.png",
             line_length = 1,
             width = 356,
             height = 328,
