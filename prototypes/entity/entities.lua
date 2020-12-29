@@ -1,6 +1,7 @@
 -- TODO: **URGENT** Fix #21
 --       Remake graphics again
 
+require('prototypes.entity.remnants')
 require("prototypes.entity.inserters")
 require("prototypes.entity.miners")
 require("prototypes.entity.assemblerpipes")
@@ -10,6 +11,7 @@ local entities = {}
 local nuclear_transport_belt = util.table.deepcopy(data.raw["transport-belt"]["express-transport-belt"])
 nuclear_transport_belt.name = "nuclear-transport-belt"
 nuclear_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-transport-belt.png"
+nuclear_transport_belt.corpse = 'nuclear-transport-belt-remnants'
 nuclear_transport_belt.minable.result = "nuclear-transport-belt"
 nuclear_transport_belt.speed = 0.125
 nuclear_transport_belt.next_upgrade = nil
@@ -20,6 +22,7 @@ table.insert(entities, nuclear_transport_belt)
 local nuclear_underground_belt = util.table.deepcopy(data.raw["underground-belt"]["express-underground-belt"])
 nuclear_underground_belt.name = "nuclear-underground-belt"
 nuclear_underground_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-underground-belt.png"
+nuclear_underground_belt.corpse = 'nuclear-underground-belt-remnants'
 nuclear_underground_belt.minable.result = "nuclear-underground-belt"
 nuclear_underground_belt.max_distance = 11
 nuclear_underground_belt.speed = 0.125
@@ -38,6 +41,7 @@ table.insert(entities, nuclear_underground_belt)
 local nuclear_splitter = util.table.deepcopy(data.raw["splitter"]["express-splitter"])
 nuclear_splitter.name = "nuclear-splitter"
 nuclear_splitter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-splitter.png"
+nuclear_splitter.corpse = 'nuclear-splitter-remnants'
 nuclear_splitter.minable.result = "nuclear-splitter"
 nuclear_splitter.speed = 0.125
 nuclear_splitter.next_upgrade = nil
@@ -190,6 +194,7 @@ if mods["PlutoniumEnergy"] then
     local plutonium_transport_belt = util.table.deepcopy(nuclear_transport_belt)
     plutonium_transport_belt.name = "plutonium-transport-belt"
     plutonium_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/plutonium-transport-belt.png"
+    plutonium_transport_belt.corpse = 'plutonium-transport-belt-remnants'
     plutonium_transport_belt.minable.result = "plutonium-transport-belt"
     plutonium_transport_belt.speed = 0.15625
     plutonium_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/plutonium-transport-belt/plutonium-transport-belt.png"
@@ -199,6 +204,7 @@ if mods["PlutoniumEnergy"] then
     local plutonium_underground_belt = util.table.deepcopy(nuclear_underground_belt)
     plutonium_underground_belt.name = "plutonium-underground-belt"
     plutonium_underground_belt.icon = "__RandomFactorioThings__/graphics/icons/plutonium-underground-belt.png"
+    plutonium_underground_belt.corpse = 'plutonium-underground-belt-remnants'
     plutonium_underground_belt.minable.result = "plutonium-underground-belt"
     plutonium_underground_belt.speed = 0.15625
     plutonium_underground_belt.belt_animation_set = plutonium_transport_belt.belt_animation_set
@@ -215,6 +221,7 @@ if mods["PlutoniumEnergy"] then
     local plutonium_splitter = util.table.deepcopy(nuclear_splitter)
     plutonium_splitter.name = "plutonium-splitter"
     plutonium_splitter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-splitter.png"
+    plutonium_splitter.corpse = 'plutonium-splitter-remnants'
     plutonium_splitter.minable.result = "plutonium-splitter"
     plutonium_splitter.speed = 0.15625
     plutonium_splitter.belt_animation_set = plutonium_transport_belt.belt_animation_set

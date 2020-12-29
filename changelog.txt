@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.6
+Date: 29.12.2020
+  Graphics:
+    - Updated hardened electric mining drill and belt graphics.
+      I tried compressing them as much as I can using pngwolf, but still size is increased to 23MB
+      from 12MB previously
+    - Added remnants to belts and hardened electric mining drill.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.5
 Date: 18.12.2020
   Locale:
