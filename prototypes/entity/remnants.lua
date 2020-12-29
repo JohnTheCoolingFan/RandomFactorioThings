@@ -99,9 +99,9 @@ table.insert(remnants, nuclear_underground_belt)
 
 
 if mods['PlutoniumEnergy'] then
-    local plutonium_transport_belt = util.table.deepcopy(data.war['corpse']['express-transport-belt-remnants'])
+    local plutonium_transport_belt = util.table.deepcopy(data.raw['corpse']['express-transport-belt-remnants'])
 
-    plutonium_transport_belt.name = 'plutonium-transport-belt-corpse'
+    plutonium_transport_belt.name = 'plutonium-transport-belt-remnants'
     plutonium_transport_belt.icon = '__RandomFactorioThings__/graphics/icons/plutonium-transport-belt.png'
     -- Yanked from base game source. Parameters may start to differ over time
     plutonium_transport_belt.animation =  make_rotated_animation_variations_from_sheet(2,
@@ -136,7 +136,7 @@ if mods['PlutoniumEnergy'] then
     local plutonium_splitter = util.table.deepcopy(data.raw['corpse']['express-splitter-remnants'])
 
     plutonium_splitter.name = 'plutonium-splitter-remnants'
-    plutonium_splitter.icon = '__RandomFactorioThings/graphics/icons/plutonium-splitter.png'
+    plutonium_splitter.icon = '__RandomFactorioThings__/graphics/icons/plutonium-splitter.png'
     plutonium_splitter.animation.filename = '__RandomFactorioThings__/graphics/entity/plutonium-splitter/remnants/plutonium-splitter-remnants.png'
     plutonium_splitter.animation.hr_version.filename = '__RandomFactorioThings__/graphics/entity/plutonium-splitter/remnants/hr-plutonium-splitter-remnants.png'
 
