@@ -5,8 +5,7 @@ require("prototypes.item.item")
 require("prototypes.recipe.recipe")
 require("prototypes.technology.technology")
 
--- TODO: REMAKE ELECTRIC MINING DRILL'S GRAPHICS AGAIN
--- TODO: **URGENT** Fix #21 // Remake splitter and all other belt sprites
+-- TODO: implement new remnants
 -- TODO: modules and beacons starting from 0.18.32
 -- TODO: technology descriptions
 -- TODO: idea. Quantum tier (how original...)
