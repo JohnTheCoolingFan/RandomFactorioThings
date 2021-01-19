@@ -1,13 +1,13 @@
 {
     "name": "RandomFactorioThings",
-    "version": "1.2.7",
+    "version": "1.2.8",
     "title": "Random Factorio Things",
     "author": "JohnTheCoolingFan",
     "contact": "https://discord.gg/grHVhE2",
     "homepage": "https://discord.gg/grHVhE2",
     "dependencies": [
         "base >= 1.1.0",
-        "? PlutoniumEnergy",
+        "? PlutoniumEnergy >= 1.2.0",
         "? deadlock-beltboxes-loaders",
         "? vanilla-loaders-hd >= 0.18.8"
     ],
