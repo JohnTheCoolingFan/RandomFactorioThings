@@ -54,6 +54,10 @@ nuclear_splitter.structure.south.filename = "__RandomFactorioThings__/graphics/e
 nuclear_splitter.structure.south.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-south.png"
 nuclear_splitter.structure.west.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-west.png"
 nuclear_splitter.structure.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-west.png"
+nuclear_splitter.structure_patch.east.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-east-top_patch.png"
+nuclear_splitter.structure_patch.east.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-east-top_patch.png"
+nuclear_splitter.structure_patch.west.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-west-top_patch.png"
+nuclear_splitter.structure_patch.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-west-top_patch.png"
 table.insert(entities, nuclear_splitter)
 
 data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "nuclear-transport-belt"
@@ -233,6 +237,10 @@ if mods["PlutoniumEnergy"] then
     plutonium_splitter.structure.south.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-south.png"
     plutonium_splitter.structure.west.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-west.png"
     plutonium_splitter.structure.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-west.png"
+    plutonium_splitter.structure_patch.east.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-east-top_patch.png"
+    plutonium_splitter.structure_patch.east.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-east-top_patch.png"
+    plutonium_splitter.structure_patch.west.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-west-top_patch.png"
+    plutonium_splitter.structure_patch.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-west-top_patch.png"
     table.insert(entities, plutonium_splitter)
 
     entities[1].next_upgrade = "plutonium-transport-belt"
