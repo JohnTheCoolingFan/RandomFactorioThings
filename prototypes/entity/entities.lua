@@ -17,6 +17,7 @@ nuclear_transport_belt.speed = 0.125
 nuclear_transport_belt.next_upgrade = nil
 nuclear_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
 nuclear_transport_belt.belt_animation_set.animation_set.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+nuclear_transport_belt.related_underground_belt = 'nuclear-underground-belt'
 table.insert(entities, nuclear_transport_belt)
 
 local nuclear_underground_belt = util.table.deepcopy(data.raw["underground-belt"]["express-underground-belt"])
@@ -203,6 +204,7 @@ if mods["PlutoniumEnergy"] then
     plutonium_transport_belt.speed = 0.15625
     plutonium_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/plutonium-transport-belt/plutonium-transport-belt.png"
     plutonium_transport_belt.belt_animation_set.animation_set.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-transport-belt/hr-plutonium-transport-belt.png"
+    plutonium_transport_belt.related_underground_belt = 'plutonium-underground-belt'
     table.insert(entities, plutonium_transport_belt)
 
     local plutonium_underground_belt = util.table.deepcopy(nuclear_underground_belt)
