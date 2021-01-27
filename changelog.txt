@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.11
+Date: 27.01.2021
+  Fixes:
+    - Fixed Nuclear empowered Stack Inserter recipe not containing any nuclear metal (caused by a typo)
+---------------------------------------------------------------------------------------------------
 Version: 1.2.10
 Date: 26.01.2021
   Minor Features:
