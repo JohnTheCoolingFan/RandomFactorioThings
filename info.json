@@ -3,8 +3,8 @@
     "version": "1.2.11",
     "title": "Random Factorio Things",
     "author": "JohnTheCoolingFan",
-    "contact": "https://discord.gg/grHVhE2",
-    "homepage": "https://discord.gg/grHVhE2",
+    "contact": "https://discord.gg/KPnETvMDYk",
+    "homepage": "https://discord.gg/KPnETvMDYk",
     "dependencies": [
         "base >= 1.1.0",
         "? PlutoniumEnergy >= 1.2.0",
