@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.12
+Date: 07.02.2021
+  Minor Features:
+    - Added some recipes to productivity modules' whitelist:
+      Nuclear metal flying robot frame
+      Raw Nuclear metal
+      Raw Plutonium steel
+      Coal Dust
+      Sawdust
+      Compressed fuel
+---------------------------------------------------------------------------------------------------
 Version: 1.2.11
 Date: 27.01.2021
   Fixes:
