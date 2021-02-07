@@ -60,3 +60,13 @@ if vanillaHD then
         vanillaHD.addLoader("plutonium-loader", {r=26,g=230,b=179}, "plutonium-transport-belt", "plutonium-logistics", "nuclear-loader")
     end
 end
+
+-- Add some recipes to productivty modules limitation (which is whitelist for some reason)
+local limitation_to_add = {'nuclear-flying-robot-frame', 'raw-nuclear-metal', 'raw-plutonium-steel', 'coal-dust', 'sawdust', 'compressed-fuel'}
+for _, module in pairs(data.raw['module']) do
+    if module.limitation and module.effect.productivity then
+        for _, recipe in pairs(limitation_to_add) do
+            table.insert(module.limitation, recipe)
+        end
+    end
+end
