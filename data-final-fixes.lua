@@ -62,7 +62,8 @@ if vanillaHD then
 end
 
 -- Add some recipes to productivty modules limitation (which is whitelist for some reason)
-local limitation_to_add = {'nuclear-flying-robot-frame', 'raw-nuclear-metal', 'raw-plutonium-steel', 'coal-dust', 'sawdust', 'compressed-fuel'}
+local limitation_to_add = {'nuclear-flying-robot-frame', 'raw-nuclear-metal', 'coal-dust', 'sawdust', 'compressed-fuel'}
+if mods['PlutoniumEnergy'] then table.insert(limitation_to_add, 'raw-plutonium-steel') end
 for _, module in pairs(data.raw['module']) do
     if module.limitation and module.effect.productivity then
         for _, recipe in pairs(limitation_to_add) do
