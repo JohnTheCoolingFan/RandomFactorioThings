@@ -213,6 +213,7 @@ if mods["PlutoniumEnergy"] then
     plutonium_underground_belt.corpse = 'plutonium-underground-belt-remnants'
     plutonium_underground_belt.minable.result = "plutonium-underground-belt"
     plutonium_underground_belt.speed = 0.15625
+    plutonium_underground_belt.max_distance = 13
     plutonium_underground_belt.belt_animation_set = plutonium_transport_belt.belt_animation_set
     plutonium_underground_belt.structure.direction_in.sheet.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
     plutonium_underground_belt.structure.direction_in.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"

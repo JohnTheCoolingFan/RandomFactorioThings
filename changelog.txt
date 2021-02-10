@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.13
+Date: 10.02.2021
+  Fixes:
+    - Fixed Plutonium underground belt having the same range as Uranium, now it is 2 tiles longer.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.12
 Date: 07.02.2021
   Minor Features:
