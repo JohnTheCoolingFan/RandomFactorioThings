@@ -2,6 +2,7 @@ require("prototypes.recipe.module")
 
 local recipes = {}
 
+-- Nuclear robots
 local nuclear_flying_robot_frame = util.table.deepcopy(data.raw["recipe"]["flying-robot-frame"])
 nuclear_flying_robot_frame.name = "nuclear-flying-robot-frame"
 nuclear_flying_robot_frame.result = "nuclear-flying-robot-frame"
@@ -21,6 +22,7 @@ nuclear_construction_robot.result = "nuclear-construction-robot"
 nuclear_construction_robot.ingredients[1][1] = "nuclear-flying-robot-frame"
 table.insert(recipes, nuclear_construction_robot)
 
+-- Nuclear inserters
 local nuclear_inserter = util.table.deepcopy(data.raw["recipe"]["fast-inserter"])
 nuclear_inserter.name = "nuclear-inserter"
 nuclear_inserter.ingredients = {{'fast-inserter', 1}, {"advanced-circuit", 1}, {"iron-gear-wheel", 5}, {"nuclear-metal", 2}}
@@ -51,6 +53,7 @@ nuclear_stack_filter_inserter.result = "nuclear-stack-filter-inserter"
 nuclear_stack_filter_inserter.ingredients = {{"nuclear-stack-inserter", 1}, {"advanced-circuit", 5}}
 table.insert(recipes, nuclear_stack_filter_inserter)
 
+-- Nuclear transport belt
 local nuclear_transport_belt = util.table.deepcopy(data.raw["recipe"]["express-transport-belt"])
 nuclear_transport_belt.name = "nuclear-transport-belt"
 if nuclear_transport_belt.normal then
@@ -77,6 +80,7 @@ nuclear_splitter.ingredients = {{"nuclear-metal", 5}, {"express-splitter", 1}, {
 nuclear_splitter.result = "nuclear-splitter"
 table.insert(recipes, nuclear_splitter)
 
+-- Hardened furnaces
 local hardened_stone_furnace = util.table.deepcopy(data.raw["recipe"]["steel-furnace"])
 hardened_stone_furnace.name = "hardened-stone-furnace"
 hardened_stone_furnace.ingredients = {{"stone-furnace", 1}, {"iron-plate", 5}}
@@ -95,6 +99,7 @@ hardened_electric_furnace.ingredients = {{"electric-furnace", 1}, {"steel-plate"
 hardened_electric_furnace.result = "hardened-electric-furnace"
 table.insert(recipes, hardened_electric_furnace)
 
+-- Hardened electric mining drill
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["recipe"]["electric-mining-drill"])
 hardened_electric_mining_drill.name = "hardened-electric-mining-drill"
 if hardened_electric_mining_drill.normal then
@@ -111,6 +116,7 @@ else
 end
 table.insert(recipes, hardened_electric_mining_drill)
 
+-- Nuclear assembling machine
 local nuclear_assembling_machine = util.table.deepcopy(data.raw["recipe"]["assembling-machine-3"])
 nuclear_assembling_machine.name = "nuclear-assembling-machine"
 nuclear_assembling_machine.ingredients = {{"assembling-machine-3", 1}, {"advanced-circuit", 5}, {"speed-module-4", 2}, {"nuclear-metal", 5}}
@@ -118,6 +124,7 @@ nuclear_assembling_machine.energy_required = 10
 nuclear_assembling_machine.result = "nuclear-assembling-machine"
 table.insert(recipes, nuclear_assembling_machine)
 
+-- Nuclear material
 local raw_nuclear_metal = {type = "recipe"}
 raw_nuclear_metal.name = "raw-nuclear-metal"
 raw_nuclear_metal.enabled = false
@@ -135,7 +142,9 @@ raw_nuclear_metal_smelting.result_count = nil
 raw_nuclear_metal_smelting.result = "nuclear-metal"
 table.insert(recipes, raw_nuclear_metal_smelting)
 
+-- Plutonium Energy integration
 if mods["PlutoniumEnergy"] then
+    -- Inserters
     local plutonium_inserter = util.table.deepcopy(nuclear_inserter)
     plutonium_inserter.name = "plutonium-inserter"
     plutonium_inserter.result = "plutonium-inserter"
@@ -166,6 +175,7 @@ if mods["PlutoniumEnergy"] then
     plutonium_stack_filter_inserter.ingredients = {{"plutonium-stack-inserter", 1}, {"advanced-circuit", 5}}
     table.insert(recipes, plutonium_stack_filter_inserter)
 
+    -- Plutonium steel
     local raw_plutonium_steel = {type = "recipe"}
     raw_plutonium_steel.name = "raw-plutonium-steel"
     raw_plutonium_steel.enabled = false
@@ -184,6 +194,7 @@ if mods["PlutoniumEnergy"] then
     raw_plutonium_steel_smelting.result = "plutonium-steel"
     table.insert(recipes, raw_plutonium_steel_smelting)
 
+    -- Plutonium assembling machine
     local plutonium_assembling_machine = util.table.deepcopy(data.raw["recipe"]["assembling-machine-3"])
     plutonium_assembling_machine.name = "plutonium-assembling-machine"
     plutonium_assembling_machine.category = "advanced-crafting"
@@ -192,6 +203,7 @@ if mods["PlutoniumEnergy"] then
     plutonium_assembling_machine.result = "plutonium-assembling-machine"
     table.insert(recipes, plutonium_assembling_machine)
 
+    -- Plutonium transport belts
     local plutonium_transport_belt = util.table.deepcopy(nuclear_transport_belt)
     plutonium_transport_belt.name = "plutonium-transport-belt"
     if plutonium_transport_belt.normal then
@@ -223,17 +235,7 @@ data:extend(recipes)
 
 -- I'll better leave these recipes as data:extend() (maybe change later)
 data:extend({
-    {
-        type = "recipe",
-        name = "coal-dust",
-        enabled = true,
-        category = "grinding",
-        ingredients = {
-            {"coal", 1},
-        },
-        result_count = 2,
-        result = "coal-dust"
-    },
+    -- Grinding and compressing
     {
         type = "recipe",
         name = "macerator",
@@ -256,6 +258,17 @@ data:extend({
             {"steel-plate", 12},
         },
         result = "compressor"
+    },
+    {
+        type = "recipe",
+        name = "coal-dust",
+        enabled = true,
+        category = "grinding",
+        ingredients = {
+            {"coal", 1},
+        },
+        result_count = 2,
+        result = "coal-dust"
     },
     {
         type = "recipe",

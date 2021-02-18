@@ -1,5 +1,7 @@
+-- Inserters
 local inserters = {}
 
+-- Nuclear
 local nuclear_inserter = util.table.deepcopy(data.raw["inserter"]["fast-inserter"])
 nuclear_inserter.name = "nuclear-inserter"
 nuclear_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-inserter.png"
@@ -101,7 +103,9 @@ nuclear_stack_filter_inserter.platform_picture.sheet.hr_version.filename = "__Ra
 table.insert(inserters, nuclear_stack_filter_inserter)
 data.raw["inserter"]["stack-filter-inserter"].next_upgrade = "nuclear-stack-filter-inserter"
 
+-- Plutonium Energy integration
 if mods["PlutoniumEnergy"] then
+    -- Plutonium
     local plutonium_inserter = util.table.deepcopy(nuclear_inserter)
     plutonium_inserter.name = "plutonium-inserter"
     plutonium_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-inserter.png"

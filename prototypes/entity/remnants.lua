@@ -1,3 +1,4 @@
+-- Dead or destroyed things
 require 'util'
 
 -- Yanked directly from __base__/prototypes/entities/remnants.lua
@@ -44,6 +45,7 @@ end
 local remnants = {}
 
 
+-- Nuclear transport belt
 local nuclear_transport_belt = util.table.deepcopy(data.raw['corpse']['express-transport-belt-remnants'])
 
 nuclear_transport_belt.name = 'nuclear-transport-belt-remnants'
@@ -98,7 +100,9 @@ nuclear_underground_belt.animation.hr_version.filename = '__RandomFactorioThings
 table.insert(remnants, nuclear_underground_belt)
 
 
+-- Plutonium Energy integration
 if mods['PlutoniumEnergy'] then
+    -- Plutonium transport belt
     local plutonium_transport_belt = util.table.deepcopy(data.raw['corpse']['express-transport-belt-remnants'])
 
     plutonium_transport_belt.name = 'plutonium-transport-belt-remnants'
@@ -154,6 +158,7 @@ if mods['PlutoniumEnergy'] then
 end
 
 
+-- Hardened electric mining drill
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw['corpse']['electric-mining-drill-remnants'])
 hardened_electric_mining_drill.name = 'hardened-electric-mining-drill-remnants'
 hardened_electric_mining_drill.icon = '__RandomFactorioThings__/graphics/icons/hardened-electric-mining-drill.png'

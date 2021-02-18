@@ -1,4 +1,5 @@
 data:extend({
+    -- Regular modules
     -- Speed
     {
         type = "technology",
@@ -239,7 +240,7 @@ data:extend({
         order = "i-g-f"
     },
 
-    -- Merged
+    -- Merged modules
     {
         type = "technology",
         name = "merged-modules",

@@ -1,3 +1,4 @@
+-- Merged effect modules, lvl 1-6
 data:extend({
     -- Speed-Effectivity
     {
