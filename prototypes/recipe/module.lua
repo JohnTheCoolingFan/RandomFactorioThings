@@ -1,4 +1,5 @@
 data:extend({
+    -- Regua;r effect modules
     -- Speed
     {
         type = "recipe",
@@ -113,6 +114,7 @@ data:extend({
         result = "effectivity-module-6"
     },
 
+    -- Merged effect modules
     -- Speed-effectivity
     {
         type = "recipe",

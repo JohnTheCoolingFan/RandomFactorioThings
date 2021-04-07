@@ -1,3 +1,4 @@
+-- Hardened electric mining drill. Alone. ~~Alone in this file on your disk in this zip archive or git repo~~
 local miners = {}
 
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["mining-drill"]["electric-mining-drill"])

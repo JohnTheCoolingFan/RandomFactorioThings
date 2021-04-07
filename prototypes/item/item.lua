@@ -3,6 +3,7 @@ require("prototypes.item.module")
 
 local items = {}
 
+-- Nuclear transport belt
 local nuclear_transport_belt = util.table.deepcopy(data.raw["item"]["express-transport-belt"])
 nuclear_transport_belt.name = "nuclear-transport-belt"
 nuclear_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-transport-belt.png"
@@ -24,6 +25,7 @@ nuclear_splitter.order = "c[splitter]-d[nuclear-splitter]"
 nuclear_splitter.place_result = "nuclear-splitter"
 table.insert(items, nuclear_splitter)
 
+-- Nuclear robots
 local nuclear_logistic_robot = util.table.deepcopy(data.raw["item"]["logistic-robot"])
 nuclear_logistic_robot.name = "nuclear-logistic-robot"
 nuclear_logistic_robot.icon = "__RandomFactorioThings__/graphics/icons/nuclear-logistic-robot.png"
@@ -43,6 +45,7 @@ nuclear_robot_frame.name = "nuclear-flying-robot-frame"
 nuclear_robot_frame.icon = "__RandomFactorioThings__/graphics/icons/nuclear-flying-robot-frame.png"
 table.insert(items, nuclear_robot_frame)
 
+-- Hardened furnaces
 local hardened_stone_furnace = util.table.deepcopy(data.raw["item"]["stone-furnace"])
 hardened_stone_furnace.name = "hardened-stone-furnace"
 hardened_stone_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-stone-furnace.png"
@@ -67,6 +70,7 @@ hardened_electric_furnace.order = "c[electric-furnace]-b[hardened-electric-furna
 table.insert(items, hardened_electric_furnace)
 data.raw["item"]["electric-furnace"].order = "c[electric-furnace]-a[electric-furnace]"
 
+-- Nuclear assembling machine
 local nuclear_assembling_machine = util.table.deepcopy(data.raw["item"]["assembling-machine-3"])
 nuclear_assembling_machine.name = "nuclear-assembling-machine"
 nuclear_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/nuclear-assembling-machine.png"
@@ -74,6 +78,7 @@ nuclear_assembling_machine.place_result = "nuclear-assembling-machine"
 nuclear_assembling_machine.order = "c[rft]-a[nuclear-assembling-machine]"
 table.insert(items, nuclear_assembling_machine)
 
+-- Grinding and compressing
 local macerator = util.table.deepcopy(data.raw["item"]["assembling-machine-3"])
 macerator.name = "macerator"
 macerator.icon = "__RandomFactorioThings__/graphics/icons/macerator.png"
@@ -88,6 +93,7 @@ compressor.place_result = "compressor"
 compressor.order = "c[rft]-c[compressor]"
 table.insert(items, compressor)
 
+-- nuclear inserters
 local nuclear_inserter = util.table.deepcopy(data.raw["item"]["fast-inserter"])
 nuclear_inserter.name = "nuclear-inserter"
 nuclear_inserter.icon = "__RandomFactorioThings__/graphics/icons/nuclear-inserter.png"
@@ -122,12 +128,14 @@ nuclear_stack_filter_inserter.order = "g[stack-filter-inserter]-b[nuclear]"
 table.insert(items, nuclear_stack_filter_inserter)
 data.raw["item"]["stack-filter-inserter"].order = "g[stack-filter-inserter]-a[common]"
 
+-- Hardened electric mining drill
 local hardened_electric_mining_drill = util.table.deepcopy(data.raw["item"]["electric-mining-drill"])
 hardened_electric_mining_drill.name = "hardened-electric-mining-drill"
 hardened_electric_mining_drill.icon = "__RandomFactorioThings__/graphics/icons/hardened-electric-mining-drill.png"
 hardened_electric_mining_drill.place_result = "hardened-electric-mining-drill"
 table.insert(items, hardened_electric_mining_drill)
 
+-- Grinding and compressing again
 local coal_dust = util.table.deepcopy(data.raw["item"]["coal"])
 coal_dust.name = "coal-dust"
 coal_dust.icon = "__RandomFactorioThings__/graphics/icons/coal-dust.png"
@@ -151,6 +159,7 @@ compressed_fuel.fuel_value = "12MJ"
 compressed_fuel.stack_size = 75
 table.insert(items, compressed_fuel)
 
+-- Nuclear material
 local nuclear_metal = util.table.deepcopy(data.raw["item"]["iron-plate"])
 nuclear_metal.name = "nuclear-metal"
 nuclear_metal.icon = "__RandomFactorioThings__/graphics/icons/nuclear-metal.png"
@@ -162,6 +171,7 @@ raw_nuclear_metal.icon = "__RandomFactorioThings__/graphics/icons/raw-nuclear-me
 table.insert(items, raw_nuclear_metal)
 
 if mods["PlutoniumEnergy"] then
+    -- Plutonium material
     local plutonium_steel = util.table.deepcopy(data.raw["item"]["steel-plate"])
     plutonium_steel.name = "plutonium-steel"
     plutonium_steel.icon = "__RandomFactorioThings__/graphics/icons/plutonium-steel.png"
@@ -172,6 +182,7 @@ if mods["PlutoniumEnergy"] then
     raw_plutonium_steel.icon = "__RandomFactorioThings__/graphics/icons/raw-plutonium-steel.png"
     table.insert(items, raw_plutonium_steel)
 
+    -- Plutonium assembling machine
     local plutonium_assembling_machine = util.table.deepcopy(nuclear_assembling_machine)
     plutonium_assembling_machine.name = "plutonium-assembling-machine"
     plutonium_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/plutonium-assembling-machine.png"
@@ -179,6 +190,7 @@ if mods["PlutoniumEnergy"] then
     plutonium_assembling_machine.order = "c[rft]-a[plutonium-assembling-machine]"
     table.insert(items, plutonium_assembling_machine)
 
+    -- Plutonium inserters
     local plutonium_inserter = util.table.deepcopy(nuclear_inserter)
     plutonium_inserter.name = "plutonium-inserter"
     plutonium_inserter.icon = "__RandomFactorioThings__/graphics/icons/plutonium-inserter.png"
@@ -211,6 +223,7 @@ if mods["PlutoniumEnergy"] then
     plutonium_stack_filter_inserter.order = "g[stack-filter-inserter]-c[plutonium]"
     table.insert(items, plutonium_stack_filter_inserter)
 
+    -- Plutonium transport belt
     local plutonium_transport_belt = util.table.deepcopy(nuclear_transport_belt)
     plutonium_transport_belt.name = "plutonium-transport-belt"
     plutonium_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/plutonium-transport-belt.png"

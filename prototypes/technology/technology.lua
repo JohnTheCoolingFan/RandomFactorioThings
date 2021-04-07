@@ -99,11 +99,11 @@ data:extend({
         icon = "__RandomFactorioThings__/graphics/technology/nuclear-automation.png",
         icon_size = 128,
         effects = {
-            {
+            { -- Nuclear assembling machine
                 type = "unlock-recipe",
                 recipe = "nuclear-assembling-machine"
             },
-            {
+            { -- Nuclear material
                 type = "unlock-recipe",
                 recipe = "raw-nuclear-metal"
             },
@@ -111,7 +111,7 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "raw-nuclear-metal-smelting"
             },
-            {
+            { -- Nuclear inserters
                 type = "unlock-recipe",
                 recipe = "nuclear-inserter"
             },
@@ -151,7 +151,7 @@ data:extend({
         icon_size = 128,
         icon = "__RandomFactorioThings__/graphics/technology/nuclear-logistics.png",
         effects = {
-            {
+            { -- Nuclear transport belt
                 type = "unlock-recipe",
                 recipe = "nuclear-transport-belt"
             },
@@ -163,7 +163,7 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "nuclear-splitter"
             },
-            {
+            { -- Nuclear robots
                 type = "unlock-recipe",
                 recipe = "nuclear-flying-robot-frame"
             },
@@ -221,6 +221,7 @@ data:extend({
 
 -- Plutonium Energy integration
 if mods["PlutoniumEnergy"] then
+    -- Plutonium tech
     data:extend({
         {
             type = "technology",
@@ -228,11 +229,11 @@ if mods["PlutoniumEnergy"] then
             icon = "__RandomFactorioThings__/graphics/technology/plutonium-automation.png",
             icon_size = 128,
             effects = {
-                {
+                { -- Plutonium assembling machine
                     type = "unlock-recipe",
                     recipe = "plutonium-assembling-machine"
                 },
-                {
+                { -- Plutonium material
                     type = "unlock-recipe",
                     recipe = "raw-plutonium-steel"
                 },
@@ -240,7 +241,7 @@ if mods["PlutoniumEnergy"] then
                     type = "unlock-recipe",
                     recipe = "raw-plutonium-steel-smelting"
                 },
-                {
+                { -- Plutonium inserters
                     type = "unlock-recipe",
                     recipe = "plutonium-inserter"
                 },
@@ -280,7 +281,7 @@ if mods["PlutoniumEnergy"] then
             icon_size = 128,
             icon = "__RandomFactorioThings__/graphics/technology/plutonium-logistics.png",
             effects = {
-                {
+                { -- Plutonium transport belt
                     type = "unlock-recipe",
                     recipe = "plutonium-transport-belt"
                 },

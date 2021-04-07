@@ -2,12 +2,13 @@
 --       Remake graphics again
 
 require('prototypes.entity.remnants')
-require("prototypes.entity.inserters")
-require("prototypes.entity.miners")
-require("prototypes.entity.assemblerpipes")
+require("prototypes.entity.inserters") -- Inserters
+require("prototypes.entity.miners") -- Hardened electric mining drill. Sitting alone in its own file. How sad.
+require("prototypes.entity.assemblerpipes") -- Thingie for assembler pipes
 
 local entities = {}
 
+-- Nuclear transport belt
 local nuclear_transport_belt = util.table.deepcopy(data.raw["transport-belt"]["express-transport-belt"])
 nuclear_transport_belt.name = "nuclear-transport-belt"
 nuclear_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/nuclear-transport-belt.png"
@@ -65,6 +66,7 @@ data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "nuclear-tra
 data.raw["underground-belt"]["express-underground-belt"].next_upgrade = "nuclear-underground-belt"
 data.raw["splitter"]["express-splitter"].next_upgrade = "nuclear-splitter"
 
+-- Nuclear robots
 local nuclear_logistic_robot = util.table.deepcopy(data.raw["logistic-robot"]["logistic-robot"])
 nuclear_logistic_robot.name = "nuclear-logistic-robot"
 nuclear_logistic_robot.minable.result = "nuclear-logistic-robot"
@@ -101,6 +103,7 @@ nuclear_construction_robot.working.filename = "__RandomFactorioThings__/graphics
 nuclear_construction_robot.working.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/hr-nuclear-construction-robot-working.png"
 table.insert(entities, nuclear_construction_robot)
 
+-- Hardened furnaces
 local hardened_stone_furnace = util.table.deepcopy(data.raw["furnace"]["stone-furnace"])
 hardened_stone_furnace.name = "hardened-stone-furnace"
 hardened_stone_furnace.icon = "__RandomFactorioThings__/graphics/icons/hardened-stone-furnace.png"
@@ -134,6 +137,7 @@ hardened_electric_furnace.animation.layers[1].filename = "__RandomFactorioThings
 hardened_electric_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-furnace/hr-hardened-electric-furnace.png"
 table.insert(entities, hardened_electric_furnace)
 
+-- Nuclear assembling machine
 local nuclear_assembling_machine = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"])
 nuclear_assembling_machine.name = "nuclear-assembling-machine"
 nuclear_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/nuclear-assembling-machine.png"
@@ -151,6 +155,7 @@ nuclear_assembling_machine.next_upgrade = mods["PlutoniumEnergy"] and "plutonium
 table.insert(entities, nuclear_assembling_machine)
 data.raw["assembling-machine"]["assembling-machine-3"].next_upgrade = "nuclear-assembling-machine"
 
+-- Grinding and compressing
 local macerator = util.table.deepcopy(data.raw["assembling-machine"]["centrifuge"])
 macerator.name = "macerator"
 macerator.icon = "__RandomFactorioThings__/graphics/icons/macerator.png"
@@ -180,7 +185,9 @@ compressor.energy_usage = "150kW"
 compressor.module_specification.module_slots = 3
 table.insert(entities, compressor)
 
+-- Plutonium Energy integration
 if mods["PlutoniumEnergy"] then
+    -- Plutonium assembling machine
     local plutonium_assembling_machine = util.table.deepcopy(nuclear_assembling_machine)
     plutonium_assembling_machine.name = "plutonium-assembling-machine"
     plutonium_assembling_machine.icon = "__RandomFactorioThings__/graphics/icons/plutonium-assembling-machine.png"
@@ -196,6 +203,7 @@ if mods["PlutoniumEnergy"] then
     plutonium_assembling_machine.next_upgrade = nil
     table.insert(entities, plutonium_assembling_machine)
 
+    -- Plutonium transport belt
     local plutonium_transport_belt = util.table.deepcopy(nuclear_transport_belt)
     plutonium_transport_belt.name = "plutonium-transport-belt"
     plutonium_transport_belt.icon = "__RandomFactorioThings__/graphics/icons/plutonium-transport-belt.png"
