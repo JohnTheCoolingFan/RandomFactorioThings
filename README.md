@@ -16,6 +16,8 @@ You can support me on [Patreon](https://www.patreon.com/JohnTheCoolingFan). Your
 *   English (en) by [JohnTheCF](https://mods.factorio.com/user/john_thecf)
 *   Russian / Русский (ru) by [JohnTheCF](https://mods.factorio.com/user/john_thecf)
 *   Ukrainian / Українська (uk) by [IgorLutiy](https://github.com/IgorLutiy)
+*   Polish / Polski (pl) by Guru [TSM]#8528
+*   German / Deutsch (de) by PanCave
 
 ### Other my mods:
 
