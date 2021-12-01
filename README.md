@@ -1,5 +1,7 @@
 Random Factorio Things (RFT for short) extends vanilla (base) game, adding new assembling machines, new buildings tiers and new modules.
 
+RandomFactorioThings development is stopped. There will be no content updates. Minor bug fixes and updates for new Factorio versions will still come out.
+
 ### Main features:
 
 - New tiers of common machines, such as furnaces or mining drills.
