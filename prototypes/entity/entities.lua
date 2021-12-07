@@ -1,6 +1,3 @@
--- TODO: **URGENT** Fix #21
---       Remake graphics again
-
 require('prototypes.entity.remnants')
 require("prototypes.entity.inserters") -- Inserters
 require("prototypes.entity.miners") -- Hardened electric mining drill. Sitting alone in its own file. How sad.
