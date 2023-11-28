@@ -1,6 +1,6 @@
 require('prototypes.entity.remnants')
-require("prototypes.entity.inserters") -- Inserters
-require("prototypes.entity.miners") -- Hardened electric mining drill. Sitting alone in its own file. How sad.
+require("prototypes.entity.inserters")      -- Inserters
+require("prototypes.entity.miners")         -- Hardened electric mining drill. Sitting alone in its own file. How sad.
 require("prototypes.entity.assemblerpipes") -- Thingie for assembler pipes
 
 local entities = {}
@@ -13,8 +13,15 @@ nuclear_transport_belt.corpse = 'nuclear-transport-belt-remnants'
 nuclear_transport_belt.minable.result = "nuclear-transport-belt"
 nuclear_transport_belt.speed = 0.125
 nuclear_transport_belt.next_upgrade = nil
-nuclear_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
-nuclear_transport_belt.belt_animation_set.animation_set.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+if mods["DeadlockBlackRubberBelts"] then
+    nuclear_transport_belt.belt_animation_set.animation_set.filename =
+    "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+else
+    nuclear_transport_belt.belt_animation_set.animation_set.filename =
+    "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/nuclear-transport-belt.png"
+    nuclear_transport_belt.belt_animation_set.animation_set.hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/nuclear-transport-belt/hr-nuclear-transport-belt.png"
+end
 nuclear_transport_belt.related_underground_belt = 'nuclear-underground-belt'
 table.insert(entities, nuclear_transport_belt)
 
@@ -27,14 +34,22 @@ nuclear_underground_belt.max_distance = 11
 nuclear_underground_belt.speed = 0.125
 nuclear_underground_belt.next_upgrade = nil
 nuclear_underground_belt.belt_animation_set = nuclear_transport_belt.belt_animation_set
-nuclear_underground_belt.structure.direction_in.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
-nuclear_underground_belt.structure.direction_in.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
-nuclear_underground_belt.structure.direction_out.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
-nuclear_underground_belt.structure.direction_out.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
-nuclear_underground_belt.structure.direction_in_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
-nuclear_underground_belt.structure.direction_in_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
-nuclear_underground_belt.structure.direction_out_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
-nuclear_underground_belt.structure.direction_out_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
+nuclear_underground_belt.structure.direction_in.sheet.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
+nuclear_underground_belt.structure.direction_in.sheet.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
+nuclear_underground_belt.structure.direction_out.sheet.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
+nuclear_underground_belt.structure.direction_out.sheet.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
+nuclear_underground_belt.structure.direction_in_side_loading.sheet.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
+nuclear_underground_belt.structure.direction_in_side_loading.sheet.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
+nuclear_underground_belt.structure.direction_out_side_loading.sheet.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/nuclear-underground-belt-structure.png"
+nuclear_underground_belt.structure.direction_out_side_loading.sheet.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-underground-belt/hr-nuclear-underground-belt-structure.png"
 table.insert(entities, nuclear_underground_belt)
 
 local nuclear_splitter = util.table.deepcopy(data.raw["splitter"]["express-splitter"])
@@ -45,18 +60,30 @@ nuclear_splitter.minable.result = "nuclear-splitter"
 nuclear_splitter.speed = 0.125
 nuclear_splitter.next_upgrade = nil
 nuclear_splitter.belt_animation_set = nuclear_transport_belt.belt_animation_set
-nuclear_splitter.structure.north.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-north.png"
-nuclear_splitter.structure.north.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-north.png"
-nuclear_splitter.structure.east.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-east.png"
-nuclear_splitter.structure.east.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-east.png"
-nuclear_splitter.structure.south.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-south.png"
-nuclear_splitter.structure.south.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-south.png"
-nuclear_splitter.structure.west.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-west.png"
-nuclear_splitter.structure.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-west.png"
-nuclear_splitter.structure_patch.east.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-east-top_patch.png"
-nuclear_splitter.structure_patch.east.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-east-top_patch.png"
-nuclear_splitter.structure_patch.west.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-west-top_patch.png"
-nuclear_splitter.structure_patch.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-west-top_patch.png"
+nuclear_splitter.structure.north.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-north.png"
+nuclear_splitter.structure.north.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-north.png"
+nuclear_splitter.structure.east.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-east.png"
+nuclear_splitter.structure.east.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-east.png"
+nuclear_splitter.structure.south.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-south.png"
+nuclear_splitter.structure.south.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-south.png"
+nuclear_splitter.structure.west.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-west.png"
+nuclear_splitter.structure.west.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-west.png"
+nuclear_splitter.structure_patch.east.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-east-top_patch.png"
+nuclear_splitter.structure_patch.east.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-east-top_patch.png"
+nuclear_splitter.structure_patch.west.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/nuclear-splitter-west-top_patch.png"
+nuclear_splitter.structure_patch.west.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-splitter/hr-nuclear-splitter-west-top_patch.png"
 table.insert(entities, nuclear_splitter)
 
 data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "nuclear-transport-belt"
@@ -73,14 +100,22 @@ nuclear_logistic_robot.max_payload_size = 2
 nuclear_logistic_robot.speed = 0.1
 nuclear_logistic_robot.max_energy = "3MJ"
 nuclear_logistic_robot.energy_per_move = "4kJ"
-nuclear_logistic_robot.idle.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
-nuclear_logistic_robot.idle.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
-nuclear_logistic_robot.idle_with_cargo.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
-nuclear_logistic_robot.idle_with_cargo.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
-nuclear_logistic_robot.in_motion.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
-nuclear_logistic_robot.in_motion.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
-nuclear_logistic_robot.in_motion_with_cargo.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
-nuclear_logistic_robot.in_motion_with_cargo.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+nuclear_logistic_robot.idle.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+nuclear_logistic_robot.idle.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+nuclear_logistic_robot.idle_with_cargo.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+nuclear_logistic_robot.idle_with_cargo.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+nuclear_logistic_robot.in_motion.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+nuclear_logistic_robot.in_motion.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
+nuclear_logistic_robot.in_motion_with_cargo.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/nuclear-logistic-robot.png"
+nuclear_logistic_robot.in_motion_with_cargo.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-logistic-robot/hr-nuclear-logistic-robot.png"
 table.insert(entities, nuclear_logistic_robot)
 
 local nuclear_construction_robot = util.table.deepcopy(data.raw["construction-robot"]["construction-robot"])
@@ -92,12 +127,18 @@ nuclear_construction_robot.max_payload_size = 2
 nuclear_construction_robot.speed = 0.12
 nuclear_construction_robot.max_energy = "3MJ"
 nuclear_construction_robot.energy_per_move = "4kJ"
-nuclear_construction_robot.idle.filename = "__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/nuclear-construction-robot.png"
-nuclear_construction_robot.idle.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/hr-nuclear-construction-robot.png"
-nuclear_construction_robot.in_motion.filename = "__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/nuclear-construction-robot.png"
-nuclear_construction_robot.in_motion.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/hr-nuclear-construction-robot.png"
-nuclear_construction_robot.working.filename = "__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/nuclear-construction-robot-working.png"
-nuclear_construction_robot.working.hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/hr-nuclear-construction-robot-working.png"
+nuclear_construction_robot.idle.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/nuclear-construction-robot.png"
+nuclear_construction_robot.idle.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/hr-nuclear-construction-robot.png"
+nuclear_construction_robot.in_motion.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/nuclear-construction-robot.png"
+nuclear_construction_robot.in_motion.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/hr-nuclear-construction-robot.png"
+nuclear_construction_robot.working.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/nuclear-construction-robot-working.png"
+nuclear_construction_robot.working.hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-construction-robot/hr-nuclear-construction-robot-working.png"
 table.insert(entities, nuclear_construction_robot)
 
 -- Hardened furnaces
@@ -108,8 +149,10 @@ hardened_stone_furnace.minable.result = "hardened-stone-furnace"
 hardened_stone_furnace.max_health = 300
 hardened_stone_furnace.crafting_speed = 1.25
 hardened_stone_furnace.energy_usage = "100kW"
-hardened_stone_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hardened-stone-furnace.png"
-hardened_stone_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hr-hardened-stone-furnace.png"
+hardened_stone_furnace.animation.layers[1].filename =
+"__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hardened-stone-furnace.png"
+hardened_stone_furnace.animation.layers[1].hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/hardened-stone-furnace/hr-hardened-stone-furnace.png"
 table.insert(entities, hardened_stone_furnace)
 
 local hardened_steel_furnace = util.table.deepcopy(data.raw["furnace"]["steel-furnace"])
@@ -119,8 +162,10 @@ hardened_steel_furnace.minable.result = "hardened-steel-furnace"
 hardened_steel_furnace.max_health = 450
 hardened_steel_furnace.crafting_speed = 2.5
 hardened_steel_furnace.energy_usage = "100kW"
-hardened_steel_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/hardened-steel-furnace/hardened-steel-furnace.png"
-hardened_steel_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-steel-furnace/hr-hardened-steel-furnace.png"
+hardened_steel_furnace.animation.layers[1].filename =
+"__RandomFactorioThings__/graphics/entity/hardened-steel-furnace/hardened-steel-furnace.png"
+hardened_steel_furnace.animation.layers[1].hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/hardened-steel-furnace/hr-hardened-steel-furnace.png"
 table.insert(entities, hardened_steel_furnace)
 
 local hardened_electric_furnace = util.table.deepcopy(data.raw["furnace"]["electric-furnace"])
@@ -130,8 +175,10 @@ hardened_electric_furnace.minable.result = "hardened-electric-furnace"
 hardened_electric_furnace.max_health = 525
 hardened_electric_furnace.crafting_speed = 2.5
 hardened_electric_furnace.energy_usage = "200kW"
-hardened_electric_furnace.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-furnace/hardened-electric-furnace.png"
-hardened_electric_furnace.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/hardened-electric-furnace/hr-hardened-electric-furnace.png"
+hardened_electric_furnace.animation.layers[1].filename =
+"__RandomFactorioThings__/graphics/entity/hardened-electric-furnace/hardened-electric-furnace.png"
+hardened_electric_furnace.animation.layers[1].hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/hardened-electric-furnace/hr-hardened-electric-furnace.png"
 table.insert(entities, hardened_electric_furnace)
 
 -- Nuclear assembling machine
@@ -144,8 +191,10 @@ nuclear_assembling_machine.crafting_speed = 2
 nuclear_assembling_machine.energy_usage = "1125kW"
 nuclear_assembling_machine.module_specification.module_slots = 6
 nuclear_assembling_machine.energy_source.emissions_per_minute = 1
-nuclear_assembling_machine.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/nuclear-assembling-machine.png"
-nuclear_assembling_machine.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/hr-nuclear-assembling-machine.png"
+nuclear_assembling_machine.animation.layers[1].filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/nuclear-assembling-machine.png"
+nuclear_assembling_machine.animation.layers[1].hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/nuclear-assembling-machine/hr-nuclear-assembling-machine.png"
 nuclear_assembling_machine.fluid_boxes[1].pipe_picture = nuclearassemblerpipepictures()
 nuclear_assembling_machine.fluid_boxes[2].pipe_picture = nuclearassemblerpipepictures()
 nuclear_assembling_machine.next_upgrade = mods["PlutoniumEnergy"] and "plutonium-assembling-machine"
@@ -157,13 +206,19 @@ local macerator = util.table.deepcopy(data.raw["assembling-machine"]["centrifuge
 macerator.name = "macerator"
 macerator.icon = "__RandomFactorioThings__/graphics/icons/macerator.png"
 macerator.minable.result = "macerator"
-macerator.working_visualisations[2].animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/macerator/macerator-C-light.png"
-macerator.working_visualisations[2].animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/macerator/hr-macerator-C-light.png"
-macerator.working_visualisations[2].animation.layers[2].filename = "__RandomFactorioThings__/graphics/entity/macerator/macerator-B-light.png"
-macerator.working_visualisations[2].animation.layers[2].hr_version.filename = "__RandomFactorioThings__/graphics/entity/macerator/hr-macerator-B-light.png"
-macerator.working_visualisations[2].animation.layers[3].filename = "__RandomFactorioThings__/graphics/entity/macerator/macerator-A-light.png"
-macerator.working_visualisations[2].animation.layers[3].hr_version.filename = "__RandomFactorioThings__/graphics/entity/macerator/hr-macerator-A-light.png"
-macerator.crafting_categories = {"grinding"}
+macerator.working_visualisations[2].animation.layers[1].filename =
+"__RandomFactorioThings__/graphics/entity/macerator/macerator-C-light.png"
+macerator.working_visualisations[2].animation.layers[1].hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/macerator/hr-macerator-C-light.png"
+macerator.working_visualisations[2].animation.layers[2].filename =
+"__RandomFactorioThings__/graphics/entity/macerator/macerator-B-light.png"
+macerator.working_visualisations[2].animation.layers[2].hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/macerator/hr-macerator-B-light.png"
+macerator.working_visualisations[2].animation.layers[3].filename =
+"__RandomFactorioThings__/graphics/entity/macerator/macerator-A-light.png"
+macerator.working_visualisations[2].animation.layers[3].hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/macerator/hr-macerator-A-light.png"
+macerator.crafting_categories = { "grinding" }
 macerator.energy_usage = "150kW"
 table.insert(entities, macerator)
 
@@ -171,13 +226,19 @@ local compressor = util.table.deepcopy(data.raw["assembling-machine"]["centrifug
 compressor.name = "compressor"
 compressor.icon = "__RandomFactorioThings__/graphics/icons/compressor.png"
 compressor.minable.result = "compressor"
-compressor.working_visualisations[2].animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/compressor/compressor-C-light.png"
-compressor.working_visualisations[2].animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-C-light.png"
-compressor.working_visualisations[2].animation.layers[2].filename = "__RandomFactorioThings__/graphics/entity/compressor/compressor-B-light.png"
-compressor.working_visualisations[2].animation.layers[2].hr_version.filename = "__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-B-light.png"
-compressor.working_visualisations[2].animation.layers[3].filename = "__RandomFactorioThings__/graphics/entity/compressor/compressor-A-light.png"
-compressor.working_visualisations[2].animation.layers[3].hr_version.filename = "__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-A-light.png"
-compressor.crafting_categories = {"compressing"}
+compressor.working_visualisations[2].animation.layers[1].filename =
+"__RandomFactorioThings__/graphics/entity/compressor/compressor-C-light.png"
+compressor.working_visualisations[2].animation.layers[1].hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-C-light.png"
+compressor.working_visualisations[2].animation.layers[2].filename =
+"__RandomFactorioThings__/graphics/entity/compressor/compressor-B-light.png"
+compressor.working_visualisations[2].animation.layers[2].hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-B-light.png"
+compressor.working_visualisations[2].animation.layers[3].filename =
+"__RandomFactorioThings__/graphics/entity/compressor/compressor-A-light.png"
+compressor.working_visualisations[2].animation.layers[3].hr_version.filename =
+"__RandomFactorioThings__/graphics/entity/compressor/hr-compressor-A-light.png"
+compressor.crafting_categories = { "compressing" }
 compressor.energy_usage = "150kW"
 compressor.module_specification.module_slots = 3
 table.insert(entities, compressor)
@@ -193,8 +254,10 @@ if mods["PlutoniumEnergy"] then
     plutonium_assembling_machine.crafting_speed = 3
     plutonium_assembling_machine.energy_usage = "4.5MW"
     plutonium_assembling_machine.module_specification.module_slots = 8
-    plutonium_assembling_machine.animation.layers[1].filename = "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/plutonium-assembling-machine.png"
-    plutonium_assembling_machine.animation.layers[1].hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/hr-plutonium-assembling-machine.png"
+    plutonium_assembling_machine.animation.layers[1].filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/plutonium-assembling-machine.png"
+    plutonium_assembling_machine.animation.layers[1].hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-assembling-machine/hr-plutonium-assembling-machine.png"
     plutonium_assembling_machine.fluid_boxes[1].pipe_picture = plutoniumassemblerpipepictures()
     plutonium_assembling_machine.fluid_boxes[2].pipe_picture = plutoniumassemblerpipepictures()
     plutonium_assembling_machine.next_upgrade = nil
@@ -207,8 +270,15 @@ if mods["PlutoniumEnergy"] then
     plutonium_transport_belt.corpse = 'plutonium-transport-belt-remnants'
     plutonium_transport_belt.minable.result = "plutonium-transport-belt"
     plutonium_transport_belt.speed = 0.15625
-    plutonium_transport_belt.belt_animation_set.animation_set.filename = "__RandomFactorioThings__/graphics/entity/plutonium-transport-belt/plutonium-transport-belt.png"
-    plutonium_transport_belt.belt_animation_set.animation_set.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-transport-belt/hr-plutonium-transport-belt.png"
+    if mods["DeadlockBlackRubberBelts"] then
+        plutonium_transport_belt.belt_animation_set.animation_set.filename =
+        "__RandomFactorioThings__/graphics/entity/plutonium-transport-belt/hr-plutonium-transport-belt.png"
+    else
+        plutonium_transport_belt.belt_animation_set.animation_set.filename =
+        "__RandomFactorioThings__/graphics/entity/plutonium-transport-belt/plutonium-transport-belt.png"
+        plutonium_transport_belt.belt_animation_set.animation_set.hr_version.filename =
+        "__RandomFactorioThings__/graphics/entity/plutonium-transport-belt/hr-plutonium-transport-belt.png"
+    end
     plutonium_transport_belt.related_underground_belt = 'plutonium-underground-belt'
     table.insert(entities, plutonium_transport_belt)
 
@@ -220,14 +290,22 @@ if mods["PlutoniumEnergy"] then
     plutonium_underground_belt.speed = 0.15625
     plutonium_underground_belt.max_distance = 13
     plutonium_underground_belt.belt_animation_set = plutonium_transport_belt.belt_animation_set
-    plutonium_underground_belt.structure.direction_in.sheet.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
-    plutonium_underground_belt.structure.direction_in.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
-    plutonium_underground_belt.structure.direction_out.sheet.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
-    plutonium_underground_belt.structure.direction_out.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
-    plutonium_underground_belt.structure.direction_in_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
-    plutonium_underground_belt.structure.direction_in_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
-    plutonium_underground_belt.structure.direction_out_side_loading.sheet.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
-    plutonium_underground_belt.structure.direction_out_side_loading.sheet.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_in.sheet.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_in.sheet.hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_out.sheet.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_out.sheet.hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_in_side_loading.sheet.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_in_side_loading.sheet.hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_out_side_loading.sheet.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/plutonium-underground-belt-structure.png"
+    plutonium_underground_belt.structure.direction_out_side_loading.sheet.hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-underground-belt/hr-plutonium-underground-belt-structure.png"
     table.insert(entities, plutonium_underground_belt)
 
     local plutonium_splitter = util.table.deepcopy(nuclear_splitter)
@@ -237,18 +315,30 @@ if mods["PlutoniumEnergy"] then
     plutonium_splitter.minable.result = "plutonium-splitter"
     plutonium_splitter.speed = 0.15625
     plutonium_splitter.belt_animation_set = plutonium_transport_belt.belt_animation_set
-    plutonium_splitter.structure.north.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-north.png"
-    plutonium_splitter.structure.north.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-north.png"
-    plutonium_splitter.structure.east.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-east.png"
-    plutonium_splitter.structure.east.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-east.png"
-    plutonium_splitter.structure.south.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-south.png"
-    plutonium_splitter.structure.south.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-south.png"
-    plutonium_splitter.structure.west.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-west.png"
-    plutonium_splitter.structure.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-west.png"
-    plutonium_splitter.structure_patch.east.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-east-top_patch.png"
-    plutonium_splitter.structure_patch.east.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-east-top_patch.png"
-    plutonium_splitter.structure_patch.west.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-west-top_patch.png"
-    plutonium_splitter.structure_patch.west.hr_version.filename = "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-west-top_patch.png"
+    plutonium_splitter.structure.north.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-north.png"
+    plutonium_splitter.structure.north.hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-north.png"
+    plutonium_splitter.structure.east.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-east.png"
+    plutonium_splitter.structure.east.hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-east.png"
+    plutonium_splitter.structure.south.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-south.png"
+    plutonium_splitter.structure.south.hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-south.png"
+    plutonium_splitter.structure.west.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-west.png"
+    plutonium_splitter.structure.west.hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-west.png"
+    plutonium_splitter.structure_patch.east.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-east-top_patch.png"
+    plutonium_splitter.structure_patch.east.hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-east-top_patch.png"
+    plutonium_splitter.structure_patch.west.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/plutonium-splitter-west-top_patch.png"
+    plutonium_splitter.structure_patch.west.hr_version.filename =
+    "__RandomFactorioThings__/graphics/entity/plutonium-splitter/hr-plutonium-splitter-west-top_patch.png"
     table.insert(entities, plutonium_splitter)
 
     entities[1].next_upgrade = "plutonium-transport-belt"
