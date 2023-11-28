@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.17
+Date: 2023-11-28
+  Fixes:
+    - Fixed incompatibility with Black Rubber Belts. Now RFT's belts can also
+      be black, with matching optional coloring.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.16
 Date: 2023-03-05
   Fixes:
